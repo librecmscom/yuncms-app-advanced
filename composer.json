@@ -15,6 +15,7 @@
         "yiisoft/yii2": "~2.0.6",
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0",
+        "yuncms/yii2-admin": "~2.0",
         "yuncms/yii2-user": "~2.0.0"
     },
     "require-dev": {
@@ -25,7 +26,9 @@
         "codeception/verify": "~0.3.1"
     },
     "config": {
-        "process-timeout": 1800
+        "process-timeout": 1800,
+        "optimize-autoloader": true,
+        "notify-on-install": false
     },
     "repositories": [
         {
