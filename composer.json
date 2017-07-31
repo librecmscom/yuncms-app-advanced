@@ -9,7 +9,7 @@
         "issues": "https://github.com/yuncms/yuncms-app-advanced/issues?state=open",
         "source": "https://github.com/yuncms/yuncms-app-advanced"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "~2.0.6",
@@ -25,12 +25,12 @@
         "codeception/verify": "~0.3.1"
     },
     "config": {
-        "process-timeout": 1800,
-        "fxp-asset":{
-            "installer-paths": {
-                "npm-asset-library": "vendor/npm",
-                "bower-asset-library": "vendor/bower"
-            }
+        "process-timeout": 1800
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
-    }
+    ]
 }
