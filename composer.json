@@ -1,16 +1,13 @@
 {
-    "name": "yiisoft/yii2-app-advanced",
-    "description": "Yii 2 Advanced Project Template",
-    "keywords": ["yii2", "framework", "advanced", "project template"],
-    "homepage": "http://www.yiiframework.com/",
+    "name": "yuncms/yii2-app-advanced",
+    "description": "Yuncms Advanced Project Template",
+    "keywords": ["yuncms", "Yii 2", "framework", "advanced", "project template"],
+    "homepage": "http://www.yuncms.net/",
     "type": "project",
-    "license": "BSD-3-Clause",
+    "license": "MIT",
     "support": {
-        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
-        "forum": "http://www.yiiframework.com/forum/",
-        "wiki": "http://www.yiiframework.com/wiki/",
-        "irc": "irc://irc.freenode.net/yii",
-        "source": "https://github.com/yiisoft/yii2"
+        "issues": "https://github.com/yuncms/yuncms-app-advanced/issues?state=open",
+        "source": "https://github.com/yuncms/yuncms-app-advanced"
     },
     "minimum-stability": "stable",
     "require": {
@@ -18,13 +15,12 @@
         "yiisoft/yii2": "~2.0.6",
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0",
-        "yuncms/yii2-user": "~1.0"
+        "yuncms/yii2-user": "~2.0.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
         "yiisoft/yii2-gii": "~2.0.0",
         "yiisoft/yii2-faker": "~2.0.0",
-
         "codeception/base": "^2.2.3",
         "codeception/verify": "~0.3.1"
     },
