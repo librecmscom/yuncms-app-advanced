@@ -1,11 +1,9 @@
 <?php
+
 namespace api\controllers;
 
 use Yii;
 use yii\rest\Controller;
-use yii\filters\VerbFilter;
-use yii\filters\AccessControl;
-use common\models\LoginForm;
 
 /**
  * Site controller
@@ -40,5 +38,5 @@ class SiteController extends Controller
     {
         return [Yii::$app->request->userIP];
     }
-    
+
 }

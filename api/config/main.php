@@ -11,12 +11,25 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'api\controllers',
     'bootstrap' => ['log'],
-    'modules' => [],
+    'modules' => [
+        'v1' => [
+            'class' => 'api\modules\v1\Module',
+        ],
+    ],
     'components' => [
+        'request' => [
+            'parsers' => [
+                'application/json' => 'yii\web\JsonParser',
+                'text/json' => 'yii\web\JsonParser',
+                'application/xml' => 'yuncms\system\web\XmlParser',
+                'text/xml' => 'yuncms\system\web\XmlParser'
+            ]
+        ],
         'user' => [
-            'identityClass' => 'common\models\User',
-            'enableAutoLogin' => true,
-            'identityCookie' => ['name' => '_identity-api', 'httpOnly' => true],
+            'identityClass' => 'yuncms\user\models\User',
+            'enableSession' => false,
+            'loginUrl' => null,
+            'enableAutoLogin' => false,
         ],
         'urlManager' => [
             'enablePrettyUrl' => true,
