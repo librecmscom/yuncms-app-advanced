@@ -20,6 +20,10 @@ return [
             'class' => 'yii\authclient\Collection'
         ],
         'i18n' => require(__DIR__ . '/i18n.php'),
+        'settings' => [
+            'class' => 'yuncms\system\components\Settings',
+            'frontCache' => 'cache'
+        ],
     ],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
