@@ -36,7 +36,7 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-		'assetManager' => [//前端资源压缩
+        'assetManager' => [//前端资源压缩
             'linkAssets' => PHP_OS == 'WINNT' ? false : true,
             'appendTimestamp' => true,
             'bundles' => [
