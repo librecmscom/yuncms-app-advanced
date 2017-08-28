@@ -19,21 +19,10 @@ return [
         'authClientCollection' => [
             'class' => 'yii\authclient\Collection'
         ],
-        'i18n' => [
-            'translations' => [
-                'admin' => [
-                    'class' => 'yii\i18n\PhpMessageSource',
-                    'basePath' => '@yuncms/admin/messages',
-                ],
-                'user' => [
-                    'class' => 'yii\i18n\PhpMessageSource',
-                    'basePath' => '@yuncms/user/messages',
-                ],
-            ]
-        ]
+        'i18n' => require(__DIR__ . '/i18n.php'),
     ],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
-        '@npm'   => '@vendor/npm-asset',
+        '@npm' => '@vendor/npm-asset',
     ],
 ];
