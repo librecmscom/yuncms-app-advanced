@@ -31,6 +31,34 @@ return [
             'class' => 'yii\i18n\PhpMessageSource',
             'basePath' => '@yuncms/user/messages',
         ],
+        'message' => [
+            'class' => 'yii\i18n\PhpMessageSource',
+            'basePath' => '@yuncms/message/messages',
+        ],
+        'coin' => [
+            'class' => 'yii\i18n\PhpMessageSource',
+            'basePath' => '@yuncms/coin/messages',
+        ],
+        'doing' => [
+            'class' => 'yii\i18n\PhpMessageSource',
+            'basePath' => '@yuncms/doing/messages',
+        ],
+        'support' => [
+            'class' => 'yii\i18n\PhpMessageSource',
+            'basePath' => '@yuncms/support/messages',
+        ],
+        'attention' => [
+            'class' => 'yii\i18n\PhpMessageSource',
+            'basePath' => '@yuncms/attention/messages',
+        ],
+        'collection' => [
+            'class' => 'yii\i18n\PhpMessageSource',
+            'basePath' => '@yuncms/collection/messages',
+        ],
+        'notification' => [
+            'class' => 'yii\i18n\PhpMessageSource',
+            'basePath' => '@yuncms/notification/messages',
+        ],
         'credit' => [
             'class' => 'yii\i18n\PhpMessageSource',
             'basePath' => '@yuncms/credit/messages',
