@@ -14,12 +14,20 @@ return [
     'modules' => [],
     'components' => [
         'request' => [
-            'csrfParam' => '_csrf-backend',
+            'csrfParam' => '_csrf_backend',
         ],
         'user' => [
-            'identityClass' => 'common\models\User',
+            'class' => 'yii\web\User',
             'enableAutoLogin' => true,
-            'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
+            'loginUrl' => ['/admin/security/login'],
+            'identityClass' => 'yuncms\user\models\User',
+            'identityCookie' => [
+                'name' => '_identity_backend',
+                'httpOnly' => true
+            ],
+        ],
+        'frontUrlManager' => [
+            'class' => 'yii\web\UrlManager',
         ],
         'session' => [
             // this is the name of the session cookie used for login on the backend
