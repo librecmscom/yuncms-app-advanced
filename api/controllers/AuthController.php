@@ -13,6 +13,8 @@ use yuncms\oauth2\frontend\models\LoginForm;
 
 /**
  * OAuth2 认证
+ * @property bool $isOauthRequest 是否是OAuth2请求
+ * @method finishAuthorization
  * @package api\controllers
  */
 class AuthController extends Controller
