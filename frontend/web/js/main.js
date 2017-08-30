@@ -1,37 +1,3 @@
-/*---IE Extend---*/
-if (!Array.prototype.indexOf) {
-    Array.prototype.indexOf = function (elt /* , from */) {
-        var len = this.length >>> 0;
-        var from = Number(arguments[1]) || 0;
-        from = (from < 0) ? Math.ceil(from) : Math.floor(from);
-        if (from < 0)
-            from += len;
-        for (; from < len; from++) {
-            if (from in this && this[from] === elt)
-                return from;
-        }
-        return -1;
-    };
-}
-
-
-
-
-/*
- * 防止浏览器不支持console报错
- */
-if (!window.console) {
-    console = {}
-    var funs = ["profiles", "memory", "_commandLineAPI", "debug", "error",
-        "info", "log", "warn", "dir", "dirxml", "trace", "assert", "count",
-        "markTimeline", "profile", "profileEnd", "time", "timeEnd",
-        "timeStamp", "group", "groupCollapsed", "groupEnd"];
-    for (var i = 0; i < funs.length; i++) {
-        console[funs[i]] = function () {
-        };
-    }
-}
-
 /*通知异步加载*/
 var refreshUnreadNotifications = function () {
     getUnreadNotifications(function (total) {
