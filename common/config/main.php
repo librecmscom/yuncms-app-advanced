@@ -17,7 +17,17 @@ return [
             'class' => 'yii\caching\FileCache',
         ],
         'authClientCollection' => [
-            'class' => 'yii\authclient\Collection'
+            'class' => 'yii\authclient\Collection',
+            'clients' => [
+                'myserver' => [
+                    'class' => 'yuncms\user\clients\Yuncms',
+                    'clientId' => '100000',
+                    'clientSecret' => 'DEApVrgoByyGpmMhQFcuO7oYz5_oBrnUDEApVrgoByyGpmMhQFcuO7oYz5_oBrnU',
+                    'tokenUrl' => 'http://127.0.0.1/yuncms-app-advanced/api/web/auth/authorize',
+                    'authUrl' => 'http://127.0.0.1/yuncms-app-advanced/api/web/auth/index',
+                    'apiBaseUrl' => 'http://127.0.0.1/yuncms-app-advanced/api/web/api',
+                ],
+            ],
         ],
         'i18n' => require(__DIR__ . '/i18n.php'),
         'settings' => [
