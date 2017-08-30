@@ -51,7 +51,7 @@ return [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'rules' => require(__DIR__ . '/urlRules.php'),
+            'rules' => require(__DIR__ . '/UrlRules.php'),
         ],
         */
     ],
