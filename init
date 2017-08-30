@@ -215,18 +215,32 @@ function setCookieValidationKey($root, $paths)
 
 function createSymlink($root, $links)
 {
+    if (PHP_OS == 'WINNT') $root = str_replace('/', '\\', $root);
     foreach ($links as $link => $target) {
-        //first removing folders to avoid errors if the folder already exists
-        @rmdir($root . "/" . $link);
-        //next removing existing symlink in order to update the target
-        if (is_link($root . "/" . $link)) {
-            @unlink($root . "/" . $link);
-        }
-        if (@symlink($root . "/" . $target, $root . "/" . $link)) {
-            echo "      symlink $root/$target $root/$link\n";
+        if (PHP_OS != 'WINNT') {
+            //first removing folders to avoid errors if the folder already exists
+            @rmdir($root . "/" . $link);
+            //next removing existing symlink in order to update the target
+            if (is_link($root . "/" . $link)) {
+                @unlink($root . "/" . $link);
+            }
+            if (@symlink($root . "/" . $target, $root . "/" . $link)) {
+                echo "      symlink $root/$target $root/$link\n";
+            } else {
+                printError("Cannot create symlink $root/$target $root/$link.");
+            }
         } else {
-            printError("Cannot create symlink $root/$target $root/$link.");
+            $cmd = strtr('rmdir {path}', ['{path}' => escapeshellarg($root . "\\" . $link)]);
+            exec($cmd);
+            echo $cmd."     \n";
+            $cmd =strtr('mklink /D {to} {from}', [
+                '{to}' => escapeshellarg($root . "\\" . $link),
+                '{from}' => escapeshellarg($target)
+            ]);
+            exec($cmd);
+            echo $cmd."     \n";
         }
+    }
 }
 
 /**
