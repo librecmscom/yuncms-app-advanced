@@ -8,7 +8,7 @@
 namespace api\controllers;
 
 use Yii;
-use yii\rest\Controller;
+use yii\web\Controller;
 use yuncms\oauth2\frontend\models\LoginForm;
 
 /**

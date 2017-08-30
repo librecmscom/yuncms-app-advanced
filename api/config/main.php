@@ -11,11 +11,6 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'api\controllers',
     'bootstrap' => ['log'],
-    'modules' => [
-        'v1' => [
-            'class' => 'api\modules\v1\Module',
-        ],
-    ],
     'components' => [
         'request' => [
             'parsers' => [
@@ -49,6 +44,11 @@ return [
                     ]
                 ],
             ],
+        ],
+    ],
+    'modules' => [
+        'v1' => [
+            'class' => 'api\modules\v1\Module',
         ],
     ],
     'params' => $params,

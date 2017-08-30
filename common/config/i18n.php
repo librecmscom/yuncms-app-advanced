@@ -31,6 +31,10 @@ return [
             'class' => 'yii\i18n\PhpMessageSource',
             'basePath' => '@yuncms/user/messages',
         ],
+        'oauth2' => [
+            'class' => 'yii\i18n\PhpMessageSource',
+            'basePath' => '@yuncms/oauth2/messages',
+        ],
         'message' => [
             'class' => 'yii\i18n\PhpMessageSource',
             'basePath' => '@yuncms/message/messages',

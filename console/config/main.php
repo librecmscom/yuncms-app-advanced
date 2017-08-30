@@ -28,7 +28,6 @@ return [
                 'yuncms\user\migrations',
                 'yuncms\question\migrations',
                 'yuncms\comment\migrations',
-                'yuncms\payment\migrations',
                 'yuncms\attachment\migrations',
                 'yuncms\article\migrations',
                 'yuncms\note\migrations',

@@ -33,10 +33,7 @@ class Controller extends ActiveController
     {
         $behaviors = parent::behaviors();
         $behaviors['authenticator'] = [
-            'class' => 'yii\filters\auth\CompositeAuth',
-            'authMethods' => [
-                'yuncms\oauth2\filters\auth\TokenAuth',
-            ],
+            'class' => 'yuncms\oauth2\filters\auth\TokenAuth',
         ];
         return $behaviors;
     }
