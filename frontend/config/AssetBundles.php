@@ -58,4 +58,24 @@ return [
             '//cdn.bootcss.com/cropper/2.3.4/cropper.min.js'
         ]
     ],
+
+    // use select2 from CDN
+    'xutl\select2\Select2Asset' => [
+        'sourcePath' => null, // do not publish the bundle
+        'css' => [
+            '//cdn.bootcss.com/select2/4.0.3/css/select2.min.css',
+            '//cdn.bootcss.com/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.min.css'
+        ],
+        'js' => [
+            '//cdn.bootcss.com/select2/4.0.3/js/select2.min.js'
+        ]
+    ],
+
+    // use bootstrap file style from CDN
+    'xutl\bootstrap\filestyle\FilestyleAsset' => [
+        'sourcePath' => null, // do not publish the bundle
+        'js' => [
+            '//cdn.bootcss.com/bootstrap-filestyle/1.3.0/bootstrap-filestyle.min.js'
+        ]
+    ],
 ];

@@ -177,12 +177,5 @@ jQuery(document).ready(function () {
 
     });
 
-    //检查未读通知
-    refreshUnreadNotifications();
-    //setInterval('refreshUnreadNotifications()',5000);
-    //检查未读短消息
-    refreshUnreadMessages();
-    //setInterval('refreshUnreadMessages()',5000);
-
     //etc....
 });
