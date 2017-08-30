@@ -11,6 +11,14 @@
 
 Documentation is at [docs/guide/README.md](docs/guide/README.md).
 
+## Run as Docker container
+
+Pull the image:
+
+``` sh
+docker pull yuncms/yuncms-app-advanced
+```
+
 ## 目录结构
 
 ```
