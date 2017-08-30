@@ -31,7 +31,11 @@
 return [
     'Development' => [
         'path' => 'dev',
+        'setNginxConf' => [
+            'nginx.conf',
+        ],
         'setWritable' => [
+            'api/runtime',
             'backend/runtime',
             'backend/web/assets',
             'frontend/runtime',
@@ -46,9 +50,17 @@ return [
             'backend/config/main-local.php',
             'frontend/config/main-local.php',
         ],
+//        'createSymlink' => [
+//            'frontend/web/uploads' => 'uploads',
+//            'backend/web/uploads' => 'uploads',
+//            'api/web/uploads' => 'uploads',
+//        ],
     ],
     'Production' => [
         'path' => 'prod',
+        'setNginxConf' => [
+            'nginx.conf',
+        ],
         'setWritable' => [
             'backend/runtime',
             'backend/web/assets',
@@ -63,5 +75,10 @@ return [
             'backend/config/main-local.php',
             'frontend/config/main-local.php',
         ],
+//        'createSymlink' => [
+//            'frontend/web/uploads' => 'uploads',
+//            'backend/web/uploads' => 'uploads',
+//            'api/web/uploads' => 'uploads',
+//        ],
     ],
 ];

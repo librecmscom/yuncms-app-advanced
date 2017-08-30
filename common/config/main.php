@@ -1,5 +1,12 @@
 <?php
 return [
+    'language' => 'zh-CN',
+    'sourceLanguage' => 'en-US',
+    'timeZone' => 'PRC',
+    'name' => 'YUNCMS',
+    'bootstrap' => [
+        'queue', // The component registers own console commands
+    ],
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => [
         'db' => [
@@ -16,6 +23,13 @@ return [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
+        'settings' => [
+            'class' => 'yuncms\system\components\Settings',
+            'frontCache' => 'cache'
+        ],
+        'queue' => [
+            'class' => 'yii\queue\sync\Queue',
+        ],
         'authClientCollection' => [
             'class' => 'yii\authclient\Collection',
             'clients' => [
@@ -29,10 +43,7 @@ return [
             ],
         ],
         'i18n' => require(__DIR__ . '/i18n.php'),
-        'settings' => [
-            'class' => 'yuncms\system\components\Settings',
-            'frontCache' => 'cache'
-        ],
+
     ],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',

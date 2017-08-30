@@ -6,6 +6,10 @@ $config = [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => '',
         ],
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+        ],
     ],
 ];
 
@@ -28,6 +32,7 @@ if (!YII_ENV_TEST) {
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
+        'allowedIPs' => ['127.0.0.1', '::1', '192.168.10.111'],
         'generators' => [
             'crud' => [ //生成器名称
                 'class' => 'yii\gii\generators\crud\Generator',

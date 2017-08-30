@@ -1,5 +1,4 @@
-Yii 2 Advanced Project Template
-===============================
+# Yii 2 Advanced Project Template
 
 Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
 developing complex Web applications with multiple tiers.
@@ -16,40 +15,45 @@ Documentation is at [docs/guide/README.md](docs/guide/README.md).
 [![Total Downloads](https://poser.pugx.org/yiisoft/yii2-app-advanced/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
 [![Build Status](https://travis-ci.org/yiisoft/yii2-app-advanced.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-advanced)
 
-DIRECTORY STRUCTURE
--------------------
+## 目录结构
 
 ```
+api
+    config/              包含API置
+    controllers/         包含API控制器类
+    models/              包含API特定的模型类
+    modules/             包含API相关模块
+    runtime/             包含运行时生成的文件
+    web/                 包含相关脚本和Web资源
 common
-    config/              contains shared configurations
-    mail/                contains view files for e-mails
-    models/              contains model classes used in both backend and frontend
-    tests/               contains tests for common classes    
+    config/              包含共享配置
+    mail/                包含电子邮件的视图文件
+    models/              包含后端和前端中使用的模型类
 console
-    config/              contains console configurations
-    controllers/         contains console controllers (commands)
-    migrations/          contains database migrations
-    models/              contains console-specific model classes
-    runtime/             contains files generated during runtime
+    config/              包含控制台配置
+    controllers/         包含控制台控制器（命令）
+    migrations/          包含数据库迁移
+    models/              包含控制台特定的模型类
+    runtime/             包含运行时生成的文件
 backend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains backend configurations
-    controllers/         contains Web controller classes
-    models/              contains backend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for backend application    
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
+    assets/              包含应用程序资源（如JavaScript和CSS）
+    config/              包含后端配置
+    controllers/         包含Web控制器类
+    models/              包含后端特定的模型类
+    runtime/             包含运行时生成的文件
+    views/               包含Web应用程序的视图文件
+    web/                 包含相关脚本和Web资源
 frontend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains frontend configurations
-    controllers/         contains Web controller classes
-    models/              contains frontend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for frontend application
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-    widgets/             contains frontend widgets
-vendor/                  contains dependent 3rd-party packages
-environments/            contains environment-based overrides
+    assets/              包含应用程序资源（如JavaScript和CSS）
+    config/              包含前端配置
+    controllers/         包含Web控制器类
+    models/              包含前端特定的模型类
+    runtime/             包含运行时生成的文件
+    views/               包含Web应用程序的视图文件
+    web/                 包含相关脚本和Web资源
+    widgets/             包含前端小部件
+vendor/                  包含相关的第三方软件包
+environments/            包含基于环境的覆盖
+tests                    包含应用程序的各种测试
+    codeception/         包含使用Codeception PHP测试框架开发的测试
 ```

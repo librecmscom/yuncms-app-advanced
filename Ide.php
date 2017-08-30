@@ -17,7 +17,12 @@ class Yii extends \yii\BaseYii
  * Used for properties that are identical for both WebApplication and ConsoleApplication
  *
  * @property yuncms\system\components\Settings $settings The settings component. This property is read-only. Extended component.
+ * @property yii\web\UrlManager $frontUrlManager The frontUrlManager component. This property is read-only. Extended component.
  * @property yii\queue\cli\Queue $queue The queue component. This property is read-only. Extended component.
+ * @property xutl\tim\Tim $im The im component. This property is read-only. Extended component.
+ * @property xutl\aliyun\Live $live The live component. This property is read-only. Extended component.
+ * @property xutl\broadcast\Broadcast $broadcast The broadcast component. This property is read-only. Extended component.
+ * @property xutl\payment\Payment $payment The payment component. This property is read-only. Extended component.
  */
 abstract class BaseApplication extends yii\base\Application
 {
@@ -27,7 +32,7 @@ abstract class BaseApplication extends yii\base\Application
  * Class WebApplication
  * Include only Web application related components here
  *
- * @property \app\components\User $user The user component. This property is read-only. Extended component.
+ * @property yii\web\UrlManager $frontUrlManager The frontUrlManager component. This property is read-only. Extended component.
  * @property \app\components\MyResponse $response The response component. This property is read-only. Extended component.
  * @property \app\components\ErrorHandler $errorHandler The error handler application component. This property is read-only. Extended component.
  */
