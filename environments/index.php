@@ -62,6 +62,7 @@ return [
             'nginx.conf',
         ],
         'setWritable' => [
+            'api/runtime',
             'backend/runtime',
             'backend/web/assets',
             'frontend/runtime',
