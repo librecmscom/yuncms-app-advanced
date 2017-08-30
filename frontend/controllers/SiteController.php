@@ -41,6 +41,16 @@ class SiteController extends Controller
     }
 
     /**
+     * 站点关闭页面
+     * @param string $reason 离线原因
+     * @return string
+     */
+    public function actionOffline($reason)
+    {
+        return $this->render('offline', ['reason' => $reason]);
+    }
+
+    /**
      * Displays contact page.
      *
      * @return mixed
