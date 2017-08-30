@@ -1,0 +1,14 @@
+version: '2'
+services:
+  php:
+    environment:
+      - YII_ENV=prod
+    env_file:
+      - build/compose/stage.env
+    volumes:
+      - /app
+  nginx:
+    volumes_from:
+      - php
+    ports:
+      - '40081:80'

@@ -1,0 +1,8 @@
+{
+  "config": {
+    "github-protocols": ["https","http","git"],
+    "github-oauth": {
+      "github.com": ""
+    }
+  }
+}
