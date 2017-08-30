@@ -1,8 +1,8 @@
 # Yii 2 Advanced Project Template
 
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-app-advanced/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii2-app-advanced/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-advanced.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-advanced)
+[![Latest Stable Version](https://poser.pugx.org/yuncms/yuncms-app-advanced/v/stable.png)](https://packagist.org/packages/yuncms/yuncms-app-advanced)
+[![Total Downloads](https://poser.pugx.org/yuncms/yuncms-app-advanced/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
+[![Build Status](https://travis-ci.org/yuncms/yuncms-app-advanced.svg?branch=master)](https://travis-ci.org/yuncms/yuncms-app-advanced)
 
 ## Run from source
 
