@@ -60,40 +60,9 @@ return [
         ],
         */
     ],
-    'modules' => [
-        'admin' => [
-            'class' => 'yuncms\admin\Module'
-        ],
-        'system' => [
-            'class' => 'yuncms\system\backend\Module'
-        ],
-        'attachment' => [
-            'class' => 'yuncms\attachment\backend\Module'
-        ],
-        'article' => [
-            'class' => 'yuncms\article\backend\Module',
-        ],
-        'comment' => [
-            'class' => 'yuncms\comment\backend\Module',
-        ],
-        'authentication' => [
-            'class' => 'yuncms\authentication\backend\Module',
-        ],
-        'user' => [
-            'class' => 'yuncms\user\backend\Module'
-        ],
-        'oauth2' => [
-            'class' => 'yuncms\oauth2\backend\Module'
-        ],
-        'link' => [
-            'class' => 'yuncms\link\backend\Module'
-        ],
-        'note' => [
-            'class' => 'yuncms\note\backend\Module'
-        ],
-        'question' => [
-            'class' => 'yuncms\question\backend\Module'
-        ],
+    'controllerMap' => [
+        'tag' => 'yuncms\tag\backend\controllers\TagController'
     ],
+    'modules' => $modules,
     'params' => $params,
 ];

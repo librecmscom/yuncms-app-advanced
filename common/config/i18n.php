@@ -55,6 +55,10 @@ return [
             'class' => 'yii\i18n\PhpMessageSource',
             'basePath' => '@yuncms/attention/messages',
         ],
+        'tag' => [
+            'class' => 'yii\i18n\PhpMessageSource',
+            'basePath' => '@yuncms/tag/messages',
+        ],
         'collection' => [
             'class' => 'yii\i18n\PhpMessageSource',
             'basePath' => '@yuncms/collection/messages',
@@ -66,6 +70,10 @@ return [
         'credit' => [
             'class' => 'yii\i18n\PhpMessageSource',
             'basePath' => '@yuncms/credit/messages',
+        ],
+        'note' => [
+            'class' => 'yii\i18n\PhpMessageSource',
+            'basePath' => '@yuncms/note/messages',
         ],
     ]
 ];
