@@ -1,9 +1,9 @@
 <?php
 
 /* @var $this \yii\web\View */
-
 /* @var $content string */
 
+use yii\helpers\Url;
 use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
 use yii\bootstrap\Modal;
@@ -11,7 +11,7 @@ use frontend\assets\AppAsset;
 use common\widgets\Alert;
 
 $asset = AppAsset::register($this);
-
+$this->registerLinkTag(['rel' => 'canonical', 'href' => Url::canonical()]);
 $this->title = $this->title ? $this->title : 'Default Title';
 ?>
 <?php $this->beginPage() ?>
