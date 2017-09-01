@@ -34,6 +34,7 @@ return [
                 'yuncms\message\migrations',
                 'yuncms\oauth2\migrations',
                 'yuncms\credit\migrations',
+                'yuncms\coin\migrations',
                 'yuncms\doing\migrations',
                 'yuncms\authentication\migrations',
                 'yuncms\support\migrations',

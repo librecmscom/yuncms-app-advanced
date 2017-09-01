@@ -45,7 +45,6 @@
     "yuncms/yii2-collection": "~1.0.0",
     "yuncms/yii2-notification": "~1.0.0",
     "yuncms/yii2-authentication": "~1.0.0"
-
   },
   "require-dev": {
     "yiisoft/yii2-debug": "~2.0.0",

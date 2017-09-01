@@ -35,6 +35,9 @@
      'attention' => [
          'class' => 'yuncms\attention\frontend\Module',
      ],
+     'authentication' => [
+         'class' => 'yuncms\authentication\frontend\Module',
+     ],
      'notification' => [
          'class' => 'yuncms\notification\frontend\Module',
      ],

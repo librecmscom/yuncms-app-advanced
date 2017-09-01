@@ -47,13 +47,14 @@ return [
             'appendTimestamp' => true,
             'bundles' => require(__DIR__ . '/AssetBundles.php'),
         ],
-        /*
+        'view' => [
+            'theme' => require(__DIR__ . '/theme.php'),
+        ],
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => require(__DIR__ . '/UrlRules.php'),
         ],
-        */
     ],
     'modules' => $modules,
     'params' => $params,
