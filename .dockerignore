@@ -1,10 +1,13 @@
 # yii file
 yii
 api/config/main-local.php
+api/config/modules-local.php
 api/config/params-local.php
 backend/config/main-local.php
+backend/config/modules-local.php
 backend/config/params-local.php
 frontend/config/main-local.php
+frontend/config/modules-local.php
 frontend/config/params-local.php
 uploads
 
@@ -27,13 +30,13 @@ vendor
 
 # composer itself is not needed
 composer.phar
-composer.lock
 
 # Mac DS_Store Files
 .DS_Store
 
 # phpunit itself is not needed
 phpunit.phar
+
 # local phpunit config
 phpunit.xml
 

@@ -36,8 +36,8 @@ $menuItems = [
     ]
 ];
 if (Yii::$app->user->isGuest) {
-    $menuItems[] = ['label' => Yii::t('app', 'Sign In'), 'url' => ['/user/registration/register']];
-    $menuItems[] = ['label' => Yii::t('app', 'Sign Up'), 'url' => ['/user/security/login']];
+    $menuItems[] = ['label' => Yii::t('app', 'Sign In'), 'url' => ['/user/security/login']];
+    $menuItems[] = ['label' => Yii::t('app', 'Sign Up'), 'url' => ['/user/registration/register']];
 } else {
     $menuItems[] = [
         'label' => '<i class="fa fa-bell-o fa-lg"></i>',

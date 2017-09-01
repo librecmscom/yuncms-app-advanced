@@ -2,6 +2,7 @@ require 'yaml'
 require 'fileutils'
 
 domains = {
+  api: 'y2aa-api.dev',
   frontend: 'y2aa-frontend.dev',
   backend:  'y2aa-backend.dev'
 }
@@ -18,7 +19,7 @@ options = YAML.load_file config[:local]
 
 # check github token
 if options['github_token'].nil? || options['github_token'].to_s.length != 40
-  puts "You must place REAL GitHub token into configuration:\n/yii2-app-advanced/vagrant/config/vagrant-local.yml"
+  puts "You must place REAL GitHub token into configuration:\n/yuncms-app-advanced/vagrant/config/vagrant-local.yml"
   exit
 end
 

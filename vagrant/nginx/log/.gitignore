@@ -1,4 +1,6 @@
 # nginx logs
+api-access.log
+api-error.log
 backend-access.log
 backend-error.log
 frontend-access.log
