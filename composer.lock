@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "807c21c7eee95d37fdd0499748a2d3c1",
+    "content-hash": "23556f4394d486a4cd33b9ac984f3c6e",
     "packages": [
         {
             "name": "2amigos/qrcode-library",
@@ -1333,6 +1333,48 @@
             "time": "2017-06-06T01:48:17+00:00"
         },
         {
+            "name": "xutl/yii2-id98",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xutl/yii2-id98.git",
+                "reference": "b9f7d5352153555b76f4243a4dab726171a1d657"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xutl/yii2-id98/zipball/b9f7d5352153555b76f4243a4dab726171a1d657",
+                "reference": "b9f7d5352153555b76f4243a4dab726171a1d657",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2-httpclient": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "xutl\\id98\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "XuTL",
+                    "email": "xutl@gmail.com"
+                }
+            ],
+            "description": "The api extension for the Yii framework",
+            "keywords": [
+                "api",
+                "id98",
+                "yii"
+            ],
+            "time": "2017-09-01T09:48:44+00:00"
+        },
+        {
             "name": "xutl/yii2-inspinia-widget",
             "version": "1.0.5",
             "source": {
@@ -2425,12 +2467,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-authentication.git",
-                "reference": "90e180f2f746ceec2afedd25d82bad39928ca0a7"
+                "reference": "8a358288ba606bafe11b55f845c5deaefca4e3d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-authentication/90e180f2f746ceec2afedd25d82bad39928ca0a7.zip",
-                "reference": "90e180f2f746ceec2afedd25d82bad39928ca0a7",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-authentication/8a358288ba606bafe11b55f845c5deaefca4e3d9.zip",
+                "reference": "8a358288ba606bafe11b55f845c5deaefca4e3d9",
                 "shasum": ""
             },
             "require": {
@@ -2465,7 +2507,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-09-01T07:26:07+00:00"
+            "time": "2017-09-01T08:54:58+00:00"
         },
         {
             "name": "yuncms/yii2-coin",
@@ -3085,12 +3127,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-user.git",
-                "reference": "6bb81484f8c9d8a0df8dadc80306a793d9617684"
+                "reference": "a0b8473adc7538bb51d6c8b2b36097754faccf9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-user/6bb81484f8c9d8a0df8dadc80306a793d9617684.zip",
-                "reference": "6bb81484f8c9d8a0df8dadc80306a793d9617684",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-user/a0b8473adc7538bb51d6c8b2b36097754faccf9d.zip",
+                "reference": "a0b8473adc7538bb51d6c8b2b36097754faccf9d",
                 "shasum": ""
             },
             "require": {
@@ -3139,7 +3181,7 @@
                 "yii2",
                 "yii2-user"
             ],
-            "time": "2017-09-01T08:09:52+00:00"
+            "time": "2017-09-01T08:27:12+00:00"
         }
     ],
     "packages-dev": [
@@ -5714,12 +5756,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-gii.git",
-                "reference": "ad39c5b75376a07085b3a7ed9407afabbf829656"
+                "reference": "6950665d4427cf26060129ef7fb0a8e26cb56ca1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-gii/ad39c5b75376a07085b3a7ed9407afabbf829656.zip",
-                "reference": "ad39c5b75376a07085b3a7ed9407afabbf829656",
+                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-gii/6950665d4427cf26060129ef7fb0a8e26cb56ca1.zip",
+                "reference": "6950665d4427cf26060129ef7fb0a8e26cb56ca1",
                 "shasum": ""
             },
             "require": {
@@ -5759,7 +5801,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2017-08-02T13:12:51+00:00"
+            "time": "2017-09-01T08:29:45+00:00"
         }
     ],
     "aliases": [],

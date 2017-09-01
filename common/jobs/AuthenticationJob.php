@@ -31,7 +31,7 @@ class AuthenticationJob extends Object implements RetryableJob
             //获取身份证正面图像的保存路径
             //$passportCoverPath = Yii::getAlias(Yii::$app->settings->get('authentication', 'idCardPath')) . $authentication->passport_cover;
             $result = Yii::$app->id98->getIdCard($authentication->real_name, $authentication->id_card);
-            if ($result['success'] = true) {
+            if ($result['success'] == true) {
                 if ($result['data'] == 1) {
                     $authentication->status = Authentication::STATUS_AUTHENTICATED;
                     $authentication->failed_reason = '信息比对一致';
