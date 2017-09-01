@@ -1,6 +1,7 @@
 <?php
 
 /* @var $this \yii\web\View */
+
 /* @var $content string */
 
 use yii\helpers\Html;
@@ -10,6 +11,8 @@ use frontend\assets\AppAsset;
 use common\widgets\Alert;
 
 $asset = AppAsset::register($this);
+
+$this->title = $this->title ? $this->title : 'Default Title';
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -40,6 +43,7 @@ $asset = AppAsset::register($this);
     <![endif]-->
     <?= Alert::widget() ?>
 </div>
+
 <!-- Main
 ================================================== -->
 <div class="wrap">

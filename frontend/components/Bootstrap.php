@@ -4,6 +4,7 @@
  * @copyright Copyright (c) 2012 TintSoft Technology Co. Ltd.
  * @license http://www.tintsoft.com/license/
  */
+
 namespace frontend\components;
 
 use Yii;
@@ -25,18 +26,20 @@ class Bootstrap implements BootstrapInterface
     public function bootstrap($app)
     {
         //检查站点关闭状态
-        if (Yii::$app->settings->get('close','system')) {
+        if (Yii::$app->settings->get('close', 'system')) {
             $app->catchAll = [
                 'site/offline',
-                'reason' => Yii::$app->settings->get('closeReason','system')
+                'reason' => Yii::$app->settings->get('closeReason', 'system')
             ];
         }
 
-        $app->view->params['title'] = Yii::$app->settings->get('title','system');
-        $app->view->params['keywords'] = Yii::$app->settings->get('keywords','system');
-        $app->view->params['description'] = Yii::$app->settings->get('description','system');
-        $app->view->params['copyright'] = Yii::$app->settings->get('copyright','system');
-        $app->view->params['analysisCode'] = Yii::$app->settings->get('analysisCode','system');
+        //注册关键词和描述
+        Yii::$app->view->registerMetaTag(['name' => 'description', 'content' => Yii::$app->settings->get('description', 'system')]);
+        Yii::$app->view->registerMetaTag(['name' => 'keywords', 'content' => Yii::$app->settings->get('keywords', 'system')]);
+
+        $app->view->params['title'] = Yii::$app->settings->get('title', 'system');
+        $app->view->params['copyright'] = Yii::$app->settings->get('copyright', 'system');
+        $app->view->params['analysisCode'] = Yii::$app->settings->get('analysisCode', 'system');
 
         //自动检测语言
         if (($language = Yii::$app->request->getQueryParam('language')) !== null) {
