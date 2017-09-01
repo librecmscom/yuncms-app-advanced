@@ -27,6 +27,7 @@
     "yiisoft/yii2-redis": "~2.0.0",
     "yiisoft/yii2-sphinx": "~2.0.0",
     "xutl/yii2-fontawesome-asset": "~2.0.0",
+    "xutl/yii2-id98": "~1.0.0",
     "2amigos/qrcode-library": "~1.1",
     "yuncms/yii2-admin": "~2.0",
     "yuncms/yii2-user": "~2.0",

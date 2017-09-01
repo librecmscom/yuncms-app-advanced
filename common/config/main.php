@@ -31,6 +31,10 @@ return [
             'class' => 'yii\queue\file\Queue',
             'path' => '@console/runtime/queue',
         ],
+        'id98' => [
+            'class' => 'xutl\id98\Id98',
+            'apiKey' => '1234567890',
+        ],
         'authClientCollection' => [
             'class' => 'yii\authclient\Collection',
             'clients' => [

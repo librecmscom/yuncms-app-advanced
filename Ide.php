@@ -23,6 +23,7 @@ class Yii extends \yii\BaseYii
  * @property xutl\aliyun\Live $live The live component. This property is read-only. Extended component.
  * @property xutl\broadcast\Broadcast $broadcast The broadcast component. This property is read-only. Extended component.
  * @property xutl\payment\Payment $payment The payment component. This property is read-only. Extended component.
+ * @property xutl\id98\Id98 $id98 The id98 component. This property is read-only. Extended component.
  */
 abstract class BaseApplication extends yii\base\Application
 {
