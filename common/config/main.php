@@ -28,7 +28,8 @@ return [
             'frontCache' => 'cache'
         ],
         'queue' => [
-            'class' => 'yii\queue\sync\Queue',
+            'class' => 'yii\queue\file\Queue',
+            'path' => '@console/runtime/queue',
         ],
         'authClientCollection' => [
             'class' => 'yii\authclient\Collection',
