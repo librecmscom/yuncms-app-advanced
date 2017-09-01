@@ -12,6 +12,15 @@ return [
     'controllerNamespace' => 'api\controllers',
     'bootstrap' => ['log'],
     'components' => [
+        'log' => [
+            'traceLevel' => YII_DEBUG ? 3 : 0,
+            'targets' => [
+                'default' => [
+                    'class' => 'yii\log\FileTarget',
+                    'levels' => ['error', 'warning'],
+                ],
+            ],
+        ],
         'request' => [
             'parsers' => [
                 'application/json' => 'yii\web\JsonParser',
@@ -19,6 +28,17 @@ return [
                 'application/xml' => 'yuncms\system\web\XmlParser',
                 'text/xml' => 'yuncms\system\web\XmlParser'
             ]
+        ],
+        'response' => [
+            'class' => 'yii\web\Response',
+            'on beforeSend' => function ($event) {
+                /** @var \yii\web\Response $response */
+                $response = $event->sender;
+                $headers = $response->getHeaders();
+                //$headers->set('Access-Control-Allow-Origin', '*');
+                //$headers->set('Access-Control-Allow-Methods', 'GET, POST, DELETE, PUT, OPTIONS');
+                //$headers->set('Access-Control-Allow-Headers', 'DNT,access-token,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type');
+            },
         ],
         'user' => [
             'identityClass' => 'yuncms\user\models\User',
@@ -29,27 +49,9 @@ return [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'rules' => [
-                'GET /' => 'site/index',
-                'GET ping' => 'site/ping',
-                'GET ip' => 'site/ip',
-                //第一版
-                [
-                    'class' => 'yii\rest\UrlRule',
-                    'controller' => [
-                        'v1/user',
-                        'v1/note',
-                        'v1/stream',
-                        'v1/group',
-                    ]
-                ],
-            ],
+            'rules' => require(__DIR__ . '/UrlRules.php'),
         ],
     ],
-    'modules' => [
-        'v1' => [
-            'class' => 'api\modules\v1\Module',
-        ],
-    ],
+    'modules' => require(__DIR__ . '/modules.php'),
     'params' => $params,
 ];
