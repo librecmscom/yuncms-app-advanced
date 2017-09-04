@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "23556f4394d486a4cd33b9ac984f3c6e",
+    "content-hash": "54057a90458eb1e8b4348bee39a07c8a",
     "packages": [
         {
             "name": "2amigos/qrcode-library",
@@ -179,12 +179,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/blueimp/JavaScript-Canvas-to-Blob.git",
-                "reference": "a8e66f1443d67d1a42b79568570daf086fc43809"
+                "reference": "9f3deb2e710d39c72a988559609d9dc9a319de0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/blueimp/JavaScript-Canvas-to-Blob/zipball/a8e66f1443d67d1a42b79568570daf086fc43809",
-                "reference": "a8e66f1443d67d1a42b79568570daf086fc43809",
+                "url": "https://api.github.com/repos/blueimp/JavaScript-Canvas-to-Blob/zipball/9f3deb2e710d39c72a988559609d9dc9a319de0b",
+                "reference": "9f3deb2e710d39c72a988559609d9dc9a319de0b",
                 "shasum": null
             },
             "type": "bower-asset"
@@ -220,12 +220,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/blueimp/JavaScript-Load-Image.git",
-                "reference": "def9078cbfe47b40f556f0ca06c6afbbaa690d1a"
+                "reference": "0da08e062d47ba61f68e3971980e9fd8c05218aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/blueimp/JavaScript-Load-Image/zipball/def9078cbfe47b40f556f0ca06c6afbbaa690d1a",
-                "reference": "def9078cbfe47b40f556f0ca06c6afbbaa690d1a",
+                "url": "https://api.github.com/repos/blueimp/JavaScript-Load-Image/zipball/0da08e062d47ba61f68e3971980e9fd8c05218aa",
+                "reference": "0da08e062d47ba61f68e3971980e9fd8c05218aa",
                 "shasum": null
             },
             "type": "bower-asset"
@@ -236,12 +236,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/blueimp/JavaScript-Templates.git",
-                "reference": "903810bbad00de168e253b14a8de356596e80293"
+                "reference": "da7647cb93fff2030e73a701db22c66de76a9919"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/blueimp/JavaScript-Templates/zipball/903810bbad00de168e253b14a8de356596e80293",
-                "reference": "903810bbad00de168e253b14a8de356596e80293",
+                "url": "https://api.github.com/repos/blueimp/JavaScript-Templates/zipball/da7647cb93fff2030e73a701db22c66de76a9919",
+                "reference": "da7647cb93fff2030e73a701db22c66de76a9919",
                 "shasum": null
             },
             "type": "bower-asset"
@@ -817,12 +817,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "b203d29086046ba1fd629534eb96ed85774753d2"
+                "reference": "2a12dff63eca980f103747935b6178862d9c88db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/thephpleague/flysystem/b203d29086046ba1fd629534eb96ed85774753d2.zip",
-                "reference": "b203d29086046ba1fd629534eb96ed85774753d2",
+                "url": "https://files.phpcomposer.com/files/thephpleague/flysystem/2a12dff63eca980f103747935b6178862d9c88db.zip",
+                "reference": "2a12dff63eca980f103747935b6178862d9c88db",
                 "shasum": ""
             },
             "require": {
@@ -892,7 +892,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2017-08-14T18:55:15+00:00"
+            "time": "2017-09-01T19:06:55+00:00"
         },
         {
             "name": "pheme/yii2-toggle-column",
@@ -1039,6 +1039,48 @@
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
             "time": "2017-07-12T14:12:10+00:00"
+        },
+        {
+            "name": "xutl/yii2-aliyun",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xutl/yii2-aliyun.git",
+                "reference": "2c7c7b01ec2e7d8eb2d2d947da466edce4f4eadd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/xutl/yii2-aliyun/2c7c7b01ec2e7d8eb2d2d947da466edce4f4eadd.zip",
+                "reference": "2c7c7b01ec2e7d8eb2d2d947da466edce4f4eadd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2-httpclient": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "xutl\\aliyun\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "XuTL",
+                    "email": "xutl@gmail.com"
+                }
+            ],
+            "description": "The aliyun extension for the Yii framework",
+            "keywords": [
+                "aliyun",
+                "api",
+                "yii"
+            ],
+            "time": "2017-08-07T03:31:50+00:00"
         },
         {
             "name": "xutl/yii2-authclient",
@@ -1678,12 +1720,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "e4744c657c3fed964b84bfdb714cecdf7b3f3cac"
+                "reference": "a407a75d927ec2060bb012ced9ec98c4177f56e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-framework/e4744c657c3fed964b84bfdb714cecdf7b3f3cac.zip",
-                "reference": "e4744c657c3fed964b84bfdb714cecdf7b3f3cac",
+                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-framework/a407a75d927ec2060bb012ced9ec98c4177f56e3.zip",
+                "reference": "a407a75d927ec2060bb012ced9ec98c4177f56e3",
                 "shasum": ""
             },
             "require": {
@@ -1770,7 +1812,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2017-09-01T07:34:56+00:00"
+            "time": "2017-09-01T21:49:53+00:00"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -3761,16 +3803,16 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "3.2.3",
+            "version": "4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "86e24012a3139b42a7b71155cfaa325389f00f1f"
+                "reference": "2d3d238c433cf69caeb4842e97a3223a116f94b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/phpDocumentor/ReflectionDocBlock/86e24012a3139b42a7b71155cfaa325389f00f1f.zip",
-                "reference": "86e24012a3139b42a7b71155cfaa325389f00f1f",
+                "url": "https://files.phpcomposer.com/files/phpDocumentor/ReflectionDocBlock/2d3d238c433cf69caeb4842e97a3223a116f94b2.zip",
+                "reference": "2d3d238c433cf69caeb4842e97a3223a116f94b2",
                 "shasum": ""
             },
             "require": {
@@ -3802,7 +3844,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2017-08-29T19:37:41+00:00"
+            "time": "2017-08-30T18:51:59+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -3895,18 +3937,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "420d44c5534bbf269e85e6213446e8284d53c6c7"
+                "reference": "15ea9ac619e37009edcda64089e3fa4cc88aa659"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/phpspec/prophecy/420d44c5534bbf269e85e6213446e8284d53c6c7.zip",
-                "reference": "420d44c5534bbf269e85e6213446e8284d53c6c7",
+                "url": "https://files.phpcomposer.com/files/phpspec/prophecy/15ea9ac619e37009edcda64089e3fa4cc88aa659.zip",
+                "reference": "15ea9ac619e37009edcda64089e3fa4cc88aa659",
                 "shasum": ""
             },
             "require": {
                 "doctrine/instantiator": "^1.0.2",
                 "php": "^5.3|^7.0",
-                "phpdocumentor/reflection-docblock": "^2.0|^3.0.2",
+                "phpdocumentor/reflection-docblock": "^2.0|^3.0.2|^4.0",
                 "sebastian/comparator": "^1.1|^2.0",
                 "sebastian/recursion-context": "^1.0|^2.0|^3.0"
             },
@@ -3950,7 +3992,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2017-07-19T07:44:25+00:00"
+            "time": "2017-09-03T09:38:53+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -5109,12 +5151,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "bab3bc775e2b175dcc0ada0169c6b8ae0efb6a6b"
+                "reference": "78d1370ad8d26a3f1bc117a2ac3af419aaf5c37e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/console/bab3bc775e2b175dcc0ada0169c6b8ae0efb6a6b.zip",
-                "reference": "bab3bc775e2b175dcc0ada0169c6b8ae0efb6a6b",
+                "url": "https://files.phpcomposer.com/files/symfony/console/78d1370ad8d26a3f1bc117a2ac3af419aaf5c37e.zip",
+                "reference": "78d1370ad8d26a3f1bc117a2ac3af419aaf5c37e",
                 "shasum": ""
             },
             "require": {
@@ -5170,7 +5212,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-08-31T09:02:44+00:00"
+            "time": "2017-09-03T15:31:40+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -5231,12 +5273,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "09d2d7c077eaeb2778e504b785423e3d04d69ec5"
+                "reference": "96bc445c20a66daacb138e5f4c53bf29a4b64c9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/debug/09d2d7c077eaeb2778e504b785423e3d04d69ec5.zip",
-                "reference": "09d2d7c077eaeb2778e504b785423e3d04d69ec5",
+                "url": "https://files.phpcomposer.com/files/symfony/debug/96bc445c20a66daacb138e5f4c53bf29a4b64c9c.zip",
+                "reference": "96bc445c20a66daacb138e5f4c53bf29a4b64c9c",
                 "shasum": ""
             },
             "require": {
@@ -5279,7 +5321,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-08-29T23:06:25+00:00"
+            "time": "2017-09-03T14:49:52+00:00"
         },
         {
             "name": "symfony/dom-crawler",
@@ -5662,12 +5704,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "51fa1ddbe0356903eb0d6d54d47cc7bd2dc6bb82"
+                "reference": "c27f8b47c249f55e7aa395f670ba9c0787f0cf0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-debug/51fa1ddbe0356903eb0d6d54d47cc7bd2dc6bb82.zip",
-                "reference": "51fa1ddbe0356903eb0d6d54d47cc7bd2dc6bb82",
+                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-debug/c27f8b47c249f55e7aa395f670ba9c0787f0cf0f.zip",
+                "reference": "c27f8b47c249f55e7aa395f670ba9c0787f0cf0f",
                 "shasum": ""
             },
             "require": {
@@ -5701,7 +5743,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2017-08-20T16:59:36+00:00"
+            "time": "2017-09-03T21:23:17+00:00"
         },
         {
             "name": "yiisoft/yii2-faker",
@@ -5756,12 +5798,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-gii.git",
-                "reference": "6950665d4427cf26060129ef7fb0a8e26cb56ca1"
+                "reference": "4ec2b55e4f0e5a6f27be93b4a1618a727409dec5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-gii/6950665d4427cf26060129ef7fb0a8e26cb56ca1.zip",
-                "reference": "6950665d4427cf26060129ef7fb0a8e26cb56ca1",
+                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-gii/4ec2b55e4f0e5a6f27be93b4a1618a727409dec5.zip",
+                "reference": "4ec2b55e4f0e5a6f27be93b4a1618a727409dec5",
                 "shasum": ""
             },
             "require": {
@@ -5801,7 +5843,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2017-09-01T08:29:45+00:00"
+            "time": "2017-09-01T10:00:13+00:00"
         }
     ],
     "aliases": [],
