@@ -1,0 +1,32 @@
+mysql:
+  image: mysql:5.7
+  environment:
+    - MYSQL_ROOT_PASSWORD=zy4j64lSWBSlBiQ8
+    - MYSQL_DATABASE=yuncms
+
+redis:
+  image: redis
+
+memcached:
+  image: memcached
+
+web:
+  build: .
+  links:
+    - mysql:mysql
+    - redis:redis
+    - memcached:memcached
+  ports:
+    - 80:80
+  environment:
+    - MYSQL_PORT_3306_TCP_ADDR=127.0.0.1
+    - MYSQL_USERNAME=root
+    - MYSQL_INSTANCE_NAME=yuncms
+    - MYSQL_ROOT_PASSWORD=zy4j64lSWBSlBiQ8
+    - REDIS_PORT_6379_TCP_ADDR=127.0.0.1
+    - REDIS_PORT_6379_TCP_PORT=6379
+    - APP_ENV=Production
+  volumes:
+    - /docker/yuncms/vendor:/app/vendor:rw
+    - /docker/yuncms/composer:/root/.composer:rw
+    # - .:/app:rw # you should uncomment this line if you want to develop the app.
