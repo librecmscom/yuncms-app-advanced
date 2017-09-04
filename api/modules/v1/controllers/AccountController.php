@@ -8,13 +8,13 @@
 namespace api\modules\v1\controllers;
 
 use Yii;
-use api\modules\v1\Controller;
+use api\modules\v1\ActiveController;
 
 /**
  * Class AccountController
  * @package api\modules\v1\controllers
  */
-class AccountController extends Controller
+class AccountController extends ActiveController
 {
     /**
      * Returns username and email

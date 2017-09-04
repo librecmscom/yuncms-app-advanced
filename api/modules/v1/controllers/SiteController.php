@@ -2,7 +2,7 @@
 namespace api\modules\v1\controllers;
 
 use Yii;
-use yii\rest\Controller;
+use api\modules\v1\Controller;
 
 /**
  * Class SiteController
