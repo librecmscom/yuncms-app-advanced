@@ -26,6 +26,9 @@ if (!YII_ENV_TEST) {
             'httpclient' => [
                 'class' => 'yii\httpclient\debug\HttpClientPanel',
             ],
+            'queue' => [
+                'class' => 'yii\queue\debug\Panel'
+            ],
         ],
     ];
 
@@ -87,6 +90,9 @@ if (!YII_ENV_TEST) {
 //            'mongoDbModel' => [
 //                'class' => 'yii\mongodb\gii\model\Generator'
 //            ],
+            'queue' => [
+                'class' => 'yii\queue\gii\Generator'
+            ],
         ]
     ];
 }

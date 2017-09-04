@@ -5,7 +5,8 @@ use Yii;
 use yii\rest\Controller;
 
 /**
- * Site controller
+ * Class SiteController
+ * @package api
  */
 class SiteController extends Controller
 {
@@ -26,7 +27,7 @@ class SiteController extends Controller
      */
     public function actionPing()
     {
-        return ['ok'];
+        return ['PONG'];
     }
 
     /**

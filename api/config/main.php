@@ -48,6 +48,7 @@ return [
         ],
         'urlManager' => [
             'enablePrettyUrl' => true,
+            // 'enableStrictParsing' => true,
             'showScriptName' => false,
             'rules' => require(__DIR__ . '/UrlRules.php'),
         ],

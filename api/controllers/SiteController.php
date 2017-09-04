@@ -6,7 +6,8 @@ use Yii;
 use yii\rest\Controller;
 
 /**
- * Site controller
+ * Class SiteController
+ * @package api
  */
 class SiteController extends Controller
 {
@@ -38,5 +39,4 @@ class SiteController extends Controller
     {
         return [Yii::$app->request->userIP];
     }
-
 }

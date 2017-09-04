@@ -5,7 +5,7 @@ return [
     'timeZone' => 'PRC',
     'name' => 'YUNCMS',
     'bootstrap' => [
-        'queue', // The component registers own console commands
+        'log', 'queue'
     ],
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => [
