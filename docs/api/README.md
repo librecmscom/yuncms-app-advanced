@@ -1,5 +1,7 @@
 # API 开发手册
 
+通过一个简单而强大的API访问 YUNCMS 。
+
 ![Api](https://dn-phphub.qbox.me/uploads/images/201701/19/1/rsop1NC84d.gif)
 
 ## 接口
