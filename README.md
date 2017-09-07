@@ -9,7 +9,7 @@
 - Install satis: `composer create-project yuncms/yuncms-app-advanced:dev-master --keep-vcs`
 - Build a repository: `php init`
 
-Documentation is at [docs/README.md](docs/guide/README.md).
+Documentation is at [docs/README.md](docs/README.md).
 
 ## Run as Docker container
 
