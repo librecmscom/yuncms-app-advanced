@@ -2,7 +2,7 @@
 
 通过一个简单而强大的API访问 YUNCMS 。
 
-![Api](https://dn-phphub.qbox.me/uploads/images/201701/19/1/rsop1NC84d.gif)
+![Api](./images/api.gif)
 
 ## 接口
 
@@ -35,7 +35,7 @@ YUNCMS 接口的调用，如发直播、关注等，都是需要获取用户身�
 
 关于 `OAuth2.0` 协议的授权流程可以参考下面的流程图，其中 `Client` 指第三方应用，`Resource Owner` 指用户，`Authorization Server` 是我们的授权服务器，`Resource Server` 是API服务器。
 
-![Api](http://www.sinaimg.cn/blog/developer/wiki/oAuth2_01.gif)
+![Api](./images/oAuth2_01.gif)
 
 开发者可以先浏览 `OAuth2.0` 的接口文档，熟悉 `OAuth2.0` 的接口及参数的含义，然后我们根据应用场景各自说明如何使用 `OAuth2.0` 。
 
