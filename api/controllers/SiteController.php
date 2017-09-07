@@ -39,4 +39,18 @@ class SiteController extends Controller
     {
         return [Yii::$app->request->userIP];
     }
+
+    /**
+     * error action
+     * @return array
+     */
+    public function actionError()
+    {
+        return [
+            "name" => "Not Found",
+            "message" => "The requested resources does not exist.",
+            "code" => 0,
+            "status" => 404,
+        ];
+    }
 }

@@ -40,6 +40,9 @@ return [
                 //$headers->set('Access-Control-Allow-Headers', 'DNT,access-token,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type');
             },
         ],
+        'errorHandler' => [
+            'errorAction' => 'site/error',
+        ],
         'user' => [
             'identityClass' => 'yuncms\user\models\User',
             'enableSession' => false,
