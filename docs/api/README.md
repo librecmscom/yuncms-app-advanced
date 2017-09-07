@@ -29,7 +29,7 @@ YUNCMS 提供了一整套用来简化实现 RESTful 风格的 Web Service 服务
 YUNCMS 接口的调用，如发直播、关注等，都是需要获取用户身份认证的。目前 YUNCMS 开放平台用户身份鉴权主要采用的是`OAuth2.0`。
 另外，为了方便开发者开发、测试自己的应用，我们还提供了 `Client Credentials` 的身份鉴权方式，但 `Client Credentials` 仅适用于应用所属的开发者自己调用接口。
 
-## OAuth2.0概述
+## OAuth2.0 概述
 
 `OAuth2.0` 较1.0相比，整个授权验证流程更简单更安全，也是未来最主要的用户身份验证和授权方式。
 
@@ -62,10 +62,7 @@ curl --header "Authorization:Bearer P-S4Q3zahfKZq9WbB3XBo9z-31t84R0l" "http://ap
 
 ## 内容协商
 
-如果一个 API 请求中包含以下 header，`Accept: application/json`
-将会得到JSON格式的响应。
-
-如果一个 API 请求中包含以下 header，`Accept: application/xml`
+如果一个 API 请求中包含以下 header，`Accept: application/json` 将会得到JSON格式的响应。如果一个 API 请求中包含以下 header，`Accept: application/xml`
 将会得到XML格式的响应。
 
 ## 状态代码
