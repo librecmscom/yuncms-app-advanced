@@ -32,12 +32,29 @@ class SiteController extends Controller
     }
 
     /**
-     * client ip
+     * 粗定位使用
      * @return array
      */
-    public function actionIp()
+    public function actionLocation()
     {
-        return [Yii::$app->request->userIP];
+        return [
+            //IP
+            'ip' => Yii::$app->request->userIP,
+            //国家
+            'country' => '',
+            //大区
+            'region' => '',
+            //城市
+            'city' => '',
+            //地区
+            'area' => '',
+            //语言
+            'language' => '',
+            //货币
+            'currency' => '',
+            //isp 运营商
+            'isp' => '',
+        ];
     }
 
     /**

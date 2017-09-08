@@ -152,6 +152,16 @@ X-Rate-Limit-Reset: 0
 | `X-Rate-Limit-Remaining`   | 在当前时间段内剩余的请求的数量。 |
 | `X-Rate-Limit-Reset`   | 为了得到最大请求数所等待的秒数。 |
 
+## 结果排序
+
+如果一个 API 请求中包含以下 Query Params，`sort=:field` 将会得到按照 `field` 正排的结果列表。如果在 `field` 前面加上 `-` 符号，你将得到一个倒排的结果。
+
+下面的事例中, 我们每个页面列出 50 条用户并且按照用户ID倒排。
+
+```shell
+curl --header "Authorization:Bearer P-S4Q3zahfKZq9WbB3XBo9z-31t84R0l" "http://api.yuncms.net/v1/users?per_page=50&sort=-id"
+```
+
 ## 未知路由
 
 当您尝试访问不存在的API网址时，您将收到 `404 Not Found` 。
