@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/yuncms/yuncms-app-advanced.svg?branch=master)](https://travis-ci.org/yuncms/yuncms-app-advanced)
 
 
-![Index](./docs/images/api.gif)
+![Index](./docs/images/index.png)
 
 ## Run from source
 
