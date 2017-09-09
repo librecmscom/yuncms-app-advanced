@@ -48,14 +48,14 @@ return [
     'question/tag' => 'question/question/tag',
     'question/<id:\d+>' => 'question/question/view',
 
-    [//如果使用子域名部署，那么所有的规则都得像这样配置，不然跳转走了，跳转不回来了。因为检测到的host是当前域名的
-        'class' => 'yii\web\UrlRule',
-        'name' => '测试',
-        'host'=>'http://test.dev.yuncms.net',
-        'suffix' => '.html',
-        'pattern' => 'testSubDomain',
-        'route' => 'article/article/index',
-    ],
+//    [//如果使用子域名部署，那么所有的规则都得像这样配置，不然跳转走了，跳转不回来了。因为检测到的host是当前域名的
+//        'class' => 'yii\web\UrlRule',
+//        'name' => '测试',
+//        'host'=>'http://test.dev.yuncms.net',
+//        'suffix' => '.html',
+//        'pattern' => 'testSubDomain',
+//        'route' => 'article/article/index',
+//    ],
 
     //文章
     'articles/<page:\d+>' => 'article/article/index',

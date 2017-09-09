@@ -2377,12 +2377,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-article.git",
-                "reference": "4bbec018e705a3ec8fc8742191404f7d994adb91"
+                "reference": "222995376108c05c849e06a54eef77748705357a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-article/4bbec018e705a3ec8fc8742191404f7d994adb91.zip",
-                "reference": "4bbec018e705a3ec8fc8742191404f7d994adb91",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-article/222995376108c05c849e06a54eef77748705357a.zip",
+                "reference": "222995376108c05c849e06a54eef77748705357a",
                 "shasum": ""
             },
             "require": {
@@ -2414,7 +2414,7 @@
                 "article",
                 "yuncms"
             ],
-            "time": "2017-08-31T02:40:58+00:00"
+            "time": "2017-09-09T04:52:42+00:00"
         },
         {
             "name": "yuncms/yii2-attachment",
@@ -2988,12 +2988,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-question.git",
-                "reference": "e84ddef52e63c8ae66bc922e108f4ab1fa8980cc"
+                "reference": "891c5d5e7240aad66871b2481c901349e5a4fe76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-question/e84ddef52e63c8ae66bc922e108f4ab1fa8980cc.zip",
-                "reference": "e84ddef52e63c8ae66bc922e108f4ab1fa8980cc",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-question/891c5d5e7240aad66871b2481c901349e5a4fe76.zip",
+                "reference": "891c5d5e7240aad66871b2481c901349e5a4fe76",
                 "shasum": ""
             },
             "require": {
@@ -3030,7 +3030,7 @@
                 "yii",
                 "yii-question"
             ],
-            "time": "2017-09-09T04:31:58+00:00"
+            "time": "2017-09-09T04:37:36+00:00"
         },
         {
             "name": "yuncms/yii2-support",

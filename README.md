@@ -4,6 +4,9 @@
 [![Total Downloads](https://poser.pugx.org/yuncms/yuncms-app-advanced/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
 [![Build Status](https://travis-ci.org/yuncms/yuncms-app-advanced.svg?branch=master)](https://travis-ci.org/yuncms/yuncms-app-advanced)
 
+
+![Index](./docs/images/api.gif)
+
 ## Run from source
 
 - Install satis: `composer create-project yuncms/yuncms-app-advanced:dev-master --keep-vcs`
