@@ -268,5 +268,25 @@ use yii\helpers\Url;
 
         <?= \yuncms\question\widgets\Tags::widget() ?>
 
+        <div class="widget-box mt30">
+            <h2 class="widget-box-title">
+                财富榜<a href="<?= Url::to(['/top/coins']) ?>" title="更多">»</a>
+            </h2>
+            <ol class="widget-top10">
+                <?php
+                $topAnswerUsers = \yuncms\user\models\Extend::top('coins', 8);
+                ?>
+                <?php foreach ($topAnswerUsers as $index => $topAnswerUser): ?>
+                    <li class="text-muted">
+                        <img class="avatar-32"
+                             src="<?= $topAnswerUser->user->getAvatar('big') ?>">
+                        <a href="<?= Url::to(['/user/space/view', 'id' => $topAnswerUser->user_id]) ?>"
+                           class="ellipsis"><?= $topAnswerUser->user->username ?></a>
+                        <span class="text-muted pull-right"><?= $topAnswerUser->coins ?> 金币</span>
+                    </li>
+                <?php endforeach; ?>
+
+            </ol>
+        </div>
     </div>
 </div>
