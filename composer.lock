@@ -195,12 +195,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/blueimp/jQuery-File-Upload.git",
-                "reference": "9459d1042a2e6b1d215c53a36d3fdc23150be04d"
+                "reference": "fbf442f1a90fdab69f1159951a2308fac0164993"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/blueimp/jQuery-File-Upload/zipball/9459d1042a2e6b1d215c53a36d3fdc23150be04d",
-                "reference": "9459d1042a2e6b1d215c53a36d3fdc23150be04d",
+                "url": "https://api.github.com/repos/blueimp/jQuery-File-Upload/zipball/fbf442f1a90fdab69f1159951a2308fac0164993",
+                "reference": "fbf442f1a90fdab69f1159951a2308fac0164993",
                 "shasum": null
             },
             "require": {
@@ -817,12 +817,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "2a12dff63eca980f103747935b6178862d9c88db"
+                "reference": "3245df3acae2dded99694b499d3bbf937679c8f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/thephpleague/flysystem/2a12dff63eca980f103747935b6178862d9c88db.zip",
-                "reference": "2a12dff63eca980f103747935b6178862d9c88db",
+                "url": "https://files.phpcomposer.com/files/thephpleague/flysystem/3245df3acae2dded99694b499d3bbf937679c8f3.zip",
+                "reference": "3245df3acae2dded99694b499d3bbf937679c8f3",
                 "shasum": ""
             },
             "require": {
@@ -892,7 +892,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2017-09-01T19:06:55+00:00"
+            "time": "2017-09-04T09:35:39+00:00"
         },
         {
             "name": "pheme/yii2-toggle-column",
@@ -1042,21 +1042,22 @@
         },
         {
             "name": "xutl/yii2-aliyun",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xutl/yii2-aliyun.git",
-                "reference": "2c7c7b01ec2e7d8eb2d2d947da466edce4f4eadd"
+                "reference": "3539842aaf55e0f7e9de9a3f0467373879fea251"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-aliyun/2c7c7b01ec2e7d8eb2d2d947da466edce4f4eadd.zip",
-                "reference": "2c7c7b01ec2e7d8eb2d2d947da466edce4f4eadd",
+                "url": "https://files.phpcomposer.com/files/xutl/yii2-aliyun/3539842aaf55e0f7e9de9a3f0467373879fea251.zip",
+                "reference": "3539842aaf55e0f7e9de9a3f0467373879fea251",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0",
-                "yiisoft/yii2-httpclient": "*"
+                "yiisoft/yii2": "~2.0.6",
+                "yiisoft/yii2-httpclient": "~2.0.0"
             },
             "type": "yii2-extension",
             "autoload": {
@@ -1066,7 +1067,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD-3-Clause"
+                "MIT"
             ],
             "authors": [
                 {
@@ -1080,7 +1081,7 @@
                 "api",
                 "yii"
             ],
-            "time": "2017-08-07T03:31:50+00:00"
+            "time": "2017-08-31T03:02:08+00:00"
         },
         {
             "name": "xutl/yii2-authclient",
@@ -1720,12 +1721,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "a407a75d927ec2060bb012ced9ec98c4177f56e3"
+                "reference": "f57d6b1124fff93994f865a39f86830d4850b2e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-framework/a407a75d927ec2060bb012ced9ec98c4177f56e3.zip",
-                "reference": "a407a75d927ec2060bb012ced9ec98c4177f56e3",
+                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-framework/f57d6b1124fff93994f865a39f86830d4850b2e8.zip",
+                "reference": "f57d6b1124fff93994f865a39f86830d4850b2e8",
                 "shasum": ""
             },
             "require": {
@@ -1812,7 +1813,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2017-09-01T21:49:53+00:00"
+            "time": "2017-09-08T15:10:16+00:00"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -2937,12 +2938,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-oauth2.git",
-                "reference": "838677e741ae0dbab4ae113d37cec8c8e6128efd"
+                "reference": "9f4ca863e0f1b5a1bab54ee7ccb5b57004806cff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-oauth2/838677e741ae0dbab4ae113d37cec8c8e6128efd.zip",
-                "reference": "838677e741ae0dbab4ae113d37cec8c8e6128efd",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-oauth2/9f4ca863e0f1b5a1bab54ee7ccb5b57004806cff.zip",
+                "reference": "9f4ca863e0f1b5a1bab54ee7ccb5b57004806cff",
                 "shasum": ""
             },
             "require": {
@@ -2979,7 +2980,7 @@
                 "oauth2-server",
                 "yii2"
             ],
-            "time": "2017-08-31T02:44:03+00:00"
+            "time": "2017-09-04T12:18:40+00:00"
         },
         {
             "name": "yuncms/yii2-question",
@@ -2987,12 +2988,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-question.git",
-                "reference": "450577a9a57f364010ad7211f1e9da11a7dc70ea"
+                "reference": "e84ddef52e63c8ae66bc922e108f4ab1fa8980cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-question/450577a9a57f364010ad7211f1e9da11a7dc70ea.zip",
-                "reference": "450577a9a57f364010ad7211f1e9da11a7dc70ea",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-question/e84ddef52e63c8ae66bc922e108f4ab1fa8980cc.zip",
+                "reference": "e84ddef52e63c8ae66bc922e108f4ab1fa8980cc",
                 "shasum": ""
             },
             "require": {
@@ -3029,7 +3030,7 @@
                 "yii",
                 "yii-question"
             ],
-            "time": "2017-08-31T02:44:17+00:00"
+            "time": "2017-09-09T04:31:58+00:00"
         },
         {
             "name": "yuncms/yii2-support",
@@ -3169,12 +3170,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-user.git",
-                "reference": "a0b8473adc7538bb51d6c8b2b36097754faccf9d"
+                "reference": "8baebde736305398cbafba4640acdfa0d72dd041"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-user/a0b8473adc7538bb51d6c8b2b36097754faccf9d.zip",
-                "reference": "a0b8473adc7538bb51d6c8b2b36097754faccf9d",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-user/8baebde736305398cbafba4640acdfa0d72dd041.zip",
+                "reference": "8baebde736305398cbafba4640acdfa0d72dd041",
                 "shasum": ""
             },
             "require": {
@@ -3223,7 +3224,7 @@
                 "yii2",
                 "yii2-user"
             ],
-            "time": "2017-09-01T08:27:12+00:00"
+            "time": "2017-09-08T03:09:29+00:00"
         }
     ],
     "packages-dev": [
@@ -3494,12 +3495,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "c3f82846fdfd1760b277767ac21426ca030f795e"
+                "reference": "95b16a4802b998f330f8a8bfc3fa4e412a7ce05b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/fzaninotto/Faker/c3f82846fdfd1760b277767ac21426ca030f795e.zip",
-                "reference": "c3f82846fdfd1760b277767ac21426ca030f795e",
+                "url": "https://files.phpcomposer.com/files/fzaninotto/Faker/95b16a4802b998f330f8a8bfc3fa4e412a7ce05b.zip",
+                "reference": "95b16a4802b998f330f8a8bfc3fa4e412a7ce05b",
                 "shasum": ""
             },
             "require": {
@@ -3536,7 +3537,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2017-08-30T09:14:20+00:00"
+            "time": "2017-09-08T09:53:19+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -3937,12 +3938,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "15ea9ac619e37009edcda64089e3fa4cc88aa659"
+                "reference": "c9b8c6088acd19d769d4cc0ffa60a9fe34344bd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/phpspec/prophecy/15ea9ac619e37009edcda64089e3fa4cc88aa659.zip",
-                "reference": "15ea9ac619e37009edcda64089e3fa4cc88aa659",
+                "url": "https://files.phpcomposer.com/files/phpspec/prophecy/c9b8c6088acd19d769d4cc0ffa60a9fe34344bd6.zip",
+                "reference": "c9b8c6088acd19d769d4cc0ffa60a9fe34344bd6",
                 "shasum": ""
             },
             "require": {
@@ -3992,7 +3993,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2017-09-03T09:38:53+00:00"
+            "time": "2017-09-04T11:05:03+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -5151,12 +5152,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "78d1370ad8d26a3f1bc117a2ac3af419aaf5c37e"
+                "reference": "a13780e9377e9ad2c11787ed51609b7cdc79999a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/console/78d1370ad8d26a3f1bc117a2ac3af419aaf5c37e.zip",
-                "reference": "78d1370ad8d26a3f1bc117a2ac3af419aaf5c37e",
+                "url": "https://files.phpcomposer.com/files/symfony/console/a13780e9377e9ad2c11787ed51609b7cdc79999a.zip",
+                "reference": "a13780e9377e9ad2c11787ed51609b7cdc79999a",
                 "shasum": ""
             },
             "require": {
@@ -5212,7 +5213,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-09-03T15:31:40+00:00"
+            "time": "2017-09-08T16:59:15+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -5556,12 +5557,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "bd9dcffc3eb2984afd4c534864f2802eccd3435a"
+                "reference": "c076a2d6f809130a84f99616b425b9665b3ce0a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/yaml/bd9dcffc3eb2984afd4c534864f2802eccd3435a.zip",
-                "reference": "bd9dcffc3eb2984afd4c534864f2802eccd3435a",
+                "url": "https://files.phpcomposer.com/files/symfony/yaml/c076a2d6f809130a84f99616b425b9665b3ce0a5.zip",
+                "reference": "c076a2d6f809130a84f99616b425b9665b3ce0a5",
                 "shasum": ""
             },
             "require": {
@@ -5606,7 +5607,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-08-30T06:19:03+00:00"
+            "time": "2017-09-04T13:18:59+00:00"
         },
         {
             "name": "theseer/tokenizer",
@@ -5704,12 +5705,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "c27f8b47c249f55e7aa395f670ba9c0787f0cf0f"
+                "reference": "c2680ad85f16871c330398aaf08dfa09427b3351"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-debug/c27f8b47c249f55e7aa395f670ba9c0787f0cf0f.zip",
-                "reference": "c27f8b47c249f55e7aa395f670ba9c0787f0cf0f",
+                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-debug/c2680ad85f16871c330398aaf08dfa09427b3351.zip",
+                "reference": "c2680ad85f16871c330398aaf08dfa09427b3351",
                 "shasum": ""
             },
             "require": {
@@ -5743,7 +5744,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2017-09-03T21:23:17+00:00"
+            "time": "2017-09-05T23:21:31+00:00"
         },
         {
             "name": "yiisoft/yii2-faker",
