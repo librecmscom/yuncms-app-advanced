@@ -79,5 +79,13 @@ return [
             'class' => 'yii\i18n\PhpMessageSource',
             'basePath' => '@yuncms/note/messages',
         ],
+        'question' => [
+            'class' => 'yii\i18n\PhpMessageSource',
+            'basePath' => '@yuncms/question/messages',
+        ],
+        'article' => [
+            'class' => 'yii\i18n\PhpMessageSource',
+            'basePath' => '@yuncms/article/messages',
+        ],
     ]
 ];
