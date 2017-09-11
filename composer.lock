@@ -1419,16 +1419,16 @@
         },
         {
             "name": "xutl/yii2-inspinia-widget",
-            "version": "1.0.5.1",
+            "version": "1.0.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xutl/yii2-inspinia-widget.git",
-                "reference": "458425dea3acc24dafe7e77c233370f1788a8147"
+                "reference": "c0bcf12a2d19b9a5e444ada459e1191dc2c549c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-inspinia-widget/458425dea3acc24dafe7e77c233370f1788a8147.zip",
-                "reference": "458425dea3acc24dafe7e77c233370f1788a8147",
+                "url": "https://files.phpcomposer.com/files/xutl/yii2-inspinia-widget/c0bcf12a2d19b9a5e444ada459e1191dc2c549c2.zip",
+                "reference": "c0bcf12a2d19b9a5e444ada459e1191dc2c549c2",
                 "shasum": ""
             },
             "require": {
@@ -1459,7 +1459,7 @@
                 "yii2",
                 "yii2-inspinia"
             ],
-            "time": "2017-09-09T06:37:50+00:00"
+            "time": "2017-09-11T04:39:49+00:00"
         },
         {
             "name": "xutl/yii2-select2-widget",
@@ -1721,12 +1721,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "f57d6b1124fff93994f865a39f86830d4850b2e8"
+                "reference": "e252ddec417a4d1dea22de0a826f191ce4910ce1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-framework/f57d6b1124fff93994f865a39f86830d4850b2e8.zip",
-                "reference": "f57d6b1124fff93994f865a39f86830d4850b2e8",
+                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-framework/e252ddec417a4d1dea22de0a826f191ce4910ce1.zip",
+                "reference": "e252ddec417a4d1dea22de0a826f191ce4910ce1",
                 "shasum": ""
             },
             "require": {
@@ -1813,7 +1813,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2017-09-08T15:10:16+00:00"
+            "time": "2017-09-09T12:43:56+00:00"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -3170,12 +3170,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-user.git",
-                "reference": "8baebde736305398cbafba4640acdfa0d72dd041"
+                "reference": "f22d1df2fee4545efca434bc7fddabfac64aefa8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-user/8baebde736305398cbafba4640acdfa0d72dd041.zip",
-                "reference": "8baebde736305398cbafba4640acdfa0d72dd041",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-user/f22d1df2fee4545efca434bc7fddabfac64aefa8.zip",
+                "reference": "f22d1df2fee4545efca434bc7fddabfac64aefa8",
                 "shasum": ""
             },
             "require": {
@@ -3224,7 +3224,7 @@
                 "yii2",
                 "yii2-user"
             ],
-            "time": "2017-09-08T03:09:29+00:00"
+            "time": "2017-09-11T05:49:01+00:00"
         }
     ],
     "packages-dev": [
