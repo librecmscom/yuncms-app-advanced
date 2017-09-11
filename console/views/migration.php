@@ -26,13 +26,18 @@ class <?= $className ?> extends Migration
         }
         $this->createTable('{{%test}}', [
             'id' => $this->primaryKey(),
+            //'user_id' => $this->integer()->comment('用户ID'),
+            'status' => $this->smallInteger(1)->defaultValue(0)->comment('状态'),
+            'published_at' => $this->integer(10)->unsigned()->comment('发布时间'),
+            'created_at' => $this->integer(10)->unsigned()->notNull()->comment('创建时间'),
+            'updated_at' => $this->integer(10)->unsigned()->notNull()->comment('更新时间'),
         ], $tableOptions);
 
     }
 
     public function safeDown()
     {
-        //$this->dropTable('{{%test}}');
+        $this->dropTable('{{%test}}');
     }
 
 
