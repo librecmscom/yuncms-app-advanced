@@ -44,6 +44,9 @@ class M170911054507Add_test_user extends Migration
             'user_id' => 1,
         ]);
 
+        //给超级管理员授权
+        $this->insert('{{%admin_auth_assignment}}', ['item_name' => 'Super Administrator', 'user_id' => 1, 'created_at' => time()]);
+
     }
 
     public function safeDown()
