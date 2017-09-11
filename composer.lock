@@ -1419,16 +1419,16 @@
         },
         {
             "name": "xutl/yii2-inspinia-widget",
-            "version": "1.0.5",
+            "version": "1.0.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xutl/yii2-inspinia-widget.git",
-                "reference": "7b4eb623500f1eb0c16ac80cdd368a6e7bb628c1"
+                "reference": "458425dea3acc24dafe7e77c233370f1788a8147"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xutl/yii2-inspinia-widget/zipball/7b4eb623500f1eb0c16ac80cdd368a6e7bb628c1",
-                "reference": "7b4eb623500f1eb0c16ac80cdd368a6e7bb628c1",
+                "url": "https://files.phpcomposer.com/files/xutl/yii2-inspinia-widget/458425dea3acc24dafe7e77c233370f1788a8147.zip",
+                "reference": "458425dea3acc24dafe7e77c233370f1788a8147",
                 "shasum": ""
             },
             "require": {
@@ -1459,7 +1459,7 @@
                 "yii2",
                 "yii2-inspinia"
             ],
-            "time": "2017-08-18T06:25:28+00:00"
+            "time": "2017-09-09T06:37:50+00:00"
         },
         {
             "name": "xutl/yii2-select2-widget",
@@ -2558,12 +2558,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-coin.git",
-                "reference": "3415309fde855b00438bbd2c458dd75ef6060fe1"
+                "reference": "98ef9be43f7807147e2d9ebeea8db426d2993e2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-coin/3415309fde855b00438bbd2c458dd75ef6060fe1.zip",
-                "reference": "3415309fde855b00438bbd2c458dd75ef6060fe1",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-coin/98ef9be43f7807147e2d9ebeea8db426d2993e2d.zip",
+                "reference": "98ef9be43f7807147e2d9ebeea8db426d2993e2d",
                 "shasum": ""
             },
             "require": {
@@ -2600,7 +2600,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-08-31T02:41:51+00:00"
+            "time": "2017-09-09T07:26:00+00:00"
         },
         {
             "name": "yuncms/yii2-collection",
@@ -2694,12 +2694,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-credit.git",
-                "reference": "3f38f4e3af89aad283346d17c97c36f43091f469"
+                "reference": "3b9e31e0c064cbc38836e9579aa4d219beb633f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-credit/3f38f4e3af89aad283346d17c97c36f43091f469.zip",
-                "reference": "3f38f4e3af89aad283346d17c97c36f43091f469",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-credit/3b9e31e0c064cbc38836e9579aa4d219beb633f4.zip",
+                "reference": "3b9e31e0c064cbc38836e9579aa4d219beb633f4",
                 "shasum": ""
             },
             "require": {
@@ -2735,7 +2735,7 @@
             "keywords": [
                 "credit"
             ],
-            "time": "2017-08-31T02:42:43+00:00"
+            "time": "2017-09-09T07:26:30+00:00"
         },
         {
             "name": "yuncms/yii2-doing",
