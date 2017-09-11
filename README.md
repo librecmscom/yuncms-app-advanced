@@ -14,7 +14,7 @@
 
 Documentation is at [docs/README.md](docs/README.md).
 
-QQ Group [![YUNCMS 开发交流](https://pub.idqqimg.com/wpa/images/group.png)](https://shang.qq.com/wpa/qunwpa?idkey=71c6d683e9aba941b3684195c7f874007fe83c615a6e89a2470866d035ca0a20).
+QQ Group [![YUNCMS 开发交流](https://pub.idqqimg.com/wpa/images/group.png)](https://shang.qq.com/wpa/qunwpa?idkey=71c6d683e9aba941b3684195c7f874007fe83c615a6e89a2470866d035ca0a20)
 
 ## Run as Docker container
 
