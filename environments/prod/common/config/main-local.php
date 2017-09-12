@@ -5,6 +5,13 @@ return [
             'dsn' => 'mysql:host=localhost;dbname=yii2advanced',
             'username' => 'root',
             'password' => '',
+            //必须开启，不然查询会额外多消耗 30-100ms
+            'enableSchemaCache' => true,
+            'schemaCacheDuration' => 3600,
+            'enableQueryCache' => true,
+            //分布式系统这里可以设置一个 本机cache,不适用集群cache,速度更好。
+            //'queryCache' => 'cache',
+            'queryCacheDuration' => 3600
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
