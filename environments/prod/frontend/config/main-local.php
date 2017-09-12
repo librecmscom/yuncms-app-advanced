@@ -2,7 +2,7 @@
 return [
     'components' => [
         'request' => [
-            // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
+            // !!! 在下面设置一个安全密钥 (如果为空) - 这是Cookie 所必须的。
             'cookieValidationKey' => '',
         ],
     ],
