@@ -2,9 +2,7 @@
 
 ## 队列管理
 
-以 `Centos7` 为例
-
-在 `/usr/lib/systemd/system` 目录新建 `yii-queue.service` 文件
+以 `Centos7` 为例, 在 `/usr/lib/systemd/system` 目录新建 `yii-queue.service` 文件
 
 ```bash
 [Unit]
