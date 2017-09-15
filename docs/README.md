@@ -8,4 +8,4 @@
 - [安装](install.md) Requirements, directory structures and installation from source.
 - [Docker](docker.md) 通过 Docker 来运行 YUNCMS。
 - [Console](console.md) 通过 控制台来运行特定任务。
-- [Systemd](systemd.md) 使用` systemd` 管理 `Yii` 队列服务,实现故障重启、开机自启动等功能。
+- [Systemd](systemd.md) 使用` systemd` 管理 `Yii` 服务, 实现故障重启、开机自启动、关机脚本等功能。
