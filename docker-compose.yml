@@ -5,10 +5,10 @@ mysql:
     - MYSQL_DATABASE=yuncms_dev
 
 redis:
-  image: redis
+  image: redis:3-alpine
 
 memcached:
-  image: memcached
+  image: memcached:alpine
 
 web:
   build: .
