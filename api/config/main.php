@@ -23,6 +23,7 @@ return [
         ],
         'request' => [
             'parsers' => [
+                'multipart/form-data' => 'yii\web\MultipartFormDataParser',
                 'application/json' => 'yii\web\JsonParser',
                 'text/json' => 'yii\web\JsonParser',
                 'application/xml' => 'yuncms\system\web\XmlParser',
