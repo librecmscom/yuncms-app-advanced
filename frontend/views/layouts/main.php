@@ -1,8 +1,10 @@
 <?php
 
 /* @var $this \yii\web\View */
+
 /* @var $content string */
 
+use yii\web\View;
 use yii\helpers\Url;
 use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
@@ -13,6 +15,7 @@ use common\widgets\Alert;
 $asset = AppAsset::register($this);
 $this->registerLinkTag(['rel' => 'canonical', 'href' => Url::canonical()]);
 $this->title = $this->title ? $this->title : 'Default Title';
+$this->registerJs('App.init();')
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>

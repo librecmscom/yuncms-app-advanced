@@ -313,16 +313,16 @@
         },
         {
             "name": "bower-asset/jquery",
-            "version": "2.2.4",
+            "version": "3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jquery/jquery-dist.git",
-                "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72"
+                "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/c0185ab7c75aab88762c5aae780b9d83b80eda72",
-                "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72",
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/77d2a51d0520d2ee44173afdf4e40a9201f5964e",
+                "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e",
                 "shasum": null
             },
             "type": "bower-asset",
@@ -1062,22 +1062,22 @@
         },
         {
             "name": "xutl/yii2-fileupload-widget",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xutl/yii2-fileupload-widget.git",
-                "reference": "59d09bd4c1c9039205b8f58f29112466a1f363ad"
+                "reference": "48ae1cae8b7f9083d6b9336a64ac1f79ac72704f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-fileupload-widget/59d09bd4c1c9039205b8f58f29112466a1f363ad.zip",
-                "reference": "59d09bd4c1c9039205b8f58f29112466a1f363ad",
+                "url": "https://files.phpcomposer.com/files/xutl/yii2-fileupload-widget/48ae1cae8b7f9083d6b9336a64ac1f79ac72704f.zip",
+                "reference": "48ae1cae8b7f9083d6b9336a64ac1f79ac72704f",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/blueimp-file-upload": "*",
                 "php": ">=5.4.0",
-                "yiisoft/yii2": "*"
+                "yiisoft/yii2": "~2.0.6"
             },
             "type": "yii2-extension",
             "autoload": {
@@ -1100,7 +1100,7 @@
                 "fileupload",
                 "yii2"
             ],
-            "time": "2017-07-04T04:57:11+00:00"
+            "time": "2017-09-18T09:03:10+00:00"
         },
         {
             "name": "xutl/yii2-fmt-asset",
@@ -1270,16 +1270,16 @@
         },
         {
             "name": "xutl/yii2-inspinia-widget",
-            "version": "1.0.5.3",
+            "version": "1.0.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xutl/yii2-inspinia-widget.git",
-                "reference": "8bd4e80d602b84d16106fca55a80bd27bb34d911"
+                "reference": "709d54b51f61ae7df78eb61fef0ab6417da73e2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-inspinia-widget/8bd4e80d602b84d16106fca55a80bd27bb34d911.zip",
-                "reference": "8bd4e80d602b84d16106fca55a80bd27bb34d911",
+                "url": "https://files.phpcomposer.com/files/xutl/yii2-inspinia-widget/709d54b51f61ae7df78eb61fef0ab6417da73e2b.zip",
+                "reference": "709d54b51f61ae7df78eb61fef0ab6417da73e2b",
                 "shasum": ""
             },
             "require": {
@@ -1310,7 +1310,7 @@
                 "yii2",
                 "yii2-inspinia"
             ],
-            "time": "2017-09-14T05:30:11+00:00"
+            "time": "2017-09-19T04:17:37+00:00"
         },
         {
             "name": "xutl/yii2-select2-widget",
@@ -1354,99 +1354,17 @@
             "time": "2016-10-25T03:03:27+00:00"
         },
         {
-            "name": "xutl/yii2-share-widget",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/xutl/yii2-share-widget.git",
-                "reference": "0ba2ba62d77ef051623d2f8790874c952c99d09f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-share-widget/0ba2ba62d77ef051623d2f8790874c952c99d09f.zip",
-                "reference": "0ba2ba62d77ef051623d2f8790874c952c99d09f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "xutl\\share\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL"
-            ],
-            "authors": [
-                {
-                    "name": "XuTL",
-                    "email": "xutl@gmail.com"
-                }
-            ],
-            "description": "share for the Yii framework",
-            "keywords": [
-                "share",
-                "yii2"
-            ],
-            "time": "2017-05-18T06:02:13+00:00"
-        },
-        {
-            "name": "xutl/yii2-summernote-widget",
-            "version": "1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/xutl/yii2-summernote-widget.git",
-                "reference": "96ec852d27b7b0c4fad49ecbe7d67f067afbbaf7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-summernote-widget/96ec852d27b7b0c4fad49ecbe7d67f067afbbaf7.zip",
-                "reference": "96ec852d27b7b0c4fad49ecbe7d67f067afbbaf7",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "xutl\\summernote\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "XuTL",
-                    "email": "xutl@gmail.com"
-                }
-            ],
-            "description": "The summernote extension for the Yii framework",
-            "keywords": [
-                "summernote",
-                "yii2"
-            ],
-            "time": "2017-02-16T09:13:18+00:00"
-        },
-        {
             "name": "xutl/yii2-ueditor-widget",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xutl/yii2-ueditor-widget.git",
-                "reference": "b8b1ab7b4b1d7632839bb10fdb024e4d99a49878"
+                "reference": "a2f06fe3b99190ec753fe1af25e9bf9bf27c0b9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xutl/yii2-ueditor-widget/zipball/b8b1ab7b4b1d7632839bb10fdb024e4d99a49878",
-                "reference": "b8b1ab7b4b1d7632839bb10fdb024e4d99a49878",
+                "url": "https://files.phpcomposer.com/files/xutl/yii2-ueditor-widget/a2f06fe3b99190ec753fe1af25e9bf9bf27c0b9d.zip",
+                "reference": "a2f06fe3b99190ec753fe1af25e9bf9bf27c0b9d",
                 "shasum": ""
             },
             "require": {
@@ -1474,48 +1392,8 @@
                 "ueditor",
                 "yii2"
             ],
-            "time": "2017-02-16T09:24:10+00:00"
-        },
-        {
-            "name": "xutl/yii2-umeditor-widget",
-            "version": "1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/xutl/yii2-umeditor-widget.git",
-                "reference": "f348ed7e0f88382acac0b243fa9aeb9811d9920c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-umeditor-widget/f348ed7e0f88382acac0b243fa9aeb9811d9920c.zip",
-                "reference": "f348ed7e0f88382acac0b243fa9aeb9811d9920c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "xutl\\umeditor\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "XuTL",
-                    "email": "xutl@gmail.com"
-                }
-            ],
-            "description": "The umeditor extension for the Yii framework",
-            "keywords": [
-                "umeditor",
-                "yii2"
-            ],
-            "time": "2017-02-16T08:02:25+00:00"
+            "abandoned": "yuncms/yii2-ueditor-widget",
+            "time": "2017-09-18T09:06:36+00:00"
         },
         {
             "name": "yii2tech/ar-position",
@@ -1572,12 +1450,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "1da39fb1f455f894433ea247eab17d31151ab633"
+                "reference": "3bc919b59bccd738b60ee5be3d15ab1797bc7a1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-framework/1da39fb1f455f894433ea247eab17d31151ab633.zip",
-                "reference": "1da39fb1f455f894433ea247eab17d31151ab633",
+                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-framework/3bc919b59bccd738b60ee5be3d15ab1797bc7a1b.zip",
+                "reference": "3bc919b59bccd738b60ee5be3d15ab1797bc7a1b",
                 "shasum": ""
             },
             "require": {
@@ -1664,7 +1542,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2017-09-16T05:52:47+00:00"
+            "time": "2017-09-19T21:43:23+00:00"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -1961,12 +1839,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-queue.git",
-                "reference": "c34f382eba229ef646d2292b65da663fdc4c48c7"
+                "reference": "7a8db9a3a934924fe49601c45b31849323898794"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-queue/c34f382eba229ef646d2292b65da663fdc4c48c7.zip",
-                "reference": "c34f382eba229ef646d2292b65da663fdc4c48c7",
+                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-queue/7a8db9a3a934924fe49601c45b31849323898794.zip",
+                "reference": "7a8db9a3a934924fe49601c45b31849323898794",
                 "shasum": ""
             },
             "require": {
@@ -2030,7 +1908,7 @@
                 "redis",
                 "yii"
             ],
-            "time": "2017-08-18T21:11:23+00:00"
+            "time": "2017-09-18T21:13:37+00:00"
         },
         {
             "name": "yiisoft/yii2-redis",
@@ -2228,21 +2106,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-article.git",
-                "reference": "de28dbd4aad86403626d9158a4aa375f711bbdb1"
+                "reference": "fa8b92e23def507c4079fe1052a129a4185598da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-article/de28dbd4aad86403626d9158a4aa375f711bbdb1.zip",
-                "reference": "de28dbd4aad86403626d9158a4aa375f711bbdb1",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-article/fa8b92e23def507c4079fe1052a129a4185598da.zip",
+                "reference": "fa8b92e23def507c4079fe1052a129a4185598da",
                 "shasum": ""
             },
             "require": {
                 "xutl/yii2-fileupload-widget": "~1.0",
-                "xutl/yii2-share-widget": "~1.0",
-                "xutl/yii2-ueditor-widget": "~1.0.0",
-                "xutl/yii2-umeditor-widget": "~1.0.0",
                 "yiisoft/yii2": "~2.0.6",
                 "yiisoft/yii2-queue": "~2.0.0",
+                "yuncms/yii2-ueditor-widget": "~1.0.0",
                 "yuncms/yii2-user": "~2.0"
             },
             "type": "yii2-extension",
@@ -2265,7 +2141,7 @@
                 "article",
                 "yuncms"
             ],
-            "time": "2017-09-15T10:21:14+00:00"
+            "time": "2017-09-18T09:49:48+00:00"
         },
         {
             "name": "yuncms/yii2-attachment",
@@ -2273,12 +2149,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-attachment.git",
-                "reference": "16cd9eafa5aa833cdf221d0b7f8b2e4e3ca79fd7"
+                "reference": "79fdc36cf378ccf7c1eadca7e52bafa4afb20a9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-attachment/16cd9eafa5aa833cdf221d0b7f8b2e4e3ca79fd7.zip",
-                "reference": "16cd9eafa5aa833cdf221d0b7f8b2e4e3ca79fd7",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-attachment/79fdc36cf378ccf7c1eadca7e52bafa4afb20a9c.zip",
+                "reference": "79fdc36cf378ccf7c1eadca7e52bafa4afb20a9c",
                 "shasum": ""
             },
             "require": {
@@ -2306,7 +2182,7 @@
                 "yii2",
                 "yii2-attachment"
             ],
-            "time": "2017-09-18T02:32:00+00:00"
+            "time": "2017-09-20T03:18:33+00:00"
         },
         {
             "name": "yuncms/yii2-attention",
@@ -2314,12 +2190,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-attention.git",
-                "reference": "36e3784c57e16805132d551b9ccdc551e542ed38"
+                "reference": "157331a2be780c0b9fd235ca25f045e4073fd5ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-attention/36e3784c57e16805132d551b9ccdc551e542ed38.zip",
-                "reference": "36e3784c57e16805132d551b9ccdc551e542ed38",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-attention/157331a2be780c0b9fd235ca25f045e4073fd5ad.zip",
+                "reference": "157331a2be780c0b9fd235ca25f045e4073fd5ad",
                 "shasum": ""
             },
             "require": {
@@ -2353,7 +2229,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-08-31T02:41:21+00:00"
+            "time": "2017-09-19T10:44:47+00:00"
         },
         {
             "name": "yuncms/yii2-authentication",
@@ -2361,12 +2237,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-authentication.git",
-                "reference": "b0b446ce906d34a2ed0cb63edad451ead4f5bb94"
+                "reference": "2598a0e5187b43bcb813caa9f8744c30b7ad2bf7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-authentication/b0b446ce906d34a2ed0cb63edad451ead4f5bb94.zip",
-                "reference": "b0b446ce906d34a2ed0cb63edad451ead4f5bb94",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-authentication/2598a0e5187b43bcb813caa9f8744c30b7ad2bf7.zip",
+                "reference": "2598a0e5187b43bcb813caa9f8744c30b7ad2bf7",
                 "shasum": ""
             },
             "require": {
@@ -2401,7 +2277,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-09-18T02:31:36+00:00"
+            "time": "2017-09-18T07:42:00+00:00"
         },
         {
             "name": "yuncms/yii2-coin",
@@ -2409,12 +2285,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-coin.git",
-                "reference": "98ef9be43f7807147e2d9ebeea8db426d2993e2d"
+                "reference": "00a4053b67e5b4c7f0356546b1cd7bd55a21cd54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-coin/98ef9be43f7807147e2d9ebeea8db426d2993e2d.zip",
-                "reference": "98ef9be43f7807147e2d9ebeea8db426d2993e2d",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-coin/00a4053b67e5b4c7f0356546b1cd7bd55a21cd54.zip",
+                "reference": "00a4053b67e5b4c7f0356546b1cd7bd55a21cd54",
                 "shasum": ""
             },
             "require": {
@@ -2451,7 +2327,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-09-09T07:26:00+00:00"
+            "time": "2017-09-19T10:45:21+00:00"
         },
         {
             "name": "yuncms/yii2-collection",
@@ -2459,12 +2335,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-collection.git",
-                "reference": "4eb648b6cf158e3daa9044813cf32bae8112a67b"
+                "reference": "97f9673dce0ef3a77765921bc258f36569ec848c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-collection/4eb648b6cf158e3daa9044813cf32bae8112a67b.zip",
-                "reference": "4eb648b6cf158e3daa9044813cf32bae8112a67b",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-collection/97f9673dce0ef3a77765921bc258f36569ec848c.zip",
+                "reference": "97f9673dce0ef3a77765921bc258f36569ec848c",
                 "shasum": ""
             },
             "require": {
@@ -2498,7 +2374,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-08-31T02:41:59+00:00"
+            "time": "2017-09-19T10:45:51+00:00"
         },
         {
             "name": "yuncms/yii2-comment",
@@ -2545,12 +2421,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-credit.git",
-                "reference": "3b9e31e0c064cbc38836e9579aa4d219beb633f4"
+                "reference": "5bcab8092b6e92cf2ba6f27b237b880a972d51a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-credit/3b9e31e0c064cbc38836e9579aa4d219beb633f4.zip",
-                "reference": "3b9e31e0c064cbc38836e9579aa4d219beb633f4",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-credit/5bcab8092b6e92cf2ba6f27b237b880a972d51a2.zip",
+                "reference": "5bcab8092b6e92cf2ba6f27b237b880a972d51a2",
                 "shasum": ""
             },
             "require": {
@@ -2586,7 +2462,7 @@
             "keywords": [
                 "credit"
             ],
-            "time": "2017-09-09T07:26:30+00:00"
+            "time": "2017-09-19T10:44:03+00:00"
         },
         {
             "name": "yuncms/yii2-doing",
@@ -2594,12 +2470,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-doing.git",
-                "reference": "bd06d97afde3cf10ba2b65b9f1c8f6d8f5af1a2a"
+                "reference": "79eb4c5ff8953bf891e1cabc0657464418196087"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-doing/bd06d97afde3cf10ba2b65b9f1c8f6d8f5af1a2a.zip",
-                "reference": "bd06d97afde3cf10ba2b65b9f1c8f6d8f5af1a2a",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-doing/79eb4c5ff8953bf891e1cabc0657464418196087.zip",
+                "reference": "79eb4c5ff8953bf891e1cabc0657464418196087",
                 "shasum": ""
             },
             "require": {
@@ -2639,7 +2515,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-08-31T06:22:43+00:00"
+            "time": "2017-09-19T10:46:30+00:00"
         },
         {
             "name": "yuncms/yii2-message",
@@ -2839,22 +2715,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-question.git",
-                "reference": "891c5d5e7240aad66871b2481c901349e5a4fe76"
+                "reference": "dd775471e1dc0ed16e5bf80c0d1691b42dd4ffa8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-question/891c5d5e7240aad66871b2481c901349e5a4fe76.zip",
-                "reference": "891c5d5e7240aad66871b2481c901349e5a4fe76",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-question/dd775471e1dc0ed16e5bf80c0d1691b42dd4ffa8.zip",
+                "reference": "dd775471e1dc0ed16e5bf80c0d1691b42dd4ffa8",
                 "shasum": ""
             },
             "require": {
                 "xutl/yii2-select2-widget": "~1.0",
-                "xutl/yii2-summernote-widget": "~1.0",
                 "yiisoft/yii2": "~2.0.6",
                 "yiisoft/yii2-jui": "~2.0.0",
                 "yuncms/yii2-attachment": "~2.0.0",
                 "yuncms/yii2-coin": "~1.0",
                 "yuncms/yii2-comment": "~2.0.0",
+                "yuncms/yii2-summernote-widget": "~1.0",
                 "yuncms/yii2-tag": "~2.0",
                 "yuncms/yii2-user": "~2.0"
             },
@@ -2881,7 +2757,54 @@
                 "yii",
                 "yii-question"
             ],
-            "time": "2017-09-09T04:37:36+00:00"
+            "time": "2017-09-18T10:32:08+00:00"
+        },
+        {
+            "name": "yuncms/yii2-summernote-widget",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yuncms/yii2-summernote-widget.git",
+                "reference": "fc054c003d8cb87a435a10545ee3b52d312517c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-summernote-widget/fc054c003d8cb87a435a10545ee3b52d312517c1.zip",
+                "reference": "fc054c003d8cb87a435a10545ee3b52d312517c1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "~2.0.6",
+                "yuncms/yii2-attachment": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yuncms\\summernote\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "XuTL",
+                    "email": "xutl@gmail.com"
+                }
+            ],
+            "description": "The Summernote extension for the Yii framework",
+            "keywords": [
+                "summernote",
+                "yii2"
+            ],
+            "time": "2017-09-18T10:30:47+00:00"
         },
         {
             "name": "yuncms/yii2-support",
@@ -2889,12 +2812,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-support.git",
-                "reference": "0cf0dcbf14cd5018b33a2ec314013f02674c93df"
+                "reference": "7dde18c3898438a059fdac2c3c22710cb2b7486d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-support/0cf0dcbf14cd5018b33a2ec314013f02674c93df.zip",
-                "reference": "0cf0dcbf14cd5018b33a2ec314013f02674c93df",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-support/7dde18c3898438a059fdac2c3c22710cb2b7486d.zip",
+                "reference": "7dde18c3898438a059fdac2c3c22710cb2b7486d",
                 "shasum": ""
             },
             "require": {
@@ -2928,7 +2851,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-08-31T02:44:24+00:00"
+            "time": "2017-09-19T10:43:14+00:00"
         },
         {
             "name": "yuncms/yii2-system",
@@ -3016,17 +2939,64 @@
             "time": "2017-08-16T01:45:23+00:00"
         },
         {
+            "name": "yuncms/yii2-ueditor-widget",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yuncms/yii2-ueditor-widget.git",
+                "reference": "d7ea9adf95097e2053ab19d873bcddb5ec27dddf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-ueditor-widget/d7ea9adf95097e2053ab19d873bcddb5ec27dddf.zip",
+                "reference": "d7ea9adf95097e2053ab19d873bcddb5ec27dddf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "~2.0.6",
+                "yuncms/yii2-attachment": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yuncms\\ueditor\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "XuTL",
+                    "email": "xutl@gmail.com"
+                }
+            ],
+            "description": "The UEditor extension for the Yii framework",
+            "keywords": [
+                "ueditor",
+                "yii2"
+            ],
+            "time": "2017-09-18T10:27:58+00:00"
+        },
+        {
             "name": "yuncms/yii2-user",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-user.git",
-                "reference": "7ca57a59de9a67dab646c1c30ed7f02942445504"
+                "reference": "c0aeadaa8022141bb7dc90f33eb778385adc6e94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-user/7ca57a59de9a67dab646c1c30ed7f02942445504.zip",
-                "reference": "7ca57a59de9a67dab646c1c30ed7f02942445504",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-user/c0aeadaa8022141bb7dc90f33eb778385adc6e94.zip",
+                "reference": "c0aeadaa8022141bb7dc90f33eb778385adc6e94",
                 "shasum": ""
             },
             "require": {
@@ -3075,7 +3045,7 @@
                 "yii2",
                 "yii2-user"
             ],
-            "time": "2017-09-18T02:32:36+00:00"
+            "time": "2017-09-19T10:38:01+00:00"
         }
     ],
     "packages-dev": [
@@ -3287,94 +3257,26 @@
             "time": "2017-01-09T10:58:51+00:00"
         },
         {
-            "name": "creocoder/yii2-flysystem",
-            "version": "0.9.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/creocoder/yii2-flysystem.git",
-                "reference": "0209d17a68027889a10a9133e4eb11f8dd6333cf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/creocoder/yii2-flysystem/zipball/0209d17a68027889a10a9133e4eb11f8dd6333cf",
-                "reference": "0209d17a68027889a10a9133e4eb11f8dd6333cf",
-                "shasum": ""
-            },
-            "require": {
-                "league/flysystem": "~1.0",
-                "yiisoft/yii2": "~2.0.0"
-            },
-            "require-dev": {
-                "league/flysystem-aws-s3-v3": "~1.0",
-                "league/flysystem-azure": "~1.0",
-                "league/flysystem-cached-adapter": "~1.0",
-                "league/flysystem-copy": "~1.0",
-                "league/flysystem-dropbox": "~1.0",
-                "league/flysystem-gridfs": "~1.0",
-                "league/flysystem-rackspace": "~1.0",
-                "league/flysystem-replicate-adapter": "~1.0",
-                "league/flysystem-sftp": "~1.0",
-                "league/flysystem-webdav": "~1.0",
-                "league/flysystem-ziparchive": "~1.0"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "creocoder\\flysystem\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Alexander Kochetov",
-                    "email": "creocoder@gmail.com"
-                }
-            ],
-            "description": "The flysystem extension for the Yii framework",
-            "keywords": [
-                "Flysystem",
-                "GridFS",
-                "WebDAV",
-                "aws",
-                "azure",
-                "copy.com",
-                "dropbox",
-                "files",
-                "filesystem",
-                "ftp",
-                "rackspace",
-                "s3",
-                "sftp",
-                "yii2"
-            ],
-            "time": "2017-02-08T10:23:22+00:00"
-        },
-        {
             "name": "doctrine/instantiator",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda"
+                "reference": "7af8066e48b8a4cbd90849bbe9234ab444057968"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/doctrine/instantiator/185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda.zip",
-                "reference": "185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda",
+                "url": "https://files.phpcomposer.com/files/doctrine/instantiator/7af8066e48b8a4cbd90849bbe9234ab444057968.zip",
+                "reference": "7af8066e48b8a4cbd90849bbe9234ab444057968",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1"
             },
             "require-dev": {
-                "athletic/athletic": "~0.1.8",
                 "ext-pdo": "*",
                 "ext-phar": "*",
-                "phpunit/phpunit": "^6.2.3",
-                "squizlabs/php_codesniffer": "^3.0.2"
+                "phpunit/phpunit": "^6.2.3"
             },
             "type": "library",
             "extra": {
@@ -3404,7 +3306,7 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2017-07-22T11:58:36+00:00"
+            "time": "2017-09-19T12:41:22+00:00"
         },
         {
             "name": "fzaninotto/faker",
@@ -3412,12 +3314,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "9775b728ac99cf5bb49d80169523dc50dd9c3d62"
+                "reference": "a8dbabd55659bbaa37abfccedc0fb3959f3ad1cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/fzaninotto/Faker/9775b728ac99cf5bb49d80169523dc50dd9c3d62.zip",
-                "reference": "9775b728ac99cf5bb49d80169523dc50dd9c3d62",
+                "url": "https://files.phpcomposer.com/files/fzaninotto/Faker/a8dbabd55659bbaa37abfccedc0fb3959f3ad1cf.zip",
+                "reference": "a8dbabd55659bbaa37abfccedc0fb3959f3ad1cf",
                 "shasum": ""
             },
             "require": {
@@ -3454,7 +3356,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2017-09-14T15:28:39+00:00"
+            "time": "2017-09-19T12:05:22+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -3520,89 +3422,6 @@
                 "url"
             ],
             "time": "2017-07-17T09:11:21+00:00"
-        },
-        {
-            "name": "league/flysystem",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "ea1c8084c5b61100500da01ac276977e03353d5f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/thephpleague/flysystem/ea1c8084c5b61100500da01ac276977e03353d5f.zip",
-                "reference": "ea1c8084c5b61100500da01ac276977e03353d5f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9"
-            },
-            "conflict": {
-                "league/flysystem-sftp": "<1.0.6"
-            },
-            "require-dev": {
-                "ext-fileinfo": "*",
-                "mockery/mockery": "~0.9",
-                "phpspec/phpspec": "^2.2",
-                "phpunit/phpunit": "~4.8"
-            },
-            "suggest": {
-                "ext-fileinfo": "Required for MimeType",
-                "league/flysystem-aws-s3-v2": "Allows you to use S3 storage with AWS SDK v2",
-                "league/flysystem-aws-s3-v3": "Allows you to use S3 storage with AWS SDK v3",
-                "league/flysystem-azure": "Allows you to use Windows Azure Blob storage",
-                "league/flysystem-cached-adapter": "Flysystem adapter decorator for metadata caching",
-                "league/flysystem-eventable-filesystem": "Allows you to use EventableFilesystem",
-                "league/flysystem-rackspace": "Allows you to use Rackspace Cloud Files",
-                "league/flysystem-sftp": "Allows you to use SFTP server storage via phpseclib",
-                "league/flysystem-webdav": "Allows you to use WebDAV storage",
-                "league/flysystem-ziparchive": "Allows you to use ZipArchive adapter",
-                "spatie/flysystem-dropbox": "Allows you to use Dropbox storage",
-                "srmklive/flysystem-dropbox-v2": "Allows you to use Dropbox storage for PHP 5 applications"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "League\\Flysystem\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Frank de Jonge",
-                    "email": "info@frenky.net"
-                }
-            ],
-            "description": "Filesystem abstraction: Many filesystems, one API.",
-            "keywords": [
-                "Cloud Files",
-                "WebDAV",
-                "abstraction",
-                "aws",
-                "cloud",
-                "copy.com",
-                "dropbox",
-                "file systems",
-                "files",
-                "filesystem",
-                "filesystems",
-                "ftp",
-                "rackspace",
-                "remote",
-                "s3",
-                "sftp",
-                "storage"
-            ],
-            "time": "2017-09-16T21:55:25+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -5152,12 +4971,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "d0fc29c14e486837da0f0734c3388a5761dd8ae4"
+                "reference": "90e1e8682abc51dbf679ef3cdc304424a3075f2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/console/d0fc29c14e486837da0f0734c3388a5761dd8ae4.zip",
-                "reference": "d0fc29c14e486837da0f0734c3388a5761dd8ae4",
+                "url": "https://files.phpcomposer.com/files/symfony/console/90e1e8682abc51dbf679ef3cdc304424a3075f2f.zip",
+                "reference": "90e1e8682abc51dbf679ef3cdc304424a3075f2f",
                 "shasum": ""
             },
             "require": {
@@ -5166,13 +4985,13 @@
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "conflict": {
-                "symfony/dependency-injection": "<3.3",
+                "symfony/dependency-injection": "<3.4",
                 "symfony/process": "<3.3"
             },
             "require-dev": {
                 "psr/log": "~1.0",
                 "symfony/config": "~3.3|~4.0",
-                "symfony/dependency-injection": "~3.3|~4.0",
+                "symfony/dependency-injection": "~3.4|~4.0",
                 "symfony/event-dispatcher": "~2.8|~3.0|~4.0",
                 "symfony/lock": "~3.4|~4.0",
                 "symfony/process": "~3.3|~4.0"
@@ -5213,7 +5032,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-09-15T10:12:22+00:00"
+            "time": "2017-09-19T09:28:48+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -5700,17 +5519,141 @@
             "time": "2016-11-23T20:04:41+00:00"
         },
         {
+            "name": "xutl/yii2-share-widget",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xutl/yii2-share-widget.git",
+                "reference": "0ba2ba62d77ef051623d2f8790874c952c99d09f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/xutl/yii2-share-widget/0ba2ba62d77ef051623d2f8790874c952c99d09f.zip",
+                "reference": "0ba2ba62d77ef051623d2f8790874c952c99d09f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "xutl\\share\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "XuTL",
+                    "email": "xutl@gmail.com"
+                }
+            ],
+            "description": "share for the Yii framework",
+            "keywords": [
+                "share",
+                "yii2"
+            ],
+            "time": "2017-05-18T06:02:13+00:00"
+        },
+        {
+            "name": "xutl/yii2-summernote-widget",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xutl/yii2-summernote-widget.git",
+                "reference": "1b616b3edecc2e5fd48fe53f80095275f49c687b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/xutl/yii2-summernote-widget/1b616b3edecc2e5fd48fe53f80095275f49c687b.zip",
+                "reference": "1b616b3edecc2e5fd48fe53f80095275f49c687b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "~2.0.6"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "xutl\\summernote\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "XuTL",
+                    "email": "xutl@gmail.com"
+                }
+            ],
+            "description": "The summer note extension for the Yii framework",
+            "keywords": [
+                "summernote",
+                "yii2"
+            ],
+            "abandoned": "yuncms/yii2-summernote-widget",
+            "time": "2017-09-18T08:04:15+00:00"
+        },
+        {
+            "name": "xutl/yii2-umeditor-widget",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xutl/yii2-umeditor-widget.git",
+                "reference": "f348ed7e0f88382acac0b243fa9aeb9811d9920c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/xutl/yii2-umeditor-widget/f348ed7e0f88382acac0b243fa9aeb9811d9920c.zip",
+                "reference": "f348ed7e0f88382acac0b243fa9aeb9811d9920c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "xutl\\umeditor\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "XuTL",
+                    "email": "xutl@gmail.com"
+                }
+            ],
+            "description": "The umeditor extension for the Yii framework",
+            "keywords": [
+                "umeditor",
+                "yii2"
+            ],
+            "time": "2017-02-16T08:02:25+00:00"
+        },
+        {
             "name": "yiisoft/yii2-debug",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "ccf0e5cc533f26f6151f013e26de452b06662de1"
+                "reference": "e158aea48b699eaddf306f4f00c8c168539ec5d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-debug/ccf0e5cc533f26f6151f013e26de452b06662de1.zip",
-                "reference": "ccf0e5cc533f26f6151f013e26de452b06662de1",
+                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-debug/e158aea48b699eaddf306f4f00c8c168539ec5d4.zip",
+                "reference": "e158aea48b699eaddf306f4f00c8c168539ec5d4",
                 "shasum": ""
             },
             "require": {
@@ -5744,7 +5687,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2017-09-12T12:51:15+00:00"
+            "time": "2017-09-19T21:13:50+00:00"
         },
         {
             "name": "yiisoft/yii2-faker",

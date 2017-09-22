@@ -23,9 +23,6 @@ return [
             'migrationNamespaces' => [//命名空间
                 'app\migrations',
                 'yuncms\admin\migrations',
-                'yuncms\system\migrations',
-                'yuncms\tag\migrations',
-                'yuncms\user\migrations',
                 'yuncms\question\migrations',
                 'yuncms\comment\migrations',
                 'yuncms\attachment\migrations',
@@ -33,13 +30,7 @@ return [
                 'yuncms\note\migrations',
                 'yuncms\message\migrations',
                 'yuncms\oauth2\migrations',
-                'yuncms\credit\migrations',
-                'yuncms\coin\migrations',
-                'yuncms\doing\migrations',
                 'yuncms\authentication\migrations',
-                'yuncms\support\migrations',
-                'yuncms\attention\migrations',
-                'yuncms\collection\migrations',
                 'yuncms\notification\migrations',
             ],
             // 完全禁用非命名空间迁移
