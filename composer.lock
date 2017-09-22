@@ -1450,12 +1450,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "3bc919b59bccd738b60ee5be3d15ab1797bc7a1b"
+                "reference": "dc792a1f1db78123ac9e1c01a5862f64dbea8e1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-framework/3bc919b59bccd738b60ee5be3d15ab1797bc7a1b.zip",
-                "reference": "3bc919b59bccd738b60ee5be3d15ab1797bc7a1b",
+                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-framework/dc792a1f1db78123ac9e1c01a5862f64dbea8e1d.zip",
+                "reference": "dc792a1f1db78123ac9e1c01a5862f64dbea8e1d",
                 "shasum": ""
             },
             "require": {
@@ -1542,7 +1542,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2017-09-19T21:43:23+00:00"
+            "time": "2017-09-20T11:37:28+00:00"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -1916,12 +1916,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-redis.git",
-                "reference": "71cfdb7ef09766cac597f0cdb78926abfff6e4cc"
+                "reference": "f3f5e97f5692638bee42ed57561326ac56ed9a87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-redis/71cfdb7ef09766cac597f0cdb78926abfff6e4cc.zip",
-                "reference": "71cfdb7ef09766cac597f0cdb78926abfff6e4cc",
+                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-redis/f3f5e97f5692638bee42ed57561326ac56ed9a87.zip",
+                "reference": "f3f5e97f5692638bee42ed57561326ac56ed9a87",
                 "shasum": ""
             },
             "require": {
@@ -1956,7 +1956,7 @@
                 "session",
                 "yii2"
             ],
-            "time": "2017-09-11T15:38:37+00:00"
+            "time": "2017-09-20T08:30:09+00:00"
         },
         {
             "name": "yiisoft/yii2-sphinx",
@@ -2106,12 +2106,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-article.git",
-                "reference": "fa8b92e23def507c4079fe1052a129a4185598da"
+                "reference": "358cf8c3608a94937e28020a685fc89ac5cf7000"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-article/fa8b92e23def507c4079fe1052a129a4185598da.zip",
-                "reference": "fa8b92e23def507c4079fe1052a129a4185598da",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-article/358cf8c3608a94937e28020a685fc89ac5cf7000.zip",
+                "reference": "358cf8c3608a94937e28020a685fc89ac5cf7000",
                 "shasum": ""
             },
             "require": {
@@ -2141,7 +2141,7 @@
                 "article",
                 "yuncms"
             ],
-            "time": "2017-09-18T09:49:48+00:00"
+            "time": "2017-09-22T02:34:53+00:00"
         },
         {
             "name": "yuncms/yii2-attachment",
@@ -2149,12 +2149,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-attachment.git",
-                "reference": "79fdc36cf378ccf7c1eadca7e52bafa4afb20a9c"
+                "reference": "3f0d430908bf9b18bde43ef0b17c0c52f65c7825"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-attachment/79fdc36cf378ccf7c1eadca7e52bafa4afb20a9c.zip",
-                "reference": "79fdc36cf378ccf7c1eadca7e52bafa4afb20a9c",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-attachment/3f0d430908bf9b18bde43ef0b17c0c52f65c7825.zip",
+                "reference": "3f0d430908bf9b18bde43ef0b17c0c52f65c7825",
                 "shasum": ""
             },
             "require": {
@@ -2182,7 +2182,7 @@
                 "yii2",
                 "yii2-attachment"
             ],
-            "time": "2017-09-20T03:18:33+00:00"
+            "time": "2017-09-22T02:41:28+00:00"
         },
         {
             "name": "yuncms/yii2-attention",
@@ -2190,12 +2190,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-attention.git",
-                "reference": "157331a2be780c0b9fd235ca25f045e4073fd5ad"
+                "reference": "931e97a9e10deb779d7aac668bf05ac5f0393883"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-attention/157331a2be780c0b9fd235ca25f045e4073fd5ad.zip",
-                "reference": "157331a2be780c0b9fd235ca25f045e4073fd5ad",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-attention/931e97a9e10deb779d7aac668bf05ac5f0393883.zip",
+                "reference": "931e97a9e10deb779d7aac668bf05ac5f0393883",
                 "shasum": ""
             },
             "require": {
@@ -2229,7 +2229,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-09-19T10:44:47+00:00"
+            "time": "2017-09-22T02:41:38+00:00"
         },
         {
             "name": "yuncms/yii2-authentication",
@@ -2237,12 +2237,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-authentication.git",
-                "reference": "2598a0e5187b43bcb813caa9f8744c30b7ad2bf7"
+                "reference": "fe20bd9a3b0f37f85f32270da89719419c1f06a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-authentication/2598a0e5187b43bcb813caa9f8744c30b7ad2bf7.zip",
-                "reference": "2598a0e5187b43bcb813caa9f8744c30b7ad2bf7",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-authentication/fe20bd9a3b0f37f85f32270da89719419c1f06a4.zip",
+                "reference": "fe20bd9a3b0f37f85f32270da89719419c1f06a4",
                 "shasum": ""
             },
             "require": {
@@ -2277,7 +2277,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-09-18T07:42:00+00:00"
+            "time": "2017-09-22T06:41:45+00:00"
         },
         {
             "name": "yuncms/yii2-coin",
@@ -2335,12 +2335,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-collection.git",
-                "reference": "97f9673dce0ef3a77765921bc258f36569ec848c"
+                "reference": "1f79d066379992b997c93b5fb0fd0c9addea2d5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-collection/97f9673dce0ef3a77765921bc258f36569ec848c.zip",
-                "reference": "97f9673dce0ef3a77765921bc258f36569ec848c",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-collection/1f79d066379992b997c93b5fb0fd0c9addea2d5f.zip",
+                "reference": "1f79d066379992b997c93b5fb0fd0c9addea2d5f",
                 "shasum": ""
             },
             "require": {
@@ -2374,7 +2374,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-09-19T10:45:51+00:00"
+            "time": "2017-09-22T02:42:41+00:00"
         },
         {
             "name": "yuncms/yii2-comment",
@@ -2382,12 +2382,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-comment.git",
-                "reference": "6b655c7c48ae198ae3e21fefcb70db12412564e8"
+                "reference": "020cbe2667d64d3524f35749fe5c51c343c3cf5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-comment/6b655c7c48ae198ae3e21fefcb70db12412564e8.zip",
-                "reference": "6b655c7c48ae198ae3e21fefcb70db12412564e8",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-comment/020cbe2667d64d3524f35749fe5c51c343c3cf5b.zip",
+                "reference": "020cbe2667d64d3524f35749fe5c51c343c3cf5b",
                 "shasum": ""
             },
             "require": {
@@ -2413,7 +2413,7 @@
                 "comment",
                 "yuncms"
             ],
-            "time": "2017-08-31T02:42:07+00:00"
+            "time": "2017-09-22T02:43:19+00:00"
         },
         {
             "name": "yuncms/yii2-credit",
@@ -2470,20 +2470,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-doing.git",
-                "reference": "79eb4c5ff8953bf891e1cabc0657464418196087"
+                "reference": "8d83c75196fb7b8ea45c43c916e84ed527a3bab3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-doing/79eb4c5ff8953bf891e1cabc0657464418196087.zip",
-                "reference": "79eb4c5ff8953bf891e1cabc0657464418196087",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-doing/8d83c75196fb7b8ea45c43c916e84ed527a3bab3.zip",
+                "reference": "8d83c75196fb7b8ea45c43c916e84ed527a3bab3",
                 "shasum": ""
             },
             "require": {
                 "yiisoft/yii2": "~2.0.6",
                 "yuncms/yii2-user": "~2.0"
-            },
-            "suggest": {
-                "yuncms/yii2-payment": "Allows you to use payment"
             },
             "type": "yii2-extension",
             "extra": {
@@ -2515,7 +2512,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-09-19T10:46:30+00:00"
+            "time": "2017-09-22T02:43:43+00:00"
         },
         {
             "name": "yuncms/yii2-message",
@@ -2523,12 +2520,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-message.git",
-                "reference": "442b84cd5f446660839d5c65ff1749f8516e0165"
+                "reference": "1c195bdd83c88ad6d7078ac578b28f27285f6024"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-message/442b84cd5f446660839d5c65ff1749f8516e0165.zip",
-                "reference": "442b84cd5f446660839d5c65ff1749f8516e0165",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-message/1c195bdd83c88ad6d7078ac578b28f27285f6024.zip",
+                "reference": "1c195bdd83c88ad6d7078ac578b28f27285f6024",
                 "shasum": ""
             },
             "require": {
@@ -2563,7 +2560,7 @@
                 "yii2",
                 "yii2-message"
             ],
-            "time": "2017-08-31T02:43:40+00:00"
+            "time": "2017-09-22T02:45:11+00:00"
         },
         {
             "name": "yuncms/yii2-note",
@@ -2571,12 +2568,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-note.git",
-                "reference": "1b9142d0f997aae8ab0bd52629d2dd785e8ebeae"
+                "reference": "c3c2157fcfd9331cf71f93494e554df03328d9c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-note/1b9142d0f997aae8ab0bd52629d2dd785e8ebeae.zip",
-                "reference": "1b9142d0f997aae8ab0bd52629d2dd785e8ebeae",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-note/c3c2157fcfd9331cf71f93494e554df03328d9c0.zip",
+                "reference": "c3c2157fcfd9331cf71f93494e554df03328d9c0",
                 "shasum": ""
             },
             "require": {
@@ -2607,7 +2604,7 @@
                 "yii",
                 "yii2-note"
             ],
-            "time": "2017-09-15T10:17:08+00:00"
+            "time": "2017-09-22T02:45:40+00:00"
         },
         {
             "name": "yuncms/yii2-notification",
@@ -2615,12 +2612,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-notification.git",
-                "reference": "45a007693940b1116f8a644df98392f8818106d1"
+                "reference": "83c0af88f00f2fce4ade4248c80633d15a32be63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-notification/45a007693940b1116f8a644df98392f8818106d1.zip",
-                "reference": "45a007693940b1116f8a644df98392f8818106d1",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-notification/83c0af88f00f2fce4ade4248c80633d15a32be63.zip",
+                "reference": "83c0af88f00f2fce4ade4248c80633d15a32be63",
                 "shasum": ""
             },
             "require": {
@@ -2657,7 +2654,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-08-31T02:43:55+00:00"
+            "time": "2017-09-22T02:46:03+00:00"
         },
         {
             "name": "yuncms/yii2-oauth2",
@@ -2665,12 +2662,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-oauth2.git",
-                "reference": "9f4ca863e0f1b5a1bab54ee7ccb5b57004806cff"
+                "reference": "3e44b0c226a4d98af7a6472d14a60ac0fe9575a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-oauth2/9f4ca863e0f1b5a1bab54ee7ccb5b57004806cff.zip",
-                "reference": "9f4ca863e0f1b5a1bab54ee7ccb5b57004806cff",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-oauth2/3e44b0c226a4d98af7a6472d14a60ac0fe9575a0.zip",
+                "reference": "3e44b0c226a4d98af7a6472d14a60ac0fe9575a0",
                 "shasum": ""
             },
             "require": {
@@ -2707,7 +2704,7 @@
                 "oauth2-server",
                 "yii2"
             ],
-            "time": "2017-09-04T12:18:40+00:00"
+            "time": "2017-09-22T02:46:32+00:00"
         },
         {
             "name": "yuncms/yii2-question",
@@ -2715,12 +2712,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-question.git",
-                "reference": "dd775471e1dc0ed16e5bf80c0d1691b42dd4ffa8"
+                "reference": "3e474d553ac61e1778eca61d82c8bfcdb3e65cff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-question/dd775471e1dc0ed16e5bf80c0d1691b42dd4ffa8.zip",
-                "reference": "dd775471e1dc0ed16e5bf80c0d1691b42dd4ffa8",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-question/3e474d553ac61e1778eca61d82c8bfcdb3e65cff.zip",
+                "reference": "3e474d553ac61e1778eca61d82c8bfcdb3e65cff",
                 "shasum": ""
             },
             "require": {
@@ -2757,7 +2754,7 @@
                 "yii",
                 "yii-question"
             ],
-            "time": "2017-09-18T10:32:08+00:00"
+            "time": "2017-09-22T02:47:25+00:00"
         },
         {
             "name": "yuncms/yii2-summernote-widget",
@@ -2991,12 +2988,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-user.git",
-                "reference": "c0aeadaa8022141bb7dc90f33eb778385adc6e94"
+                "reference": "20c69e7139cfbc796ebd8db988fb32b1f7492631"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-user/c0aeadaa8022141bb7dc90f33eb778385adc6e94.zip",
-                "reference": "c0aeadaa8022141bb7dc90f33eb778385adc6e94",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-user/20c69e7139cfbc796ebd8db988fb32b1f7492631.zip",
+                "reference": "20c69e7139cfbc796ebd8db988fb32b1f7492631",
                 "shasum": ""
             },
             "require": {
@@ -3006,18 +3003,19 @@
                 "yiisoft/yii2": "~2.0.6",
                 "yiisoft/yii2-bootstrap": "~2.0",
                 "yiisoft/yii2-imagine": "~2.1",
+                "yiisoft/yii2-jui": "~2.0",
+                "yiisoft/yii2-queue": "~2.0",
                 "yiisoft/yii2-swiftmailer": "~2.0",
                 "yuncms/yii2-oauth2": "~2.0",
                 "yuncms/yii2-system": "~2.0",
                 "yuncms/yii2-tag": "~2.0"
             },
             "require-dev": {
-                "codeception/specify": "^0.4.3",
-                "codeception/verify": "^0.3.1",
+                "codeception/specify": "^0.4.6",
+                "codeception/verify": "^0.4.0",
                 "yiisoft/yii2-codeception": "^2.0.0"
             },
             "suggest": {
-                "yuncms/yii2-im": "Allows you to use message",
                 "yuncms/yii2-message": "Allows you to use message",
                 "yuncms/yii2-tag": "Allows you to use tag",
                 "yuncms/yii2-vote": "Allows you to use vote",
@@ -3045,7 +3043,7 @@
                 "yii2",
                 "yii2-user"
             ],
-            "time": "2017-09-19T10:38:01+00:00"
+            "time": "2017-09-22T04:14:53+00:00"
         }
     ],
     "packages-dev": [
@@ -5519,130 +5517,6 @@
             "time": "2016-11-23T20:04:41+00:00"
         },
         {
-            "name": "xutl/yii2-share-widget",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/xutl/yii2-share-widget.git",
-                "reference": "0ba2ba62d77ef051623d2f8790874c952c99d09f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-share-widget/0ba2ba62d77ef051623d2f8790874c952c99d09f.zip",
-                "reference": "0ba2ba62d77ef051623d2f8790874c952c99d09f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "xutl\\share\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL"
-            ],
-            "authors": [
-                {
-                    "name": "XuTL",
-                    "email": "xutl@gmail.com"
-                }
-            ],
-            "description": "share for the Yii framework",
-            "keywords": [
-                "share",
-                "yii2"
-            ],
-            "time": "2017-05-18T06:02:13+00:00"
-        },
-        {
-            "name": "xutl/yii2-summernote-widget",
-            "version": "1.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/xutl/yii2-summernote-widget.git",
-                "reference": "1b616b3edecc2e5fd48fe53f80095275f49c687b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-summernote-widget/1b616b3edecc2e5fd48fe53f80095275f49c687b.zip",
-                "reference": "1b616b3edecc2e5fd48fe53f80095275f49c687b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "yiisoft/yii2": "~2.0.6"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "xutl\\summernote\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "XuTL",
-                    "email": "xutl@gmail.com"
-                }
-            ],
-            "description": "The summer note extension for the Yii framework",
-            "keywords": [
-                "summernote",
-                "yii2"
-            ],
-            "abandoned": "yuncms/yii2-summernote-widget",
-            "time": "2017-09-18T08:04:15+00:00"
-        },
-        {
-            "name": "xutl/yii2-umeditor-widget",
-            "version": "1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/xutl/yii2-umeditor-widget.git",
-                "reference": "f348ed7e0f88382acac0b243fa9aeb9811d9920c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-umeditor-widget/f348ed7e0f88382acac0b243fa9aeb9811d9920c.zip",
-                "reference": "f348ed7e0f88382acac0b243fa9aeb9811d9920c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "xutl\\umeditor\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "XuTL",
-                    "email": "xutl@gmail.com"
-                }
-            ],
-            "description": "The umeditor extension for the Yii framework",
-            "keywords": [
-                "umeditor",
-                "yii2"
-            ],
-            "time": "2017-02-16T08:02:25+00:00"
-        },
-        {
             "name": "yiisoft/yii2-debug",
             "version": "dev-master",
             "source": {
@@ -5742,12 +5616,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-gii.git",
-                "reference": "4ec2b55e4f0e5a6f27be93b4a1618a727409dec5"
+                "reference": "7d60ee3268d5dbf43bfbf22c540f8f87320579d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-gii/4ec2b55e4f0e5a6f27be93b4a1618a727409dec5.zip",
-                "reference": "4ec2b55e4f0e5a6f27be93b4a1618a727409dec5",
+                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-gii/7d60ee3268d5dbf43bfbf22c540f8f87320579d0.zip",
+                "reference": "7d60ee3268d5dbf43bfbf22c540f8f87320579d0",
                 "shasum": ""
             },
             "require": {
@@ -5787,7 +5661,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2017-09-01T10:00:13+00:00"
+            "time": "2017-09-21T12:31:17+00:00"
         }
     ],
     "aliases": [],

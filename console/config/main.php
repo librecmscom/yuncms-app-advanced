@@ -20,9 +20,13 @@ return [
             'class' => 'yii\console\controllers\MigrateController',
             'templateFile' => '@app/views/migration.php',
             'interactive' => 0,//自动应答
+            // 完全禁用非命名空间迁移
+            'migrationPath' => null,
             'migrationNamespaces' => [//命名空间
                 'app\migrations',
                 'yuncms\admin\migrations',
+                'yuncms\tag\migrations',
+                'yuncms\user\migrations',
                 'yuncms\question\migrations',
                 'yuncms\comment\migrations',
                 'yuncms\attachment\migrations',
@@ -33,8 +37,6 @@ return [
                 'yuncms\authentication\migrations',
                 'yuncms\notification\migrations',
             ],
-            // 完全禁用非命名空间迁移
-            //'migrationPath' => null,
         ],
     ],
     'components' => [
