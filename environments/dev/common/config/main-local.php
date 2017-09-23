@@ -3,8 +3,8 @@ return [
     'components' => [
         'db' => [
             'dsn' => 'mysql:host=localhost;dbname=yuncms_advanced_dev',
-            'username' => 'root',
-            'password' => '',
+            'username' => 'yuncms',
+            'password' => '123456',
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
