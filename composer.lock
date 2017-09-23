@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2a29bf93e9ac3af34ee5c480d2f98fc9",
+    "content-hash": "8ce09046728a2521d28108917a0dddff",
     "packages": [
         {
             "name": "2amigos/qrcode-library",
@@ -72,6 +72,64 @@
                 "yii2"
             ],
             "time": "2017-08-25T15:23:58+00:00"
+        },
+        {
+            "name": "2amigos/yii2-qrcode-helper",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/2amigos/yii2-qrcode-helper.git",
+                "reference": "b034402e98c19f914946cc868e0606e657458fc8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/2amigos/yii2-qrcode-helper/b034402e98c19f914946cc868e0606e657458fc8.zip",
+                "reference": "b034402e98c19f914946cc868e0606e657458fc8",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "dosamigos\\qrcode\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "2amigOS! Consulting Group",
+                    "email": "hola@2amigos.us",
+                    "homepage": "http://2amigos.us",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Create QrCodes based on libqrencode C library.",
+            "homepage": "http://yiiwheels.com/extension/qrcode-helper",
+            "keywords": [
+                "2amigos",
+                "extension",
+                "helper",
+                "qrcode",
+                "yii",
+                "yii 2",
+                "yii2"
+            ],
+            "abandoned": "2amigos/qrcode-library",
+            "time": "2017-06-21T10:56:44+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -211,6 +269,28 @@
             ]
         },
         {
+            "name": "bower-asset/bootstrap-tagsinput",
+            "version": "0.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bootstrap-tagsinput/bootstrap-tagsinput.git",
+                "reference": "5380ff820805a19807cd93d2da44bf9d26c5324a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bootstrap-tagsinput/bootstrap-tagsinput/zipball/5380ff820805a19807cd93d2da44bf9d26c5324a",
+                "reference": "5380ff820805a19807cd93d2da44bf9d26c5324a",
+                "shasum": null
+            },
+            "require": {
+                "bower-asset/jquery": "~2.1.1"
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
             "name": "bower-asset/font-awesome",
             "version": "v4.7.0",
             "source": {
@@ -255,16 +335,16 @@
         },
         {
             "name": "bower-asset/jquery",
-            "version": "3.2.1",
+            "version": "2.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jquery/jquery-dist.git",
-                "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e"
+                "reference": "7751e69b615c6eca6f783a81e292a55725af6b85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/77d2a51d0520d2ee44173afdf4e40a9201f5964e",
-                "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e",
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/7751e69b615c6eca6f783a81e292a55725af6b85",
+                "reference": "7751e69b615c6eca6f783a81e292a55725af6b85",
                 "shasum": null
             },
             "type": "bower-asset",
@@ -388,6 +468,47 @@
                 "markdown-extra"
             ],
             "time": "2017-08-22T10:13:04+00:00"
+        },
+        {
+            "name": "creocoder/yii2-taggable",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/creocoder/yii2-taggable.git",
+                "reference": "d2c73df372a490ccc45dd064c52f3f022d62dde5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/creocoder/yii2-taggable/d2c73df372a490ccc45dd064c52f3f022d62dde5.zip",
+                "reference": "d2c73df372a490ccc45dd064c52f3f022d62dde5",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "creocoder\\taggable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Kochetov",
+                    "email": "creocoder@gmail.com"
+                }
+            ],
+            "description": "The taggable behavior for the Yii framework",
+            "keywords": [
+                "Taggable",
+                "tags",
+                "yii2"
+            ],
+            "time": "2015-02-24T21:45:58+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -688,48 +809,6 @@
             "time": "2017-01-13T09:11:46+00:00"
         },
         {
-            "name": "pheme/yii2-toggle-column",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phemellc/yii2-toggle-column.git",
-                "reference": "a3f7badb43d968d1abe60964f6158a0adf70f145"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/phemellc/yii2-toggle-column/a3f7badb43d968d1abe60964f6158a0adf70f145.zip",
-                "reference": "a3f7badb43d968d1abe60964f6158a0adf70f145",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": ">=2.0.7"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "\\pheme\\grid\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Aris Karageorgos",
-                    "email": "aris@phe.me"
-                }
-            ],
-            "description": "Provides a toggle data column and action",
-            "keywords": [
-                "column",
-                "extension",
-                "toggle",
-                "yii2"
-            ],
-            "time": "2017-01-17T18:44:09+00:00"
-        },
-        {
             "name": "swiftmailer/swiftmailer",
             "version": "dev-master",
             "source": {
@@ -960,6 +1039,44 @@
                 "yii2"
             ],
             "time": "2017-07-30T03:46:05+00:00"
+        },
+        {
+            "name": "xutl/yii2-bootstrap-tagsinput-asset",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xutl/yii2-bootstrap-tagsinput-asset.git",
+                "reference": "a59a663ee2e5b137368a57fbb3664f68bbcb054f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/xutl/yii2-bootstrap-tagsinput-asset/a59a663ee2e5b137368a57fbb3664f68bbcb054f.zip",
+                "reference": "a59a663ee2e5b137368a57fbb3664f68bbcb054f",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/bootstrap-tagsinput": "~0.8.0",
+                "yiisoft/yii2": "~2.0.6"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "xutl\\bootstrap\\tagsinput\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "The tag extension for the yii framework",
+            "keywords": [
+                "Taggable",
+                "bootstrap",
+                "tag",
+                "tags",
+                "tagsinput"
+            ],
+            "time": "2017-08-21T02:31:15+00:00"
         },
         {
             "name": "xutl/yii2-cropper-asset",
@@ -1294,6 +1411,48 @@
                 "yii2"
             ],
             "time": "2016-10-25T03:03:27+00:00"
+        },
+        {
+            "name": "xutl/yii2-ueditor-widget",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xutl/yii2-ueditor-widget.git",
+                "reference": "a2f06fe3b99190ec753fe1af25e9bf9bf27c0b9d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/xutl/yii2-ueditor-widget/a2f06fe3b99190ec753fe1af25e9bf9bf27c0b9d.zip",
+                "reference": "a2f06fe3b99190ec753fe1af25e9bf9bf27c0b9d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "xutl\\ueditor\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "XuTL",
+                    "email": "xutl@gmail.com"
+                }
+            ],
+            "description": "The ueditor extension for the Yii framework",
+            "keywords": [
+                "ueditor",
+                "yii2"
+            ],
+            "abandoned": "yuncms/yii2-ueditor-widget",
+            "time": "2017-09-18T09:06:36+00:00"
         },
         {
             "name": "yii2tech/ar-position",
@@ -1960,16 +2119,16 @@
         },
         {
             "name": "yuncms/yii2-admin",
-            "version": "dev-master",
+            "version": "2.0.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-admin.git",
-                "reference": "6f764aac154e514524520c99934d27e4ca73740c"
+                "reference": "3a8c0940b110fa9b33f81a85b88b9760aebaa025"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-admin/6f764aac154e514524520c99934d27e4ca73740c.zip",
-                "reference": "6f764aac154e514524520c99934d27e4ca73740c",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-admin/3a8c0940b110fa9b33f81a85b88b9760aebaa025.zip",
+                "reference": "3a8c0940b110fa9b33f81a85b88b9760aebaa025",
                 "shasum": ""
             },
             "require": {
@@ -1986,9 +2145,10 @@
                     "name": "admin",
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
+                        "sourceLanguage": "en-US",
                         "basePath": "@yuncms/admin/message"
                     },
-                    "migrationNamespace": "@yuncms/admin/migrations",
+                    "migrationNamespace": "yuncms\\admin\\migrations",
                     "backend": {
                         "class": "yuncms\\admin\\Module"
                     },
@@ -2015,7 +2175,7 @@
                 "admin",
                 "yuncms"
             ],
-            "time": "2017-09-22T09:37:35+00:00"
+            "time": "2017-09-23T08:23:04+00:00"
         },
         {
             "name": "yuncms/yii2-article",
@@ -2023,12 +2183,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-article.git",
-                "reference": "b898159a3fe176bc24467c9ba3cf1f0cb0c28fc2"
+                "reference": "fc569b15a95aab85fb322010e23216bdb8b7199a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-article/b898159a3fe176bc24467c9ba3cf1f0cb0c28fc2.zip",
-                "reference": "b898159a3fe176bc24467c9ba3cf1f0cb0c28fc2",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-article/fc569b15a95aab85fb322010e23216bdb8b7199a.zip",
+                "reference": "fc569b15a95aab85fb322010e23216bdb8b7199a",
                 "shasum": ""
             },
             "require": {
@@ -2044,9 +2204,10 @@
                     "name": "article",
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
+                        "sourceLanguage": "en-US",
                         "basePath": "@yuncms/article/message"
                     },
-                    "migrationNamespace": "@yuncms/article/migrations",
+                    "migrationNamespace": "yuncms\\article\\migrations",
                     "backend": {
                         "class": "yuncms\\article\\backend\\Module"
                     },
@@ -2072,7 +2233,7 @@
                 "article",
                 "yuncms"
             ],
-            "time": "2017-09-23T01:34:59+00:00"
+            "time": "2017-09-23T08:23:14+00:00"
         },
         {
             "name": "yuncms/yii2-attachment",
@@ -2080,12 +2241,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-attachment.git",
-                "reference": "968bdd3a7aadeb22c42a94e34eb79683a042426b"
+                "reference": "a7889e0c5cf71047fd7adfa3553903ba136dff8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-attachment/968bdd3a7aadeb22c42a94e34eb79683a042426b.zip",
-                "reference": "968bdd3a7aadeb22c42a94e34eb79683a042426b",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-attachment/a7889e0c5cf71047fd7adfa3553903ba136dff8c.zip",
+                "reference": "a7889e0c5cf71047fd7adfa3553903ba136dff8c",
                 "shasum": ""
             },
             "require": {
@@ -2098,9 +2259,10 @@
                     "name": "attachment",
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
+                        "sourceLanguage": "en-US",
                         "basePath": "@yuncms/attachment/message"
                     },
-                    "migrationNamespace": "@yuncms/attachment/migrations",
+                    "migrationNamespace": "yuncms\\attachment\\migrations",
                     "backend": {
                         "class": "yuncms\\attachment\\backend\\Module"
                     },
@@ -2127,7 +2289,7 @@
                 "yii2",
                 "yii2-attachment"
             ],
-            "time": "2017-09-23T01:34:46+00:00"
+            "time": "2017-09-23T08:23:20+00:00"
         },
         {
             "name": "yuncms/yii2-attention",
@@ -2135,12 +2297,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-attention.git",
-                "reference": "2018487e6c42ea0c06a4452cc1d8024762a172ac"
+                "reference": "f61173b60c1cb8407d6f752abc6c512254704b88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-attention/2018487e6c42ea0c06a4452cc1d8024762a172ac.zip",
-                "reference": "2018487e6c42ea0c06a4452cc1d8024762a172ac",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-attention/f61173b60c1cb8407d6f752abc6c512254704b88.zip",
+                "reference": "f61173b60c1cb8407d6f752abc6c512254704b88",
                 "shasum": ""
             },
             "require": {
@@ -2153,9 +2315,10 @@
                     "name": "attention",
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
+                        "sourceLanguage": "en-US",
                         "basePath": "@yuncms/attention/message"
                     },
-                    "migrationNamespace": "@yuncms/attention/migrations",
+                    "migrationNamespace": "yuncms\\attention\\migrations",
                     "backend": [],
                     "frontend": {
                         "class": "yuncms\\attention\\frontend\\Module"
@@ -2186,7 +2349,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-09-23T01:34:27+00:00"
+            "time": "2017-09-23T08:23:29+00:00"
         },
         {
             "name": "yuncms/yii2-authentication",
@@ -2194,12 +2357,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-authentication.git",
-                "reference": "4cd044bde64094f802f22010a0f7d39a8f921e25"
+                "reference": "66a7cdc7066eda703e4a4502353e04215e7e122c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-authentication/4cd044bde64094f802f22010a0f7d39a8f921e25.zip",
-                "reference": "4cd044bde64094f802f22010a0f7d39a8f921e25",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-authentication/66a7cdc7066eda703e4a4502353e04215e7e122c.zip",
+                "reference": "66a7cdc7066eda703e4a4502353e04215e7e122c",
                 "shasum": ""
             },
             "require": {
@@ -2214,9 +2377,10 @@
                     "name": "authentication",
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
+                        "sourceLanguage": "en-US",
                         "basePath": "@yuncms/authentication/message"
                     },
-                    "migrationNamespace": "@yuncms/authentication/migrations",
+                    "migrationNamespace": "yuncms\\authentication\\migrations",
                     "backend": {
                         "class": "yuncms\\authentication\\backend\\Module"
                     },
@@ -2249,7 +2413,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-09-23T01:33:53+00:00"
+            "time": "2017-09-23T08:23:36+00:00"
         },
         {
             "name": "yuncms/yii2-coin",
@@ -2257,12 +2421,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-coin.git",
-                "reference": "6edd67f7150a1e4e0b990c473fdf5b6cff7367d1"
+                "reference": "fb59ea0e6d1cddcaed958e85ecb6e5220f413a1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-coin/6edd67f7150a1e4e0b990c473fdf5b6cff7367d1.zip",
-                "reference": "6edd67f7150a1e4e0b990c473fdf5b6cff7367d1",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-coin/fb59ea0e6d1cddcaed958e85ecb6e5220f413a1b.zip",
+                "reference": "fb59ea0e6d1cddcaed958e85ecb6e5220f413a1b",
                 "shasum": ""
             },
             "require": {
@@ -2275,9 +2439,10 @@
                     "name": "coin",
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
+                        "sourceLanguage": "en-US",
                         "basePath": "@yuncms/coin/message"
                     },
-                    "migrationNamespace": "@yuncms/coin/migrations",
+                    "migrationNamespace": "yuncms\\coin\\migrations",
                     "backend": [],
                     "frontend": {
                         "class": "yuncms\\coin\\frontend\\Module"
@@ -2311,7 +2476,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-09-23T01:33:38+00:00"
+            "time": "2017-09-23T08:23:43+00:00"
         },
         {
             "name": "yuncms/yii2-collection",
@@ -2319,12 +2484,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-collection.git",
-                "reference": "2e22d9e831a1aaea33006b35a6de03e4203b8992"
+                "reference": "3bba459c9f9e530f0bbd25b788ea6c51be4d1672"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-collection/2e22d9e831a1aaea33006b35a6de03e4203b8992.zip",
-                "reference": "2e22d9e831a1aaea33006b35a6de03e4203b8992",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-collection/3bba459c9f9e530f0bbd25b788ea6c51be4d1672.zip",
+                "reference": "3bba459c9f9e530f0bbd25b788ea6c51be4d1672",
                 "shasum": ""
             },
             "require": {
@@ -2337,9 +2502,10 @@
                     "name": "collection",
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
+                        "sourceLanguage": "en-US",
                         "basePath": "@yuncms/collection/message"
                     },
-                    "migrationNamespace": "@yuncms/collection/migrations",
+                    "migrationNamespace": "yuncms\\collection\\migrations",
                     "backend": [],
                     "frontend": {
                         "class": "yuncms\\collection\\frontend\\Module"
@@ -2370,7 +2536,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-09-23T01:33:19+00:00"
+            "time": "2017-09-23T08:23:53+00:00"
         },
         {
             "name": "yuncms/yii2-comment",
@@ -2378,12 +2544,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-comment.git",
-                "reference": "bbc866490d26539b8b842e5812b88674098654a1"
+                "reference": "75a590bfddd69b878f600c1a289b95947a9b0a86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-comment/bbc866490d26539b8b842e5812b88674098654a1.zip",
-                "reference": "bbc866490d26539b8b842e5812b88674098654a1",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-comment/75a590bfddd69b878f600c1a289b95947a9b0a86.zip",
+                "reference": "75a590bfddd69b878f600c1a289b95947a9b0a86",
                 "shasum": ""
             },
             "require": {
@@ -2395,9 +2561,10 @@
                     "name": "comment",
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
+                        "sourceLanguage": "en-US",
                         "basePath": "@yuncms/comment/message"
                     },
-                    "migrationNamespace": "@yuncms/comment/migrations",
+                    "migrationNamespace": "yuncms\\comment\\migrations",
                     "backend": {
                         "class": "yuncms\\comment\\backend\\Module"
                     },
@@ -2423,58 +2590,7 @@
                 "comment",
                 "yuncms"
             ],
-            "time": "2017-09-23T01:32:50+00:00"
-        },
-        {
-            "name": "yuncms/yii2-composer",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yuncms/yii2-composer.git",
-                "reference": "921cd920a043e1a26844f4753f004799f32a328a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-composer/921cd920a043e1a26844f4753f004799f32a328a.zip",
-                "reference": "921cd920a043e1a26844f4753f004799f32a328a",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0"
-            },
-            "require-dev": {
-                "composer/composer": "^1.0"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "yuncms\\composer\\Plugin",
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "yuncms\\composer\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Tongle Xu",
-                    "email": "xutongle@gmail.com"
-                }
-            ],
-            "description": "The composer plugin for yuncms module installer",
-            "keywords": [
-                "composer",
-                "module installer",
-                "yii2",
-                "yuncms"
-            ],
-            "time": "2017-09-23T05:36:51+00:00"
+            "time": "2017-09-23T08:24:00+00:00"
         },
         {
             "name": "yuncms/yii2-credit",
@@ -2482,12 +2598,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-credit.git",
-                "reference": "0e17270e37947590ed26247f314a69fa7e5043be"
+                "reference": "35fe0b88cf5fa71ae4ef73a7a3d3bf71a5239696"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-credit/0e17270e37947590ed26247f314a69fa7e5043be.zip",
-                "reference": "0e17270e37947590ed26247f314a69fa7e5043be",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-credit/35fe0b88cf5fa71ae4ef73a7a3d3bf71a5239696.zip",
+                "reference": "35fe0b88cf5fa71ae4ef73a7a3d3bf71a5239696",
                 "shasum": ""
             },
             "require": {
@@ -2501,9 +2617,10 @@
                     "name": "credit",
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
+                        "sourceLanguage": "en-US",
                         "basePath": "@yuncms/credit/message"
                     },
-                    "migrationNamespace": "@yuncms/credit/migrations",
+                    "migrationNamespace": "yuncms\\credit\\migrations",
                     "backend": {
                         "class": "yuncms\\credit\\backend\\Module"
                     },
@@ -2537,7 +2654,7 @@
             "keywords": [
                 "credit"
             ],
-            "time": "2017-09-23T01:32:36+00:00"
+            "time": "2017-09-23T08:24:09+00:00"
         },
         {
             "name": "yuncms/yii2-doing",
@@ -2545,12 +2662,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-doing.git",
-                "reference": "bf186f76eff1370a9b5893ddf22b6ec23adb9d08"
+                "reference": "d3a13dc60e9b5679c46afdc06396fb5005e7aace"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-doing/bf186f76eff1370a9b5893ddf22b6ec23adb9d08.zip",
-                "reference": "bf186f76eff1370a9b5893ddf22b6ec23adb9d08",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-doing/d3a13dc60e9b5679c46afdc06396fb5005e7aace.zip",
+                "reference": "d3a13dc60e9b5679c46afdc06396fb5005e7aace",
                 "shasum": ""
             },
             "require": {
@@ -2563,12 +2680,11 @@
                     "name": "doing",
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
+                        "sourceLanguage": "en-US",
                         "basePath": "@yuncms/doing/message"
                     },
-                    "migrationNamespace": "@yuncms/doing/migrations",
-                    "backend": {
-                        "class": "yuncms\\doing\\backend\\Module"
-                    },
+                    "migrationNamespace": "yuncms\\doing\\migrations",
+                    "backend": [],
                     "frontend": {
                         "class": "yuncms\\doing\\frontend\\Module"
                     }
@@ -2601,7 +2717,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-09-23T01:32:16+00:00"
+            "time": "2017-09-23T08:24:16+00:00"
         },
         {
             "name": "yuncms/yii2-message",
@@ -2609,12 +2725,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-message.git",
-                "reference": "882cd7aeb6d5411ca930a4ae7a4be27926b16873"
+                "reference": "7ec6d2a1365bc1c57e93391b7d0d0f0103467a09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-message/882cd7aeb6d5411ca930a4ae7a4be27926b16873.zip",
-                "reference": "882cd7aeb6d5411ca930a4ae7a4be27926b16873",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-message/7ec6d2a1365bc1c57e93391b7d0d0f0103467a09.zip",
+                "reference": "7ec6d2a1365bc1c57e93391b7d0d0f0103467a09",
                 "shasum": ""
             },
             "require": {
@@ -2634,12 +2750,11 @@
                     "name": "message",
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
+                        "sourceLanguage": "en-US",
                         "basePath": "@yuncms/message/message"
                     },
-                    "migrationNamespace": "@yuncms/message/migrations",
-                    "backend": {
-                        "class": "yuncms\\message\\backend\\Module"
-                    },
+                    "migrationNamespace": "yuncms\\message\\migrations",
+                    "backend": [],
                     "frontend": {
                         "class": "yuncms\\message\\frontend\\Module"
                     }
@@ -2663,7 +2778,7 @@
                 "yii2",
                 "yii2-message"
             ],
-            "time": "2017-09-23T01:31:33+00:00"
+            "time": "2017-09-23T08:25:13+00:00"
         },
         {
             "name": "yuncms/yii2-note",
@@ -2671,12 +2786,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-note.git",
-                "reference": "566399aae97b5f8ab5f4b2a9131d154a26078578"
+                "reference": "a858eba37318bd99d9e0a04a25060ffd95cf0091"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-note/566399aae97b5f8ab5f4b2a9131d154a26078578.zip",
-                "reference": "566399aae97b5f8ab5f4b2a9131d154a26078578",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-note/a858eba37318bd99d9e0a04a25060ffd95cf0091.zip",
+                "reference": "a858eba37318bd99d9e0a04a25060ffd95cf0091",
                 "shasum": ""
             },
             "require": {
@@ -2692,9 +2807,10 @@
                     "name": "note",
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
+                        "sourceLanguage": "en-US",
                         "basePath": "@yuncms/note/message"
                     },
-                    "migrationNamespace": "@yuncms/note/migrations",
+                    "migrationNamespace": "yuncms\\note\\migrations",
                     "backend": {
                         "class": "yuncms\\note\\backend\\Module"
                     },
@@ -2721,7 +2837,7 @@
                 "yii",
                 "yii2-note"
             ],
-            "time": "2017-09-23T01:29:29+00:00"
+            "time": "2017-09-23T08:25:22+00:00"
         },
         {
             "name": "yuncms/yii2-notification",
@@ -2729,12 +2845,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-notification.git",
-                "reference": "8cd90d680f092788b58260b5f86b8a40db5f42a8"
+                "reference": "7abe0ff7421a41025e82972c72b786add641081d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-notification/8cd90d680f092788b58260b5f86b8a40db5f42a8.zip",
-                "reference": "8cd90d680f092788b58260b5f86b8a40db5f42a8",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-notification/7abe0ff7421a41025e82972c72b786add641081d.zip",
+                "reference": "7abe0ff7421a41025e82972c72b786add641081d",
                 "shasum": ""
             },
             "require": {
@@ -2747,9 +2863,10 @@
                     "name": "notification",
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
+                        "sourceLanguage": "en-US",
                         "basePath": "@yuncms/notification/message"
                     },
-                    "migrationNamespace": "@yuncms/notification/migrations",
+                    "migrationNamespace": "yuncms\\notification\\migrations",
                     "backend": [],
                     "frontend": {
                         "class": "yuncms\\notification\\frontend\\Module"
@@ -2783,7 +2900,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-09-23T01:29:13+00:00"
+            "time": "2017-09-23T08:25:33+00:00"
         },
         {
             "name": "yuncms/yii2-oauth2",
@@ -2791,12 +2908,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-oauth2.git",
-                "reference": "e41065f5b7f595cc89ccc95d77fb02efc11fce80"
+                "reference": "8322e00601cf06428794dd4f05781d30722f7ff6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-oauth2/e41065f5b7f595cc89ccc95d77fb02efc11fce80.zip",
-                "reference": "e41065f5b7f595cc89ccc95d77fb02efc11fce80",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-oauth2/8322e00601cf06428794dd4f05781d30722f7ff6.zip",
+                "reference": "8322e00601cf06428794dd4f05781d30722f7ff6",
                 "shasum": ""
             },
             "require": {
@@ -2810,9 +2927,10 @@
                     "name": "oauth2",
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
+                        "sourceLanguage": "en-US",
                         "basePath": "@yuncms/oauth2/message"
                     },
-                    "migrationNamespace": "@yuncms/oauth2/migrations",
+                    "migrationNamespace": "yuncms\\oauth2\\migrations",
                     "backend": {
                         "class": "yuncms\\oauth2\\backend\\Module"
                     },
@@ -2847,7 +2965,7 @@
                 "oauth2-server",
                 "yii2"
             ],
-            "time": "2017-09-23T00:00:50+00:00"
+            "time": "2017-09-23T08:25:40+00:00"
         },
         {
             "name": "yuncms/yii2-question",
@@ -2855,12 +2973,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-question.git",
-                "reference": "8a509169744110a3554c3a66207e1e02f7b6c415"
+                "reference": "d6895b97baf5e12fca4282faab00dd5cd5e8ee91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-question/8a509169744110a3554c3a66207e1e02f7b6c415.zip",
-                "reference": "8a509169744110a3554c3a66207e1e02f7b6c415",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-question/d6895b97baf5e12fca4282faab00dd5cd5e8ee91.zip",
+                "reference": "d6895b97baf5e12fca4282faab00dd5cd5e8ee91",
                 "shasum": ""
             },
             "require": {
@@ -2880,9 +2998,10 @@
                     "name": "question",
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
+                        "sourceLanguage": "en-US",
                         "basePath": "@yuncms/question/message"
                     },
-                    "migrationNamespace": "@yuncms/question/migrations",
+                    "migrationNamespace": "yuncms\\question\\migrations",
                     "backend": {
                         "class": "yuncms\\question\\backend\\Module"
                     },
@@ -2911,7 +3030,7 @@
                 "yii",
                 "yii-question"
             ],
-            "time": "2017-09-23T01:27:29+00:00"
+            "time": "2017-09-23T08:25:54+00:00"
         },
         {
             "name": "yuncms/yii2-summernote-widget",
@@ -2966,12 +3085,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-support.git",
-                "reference": "87b31dcfe0c0b8192afd14a1bd8be0d309d1e130"
+                "reference": "0388892846f42a7bd7cf4aa5659ccd3a03beafb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-support/87b31dcfe0c0b8192afd14a1bd8be0d309d1e130.zip",
-                "reference": "87b31dcfe0c0b8192afd14a1bd8be0d309d1e130",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-support/0388892846f42a7bd7cf4aa5659ccd3a03beafb6.zip",
+                "reference": "0388892846f42a7bd7cf4aa5659ccd3a03beafb6",
                 "shasum": ""
             },
             "require": {
@@ -2984,9 +3103,10 @@
                     "name": "support",
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
+                        "sourceLanguage": "en-US",
                         "basePath": "@yuncms/support/message"
                     },
-                    "migrationNamespace": "@yuncms/support/migrations",
+                    "migrationNamespace": "yuncms\\support\\migrations",
                     "backend": [],
                     "frontend": {
                         "class": "yuncms\\support\\frontend\\Module"
@@ -3017,53 +3137,31 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-09-23T01:26:47+00:00"
+            "time": "2017-09-23T08:26:02+00:00"
         },
         {
             "name": "yuncms/yii2-system",
-            "version": "2.0.0.6",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-system.git",
-                "reference": "c9fa5e3adc8bb9304125493df44dcd43df3dfd83"
+                "reference": "d08d1dd6b5439a386ec3d68a3d66e28a44f0278f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-system/c9fa5e3adc8bb9304125493df44dcd43df3dfd83.zip",
-                "reference": "c9fa5e3adc8bb9304125493df44dcd43df3dfd83",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-system/d08d1dd6b5439a386ec3d68a3d66e28a44f0278f.zip",
+                "reference": "d08d1dd6b5439a386ec3d68a3d66e28a44f0278f",
                 "shasum": ""
             },
             "require": {
-                "pheme/yii2-toggle-column": "*",
+                "2amigos/yii2-qrcode-helper": "~1.0",
+                "xutl/yii2-ueditor-widget": "~1.0",
                 "yii2tech/ar-position": "~1.0",
-                "yiisoft/yii2": "~2.0.6",
-                "yiisoft/yii2-queue": "~2.0.0",
-                "yuncms/yii2-composer": "~2.0.0",
-                "yuncms/yii2-ueditor-widget": "~1.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~6.0"
+                "yiisoft/yii2": "~2.0"
             },
             "type": "yii2-extension",
             "extra": {
-                "yuncms": {
-                    "name": "system",
-                    "i18n": {
-                        "class": "yii\\i18n\\PhpMessageSource",
-                        "basePath": "@yuncms/system/message"
-                    },
-                    "migrationNamespace": "@yuncms/system/migrations",
-                    "backend": {
-                        "class": "yuncms\\system\\backend\\Module"
-                    },
-                    "frontend": {
-                        "class": "yuncms\\system\\frontend\\Module"
-                    }
-                },
-                "bootstrap": "yuncms\\system\\Bootstrap",
-                "branch-alias": {
-                    "dev-master": "2.0-dev"
-                }
+                "bootstrap": "yuncms\\system\\Bootstrap"
             },
             "autoload": {
                 "files": [
@@ -3083,26 +3181,44 @@
                 "system",
                 "yuncms"
             ],
-            "time": "2017-09-23T05:34:57+00:00"
+            "time": "2017-07-28T07:47:05+00:00"
         },
         {
             "name": "yuncms/yii2-tag",
-            "version": "2.0.0",
+            "version": "2.0.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-tag.git",
-                "reference": "53cbb35ef049d5bb29745ecca9870e067a46fd71"
+                "reference": "e8d39540c507f173a0b1a07c07cff40e601cff89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-tag/53cbb35ef049d5bb29745ecca9870e067a46fd71.zip",
-                "reference": "53cbb35ef049d5bb29745ecca9870e067a46fd71",
+                "url": "https://api.github.com/repos/yuncms/yii2-tag/zipball/e8d39540c507f173a0b1a07c07cff40e601cff89",
+                "reference": "e8d39540c507f173a0b1a07c07cff40e601cff89",
                 "shasum": ""
             },
             "require": {
-                "yiisoft/yii2": "~2.0.6"
+                "creocoder/yii2-taggable": "~2.0",
+                "xutl/yii2-bootstrap-tagsinput-asset": "~1.0.0",
+                "yiisoft/yii2": "~2.0.6",
+                "yuncms/yii2-system": "~2.0"
             },
             "type": "yii2-extension",
+            "extra": {
+                "yuncms": {
+                    "name": "tag",
+                    "i18n": {
+                        "class": "yii\\i18n\\PhpMessageSource",
+                        "basePath": "@yuncms/tag/message"
+                    },
+                    "migrationNamespace": "yuncms\\tag\\migrations",
+                    "backend": [],
+                    "frontend": []
+                },
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "yuncms\\tag\\": ""
@@ -3119,7 +3235,7 @@
                 "tags",
                 "yuncms"
             ],
-            "time": "2017-08-11T08:17:33+00:00"
+            "time": "2017-09-23T06:46:40+00:00"
         },
         {
             "name": "yuncms/yii2-ueditor-widget",
@@ -3174,12 +3290,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-user.git",
-                "reference": "55b8d5b952afa8e9e84f623324ba36074af6f455"
+                "reference": "c19fd25900ed9ba0e1a5f3c0edd361f856f25dcf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-user/55b8d5b952afa8e9e84f623324ba36074af6f455.zip",
-                "reference": "55b8d5b952afa8e9e84f623324ba36074af6f455",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-user/c19fd25900ed9ba0e1a5f3c0edd361f856f25dcf.zip",
+                "reference": "c19fd25900ed9ba0e1a5f3c0edd361f856f25dcf",
                 "shasum": ""
             },
             "require": {
@@ -3213,9 +3329,10 @@
                     "name": "user",
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
+                        "sourceLanguage": "en-US",
                         "basePath": "@yuncms/user/message"
                     },
-                    "migrationNamespace": "@yuncms/user/migrations",
+                    "migrationNamespace": "yuncms\\user\\migrations",
                     "backend": {
                         "class": "yuncms\\user\\backend\\Module"
                     },
@@ -3243,7 +3360,7 @@
                 "yii2",
                 "yii2-user"
             ],
-            "time": "2017-09-23T01:25:23+00:00"
+            "time": "2017-09-23T08:26:25+00:00"
         }
     ],
     "packages-dev": [

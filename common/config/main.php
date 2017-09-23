@@ -21,9 +21,7 @@ return [
             'datetimeFormat' => 'php:Y-m-d H:i:s',
             'timeFormat' => 'php:H:i:s',
         ],
-        'i18n' => [
-            'translations' => require(__DIR__ . '/translations.php'),
-        ],
+        'i18n' => require(__DIR__ . '/i18n.php'),
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
