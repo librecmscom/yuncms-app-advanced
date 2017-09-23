@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ce09046728a2521d28108917a0dddff",
+    "content-hash": "43f9b87b3575217d96bc39cbc8bf5694",
     "packages": [
         {
             "name": "2amigos/qrcode-library",
@@ -16,7 +16,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/2amigos/qrcode-library/5356f2355c7ba9a9ced67753411c88c2c095deb0.zip",
+                "url": "https://api.github.com/repos/2amigos/qrcode-library/zipball/5356f2355c7ba9a9ced67753411c88c2c095deb0",
                 "reference": "5356f2355c7ba9a9ced67753411c88c2c095deb0",
                 "shasum": ""
             },
@@ -74,64 +74,6 @@
             "time": "2017-08-25T15:23:58+00:00"
         },
         {
-            "name": "2amigos/yii2-qrcode-helper",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/2amigos/yii2-qrcode-helper.git",
-                "reference": "b034402e98c19f914946cc868e0606e657458fc8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/2amigos/yii2-qrcode-helper/b034402e98c19f914946cc868e0606e657458fc8.zip",
-                "reference": "b034402e98c19f914946cc868e0606e657458fc8",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "*"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.*",
-                "scrutinizer/ocular": "~1.1"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "dosamigos\\qrcode\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "2amigOS! Consulting Group",
-                    "email": "hola@2amigos.us",
-                    "homepage": "http://2amigos.us",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Create QrCodes based on libqrencode C library.",
-            "homepage": "http://yiiwheels.com/extension/qrcode-helper",
-            "keywords": [
-                "2amigos",
-                "extension",
-                "helper",
-                "qrcode",
-                "yii",
-                "yii 2",
-                "yii2"
-            ],
-            "abandoned": "2amigos/qrcode-library",
-            "time": "2017-06-21T10:56:44+00:00"
-        },
-        {
             "name": "bacon/bacon-qr-code",
             "version": "1.0.1",
             "source": {
@@ -141,7 +83,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/Bacon/BaconQrCode/031a2ce68c5794064b49d11775b2daf45c96e21c.zip",
+                "url": "https://api.github.com/repos/Bacon/BaconQrCode/zipball/031a2ce68c5794064b49d11775b2daf45c96e21c",
                 "reference": "031a2ce68c5794064b49d11775b2daf45c96e21c",
                 "shasum": ""
             },
@@ -419,7 +361,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/cebe/markdown/fcc325311c4c5e11c4453a405344d02adfa64aa1.zip",
+                "url": "https://api.github.com/repos/cebe/markdown/zipball/fcc325311c4c5e11c4453a405344d02adfa64aa1",
                 "reference": "fcc325311c4c5e11c4453a405344d02adfa64aa1",
                 "shasum": ""
             },
@@ -479,7 +421,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/creocoder/yii2-taggable/d2c73df372a490ccc45dd064c52f3f022d62dde5.zip",
+                "url": "https://api.github.com/repos/creocoder/yii2-taggable/zipball/d2c73df372a490ccc45dd064c52f3f022d62dde5",
                 "reference": "d2c73df372a490ccc45dd064c52f3f022d62dde5",
                 "shasum": ""
             },
@@ -520,7 +462,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/doctrine/lexer/cc709ba91eee09540091ad5a5f2616727662e41b.zip",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/cc709ba91eee09540091ad5a5f2616727662e41b",
                 "reference": "cc709ba91eee09540091ad5a5f2616727662e41b",
                 "shasum": ""
             },
@@ -574,7 +516,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/egulias/EmailValidator/bc31baa11ea2883e017f0a10d9722ef9d50eac1c.zip",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/bc31baa11ea2883e017f0a10d9722ef9d50eac1c",
                 "reference": "bc31baa11ea2883e017f0a10d9722ef9d50eac1c",
                 "shasum": ""
             },
@@ -631,7 +573,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/ezyang/htmlpurifier/95e1bae3182efc0f3422896a3236e991049dac69.zip",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/95e1bae3182efc0f3422896a3236e991049dac69",
                 "reference": "95e1bae3182efc0f3422896a3236e991049dac69",
                 "shasum": ""
             },
@@ -678,7 +620,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/avalanche123/Imagine/149041d2a1b517107bfe270ca2b1a17aa341715d.zip",
+                "url": "https://api.github.com/repos/avalanche123/Imagine/zipball/149041d2a1b517107bfe270ca2b1a17aa341715d",
                 "reference": "149041d2a1b517107bfe270ca2b1a17aa341715d",
                 "shasum": ""
             },
@@ -735,7 +677,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/jakeasmith/http_build_url/93c273e77cb1edead0cf8bcf8cd2003428e74e37.zip",
+                "url": "https://api.github.com/repos/jakeasmith/http_build_url/zipball/93c273e77cb1edead0cf8bcf8cd2003428e74e37",
                 "reference": "93c273e77cb1edead0cf8bcf8cd2003428e74e37",
                 "shasum": ""
             },
@@ -768,7 +710,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/khanamiryan/php-qrcode-detector-decoder/96d5f80680b04803c4f1b69d6e01735e876b80c7.zip",
+                "url": "https://api.github.com/repos/khanamiryan/php-qrcode-detector-decoder/zipball/96d5f80680b04803c4f1b69d6e01735e876b80c7",
                 "reference": "96d5f80680b04803c4f1b69d6e01735e876b80c7",
                 "shasum": ""
             },
@@ -809,6 +751,48 @@
             "time": "2017-01-13T09:11:46+00:00"
         },
         {
+            "name": "pheme/yii2-toggle-column",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phemellc/yii2-toggle-column.git",
+                "reference": "a3f7badb43d968d1abe60964f6158a0adf70f145"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phemellc/yii2-toggle-column/zipball/a3f7badb43d968d1abe60964f6158a0adf70f145",
+                "reference": "a3f7badb43d968d1abe60964f6158a0adf70f145",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": ">=2.0.7"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "\\pheme\\grid\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aris Karageorgos",
+                    "email": "aris@phe.me"
+                }
+            ],
+            "description": "Provides a toggle data column and action",
+            "keywords": [
+                "column",
+                "extension",
+                "toggle",
+                "yii2"
+            ],
+            "time": "2017-01-17T18:44:09+00:00"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "dev-master",
             "source": {
@@ -818,7 +802,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/swiftmailer/swiftmailer/1a2f9df896c8bfa6e22e8e1a78cca637c6f70613.zip",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/1a2f9df896c8bfa6e22e8e1a78cca637c6f70613",
                 "reference": "1a2f9df896c8bfa6e22e8e1a78cca637c6f70613",
                 "shasum": ""
             },
@@ -873,7 +857,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/process/89a6ce31d08c44978b7523a45272291061ab9f82.zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/89a6ce31d08c44978b7523a45272291061ab9f82",
                 "reference": "89a6ce31d08c44978b7523a45272291061ab9f82",
                 "shasum": ""
             },
@@ -922,7 +906,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-aliyun/3539842aaf55e0f7e9de9a3f0467373879fea251.zip",
+                "url": "https://api.github.com/repos/xutl/yii2-aliyun/zipball/3539842aaf55e0f7e9de9a3f0467373879fea251",
                 "reference": "3539842aaf55e0f7e9de9a3f0467373879fea251",
                 "shasum": ""
             },
@@ -965,7 +949,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-authclient/3a337cddc9e9511d9ac079683d8d6e2a49e2d3f9.zip",
+                "url": "https://api.github.com/repos/xutl/yii2-authclient/zipball/3a337cddc9e9511d9ac079683d8d6e2a49e2d3f9",
                 "reference": "3a337cddc9e9511d9ac079683d8d6e2a49e2d3f9",
                 "shasum": ""
             },
@@ -1008,7 +992,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-bootstrap-filestyle-asset/69aff0ea25947caef22f39cc2475dffaf0177720.zip",
+                "url": "https://api.github.com/repos/xutl/yii2-bootstrap-filestyle-asset/zipball/69aff0ea25947caef22f39cc2475dffaf0177720",
                 "reference": "69aff0ea25947caef22f39cc2475dffaf0177720",
                 "shasum": ""
             },
@@ -1050,7 +1034,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-bootstrap-tagsinput-asset/a59a663ee2e5b137368a57fbb3664f68bbcb054f.zip",
+                "url": "https://api.github.com/repos/xutl/yii2-bootstrap-tagsinput-asset/zipball/a59a663ee2e5b137368a57fbb3664f68bbcb054f",
                 "reference": "a59a663ee2e5b137368a57fbb3664f68bbcb054f",
                 "shasum": ""
             },
@@ -1088,7 +1072,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-cropper-asset/4f2040ab2452947feb1a9ad912f7f949eda9fb35.zip",
+                "url": "https://api.github.com/repos/xutl/yii2-cropper-asset/zipball/4f2040ab2452947feb1a9ad912f7f949eda9fb35",
                 "reference": "4f2040ab2452947feb1a9ad912f7f949eda9fb35",
                 "shasum": ""
             },
@@ -1129,7 +1113,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-fileupload-widget/48ae1cae8b7f9083d6b9336a64ac1f79ac72704f.zip",
+                "url": "https://api.github.com/repos/xutl/yii2-fileupload-widget/zipball/48ae1cae8b7f9083d6b9336a64ac1f79ac72704f",
                 "reference": "48ae1cae8b7f9083d6b9336a64ac1f79ac72704f",
                 "shasum": ""
             },
@@ -1171,7 +1155,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-fmt-asset/d9013e99931136adad1c360bafc8894d176a7211.zip",
+                "url": "https://api.github.com/repos/xutl/yii2-fmt-asset/zipball/d9013e99931136adad1c360bafc8894d176a7211",
                 "reference": "d9013e99931136adad1c360bafc8894d176a7211",
                 "shasum": ""
             },
@@ -1212,7 +1196,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-fontawesome-asset/a28b83ba4258de8ae66da4b6ce9e04b8e4fc288e.zip",
+                "url": "https://api.github.com/repos/xutl/yii2-fontawesome-asset/zipball/a28b83ba4258de8ae66da4b6ce9e04b8e4fc288e",
                 "reference": "a28b83ba4258de8ae66da4b6ce9e04b8e4fc288e",
                 "shasum": ""
             },
@@ -1254,7 +1238,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-highlightjs-widget/a9b83550698f7990958e80de47e5e529467a0c08.zip",
+                "url": "https://api.github.com/repos/xutl/yii2-highlightjs-widget/zipball/a9b83550698f7990958e80de47e5e529467a0c08",
                 "reference": "a9b83550698f7990958e80de47e5e529467a0c08",
                 "shasum": ""
             },
@@ -1295,7 +1279,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-id98/b9f7d5352153555b76f4243a4dab726171a1d657.zip",
+                "url": "https://api.github.com/repos/xutl/yii2-id98/zipball/b9f7d5352153555b76f4243a4dab726171a1d657",
                 "reference": "b9f7d5352153555b76f4243a4dab726171a1d657",
                 "shasum": ""
             },
@@ -1337,7 +1321,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-inspinia-widget/709d54b51f61ae7df78eb61fef0ab6417da73e2b.zip",
+                "url": "https://api.github.com/repos/xutl/yii2-inspinia-widget/zipball/709d54b51f61ae7df78eb61fef0ab6417da73e2b",
                 "reference": "709d54b51f61ae7df78eb61fef0ab6417da73e2b",
                 "shasum": ""
             },
@@ -1381,7 +1365,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-select2-widget/d1f83149dd4a157a3375b97363dc7f568eb9a46e.zip",
+                "url": "https://api.github.com/repos/xutl/yii2-select2-widget/zipball/d1f83149dd4a157a3375b97363dc7f568eb9a46e",
                 "reference": "d1f83149dd4a157a3375b97363dc7f568eb9a46e",
                 "shasum": ""
             },
@@ -1413,48 +1397,6 @@
             "time": "2016-10-25T03:03:27+00:00"
         },
         {
-            "name": "xutl/yii2-ueditor-widget",
-            "version": "1.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/xutl/yii2-ueditor-widget.git",
-                "reference": "a2f06fe3b99190ec753fe1af25e9bf9bf27c0b9d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-ueditor-widget/a2f06fe3b99190ec753fe1af25e9bf9bf27c0b9d.zip",
-                "reference": "a2f06fe3b99190ec753fe1af25e9bf9bf27c0b9d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "xutl\\ueditor\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "XuTL",
-                    "email": "xutl@gmail.com"
-                }
-            ],
-            "description": "The ueditor extension for the Yii framework",
-            "keywords": [
-                "ueditor",
-                "yii2"
-            ],
-            "abandoned": "yuncms/yii2-ueditor-widget",
-            "time": "2017-09-18T09:06:36+00:00"
-        },
-        {
             "name": "yii2tech/ar-position",
             "version": "dev-master",
             "source": {
@@ -1464,7 +1406,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yii2tech/ar-position/658057c736d7700dff8ad75c486c80cca1ff6260.zip",
+                "url": "https://api.github.com/repos/yii2tech/ar-position/zipball/658057c736d7700dff8ad75c486c80cca1ff6260",
                 "reference": "658057c736d7700dff8ad75c486c80cca1ff6260",
                 "shasum": ""
             },
@@ -1513,7 +1455,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-framework/31cbccb32fd84fa408446bd84af300e52b4af9bf.zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/31cbccb32fd84fa408446bd84af300e52b4af9bf",
                 "reference": "31cbccb32fd84fa408446bd84af300e52b4af9bf",
                 "shasum": ""
             },
@@ -1613,7 +1555,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-authclient/eec33d8584558aac1ec8d68ba605a898cee2d6e8.zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-authclient/zipball/eec33d8584558aac1ec8d68ba605a898cee2d6e8",
                 "reference": "eec33d8584558aac1ec8d68ba605a898cee2d6e8",
                 "shasum": ""
             },
@@ -1665,7 +1607,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-bootstrap/034d57071f7bb91074c0c2728c60ae8abdaa0e47.zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/034d57071f7bb91074c0c2728c60ae8abdaa0e47",
                 "reference": "034d57071f7bb91074c0c2728c60ae8abdaa0e47",
                 "shasum": ""
             },
@@ -1711,7 +1653,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-composer/248f7065a352273b15a9f624be63830f360a59f2.zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/248f7065a352273b15a9f624be63830f360a59f2",
                 "reference": "248f7065a352273b15a9f624be63830f360a59f2",
                 "shasum": ""
             },
@@ -1761,7 +1703,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-httpclient/d1ab910c752dbcdfc88fdbde9a4ea0fdc9a10b62.zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-httpclient/zipball/d1ab910c752dbcdfc88fdbde9a4ea0fdc9a10b62",
                 "reference": "d1ab910c752dbcdfc88fdbde9a4ea0fdc9a10b62",
                 "shasum": ""
             },
@@ -1808,7 +1750,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-imagine/59dcd0b43c2b0e5495c7e5c0320e2cbc1cd57411.zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-imagine/zipball/59dcd0b43c2b0e5495c7e5c0320e2cbc1cd57411",
                 "reference": "59dcd0b43c2b0e5495c7e5c0320e2cbc1cd57411",
                 "shasum": ""
             },
@@ -1856,7 +1798,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-jui/75e6f78010e9e9a60d7eecc58c8ad5655778535d.zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-jui/zipball/75e6f78010e9e9a60d7eecc58c8ad5655778535d",
                 "reference": "75e6f78010e9e9a60d7eecc58c8ad5655778535d",
                 "shasum": ""
             },
@@ -1902,7 +1844,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-queue/7a8db9a3a934924fe49601c45b31849323898794.zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-queue/zipball/7a8db9a3a934924fe49601c45b31849323898794",
                 "reference": "7a8db9a3a934924fe49601c45b31849323898794",
                 "shasum": ""
             },
@@ -1979,7 +1921,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-redis/f3f5e97f5692638bee42ed57561326ac56ed9a87.zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-redis/zipball/f3f5e97f5692638bee42ed57561326ac56ed9a87",
                 "reference": "f3f5e97f5692638bee42ed57561326ac56ed9a87",
                 "shasum": ""
             },
@@ -2027,7 +1969,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-sphinx/468ded3fcf902ea80e2694ee6286ce7f850f7eea.zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-sphinx/zipball/468ded3fcf902ea80e2694ee6286ce7f850f7eea",
                 "reference": "468ded3fcf902ea80e2694ee6286ce7f850f7eea",
                 "shasum": ""
             },
@@ -2077,7 +2019,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-swiftmailer/76cd85c7ed79cfff57b69096099ef38adc37691e.zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/76cd85c7ed79cfff57b69096099ef38adc37691e",
                 "reference": "76cd85c7ed79cfff57b69096099ef38adc37691e",
                 "shasum": ""
             },
@@ -2119,7 +2061,7 @@
         },
         {
             "name": "yuncms/yii2-admin",
-            "version": "2.0.0.5",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-admin.git",
@@ -2127,7 +2069,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-admin/3a8c0940b110fa9b33f81a85b88b9760aebaa025.zip",
+                "url": "https://api.github.com/repos/yuncms/yii2-admin/zipball/3a8c0940b110fa9b33f81a85b88b9760aebaa025",
                 "reference": "3a8c0940b110fa9b33f81a85b88b9760aebaa025",
                 "shasum": ""
             },
@@ -2187,7 +2129,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-article/fc569b15a95aab85fb322010e23216bdb8b7199a.zip",
+                "url": "https://api.github.com/repos/yuncms/yii2-article/zipball/fc569b15a95aab85fb322010e23216bdb8b7199a",
                 "reference": "fc569b15a95aab85fb322010e23216bdb8b7199a",
                 "shasum": ""
             },
@@ -2245,7 +2187,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-attachment/a7889e0c5cf71047fd7adfa3553903ba136dff8c.zip",
+                "url": "https://api.github.com/repos/yuncms/yii2-attachment/zipball/a7889e0c5cf71047fd7adfa3553903ba136dff8c",
                 "reference": "a7889e0c5cf71047fd7adfa3553903ba136dff8c",
                 "shasum": ""
             },
@@ -2301,7 +2243,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-attention/f61173b60c1cb8407d6f752abc6c512254704b88.zip",
+                "url": "https://api.github.com/repos/yuncms/yii2-attention/zipball/f61173b60c1cb8407d6f752abc6c512254704b88",
                 "reference": "f61173b60c1cb8407d6f752abc6c512254704b88",
                 "shasum": ""
             },
@@ -2361,7 +2303,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-authentication/66a7cdc7066eda703e4a4502353e04215e7e122c.zip",
+                "url": "https://api.github.com/repos/yuncms/yii2-authentication/zipball/66a7cdc7066eda703e4a4502353e04215e7e122c",
                 "reference": "66a7cdc7066eda703e4a4502353e04215e7e122c",
                 "shasum": ""
             },
@@ -2425,7 +2367,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-coin/fb59ea0e6d1cddcaed958e85ecb6e5220f413a1b.zip",
+                "url": "https://api.github.com/repos/yuncms/yii2-coin/zipball/fb59ea0e6d1cddcaed958e85ecb6e5220f413a1b",
                 "reference": "fb59ea0e6d1cddcaed958e85ecb6e5220f413a1b",
                 "shasum": ""
             },
@@ -2488,7 +2430,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-collection/3bba459c9f9e530f0bbd25b788ea6c51be4d1672.zip",
+                "url": "https://api.github.com/repos/yuncms/yii2-collection/zipball/3bba459c9f9e530f0bbd25b788ea6c51be4d1672",
                 "reference": "3bba459c9f9e530f0bbd25b788ea6c51be4d1672",
                 "shasum": ""
             },
@@ -2548,7 +2490,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-comment/75a590bfddd69b878f600c1a289b95947a9b0a86.zip",
+                "url": "https://api.github.com/repos/yuncms/yii2-comment/zipball/75a590bfddd69b878f600c1a289b95947a9b0a86",
                 "reference": "75a590bfddd69b878f600c1a289b95947a9b0a86",
                 "shasum": ""
             },
@@ -2593,6 +2535,57 @@
             "time": "2017-09-23T08:24:00+00:00"
         },
         {
+            "name": "yuncms/yii2-composer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yuncms/yii2-composer.git",
+                "reference": "b518142648fb81b567c422182a99cf9b262a801f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yuncms/yii2-composer/zipball/b518142648fb81b567c422182a99cf9b262a801f",
+                "reference": "b518142648fb81b567c422182a99cf9b262a801f",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "yuncms\\composer\\Plugin",
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yuncms\\composer\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tongle Xu",
+                    "email": "xutongle@gmail.com"
+                }
+            ],
+            "description": "The composer plugin for yuncms module installer",
+            "keywords": [
+                "composer",
+                "module installer",
+                "yii2",
+                "yuncms"
+            ],
+            "time": "2017-09-23T08:32:48+00:00"
+        },
+        {
             "name": "yuncms/yii2-credit",
             "version": "dev-master",
             "source": {
@@ -2602,7 +2595,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-credit/35fe0b88cf5fa71ae4ef73a7a3d3bf71a5239696.zip",
+                "url": "https://api.github.com/repos/yuncms/yii2-credit/zipball/35fe0b88cf5fa71ae4ef73a7a3d3bf71a5239696",
                 "reference": "35fe0b88cf5fa71ae4ef73a7a3d3bf71a5239696",
                 "shasum": ""
             },
@@ -2666,7 +2659,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-doing/d3a13dc60e9b5679c46afdc06396fb5005e7aace.zip",
+                "url": "https://api.github.com/repos/yuncms/yii2-doing/zipball/d3a13dc60e9b5679c46afdc06396fb5005e7aace",
                 "reference": "d3a13dc60e9b5679c46afdc06396fb5005e7aace",
                 "shasum": ""
             },
@@ -2729,7 +2722,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-message/7ec6d2a1365bc1c57e93391b7d0d0f0103467a09.zip",
+                "url": "https://api.github.com/repos/yuncms/yii2-message/zipball/7ec6d2a1365bc1c57e93391b7d0d0f0103467a09",
                 "reference": "7ec6d2a1365bc1c57e93391b7d0d0f0103467a09",
                 "shasum": ""
             },
@@ -2790,7 +2783,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-note/a858eba37318bd99d9e0a04a25060ffd95cf0091.zip",
+                "url": "https://api.github.com/repos/yuncms/yii2-note/zipball/a858eba37318bd99d9e0a04a25060ffd95cf0091",
                 "reference": "a858eba37318bd99d9e0a04a25060ffd95cf0091",
                 "shasum": ""
             },
@@ -2849,7 +2842,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-notification/7abe0ff7421a41025e82972c72b786add641081d.zip",
+                "url": "https://api.github.com/repos/yuncms/yii2-notification/zipball/7abe0ff7421a41025e82972c72b786add641081d",
                 "reference": "7abe0ff7421a41025e82972c72b786add641081d",
                 "shasum": ""
             },
@@ -2912,7 +2905,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-oauth2/8322e00601cf06428794dd4f05781d30722f7ff6.zip",
+                "url": "https://api.github.com/repos/yuncms/yii2-oauth2/zipball/8322e00601cf06428794dd4f05781d30722f7ff6",
                 "reference": "8322e00601cf06428794dd4f05781d30722f7ff6",
                 "shasum": ""
             },
@@ -2977,7 +2970,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-question/d6895b97baf5e12fca4282faab00dd5cd5e8ee91.zip",
+                "url": "https://api.github.com/repos/yuncms/yii2-question/zipball/d6895b97baf5e12fca4282faab00dd5cd5e8ee91",
                 "reference": "d6895b97baf5e12fca4282faab00dd5cd5e8ee91",
                 "shasum": ""
             },
@@ -3042,7 +3035,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-summernote-widget/fc054c003d8cb87a435a10545ee3b52d312517c1.zip",
+                "url": "https://api.github.com/repos/yuncms/yii2-summernote-widget/zipball/fc054c003d8cb87a435a10545ee3b52d312517c1",
                 "reference": "fc054c003d8cb87a435a10545ee3b52d312517c1",
                 "shasum": ""
             },
@@ -3089,7 +3082,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-support/0388892846f42a7bd7cf4aa5659ccd3a03beafb6.zip",
+                "url": "https://api.github.com/repos/yuncms/yii2-support/zipball/0388892846f42a7bd7cf4aa5659ccd3a03beafb6",
                 "reference": "0388892846f42a7bd7cf4aa5659ccd3a03beafb6",
                 "shasum": ""
             },
@@ -3141,27 +3134,49 @@
         },
         {
             "name": "yuncms/yii2-system",
-            "version": "2.0.1",
+            "version": "2.0.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-system.git",
-                "reference": "d08d1dd6b5439a386ec3d68a3d66e28a44f0278f"
+                "reference": "b8ba3e3a30b1e5063d6e9fa0404339535c0ca7d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-system/d08d1dd6b5439a386ec3d68a3d66e28a44f0278f.zip",
-                "reference": "d08d1dd6b5439a386ec3d68a3d66e28a44f0278f",
+                "url": "https://api.github.com/repos/yuncms/yii2-system/zipball/b8ba3e3a30b1e5063d6e9fa0404339535c0ca7d9",
+                "reference": "b8ba3e3a30b1e5063d6e9fa0404339535c0ca7d9",
                 "shasum": ""
             },
             "require": {
-                "2amigos/yii2-qrcode-helper": "~1.0",
-                "xutl/yii2-ueditor-widget": "~1.0",
+                "pheme/yii2-toggle-column": "*",
                 "yii2tech/ar-position": "~1.0",
-                "yiisoft/yii2": "~2.0"
+                "yiisoft/yii2": "~2.0.6",
+                "yiisoft/yii2-queue": "~2.0.0",
+                "yuncms/yii2-composer": "~2.0.0",
+                "yuncms/yii2-ueditor-widget": "~1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
             },
             "type": "yii2-extension",
             "extra": {
-                "bootstrap": "yuncms\\system\\Bootstrap"
+                "yuncms": {
+                    "name": "system",
+                    "i18n": {
+                        "class": "yii\\i18n\\PhpMessageSource",
+                        "basePath": "@yuncms/system/message"
+                    },
+                    "migrationNamespace": "yuncms\\system\\migrations",
+                    "backend": {
+                        "class": "yuncms\\system\\backend\\Module"
+                    },
+                    "frontend": {
+                        "class": "yuncms\\system\\frontend\\Module"
+                    }
+                },
+                "bootstrap": "yuncms\\system\\Bootstrap",
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
             },
             "autoload": {
                 "files": [
@@ -3181,20 +3196,20 @@
                 "system",
                 "yuncms"
             ],
-            "time": "2017-07-28T07:47:05+00:00"
+            "time": "2017-09-23T06:43:22+00:00"
         },
         {
             "name": "yuncms/yii2-tag",
-            "version": "2.0.2.7",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-tag.git",
-                "reference": "e8d39540c507f173a0b1a07c07cff40e601cff89"
+                "reference": "8d2f60af8ab077ef61380dabf33fde7804a22ea7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-tag/zipball/e8d39540c507f173a0b1a07c07cff40e601cff89",
-                "reference": "e8d39540c507f173a0b1a07c07cff40e601cff89",
+                "url": "https://api.github.com/repos/yuncms/yii2-tag/zipball/8d2f60af8ab077ef61380dabf33fde7804a22ea7",
+                "reference": "8d2f60af8ab077ef61380dabf33fde7804a22ea7",
                 "shasum": ""
             },
             "require": {
@@ -3209,6 +3224,7 @@
                     "name": "tag",
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
+                        "sourceLanguage": "en-US",
                         "basePath": "@yuncms/tag/message"
                     },
                     "migrationNamespace": "yuncms\\tag\\migrations",
@@ -3235,7 +3251,7 @@
                 "tags",
                 "yuncms"
             ],
-            "time": "2017-09-23T06:46:40+00:00"
+            "time": "2017-09-23T08:26:17+00:00"
         },
         {
             "name": "yuncms/yii2-ueditor-widget",
@@ -3247,7 +3263,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-ueditor-widget/d7ea9adf95097e2053ab19d873bcddb5ec27dddf.zip",
+                "url": "https://api.github.com/repos/yuncms/yii2-ueditor-widget/zipball/d7ea9adf95097e2053ab19d873bcddb5ec27dddf",
                 "reference": "d7ea9adf95097e2053ab19d873bcddb5ec27dddf",
                 "shasum": ""
             },
@@ -3294,7 +3310,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-user/c19fd25900ed9ba0e1a5f3c0edd361f856f25dcf.zip",
+                "url": "https://api.github.com/repos/yuncms/yii2-user/zipball/c19fd25900ed9ba0e1a5f3c0edd361f856f25dcf",
                 "reference": "c19fd25900ed9ba0e1a5f3c0edd361f856f25dcf",
                 "shasum": ""
             },
