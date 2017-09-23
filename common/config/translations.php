@@ -5,7 +5,7 @@
  * @license http://www.tintsoft.com/license/
  */
 //合并语言包配置
-$translations = array_merge(
+return array_merge(
     require(__DIR__ . '/../../vendor/yuncms/i18n.php'),
     [
         'app*' => [

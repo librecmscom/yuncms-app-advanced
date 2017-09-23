@@ -13,6 +13,7 @@ return [
             'class' => 'yii\db\Connection',
             'charset' => 'utf8',
             'tablePrefix' => 'yun_',
+            //'enableSchemaCache' => true,
         ],
         'formatter' => [
             'class' => 'yii\i18n\Formatter',
@@ -32,7 +33,6 @@ return [
         ],
         'queue' => [
             'class' => 'yii\queue\file\Queue',
-            'path' => '@console/runtime/queue',
         ],
         'id98' => [
             'class' => 'xutl\id98\Id98',
