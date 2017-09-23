@@ -1,6 +1,20 @@
 <?php
 
-
+//合并语言包配置
+$translations = array_merge(
+    require(__DIR__ . '/../../vendor/yuncms/i18n.php'),
+    [
+        'app*' => [
+            'class' => 'yii\i18n\PhpMessageSource',
+            //'basePath' => '@app/messages',
+            'sourceLanguage' => 'en-GB',
+            'fileMap' => [
+                'app' => 'app.php',
+                'app/error' => 'error.php',
+            ],
+        ],
+    ]
+);
 
 return [
     'language' => 'zh-CN',
@@ -50,7 +64,9 @@ return [
                 ],
             ],
         ],
-        'i18n' => require(__DIR__ . '/i18n.php'),
+        'i18n' => [
+            'translations' => $translations
+        ],
 
     ],
     'aliases' => [
