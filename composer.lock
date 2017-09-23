@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "54057a90458eb1e8b4348bee39a07c8a",
+    "content-hash": "714244cb20eb4b18e0f61ed40ec126c9",
     "packages": [
         {
             "name": "2amigos/qrcode-library",
@@ -72,64 +72,6 @@
                 "yii2"
             ],
             "time": "2017-08-25T15:23:58+00:00"
-        },
-        {
-            "name": "2amigos/yii2-qrcode-helper",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/2amigos/yii2-qrcode-helper.git",
-                "reference": "b034402e98c19f914946cc868e0606e657458fc8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/2amigos/yii2-qrcode-helper/b034402e98c19f914946cc868e0606e657458fc8.zip",
-                "reference": "b034402e98c19f914946cc868e0606e657458fc8",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "*"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.*",
-                "scrutinizer/ocular": "~1.1"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "dosamigos\\qrcode\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "2amigOS! Consulting Group",
-                    "email": "hola@2amigos.us",
-                    "homepage": "http://2amigos.us",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Create QrCodes based on libqrencode C library.",
-            "homepage": "http://yiiwheels.com/extension/qrcode-helper",
-            "keywords": [
-                "2amigos",
-                "extension",
-                "helper",
-                "qrcode",
-                "yii",
-                "yii 2",
-                "yii2"
-            ],
-            "abandoned": "2amigos/qrcode-library",
-            "time": "2017-06-21T10:56:44+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -1354,48 +1296,6 @@
             "time": "2016-10-25T03:03:27+00:00"
         },
         {
-            "name": "xutl/yii2-ueditor-widget",
-            "version": "1.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/xutl/yii2-ueditor-widget.git",
-                "reference": "a2f06fe3b99190ec753fe1af25e9bf9bf27c0b9d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/xutl/yii2-ueditor-widget/a2f06fe3b99190ec753fe1af25e9bf9bf27c0b9d.zip",
-                "reference": "a2f06fe3b99190ec753fe1af25e9bf9bf27c0b9d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "xutl\\ueditor\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "XuTL",
-                    "email": "xutl@gmail.com"
-                }
-            ],
-            "description": "The ueditor extension for the Yii framework",
-            "keywords": [
-                "ueditor",
-                "yii2"
-            ],
-            "abandoned": "yuncms/yii2-ueditor-widget",
-            "time": "2017-09-18T09:06:36+00:00"
-        },
-        {
             "name": "yii2tech/ar-position",
             "version": "dev-master",
             "source": {
@@ -1450,12 +1350,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "dc792a1f1db78123ac9e1c01a5862f64dbea8e1d"
+                "reference": "31cbccb32fd84fa408446bd84af300e52b4af9bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-framework/dc792a1f1db78123ac9e1c01a5862f64dbea8e1d.zip",
-                "reference": "dc792a1f1db78123ac9e1c01a5862f64dbea8e1d",
+                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-framework/31cbccb32fd84fa408446bd84af300e52b4af9bf.zip",
+                "reference": "31cbccb32fd84fa408446bd84af300e52b4af9bf",
                 "shasum": ""
             },
             "require": {
@@ -1542,7 +1442,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2017-09-20T11:37:28+00:00"
+            "time": "2017-09-22T23:24:18+00:00"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -2237,16 +2137,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-authentication.git",
-                "reference": "fe20bd9a3b0f37f85f32270da89719419c1f06a4"
+                "reference": "8efb107157fcca62b96f59d225bfcd08945e6903"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-authentication/fe20bd9a3b0f37f85f32270da89719419c1f06a4.zip",
-                "reference": "fe20bd9a3b0f37f85f32270da89719419c1f06a4",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-authentication/8efb107157fcca62b96f59d225bfcd08945e6903.zip",
+                "reference": "8efb107157fcca62b96f59d225bfcd08945e6903",
                 "shasum": ""
             },
             "require": {
                 "xutl/yii2-bootstrap-filestyle-asset": "~1.0",
+                "xutl/yii2-id98": "~1.0.0",
                 "yiisoft/yii2": "~2.0.6",
                 "yuncms/yii2-user": "~2.0"
             },
@@ -2277,7 +2178,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-09-22T06:41:45+00:00"
+            "time": "2017-09-22T06:50:45+00:00"
         },
         {
             "name": "yuncms/yii2-coin",
@@ -2414,6 +2315,57 @@
                 "yuncms"
             ],
             "time": "2017-09-22T02:43:19+00:00"
+        },
+        {
+            "name": "yuncms/yii2-composer",
+            "version": "1.0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yuncms/yii2-composer.git",
+                "reference": "499b0556f4a9b67fa92775db3da61b46ab6cad20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-composer/499b0556f4a9b67fa92775db3da61b46ab6cad20.zip",
+                "reference": "499b0556f4a9b67fa92775db3da61b46ab6cad20",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "yuncms\\composer\\Plugin",
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yuncms\\composer\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "XUTL",
+                    "email": "xutl@gmail.com"
+                }
+            ],
+            "description": "The composer plugin for yuncms module installer",
+            "keywords": [
+                "composer",
+                "module installer",
+                "yii2",
+                "yuncms"
+            ],
+            "time": "2017-09-22T23:53:55+00:00"
         },
         {
             "name": "yuncms/yii2-credit",
@@ -2662,12 +2614,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-oauth2.git",
-                "reference": "3e44b0c226a4d98af7a6472d14a60ac0fe9575a0"
+                "reference": "e41065f5b7f595cc89ccc95d77fb02efc11fce80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-oauth2/3e44b0c226a4d98af7a6472d14a60ac0fe9575a0.zip",
-                "reference": "3e44b0c226a4d98af7a6472d14a60ac0fe9575a0",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-oauth2/e41065f5b7f595cc89ccc95d77fb02efc11fce80.zip",
+                "reference": "e41065f5b7f595cc89ccc95d77fb02efc11fce80",
                 "shasum": ""
             },
             "require": {
@@ -2677,6 +2629,20 @@
             },
             "type": "yii2-extension",
             "extra": {
+                "yuncms": {
+                    "name": "oauth2",
+                    "i18n": {
+                        "class": "yii\\i18n\\PhpMessageSource",
+                        "basePath": "@yuncms/oauth2/message"
+                    },
+                    "migrationNamespace": "@yuncms/oauth2/migrations",
+                    "backend": {
+                        "class": "yuncms\\oauth2\\backend\\Module"
+                    },
+                    "frontend": {
+                        "class": "yuncms\\oauth2\\frontend\\Module"
+                    }
+                },
                 "bootstrap": "yuncms\\oauth2\\Bootstrap",
                 "branch-alias": {
                     "dev-master": "2.0-dev"
@@ -2704,7 +2670,7 @@
                 "oauth2-server",
                 "yii2"
             ],
-            "time": "2017-09-22T02:46:32+00:00"
+            "time": "2017-09-23T00:00:50+00:00"
         },
         {
             "name": "yuncms/yii2-question",
@@ -2852,31 +2818,49 @@
         },
         {
             "name": "yuncms/yii2-system",
-            "version": "2.1.2",
+            "version": "2.0.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-system.git",
-                "reference": "45fada517c68b5a0fd99bcffd3bcccc416f0f5a7"
+                "reference": "4d60e60b400ef63ab05687d756ca512122ba2f42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-system/zipball/45fada517c68b5a0fd99bcffd3bcccc416f0f5a7",
-                "reference": "45fada517c68b5a0fd99bcffd3bcccc416f0f5a7",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-system/4d60e60b400ef63ab05687d756ca512122ba2f42.zip",
+                "reference": "4d60e60b400ef63ab05687d756ca512122ba2f42",
                 "shasum": ""
             },
             "require": {
-                "2amigos/yii2-qrcode-helper": "~1.0",
                 "pheme/yii2-toggle-column": "*",
-                "xutl/yii2-ueditor-widget": "~1.0",
                 "yii2tech/ar-position": "~1.0",
-                "yiisoft/yii2": "~2.0.6"
+                "yiisoft/yii2": "~2.0.6",
+                "yiisoft/yii2-queue": "~2.0.0",
+                "yuncms/yii2-composer": "~1.0.0",
+                "yuncms/yii2-ueditor-widget": "~1.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "~6.0"
             },
             "type": "yii2-extension",
             "extra": {
-                "bootstrap": "yuncms\\system\\Bootstrap"
+                "yuncms": {
+                    "name": "system",
+                    "i18n": {
+                        "class": "yii\\i18n\\PhpMessageSource",
+                        "basePath": "@yuncms/system/message"
+                    },
+                    "migrationNamespace": "@yuncms/system/migrations",
+                    "backend": {
+                        "class": "yuncms\\system\\backend\\Module"
+                    },
+                    "frontend": {
+                        "class": "yuncms\\system\\frontend\\Module"
+                    }
+                },
+                "bootstrap": "yuncms\\system\\Bootstrap",
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
             },
             "autoload": {
                 "files": [
@@ -2896,25 +2880,24 @@
                 "system",
                 "yuncms"
             ],
-            "time": "2017-08-16T03:32:53+00:00"
+            "time": "2017-09-23T00:58:57+00:00"
         },
         {
             "name": "yuncms/yii2-tag",
-            "version": "2.0.1",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-tag.git",
-                "reference": "97ac3c662e03e2dbadea25caa2899e808c2d76fc"
+                "reference": "53cbb35ef049d5bb29745ecca9870e067a46fd71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-tag/zipball/97ac3c662e03e2dbadea25caa2899e808c2d76fc",
-                "reference": "97ac3c662e03e2dbadea25caa2899e808c2d76fc",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-tag/53cbb35ef049d5bb29745ecca9870e067a46fd71.zip",
+                "reference": "53cbb35ef049d5bb29745ecca9870e067a46fd71",
                 "shasum": ""
             },
             "require": {
-                "yiisoft/yii2": "~2.0.6",
-                "yuncms/yii2-system": "~2.1.0"
+                "yiisoft/yii2": "~2.0.6"
             },
             "type": "yii2-extension",
             "autoload": {
@@ -2933,7 +2916,7 @@
                 "tags",
                 "yuncms"
             ],
-            "time": "2017-08-16T01:45:23+00:00"
+            "time": "2017-08-11T08:17:33+00:00"
         },
         {
             "name": "yuncms/yii2-ueditor-widget",

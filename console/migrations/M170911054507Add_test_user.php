@@ -17,8 +17,8 @@ class M170911054507Add_test_user extends Migration
         //添加默认超级管理员帐户 密码是 123456
         $this->insert('{{%user}}', [
             'id' => 1,
-            'slug' => 'admin',
-            'username' => 'Administrator',
+            'username' => 'admin',
+            'nickname' => 'Administrator',
             'email' => 'admin@example.com',
             'mobile' => '13800138000',
             'auth_key' => '0B8C1dRH1XxKhO15h_9JzaN0OAY9WprZ',
