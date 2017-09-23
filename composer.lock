@@ -211,28 +211,6 @@
             ]
         },
         {
-            "name": "bower-asset/bootstrap-tagsinput",
-            "version": "0.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bootstrap-tagsinput/bootstrap-tagsinput.git",
-                "reference": "5380ff820805a19807cd93d2da44bf9d26c5324a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/bootstrap-tagsinput/bootstrap-tagsinput/zipball/5380ff820805a19807cd93d2da44bf9d26c5324a",
-                "reference": "5380ff820805a19807cd93d2da44bf9d26c5324a",
-                "shasum": null
-            },
-            "require": {
-                "bower-asset/jquery": "~2.1.1"
-            },
-            "type": "bower-asset",
-            "license": [
-                "MIT"
-            ]
-        },
-        {
             "name": "bower-asset/font-awesome",
             "version": "v4.7.0",
             "source": {
@@ -277,16 +255,16 @@
         },
         {
             "name": "bower-asset/jquery",
-            "version": "2.1.4",
+            "version": "3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jquery/jquery-dist.git",
-                "reference": "7751e69b615c6eca6f783a81e292a55725af6b85"
+                "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/7751e69b615c6eca6f783a81e292a55725af6b85",
-                "reference": "7751e69b615c6eca6f783a81e292a55725af6b85",
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/77d2a51d0520d2ee44173afdf4e40a9201f5964e",
+                "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e",
                 "shasum": null
             },
             "type": "bower-asset",
@@ -1026,20 +1004,19 @@
         },
         {
             "name": "xutl/yii2-bootstrap-tagsinput-asset",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xutl/yii2-bootstrap-tagsinput-asset.git",
-                "reference": "a59a663ee2e5b137368a57fbb3664f68bbcb054f"
+                "reference": "3e2b37cc6de4f1c5a60c02ee89b3dded4350e79d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xutl/yii2-bootstrap-tagsinput-asset/zipball/a59a663ee2e5b137368a57fbb3664f68bbcb054f",
-                "reference": "a59a663ee2e5b137368a57fbb3664f68bbcb054f",
+                "url": "https://api.github.com/repos/xutl/yii2-bootstrap-tagsinput-asset/zipball/3e2b37cc6de4f1c5a60c02ee89b3dded4350e79d",
+                "reference": "3e2b37cc6de4f1c5a60c02ee89b3dded4350e79d",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/bootstrap-tagsinput": "~0.8.0",
                 "yiisoft/yii2": "~2.0.6"
             },
             "type": "yii2-extension",
@@ -1060,7 +1037,7 @@
                 "tags",
                 "tagsinput"
             ],
-            "time": "2017-08-21T02:31:15+00:00"
+            "time": "2017-09-23T13:06:36+00:00"
         },
         {
             "name": "xutl/yii2-cropper-asset",
@@ -2065,12 +2042,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-admin.git",
-                "reference": "3a8c0940b110fa9b33f81a85b88b9760aebaa025"
+                "reference": "c8c5264eca330ecb92788eed0000135b29d11e13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-admin/zipball/3a8c0940b110fa9b33f81a85b88b9760aebaa025",
-                "reference": "3a8c0940b110fa9b33f81a85b88b9760aebaa025",
+                "url": "https://api.github.com/repos/yuncms/yii2-admin/zipball/c8c5264eca330ecb92788eed0000135b29d11e13",
+                "reference": "c8c5264eca330ecb92788eed0000135b29d11e13",
                 "shasum": ""
             },
             "require": {
@@ -2088,7 +2065,7 @@
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
                         "sourceLanguage": "en-US",
-                        "basePath": "@yuncms/admin/message"
+                        "basePath": "@yuncms/admin/messages"
                     },
                     "migrationNamespace": "yuncms\\admin\\migrations",
                     "backend": {
@@ -2117,7 +2094,7 @@
                 "admin",
                 "yuncms"
             ],
-            "time": "2017-09-23T08:23:04+00:00"
+            "time": "2017-09-23T12:28:34+00:00"
         },
         {
             "name": "yuncms/yii2-article",
@@ -2125,12 +2102,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-article.git",
-                "reference": "fc569b15a95aab85fb322010e23216bdb8b7199a"
+                "reference": "130a7ebd7525e4c420d4cd0d359ebd680f2ba3b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-article/zipball/fc569b15a95aab85fb322010e23216bdb8b7199a",
-                "reference": "fc569b15a95aab85fb322010e23216bdb8b7199a",
+                "url": "https://api.github.com/repos/yuncms/yii2-article/zipball/130a7ebd7525e4c420d4cd0d359ebd680f2ba3b5",
+                "reference": "130a7ebd7525e4c420d4cd0d359ebd680f2ba3b5",
                 "shasum": ""
             },
             "require": {
@@ -2147,7 +2124,7 @@
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
                         "sourceLanguage": "en-US",
-                        "basePath": "@yuncms/article/message"
+                        "basePath": "@yuncms/article/messages"
                     },
                     "migrationNamespace": "yuncms\\article\\migrations",
                     "backend": {
@@ -2175,7 +2152,7 @@
                 "article",
                 "yuncms"
             ],
-            "time": "2017-09-23T08:23:14+00:00"
+            "time": "2017-09-23T12:28:27+00:00"
         },
         {
             "name": "yuncms/yii2-attachment",
@@ -2183,12 +2160,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-attachment.git",
-                "reference": "a7889e0c5cf71047fd7adfa3553903ba136dff8c"
+                "reference": "aed3ecd57c6ed9712d8867b2a470db06dfb1d657"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-attachment/zipball/a7889e0c5cf71047fd7adfa3553903ba136dff8c",
-                "reference": "a7889e0c5cf71047fd7adfa3553903ba136dff8c",
+                "url": "https://api.github.com/repos/yuncms/yii2-attachment/zipball/aed3ecd57c6ed9712d8867b2a470db06dfb1d657",
+                "reference": "aed3ecd57c6ed9712d8867b2a470db06dfb1d657",
                 "shasum": ""
             },
             "require": {
@@ -2202,7 +2179,7 @@
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
                         "sourceLanguage": "en-US",
-                        "basePath": "@yuncms/attachment/message"
+                        "basePath": "@yuncms/attachment/messages"
                     },
                     "migrationNamespace": "yuncms\\attachment\\migrations",
                     "backend": {
@@ -2231,7 +2208,7 @@
                 "yii2",
                 "yii2-attachment"
             ],
-            "time": "2017-09-23T08:23:20+00:00"
+            "time": "2017-09-23T12:28:19+00:00"
         },
         {
             "name": "yuncms/yii2-attention",
@@ -2239,12 +2216,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-attention.git",
-                "reference": "f61173b60c1cb8407d6f752abc6c512254704b88"
+                "reference": "31a7efb33de988efb85c45972fd3c391a20421a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-attention/zipball/f61173b60c1cb8407d6f752abc6c512254704b88",
-                "reference": "f61173b60c1cb8407d6f752abc6c512254704b88",
+                "url": "https://api.github.com/repos/yuncms/yii2-attention/zipball/31a7efb33de988efb85c45972fd3c391a20421a7",
+                "reference": "31a7efb33de988efb85c45972fd3c391a20421a7",
                 "shasum": ""
             },
             "require": {
@@ -2258,7 +2235,7 @@
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
                         "sourceLanguage": "en-US",
-                        "basePath": "@yuncms/attention/message"
+                        "basePath": "@yuncms/attention/messages"
                     },
                     "migrationNamespace": "yuncms\\attention\\migrations",
                     "backend": [],
@@ -2291,7 +2268,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-09-23T08:23:29+00:00"
+            "time": "2017-09-23T12:28:12+00:00"
         },
         {
             "name": "yuncms/yii2-authentication",
@@ -2299,12 +2276,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-authentication.git",
-                "reference": "66a7cdc7066eda703e4a4502353e04215e7e122c"
+                "reference": "188131a0bc04365b4f809e3277597752f573dd7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-authentication/zipball/66a7cdc7066eda703e4a4502353e04215e7e122c",
-                "reference": "66a7cdc7066eda703e4a4502353e04215e7e122c",
+                "url": "https://api.github.com/repos/yuncms/yii2-authentication/zipball/188131a0bc04365b4f809e3277597752f573dd7e",
+                "reference": "188131a0bc04365b4f809e3277597752f573dd7e",
                 "shasum": ""
             },
             "require": {
@@ -2320,7 +2297,7 @@
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
                         "sourceLanguage": "en-US",
-                        "basePath": "@yuncms/authentication/message"
+                        "basePath": "@yuncms/authentication/messages"
                     },
                     "migrationNamespace": "yuncms\\authentication\\migrations",
                     "backend": {
@@ -2355,7 +2332,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-09-23T08:23:36+00:00"
+            "time": "2017-09-23T12:28:04+00:00"
         },
         {
             "name": "yuncms/yii2-coin",
@@ -2363,12 +2340,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-coin.git",
-                "reference": "fb59ea0e6d1cddcaed958e85ecb6e5220f413a1b"
+                "reference": "60b74253c5f3cf3f96b45c0522b9d3ab5a88de49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-coin/zipball/fb59ea0e6d1cddcaed958e85ecb6e5220f413a1b",
-                "reference": "fb59ea0e6d1cddcaed958e85ecb6e5220f413a1b",
+                "url": "https://api.github.com/repos/yuncms/yii2-coin/zipball/60b74253c5f3cf3f96b45c0522b9d3ab5a88de49",
+                "reference": "60b74253c5f3cf3f96b45c0522b9d3ab5a88de49",
                 "shasum": ""
             },
             "require": {
@@ -2382,7 +2359,7 @@
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
                         "sourceLanguage": "en-US",
-                        "basePath": "@yuncms/coin/message"
+                        "basePath": "@yuncms/coin/messages"
                     },
                     "migrationNamespace": "yuncms\\coin\\migrations",
                     "backend": [],
@@ -2418,7 +2395,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-09-23T08:23:43+00:00"
+            "time": "2017-09-23T12:27:57+00:00"
         },
         {
             "name": "yuncms/yii2-collection",
@@ -2426,12 +2403,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-collection.git",
-                "reference": "3bba459c9f9e530f0bbd25b788ea6c51be4d1672"
+                "reference": "2459ad24e761efd0f0276333a8822922499562c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-collection/zipball/3bba459c9f9e530f0bbd25b788ea6c51be4d1672",
-                "reference": "3bba459c9f9e530f0bbd25b788ea6c51be4d1672",
+                "url": "https://api.github.com/repos/yuncms/yii2-collection/zipball/2459ad24e761efd0f0276333a8822922499562c6",
+                "reference": "2459ad24e761efd0f0276333a8822922499562c6",
                 "shasum": ""
             },
             "require": {
@@ -2445,7 +2422,7 @@
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
                         "sourceLanguage": "en-US",
-                        "basePath": "@yuncms/collection/message"
+                        "basePath": "@yuncms/collection/messages"
                     },
                     "migrationNamespace": "yuncms\\collection\\migrations",
                     "backend": [],
@@ -2478,7 +2455,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-09-23T08:23:53+00:00"
+            "time": "2017-09-23T12:27:50+00:00"
         },
         {
             "name": "yuncms/yii2-comment",
@@ -2486,12 +2463,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-comment.git",
-                "reference": "75a590bfddd69b878f600c1a289b95947a9b0a86"
+                "reference": "c860facf74ad30411b4e303cd6fd687f677b0ab4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-comment/zipball/75a590bfddd69b878f600c1a289b95947a9b0a86",
-                "reference": "75a590bfddd69b878f600c1a289b95947a9b0a86",
+                "url": "https://api.github.com/repos/yuncms/yii2-comment/zipball/c860facf74ad30411b4e303cd6fd687f677b0ab4",
+                "reference": "c860facf74ad30411b4e303cd6fd687f677b0ab4",
                 "shasum": ""
             },
             "require": {
@@ -2504,7 +2481,7 @@
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
                         "sourceLanguage": "en-US",
-                        "basePath": "@yuncms/comment/message"
+                        "basePath": "@yuncms/comment/messages"
                     },
                     "migrationNamespace": "yuncms\\comment\\migrations",
                     "backend": {
@@ -2532,7 +2509,7 @@
                 "comment",
                 "yuncms"
             ],
-            "time": "2017-09-23T08:24:00+00:00"
+            "time": "2017-09-23T12:27:43+00:00"
         },
         {
             "name": "yuncms/yii2-composer",
@@ -2591,12 +2568,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-credit.git",
-                "reference": "35fe0b88cf5fa71ae4ef73a7a3d3bf71a5239696"
+                "reference": "c7d0153d6d3b231b1e03130ba7ba9fc6fbdcbb9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-credit/zipball/35fe0b88cf5fa71ae4ef73a7a3d3bf71a5239696",
-                "reference": "35fe0b88cf5fa71ae4ef73a7a3d3bf71a5239696",
+                "url": "https://api.github.com/repos/yuncms/yii2-credit/zipball/c7d0153d6d3b231b1e03130ba7ba9fc6fbdcbb9a",
+                "reference": "c7d0153d6d3b231b1e03130ba7ba9fc6fbdcbb9a",
                 "shasum": ""
             },
             "require": {
@@ -2611,7 +2588,7 @@
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
                         "sourceLanguage": "en-US",
-                        "basePath": "@yuncms/credit/message"
+                        "basePath": "@yuncms/credit/messages"
                     },
                     "migrationNamespace": "yuncms\\credit\\migrations",
                     "backend": {
@@ -2647,7 +2624,7 @@
             "keywords": [
                 "credit"
             ],
-            "time": "2017-09-23T08:24:09+00:00"
+            "time": "2017-09-23T12:27:36+00:00"
         },
         {
             "name": "yuncms/yii2-doing",
@@ -2655,12 +2632,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-doing.git",
-                "reference": "d3a13dc60e9b5679c46afdc06396fb5005e7aace"
+                "reference": "e348cfbeb12ecb019edcaa032ab62bc5c6585883"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-doing/zipball/d3a13dc60e9b5679c46afdc06396fb5005e7aace",
-                "reference": "d3a13dc60e9b5679c46afdc06396fb5005e7aace",
+                "url": "https://api.github.com/repos/yuncms/yii2-doing/zipball/e348cfbeb12ecb019edcaa032ab62bc5c6585883",
+                "reference": "e348cfbeb12ecb019edcaa032ab62bc5c6585883",
                 "shasum": ""
             },
             "require": {
@@ -2674,7 +2651,7 @@
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
                         "sourceLanguage": "en-US",
-                        "basePath": "@yuncms/doing/message"
+                        "basePath": "@yuncms/doing/messages"
                     },
                     "migrationNamespace": "yuncms\\doing\\migrations",
                     "backend": [],
@@ -2710,7 +2687,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-09-23T08:24:16+00:00"
+            "time": "2017-09-23T12:27:28+00:00"
         },
         {
             "name": "yuncms/yii2-message",
@@ -2718,12 +2695,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-message.git",
-                "reference": "7ec6d2a1365bc1c57e93391b7d0d0f0103467a09"
+                "reference": "7492a917b5d263fcfa3374a23812f21d922262dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-message/zipball/7ec6d2a1365bc1c57e93391b7d0d0f0103467a09",
-                "reference": "7ec6d2a1365bc1c57e93391b7d0d0f0103467a09",
+                "url": "https://api.github.com/repos/yuncms/yii2-message/zipball/7492a917b5d263fcfa3374a23812f21d922262dc",
+                "reference": "7492a917b5d263fcfa3374a23812f21d922262dc",
                 "shasum": ""
             },
             "require": {
@@ -2744,7 +2721,7 @@
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
                         "sourceLanguage": "en-US",
-                        "basePath": "@yuncms/message/message"
+                        "basePath": "@yuncms/message/messages"
                     },
                     "migrationNamespace": "yuncms\\message\\migrations",
                     "backend": [],
@@ -2771,7 +2748,7 @@
                 "yii2",
                 "yii2-message"
             ],
-            "time": "2017-09-23T08:25:13+00:00"
+            "time": "2017-09-23T12:27:07+00:00"
         },
         {
             "name": "yuncms/yii2-note",
@@ -2779,12 +2756,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-note.git",
-                "reference": "a858eba37318bd99d9e0a04a25060ffd95cf0091"
+                "reference": "d68fb6536b712e1a34e740110d0405515605ec30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-note/zipball/a858eba37318bd99d9e0a04a25060ffd95cf0091",
-                "reference": "a858eba37318bd99d9e0a04a25060ffd95cf0091",
+                "url": "https://api.github.com/repos/yuncms/yii2-note/zipball/d68fb6536b712e1a34e740110d0405515605ec30",
+                "reference": "d68fb6536b712e1a34e740110d0405515605ec30",
                 "shasum": ""
             },
             "require": {
@@ -2801,7 +2778,7 @@
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
                         "sourceLanguage": "en-US",
-                        "basePath": "@yuncms/note/message"
+                        "basePath": "@yuncms/note/messages"
                     },
                     "migrationNamespace": "yuncms\\note\\migrations",
                     "backend": {
@@ -2830,7 +2807,7 @@
                 "yii",
                 "yii2-note"
             ],
-            "time": "2017-09-23T08:25:22+00:00"
+            "time": "2017-09-23T12:26:59+00:00"
         },
         {
             "name": "yuncms/yii2-notification",
@@ -2838,12 +2815,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-notification.git",
-                "reference": "7abe0ff7421a41025e82972c72b786add641081d"
+                "reference": "0df3b3ff8155a3c8d6995e9368cb6066e337aeb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-notification/zipball/7abe0ff7421a41025e82972c72b786add641081d",
-                "reference": "7abe0ff7421a41025e82972c72b786add641081d",
+                "url": "https://api.github.com/repos/yuncms/yii2-notification/zipball/0df3b3ff8155a3c8d6995e9368cb6066e337aeb6",
+                "reference": "0df3b3ff8155a3c8d6995e9368cb6066e337aeb6",
                 "shasum": ""
             },
             "require": {
@@ -2857,7 +2834,7 @@
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
                         "sourceLanguage": "en-US",
-                        "basePath": "@yuncms/notification/message"
+                        "basePath": "@yuncms/notification/messages"
                     },
                     "migrationNamespace": "yuncms\\notification\\migrations",
                     "backend": [],
@@ -2893,7 +2870,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-09-23T08:25:33+00:00"
+            "time": "2017-09-23T12:24:48+00:00"
         },
         {
             "name": "yuncms/yii2-oauth2",
@@ -2901,12 +2878,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-oauth2.git",
-                "reference": "8322e00601cf06428794dd4f05781d30722f7ff6"
+                "reference": "0b1461beb6feb3e4de92316a0bd58003fd54e3bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-oauth2/zipball/8322e00601cf06428794dd4f05781d30722f7ff6",
-                "reference": "8322e00601cf06428794dd4f05781d30722f7ff6",
+                "url": "https://api.github.com/repos/yuncms/yii2-oauth2/zipball/0b1461beb6feb3e4de92316a0bd58003fd54e3bf",
+                "reference": "0b1461beb6feb3e4de92316a0bd58003fd54e3bf",
                 "shasum": ""
             },
             "require": {
@@ -2921,7 +2898,7 @@
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
                         "sourceLanguage": "en-US",
-                        "basePath": "@yuncms/oauth2/message"
+                        "basePath": "@yuncms/oauth2/messages"
                     },
                     "migrationNamespace": "yuncms\\oauth2\\migrations",
                     "backend": {
@@ -2958,7 +2935,7 @@
                 "oauth2-server",
                 "yii2"
             ],
-            "time": "2017-09-23T08:25:40+00:00"
+            "time": "2017-09-23T12:24:30+00:00"
         },
         {
             "name": "yuncms/yii2-question",
@@ -2966,12 +2943,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-question.git",
-                "reference": "d6895b97baf5e12fca4282faab00dd5cd5e8ee91"
+                "reference": "488a68790cf52bf7505c25e7697b82ce6e374b76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-question/zipball/d6895b97baf5e12fca4282faab00dd5cd5e8ee91",
-                "reference": "d6895b97baf5e12fca4282faab00dd5cd5e8ee91",
+                "url": "https://api.github.com/repos/yuncms/yii2-question/zipball/488a68790cf52bf7505c25e7697b82ce6e374b76",
+                "reference": "488a68790cf52bf7505c25e7697b82ce6e374b76",
                 "shasum": ""
             },
             "require": {
@@ -2992,7 +2969,7 @@
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
                         "sourceLanguage": "en-US",
-                        "basePath": "@yuncms/question/message"
+                        "basePath": "@yuncms/question/messages"
                     },
                     "migrationNamespace": "yuncms\\question\\migrations",
                     "backend": {
@@ -3023,7 +3000,7 @@
                 "yii",
                 "yii-question"
             ],
-            "time": "2017-09-23T08:25:54+00:00"
+            "time": "2017-09-23T12:22:47+00:00"
         },
         {
             "name": "yuncms/yii2-summernote-widget",
@@ -3078,12 +3055,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-support.git",
-                "reference": "0388892846f42a7bd7cf4aa5659ccd3a03beafb6"
+                "reference": "486fa0d2af217a406c574ae88eec871d1abc34a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-support/zipball/0388892846f42a7bd7cf4aa5659ccd3a03beafb6",
-                "reference": "0388892846f42a7bd7cf4aa5659ccd3a03beafb6",
+                "url": "https://api.github.com/repos/yuncms/yii2-support/zipball/486fa0d2af217a406c574ae88eec871d1abc34a4",
+                "reference": "486fa0d2af217a406c574ae88eec871d1abc34a4",
                 "shasum": ""
             },
             "require": {
@@ -3097,7 +3074,7 @@
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
                         "sourceLanguage": "en-US",
-                        "basePath": "@yuncms/support/message"
+                        "basePath": "@yuncms/support/messages"
                     },
                     "migrationNamespace": "yuncms\\support\\migrations",
                     "backend": [],
@@ -3130,7 +3107,7 @@
                 "yii2",
                 "yii2-module"
             ],
-            "time": "2017-09-23T08:26:02+00:00"
+            "time": "2017-09-23T12:22:28+00:00"
         },
         {
             "name": "yuncms/yii2-system",
@@ -3204,12 +3181,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-tag.git",
-                "reference": "8d2f60af8ab077ef61380dabf33fde7804a22ea7"
+                "reference": "13ddc12f0d5567c1acbd50cdb14a8191ce0aa178"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-tag/zipball/8d2f60af8ab077ef61380dabf33fde7804a22ea7",
-                "reference": "8d2f60af8ab077ef61380dabf33fde7804a22ea7",
+                "url": "https://api.github.com/repos/yuncms/yii2-tag/zipball/13ddc12f0d5567c1acbd50cdb14a8191ce0aa178",
+                "reference": "13ddc12f0d5567c1acbd50cdb14a8191ce0aa178",
                 "shasum": ""
             },
             "require": {
@@ -3225,7 +3202,7 @@
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
                         "sourceLanguage": "en-US",
-                        "basePath": "@yuncms/tag/message"
+                        "basePath": "@yuncms/tag/messages"
                     },
                     "migrationNamespace": "yuncms\\tag\\migrations",
                     "backend": [],
@@ -3251,7 +3228,7 @@
                 "tags",
                 "yuncms"
             ],
-            "time": "2017-09-23T08:26:17+00:00"
+            "time": "2017-09-23T12:20:47+00:00"
         },
         {
             "name": "yuncms/yii2-ueditor-widget",
@@ -3306,12 +3283,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-user.git",
-                "reference": "c19fd25900ed9ba0e1a5f3c0edd361f856f25dcf"
+                "reference": "9cbe9f9e63d06f9d10e983ab0c5a411be61043cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-user/zipball/c19fd25900ed9ba0e1a5f3c0edd361f856f25dcf",
-                "reference": "c19fd25900ed9ba0e1a5f3c0edd361f856f25dcf",
+                "url": "https://api.github.com/repos/yuncms/yii2-user/zipball/9cbe9f9e63d06f9d10e983ab0c5a411be61043cb",
+                "reference": "9cbe9f9e63d06f9d10e983ab0c5a411be61043cb",
                 "shasum": ""
             },
             "require": {
@@ -3346,7 +3323,7 @@
                     "i18n": {
                         "class": "yii\\i18n\\PhpMessageSource",
                         "sourceLanguage": "en-US",
-                        "basePath": "@yuncms/user/message"
+                        "basePath": "@yuncms/user/messages"
                     },
                     "migrationNamespace": "yuncms\\user\\migrations",
                     "backend": {
@@ -3376,7 +3353,7 @@
                 "yii2",
                 "yii2-user"
             ],
-            "time": "2017-09-23T08:26:25+00:00"
+            "time": "2017-09-23T12:19:34+00:00"
         }
     ],
     "packages-dev": [
@@ -3390,7 +3367,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/Behat/Gherkin/0069ea0ca51f5d372096fe7b02b63d5aef97ef15.zip",
+                "url": "https://api.github.com/repos/Behat/Gherkin/zipball/0069ea0ca51f5d372096fe7b02b63d5aef97ef15",
                 "reference": "0069ea0ca51f5d372096fe7b02b63d5aef97ef15",
                 "shasum": ""
             },
@@ -3468,7 +3445,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/Codeception/base/eb3274a5dddeef8d8ca64b0414c0bf3c75bc9be9.zip",
+                "url": "https://api.github.com/repos/Codeception/base/zipball/eb3274a5dddeef8d8ca64b0414c0bf3c75bc9be9",
                 "reference": "eb3274a5dddeef8d8ca64b0414c0bf3c75bc9be9",
                 "shasum": ""
             },
@@ -3561,7 +3538,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/Codeception/Verify/5d649dda453cd814dadc4bb053060cd2c6bb4b4c.zip",
+                "url": "https://api.github.com/repos/Codeception/Verify/zipball/5d649dda453cd814dadc4bb053060cd2c6bb4b4c",
                 "reference": "5d649dda453cd814dadc4bb053060cd2c6bb4b4c",
                 "shasum": ""
             },
@@ -3597,7 +3574,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/doctrine/instantiator/7af8066e48b8a4cbd90849bbe9234ab444057968.zip",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/7af8066e48b8a4cbd90849bbe9234ab444057968",
                 "reference": "7af8066e48b8a4cbd90849bbe9234ab444057968",
                 "shasum": ""
             },
@@ -3649,7 +3626,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/fzaninotto/Faker/a8dbabd55659bbaa37abfccedc0fb3959f3ad1cf.zip",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/a8dbabd55659bbaa37abfccedc0fb3959f3ad1cf",
                 "reference": "a8dbabd55659bbaa37abfccedc0fb3959f3ad1cf",
                 "shasum": ""
             },
@@ -3699,7 +3676,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/guzzle/psr7/811b676fbab9c99e359885032e5ebc70e442f5b8.zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/811b676fbab9c99e359885032e5ebc70e442f5b8",
                 "reference": "811b676fbab9c99e359885032e5ebc70e442f5b8",
                 "shasum": ""
             },
@@ -3764,7 +3741,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/myclabs/DeepCopy/8e6e04167378abf1ddb4d3522d8755c5fd90d102.zip",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/8e6e04167378abf1ddb4d3522d8755c5fd90d102",
                 "reference": "8e6e04167378abf1ddb4d3522d8755c5fd90d102",
                 "shasum": ""
             },
@@ -3806,7 +3783,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/phar-io/manifest/014feadb268809af7c8e2f7ccd396b8494901f58.zip",
+                "url": "https://api.github.com/repos/phar-io/manifest/zipball/014feadb268809af7c8e2f7ccd396b8494901f58",
                 "reference": "014feadb268809af7c8e2f7ccd396b8494901f58",
                 "shasum": ""
             },
@@ -3861,7 +3838,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/phar-io/version/a70c0ced4be299a63d32fa96d9281d03e94041df.zip",
+                "url": "https://api.github.com/repos/phar-io/version/zipball/a70c0ced4be299a63d32fa96d9281d03e94041df",
                 "reference": "a70c0ced4be299a63d32fa96d9281d03e94041df",
                 "shasum": ""
             },
@@ -3908,7 +3885,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/phpDocumentor/ReflectionCommon/21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6.zip",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
                 "reference": "21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
                 "shasum": ""
             },
@@ -3962,7 +3939,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/phpDocumentor/ReflectionDocBlock/2d3d238c433cf69caeb4842e97a3223a116f94b2.zip",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/2d3d238c433cf69caeb4842e97a3223a116f94b2",
                 "reference": "2d3d238c433cf69caeb4842e97a3223a116f94b2",
                 "shasum": ""
             },
@@ -4007,7 +3984,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/phpDocumentor/TypeResolver/9c977708995954784726e25d0cd1dddf4e65b0f7.zip",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/9c977708995954784726e25d0cd1dddf4e65b0f7",
                 "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7",
                 "shasum": ""
             },
@@ -4054,7 +4031,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/phpspec/php-diff/0464787bfa7cd13576c5a1e318709768798bec6a.zip",
+                "url": "https://api.github.com/repos/phpspec/php-diff/zipball/0464787bfa7cd13576c5a1e318709768798bec6a",
                 "reference": "0464787bfa7cd13576c5a1e318709768798bec6a",
                 "shasum": ""
             },
@@ -4092,7 +4069,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/phpspec/prophecy/c9b8c6088acd19d769d4cc0ffa60a9fe34344bd6.zip",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/c9b8c6088acd19d769d4cc0ffa60a9fe34344bd6",
                 "reference": "c9b8c6088acd19d769d4cc0ffa60a9fe34344bd6",
                 "shasum": ""
             },
@@ -4155,7 +4132,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/php-code-coverage/77a1ba8076365f943e2a3d75573b6c9822840ac6.zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/77a1ba8076365f943e2a3d75573b6c9822840ac6",
                 "reference": "77a1ba8076365f943e2a3d75573b6c9822840ac6",
                 "shasum": ""
             },
@@ -4219,7 +4196,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/php-file-iterator/3cc8f69b3028d0f96a9078e6295d86e9bf019be5.zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/3cc8f69b3028d0f96a9078e6295d86e9bf019be5",
                 "reference": "3cc8f69b3028d0f96a9078e6295d86e9bf019be5",
                 "shasum": ""
             },
@@ -4266,7 +4243,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/php-text-template/31f8b717e51d9a2afca6c9f046f5d69fc27c8686.zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
                 "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
                 "shasum": ""
             },
@@ -4307,7 +4284,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/php-timer/d107f347d368dd8a384601398280c7c608390ab7.zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/d107f347d368dd8a384601398280c7c608390ab7",
                 "reference": "d107f347d368dd8a384601398280c7c608390ab7",
                 "shasum": ""
             },
@@ -4356,7 +4333,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/php-token-stream/9a02332089ac48e704c70f6cefed30c224e3c0b0.zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/9a02332089ac48e704c70f6cefed30c224e3c0b0",
                 "reference": "9a02332089ac48e704c70f6cefed30c224e3c0b0",
                 "shasum": ""
             },
@@ -4405,7 +4382,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/phpunit/ff3a76a58ac293657808aefd58c8aaf05945f4d9.zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ff3a76a58ac293657808aefd58c8aaf05945f4d9",
                 "reference": "ff3a76a58ac293657808aefd58c8aaf05945f4d9",
                 "shasum": ""
             },
@@ -4489,7 +4466,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/phpunit-mock-objects/2f789b59ab89669015ad984afa350c4ec577ade0.zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/2f789b59ab89669015ad984afa350c4ec577ade0",
                 "reference": "2f789b59ab89669015ad984afa350c4ec577ade0",
                 "shasum": ""
             },
@@ -4548,7 +4525,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/php-fig/http-message/f6561bf28d520154e4b0ec72be95418abe6d9363.zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
                 "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
                 "shasum": ""
             },
@@ -4598,7 +4575,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/php-fig/log/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d.zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
                 "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
                 "shasum": ""
             },
@@ -4645,7 +4622,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/code-unit-reverse-lookup/3488be0a7b346cd6e5361510ed07e88f9bea2e88.zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/code-unit-reverse-lookup/zipball/3488be0a7b346cd6e5361510ed07e88f9bea2e88",
                 "reference": "3488be0a7b346cd6e5361510ed07e88f9bea2e88",
                 "shasum": ""
             },
@@ -4690,7 +4667,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/comparator/20f84f468cb67efee293246e6a09619b891f55f0.zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/20f84f468cb67efee293246e6a09619b891f55f0",
                 "reference": "20f84f468cb67efee293246e6a09619b891f55f0",
                 "shasum": ""
             },
@@ -4754,7 +4731,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/diff/7f066a26a962dbe58ddea9f72a4e82874a3975a4.zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/7f066a26a962dbe58ddea9f72a4e82874a3975a4",
                 "reference": "7f066a26a962dbe58ddea9f72a4e82874a3975a4",
                 "shasum": ""
             },
@@ -4806,7 +4783,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/environment/cd0871b3975fb7fc44d11314fd1ee20925fce4f5.zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/cd0871b3975fb7fc44d11314fd1ee20925fce4f5",
                 "reference": "cd0871b3975fb7fc44d11314fd1ee20925fce4f5",
                 "shasum": ""
             },
@@ -4856,7 +4833,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/exporter/234199f4528de6d12aaa58b612e98f7d36adb937.zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/234199f4528de6d12aaa58b612e98f7d36adb937",
                 "reference": "234199f4528de6d12aaa58b612e98f7d36adb937",
                 "shasum": ""
             },
@@ -4923,7 +4900,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/global-state/e8ba02eed7bbbb9e59e43dedd3dddeff4a56b0c4.zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/e8ba02eed7bbbb9e59e43dedd3dddeff4a56b0c4",
                 "reference": "e8ba02eed7bbbb9e59e43dedd3dddeff4a56b0c4",
                 "shasum": ""
             },
@@ -4974,7 +4951,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/object-enumerator/7cfd9e65d11ffb5af41198476395774d4c8a84c5.zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/object-enumerator/zipball/7cfd9e65d11ffb5af41198476395774d4c8a84c5",
                 "reference": "7cfd9e65d11ffb5af41198476395774d4c8a84c5",
                 "shasum": ""
             },
@@ -5021,7 +4998,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/object-reflector/773f97c67f28de00d397be301821b06708fca0be.zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/object-reflector/zipball/773f97c67f28de00d397be301821b06708fca0be",
                 "reference": "773f97c67f28de00d397be301821b06708fca0be",
                 "shasum": ""
             },
@@ -5066,7 +5043,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/recursion-context/a0e54bc9bf04e2c5b302236984cebc277631f0f1.zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/a0e54bc9bf04e2c5b302236984cebc277631f0f1",
                 "reference": "a0e54bc9bf04e2c5b302236984cebc277631f0f1",
                 "shasum": ""
             },
@@ -5119,7 +5096,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/resource-operations/fadc83f7c41fb2924e542635fea47ae546816ece.zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/resource-operations/zipball/fadc83f7c41fb2924e542635fea47ae546816ece",
                 "reference": "fadc83f7c41fb2924e542635fea47ae546816ece",
                 "shasum": ""
             },
@@ -5161,7 +5138,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/version/99732be0ddb3361e16ad77b68ba41efc8e979019.zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/version/zipball/99732be0ddb3361e16ad77b68ba41efc8e979019",
                 "reference": "99732be0ddb3361e16ad77b68ba41efc8e979019",
                 "shasum": ""
             },
@@ -5204,7 +5181,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/stecman/symfony-console-completion/5461d43e53092b3d3b9dbd9d999f2054730f4bbb.zip",
+                "url": "https://api.github.com/repos/stecman/symfony-console-completion/zipball/5461d43e53092b3d3b9dbd9d999f2054730f4bbb",
                 "reference": "5461d43e53092b3d3b9dbd9d999f2054730f4bbb",
                 "shasum": ""
             },
@@ -5249,7 +5226,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/browser-kit/b75564b5d11cd7aef9528fcfc6a701ba26d5b6dc.zip",
+                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/b75564b5d11cd7aef9528fcfc6a701ba26d5b6dc",
                 "reference": "b75564b5d11cd7aef9528fcfc6a701ba26d5b6dc",
                 "shasum": ""
             },
@@ -5306,7 +5283,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/console/90e1e8682abc51dbf679ef3cdc304424a3075f2f.zip",
+                "url": "https://api.github.com/repos/symfony/console/zipball/90e1e8682abc51dbf679ef3cdc304424a3075f2f",
                 "reference": "90e1e8682abc51dbf679ef3cdc304424a3075f2f",
                 "shasum": ""
             },
@@ -5375,7 +5352,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/css-selector/0fb45a835b60085d00ad92261829d2fd1243f01b.zip",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/0fb45a835b60085d00ad92261829d2fd1243f01b",
                 "reference": "0fb45a835b60085d00ad92261829d2fd1243f01b",
                 "shasum": ""
             },
@@ -5428,7 +5405,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/debug/82a670d33fdb850d6ffed6e0e1a29591fb541365.zip",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/82a670d33fdb850d6ffed6e0e1a29591fb541365",
                 "reference": "82a670d33fdb850d6ffed6e0e1a29591fb541365",
                 "shasum": ""
             },
@@ -5484,7 +5461,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/dom-crawler/407a9b933209f5291b1b90ec0ed1298fcfba3026.zip",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/407a9b933209f5291b1b90ec0ed1298fcfba3026",
                 "reference": "407a9b933209f5291b1b90ec0ed1298fcfba3026",
                 "shasum": ""
             },
@@ -5540,7 +5517,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/event-dispatcher/2766c22a2a7d2a8317c575c2912f61ed39684107.zip",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/2766c22a2a7d2a8317c575c2912f61ed39684107",
                 "reference": "2766c22a2a7d2a8317c575c2912f61ed39684107",
                 "shasum": ""
             },
@@ -5603,7 +5580,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/finder/985b4788f55362bb73e632c431221d5887bded12.zip",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/985b4788f55362bb73e632c431221d5887bded12",
                 "reference": "985b4788f55362bb73e632c431221d5887bded12",
                 "shasum": ""
             },
@@ -5652,7 +5629,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/polyfill-mbstring/7c8fae0ac1d216eb54349e6a8baa57d515fe8803.zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/7c8fae0ac1d216eb54349e6a8baa57d515fe8803",
                 "reference": "7c8fae0ac1d216eb54349e6a8baa57d515fe8803",
                 "shasum": ""
             },
@@ -5711,7 +5688,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/yaml/a0e15688972f012156cf1ffa076fe1203bce6bc9.zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/a0e15688972f012156cf1ffa076fe1203bce6bc9",
                 "reference": "a0e15688972f012156cf1ffa076fe1203bce6bc9",
                 "shasum": ""
             },
@@ -5769,7 +5746,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/theseer/tokenizer/cb2f008f3f05af2893a87208fe6a6c4985483f8b.zip",
+                "url": "https://api.github.com/repos/theseer/tokenizer/zipball/cb2f008f3f05af2893a87208fe6a6c4985483f8b",
                 "reference": "cb2f008f3f05af2893a87208fe6a6c4985483f8b",
                 "shasum": ""
             },
@@ -5809,7 +5786,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/webmozart/assert/4a8bf11547e139e77b651365113fc12850c43d9a.zip",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/4a8bf11547e139e77b651365113fc12850c43d9a",
                 "reference": "4a8bf11547e139e77b651365113fc12850c43d9a",
                 "shasum": ""
             },
@@ -5859,7 +5836,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-debug/e158aea48b699eaddf306f4f00c8c168539ec5d4.zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/e158aea48b699eaddf306f4f00c8c168539ec5d4",
                 "reference": "e158aea48b699eaddf306f4f00c8c168539ec5d4",
                 "shasum": ""
             },
@@ -5906,7 +5883,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-faker/ed09caef15777a867f386158f84ea75b84053dff.zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-faker/zipball/ed09caef15777a867f386158f84ea75b84053dff",
                 "reference": "ed09caef15777a867f386158f84ea75b84053dff",
                 "shasum": ""
             },
@@ -5953,7 +5930,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-gii/7d60ee3268d5dbf43bfbf22c540f8f87320579d0.zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/7d60ee3268d5dbf43bfbf22c540f8f87320579d0",
                 "reference": "7d60ee3268d5dbf43bfbf22c540f8f87320579d0",
                 "shasum": ""
             },
