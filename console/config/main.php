@@ -28,8 +28,7 @@ return [
             'class' => 'yii\console\controllers\MigrateController',
             'templateFile' => '@app/views/migration.php',
             'interactive' => 0,//自动应答
-            // 完全禁用非命名空间迁移
-            'migrationPath' => null,
+            'migrationPath' => null,// 完全禁用非命名空间迁移
             'migrationNamespaces' => $migrationNamespaces,
         ],
     ],

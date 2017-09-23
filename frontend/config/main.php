@@ -6,6 +6,7 @@ $params = array_merge(
     require(__DIR__ . '/params-local.php')
 );
 $modules = array_merge(
+    require(__DIR__ . '/../../vendor/yuncms/modules.php'),
     require(__DIR__ . '/../../common/config/modules.php'),
     require(__DIR__ . '/../../common/config/modules-local.php'),
     require(__DIR__ . '/modules.php'),
