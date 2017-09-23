@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "714244cb20eb4b18e0f61ed40ec126c9",
+    "content-hash": "2a29bf93e9ac3af34ee5c480d2f98fc9",
     "packages": [
         {
             "name": "2amigos/qrcode-library",
@@ -453,7 +453,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/bc31baa11ea2883e017f0a10d9722ef9d50eac1c",
+                "url": "https://files.phpcomposer.com/files/egulias/EmailValidator/bc31baa11ea2883e017f0a10d9722ef9d50eac1c.zip",
                 "reference": "bc31baa11ea2883e017f0a10d9722ef9d50eac1c",
                 "shasum": ""
             },
@@ -510,7 +510,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/95e1bae3182efc0f3422896a3236e991049dac69",
+                "url": "https://files.phpcomposer.com/files/ezyang/htmlpurifier/95e1bae3182efc0f3422896a3236e991049dac69.zip",
                 "reference": "95e1bae3182efc0f3422896a3236e991049dac69",
                 "shasum": ""
             },
@@ -557,7 +557,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/avalanche123/Imagine/zipball/149041d2a1b517107bfe270ca2b1a17aa341715d",
+                "url": "https://files.phpcomposer.com/files/avalanche123/Imagine/149041d2a1b517107bfe270ca2b1a17aa341715d.zip",
                 "reference": "149041d2a1b517107bfe270ca2b1a17aa341715d",
                 "shasum": ""
             },
@@ -614,7 +614,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jakeasmith/http_build_url/zipball/93c273e77cb1edead0cf8bcf8cd2003428e74e37",
+                "url": "https://files.phpcomposer.com/files/jakeasmith/http_build_url/93c273e77cb1edead0cf8bcf8cd2003428e74e37.zip",
                 "reference": "93c273e77cb1edead0cf8bcf8cd2003428e74e37",
                 "shasum": ""
             },
@@ -949,7 +949,7 @@
             ],
             "authors": [
                 {
-                    "name": "XuTL",
+                    "name": "XuTl",
                     "email": "xutl@gmail.com"
                 }
             ],
@@ -971,7 +971,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xutl/yii2-cropper-asset/zipball/4f2040ab2452947feb1a9ad912f7f949eda9fb35",
+                "url": "https://files.phpcomposer.com/files/xutl/yii2-cropper-asset/4f2040ab2452947feb1a9ad912f7f949eda9fb35.zip",
                 "reference": "4f2040ab2452947feb1a9ad912f7f949eda9fb35",
                 "shasum": ""
             },
@@ -991,7 +991,7 @@
             ],
             "authors": [
                 {
-                    "name": "XuTL",
+                    "name": "XuTl",
                     "email": "xutl@gmail.com"
                 }
             ],
@@ -1095,7 +1095,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xutl/yii2-fontawesome-asset/zipball/a28b83ba4258de8ae66da4b6ce9e04b8e4fc288e",
+                "url": "https://files.phpcomposer.com/files/xutl/yii2-fontawesome-asset/a28b83ba4258de8ae66da4b6ce9e04b8e4fc288e.zip",
                 "reference": "a28b83ba4258de8ae66da4b6ce9e04b8e4fc288e",
                 "shasum": ""
             },
@@ -1116,7 +1116,7 @@
             ],
             "authors": [
                 {
-                    "name": "xutl",
+                    "name": "XuTL",
                     "email": "xutl@gmail.com"
                 }
             ],
@@ -1157,7 +1157,7 @@
             ],
             "authors": [
                 {
-                    "name": "XuTL",
+                    "name": "XUTL",
                     "email": "xutl@gmail.com"
                 }
             ],
@@ -1178,7 +1178,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xutl/yii2-id98/zipball/b9f7d5352153555b76f4243a4dab726171a1d657",
+                "url": "https://files.phpcomposer.com/files/xutl/yii2-id98/b9f7d5352153555b76f4243a4dab726171a1d657.zip",
                 "reference": "b9f7d5352153555b76f4243a4dab726171a1d657",
                 "shasum": ""
             },
@@ -1454,7 +1454,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-authclient/zipball/eec33d8584558aac1ec8d68ba605a898cee2d6e8",
+                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-authclient/eec33d8584558aac1ec8d68ba605a898cee2d6e8.zip",
                 "reference": "eec33d8584558aac1ec8d68ba605a898cee2d6e8",
                 "shasum": ""
             },
@@ -1649,7 +1649,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-imagine/zipball/59dcd0b43c2b0e5495c7e5c0320e2cbc1cd57411",
+                "url": "https://files.phpcomposer.com/files/yiisoft/yii2-imagine/59dcd0b43c2b0e5495c7e5c0320e2cbc1cd57411.zip",
                 "reference": "59dcd0b43c2b0e5495c7e5c0320e2cbc1cd57411",
                 "shasum": ""
             },
@@ -1960,16 +1960,16 @@
         },
         {
             "name": "yuncms/yii2-admin",
-            "version": "2.2.4",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-admin.git",
-                "reference": "9327a324832085349de5868ad523bfe3550a5195"
+                "reference": "6f764aac154e514524520c99934d27e4ca73740c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-admin/zipball/9327a324832085349de5868ad523bfe3550a5195",
-                "reference": "9327a324832085349de5868ad523bfe3550a5195",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-admin/6f764aac154e514524520c99934d27e4ca73740c.zip",
+                "reference": "6f764aac154e514524520c99934d27e4ca73740c",
                 "shasum": ""
             },
             "require": {
@@ -1981,6 +1981,23 @@
                 "yuncms/yii2-user": "~2.0"
             },
             "type": "yii2-extension",
+            "extra": {
+                "yuncms": {
+                    "name": "admin",
+                    "i18n": {
+                        "class": "yii\\i18n\\PhpMessageSource",
+                        "basePath": "@yuncms/admin/message"
+                    },
+                    "migrationNamespace": "@yuncms/admin/migrations",
+                    "backend": {
+                        "class": "yuncms\\admin\\Module"
+                    },
+                    "frontend": []
+                },
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
             "autoload": {
                 "files": [
                     "helpers.php"
@@ -1998,7 +2015,7 @@
                 "admin",
                 "yuncms"
             ],
-            "time": "2017-08-18T06:39:51+00:00"
+            "time": "2017-09-22T09:37:35+00:00"
         },
         {
             "name": "yuncms/yii2-article",
@@ -2410,16 +2427,16 @@
         },
         {
             "name": "yuncms/yii2-composer",
-            "version": "1.0.0.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-composer.git",
-                "reference": "499b0556f4a9b67fa92775db3da61b46ab6cad20"
+                "reference": "921cd920a043e1a26844f4753f004799f32a328a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-composer/499b0556f4a9b67fa92775db3da61b46ab6cad20.zip",
-                "reference": "499b0556f4a9b67fa92775db3da61b46ab6cad20",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-composer/921cd920a043e1a26844f4753f004799f32a328a.zip",
+                "reference": "921cd920a043e1a26844f4753f004799f32a328a",
                 "shasum": ""
             },
             "require": {
@@ -2446,8 +2463,8 @@
             ],
             "authors": [
                 {
-                    "name": "XUTL",
-                    "email": "xutl@gmail.com"
+                    "name": "Tongle Xu",
+                    "email": "xutongle@gmail.com"
                 }
             ],
             "description": "The composer plugin for yuncms module installer",
@@ -2457,7 +2474,7 @@
                 "yii2",
                 "yuncms"
             ],
-            "time": "2017-09-22T23:53:55+00:00"
+            "time": "2017-09-23T05:36:51+00:00"
         },
         {
             "name": "yuncms/yii2-credit",
@@ -3004,16 +3021,16 @@
         },
         {
             "name": "yuncms/yii2-system",
-            "version": "2.0.0.5",
+            "version": "2.0.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-system.git",
-                "reference": "4d60e60b400ef63ab05687d756ca512122ba2f42"
+                "reference": "c9fa5e3adc8bb9304125493df44dcd43df3dfd83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/yuncms/yii2-system/4d60e60b400ef63ab05687d756ca512122ba2f42.zip",
-                "reference": "4d60e60b400ef63ab05687d756ca512122ba2f42",
+                "url": "https://files.phpcomposer.com/files/yuncms/yii2-system/c9fa5e3adc8bb9304125493df44dcd43df3dfd83.zip",
+                "reference": "c9fa5e3adc8bb9304125493df44dcd43df3dfd83",
                 "shasum": ""
             },
             "require": {
@@ -3021,7 +3038,7 @@
                 "yii2tech/ar-position": "~1.0",
                 "yiisoft/yii2": "~2.0.6",
                 "yiisoft/yii2-queue": "~2.0.0",
-                "yuncms/yii2-composer": "~1.0.0",
+                "yuncms/yii2-composer": "~2.0.0",
                 "yuncms/yii2-ueditor-widget": "~1.0"
             },
             "require-dev": {
@@ -3066,7 +3083,7 @@
                 "system",
                 "yuncms"
             ],
-            "time": "2017-09-23T00:58:57+00:00"
+            "time": "2017-09-23T05:34:57+00:00"
         },
         {
             "name": "yuncms/yii2-tag",
