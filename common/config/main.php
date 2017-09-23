@@ -1,21 +1,4 @@
 <?php
-
-//合并语言包配置
-$translations = array_merge(
-    require(__DIR__ . '/../../vendor/yuncms/i18n.php'),
-    [
-        'app*' => [
-            'class' => 'yii\i18n\PhpMessageSource',
-            //'basePath' => '@app/messages',
-            'sourceLanguage' => 'en-GB',
-            'fileMap' => [
-                'app' => 'app.php',
-                'app/error' => 'error.php',
-            ],
-        ],
-    ]
-);
-
 return [
     'language' => 'zh-CN',
     'sourceLanguage' => 'en-US',
@@ -36,6 +19,9 @@ return [
             'dateFormat' => 'php:Y-M-d',
             'datetimeFormat' => 'php:Y-m-d H:i:s',
             'timeFormat' => 'php:H:i:s',
+        ],
+        'i18n' => [
+            'translations' => require(__DIR__ . '/translations.php'),
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -64,10 +50,6 @@ return [
                 ],
             ],
         ],
-        'i18n' => [
-            'translations' => $translations
-        ],
-
     ],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
