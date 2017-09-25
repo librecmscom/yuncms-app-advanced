@@ -17,11 +17,11 @@ class WebSocketController extends Controller
 {
     public $port = 9501;
 
-    private $_server;
+    private $server;
 
     public function init()
     {
-        $this->server = new \swoole_websocket_server("0.0.0.0", 9501);
+        $this->server = new \swoole\websocket\server("0.0.0.0", 9501);
         $this->server->on('workerStart', function ($server, $workerId) {
             $client = new \swoole_redis;
             $client->on('message', function (\swoole_redis $client, $result) use ($server) {
