@@ -4,8 +4,6 @@
  * @copyright Copyright (c) 2012 TintSoft Technology Co. Ltd.
  * @license http://www.tintsoft.com/license/
  */
-//合并语言包配置
-//合并语言包配置
 return [
     'translations' => array_merge(
         require(__DIR__ . '/../../vendor/yuncms/i18n.php'),
