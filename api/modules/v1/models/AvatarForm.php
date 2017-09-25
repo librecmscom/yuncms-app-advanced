@@ -7,6 +7,7 @@
 
 namespace api\modules\v1\models;
 
+use api\models\User;
 use Yii;
 use yii\base\Model;
 use yii\imagine\Image;

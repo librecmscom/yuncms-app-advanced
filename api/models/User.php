@@ -5,10 +5,10 @@
  * @license http://www.tintsoft.com/license/
  */
 
-namespace api\modules\v1\models;
+namespace api\models;
 
-use yii\helpers\Url;
 use yii\web\Link;
+use yii\helpers\Url;
 
 /**
  * Class User

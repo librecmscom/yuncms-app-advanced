@@ -9,7 +9,9 @@ namespace api\modules\v1\controllers;
 
 use Yii;
 use yii\web\ForbiddenHttpException;
+use yii\web\NotFoundHttpException;
 use yii\web\ServerErrorHttpException;
+use api\models\Profile;
 use api\modules\v1\ActiveController;
 use api\modules\v1\models\AvatarForm;
 
@@ -19,7 +21,7 @@ use api\modules\v1\models\AvatarForm;
  */
 class UserController extends ActiveController
 {
-    public $modelClass = 'api\modules\v1\models\User';
+    public $modelClass = 'api\models\User';
 
     /**
      * @var string the scenario used for updating a model.
@@ -53,6 +55,56 @@ class UserController extends ActiveController
             'me' => ['GET'],
             'profile' => ['GET', 'PUT', 'PATCH'],
         ];
+    }
+
+    /**
+     * 读取用户扩展数据
+     * @return \yuncms\user\models\Extend
+     */
+    public function actionExtend()
+    {
+        /** @var \yuncms\user\models\User $user */
+        $user = Yii::$app->user->identity;
+        return $user->extend;
+    }
+
+    /**
+     * 获取个人基本资料
+     * @return array
+     */
+    public function actionMe()
+    {
+        /** @var \yuncms\user\models\User $user */
+        $user = Yii::$app->user->identity;
+        return [
+            'id' => $user->id,
+            'username' => $user->username,
+            'nickname' => $user->nickname,
+            'email' => $user->email,
+            'mobile' => $user->mobile,
+            'faceUrl' => $user->getAvatar()
+        ];
+    }
+
+    /**
+     * 获取个人扩展资料
+     * @return Profile
+     * @throws NotFoundHttpException
+     * @throws ServerErrorHttpException
+     */
+    public function actionProfile()
+    {
+        if (($model = Profile::findOne(['user_id' => Yii::$app->user->identity->getId()])) !== null) {
+            if (!Yii::$app->request->isGet) {
+                $model->load(Yii::$app->getRequest()->getBodyParams(), '');
+                if ($model->save() === false && !$model->hasErrors()) {
+                    throw new ServerErrorHttpException('Failed to update the object for unknown reason.');
+                }
+            }
+            return $model;
+        } else {
+            throw new NotFoundHttpException (Yii::t('yii', 'The requested page does not exist.'));
+        }
     }
 
     /**
