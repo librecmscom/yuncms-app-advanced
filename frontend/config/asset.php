@@ -14,28 +14,42 @@ return [
     'cssCompressor' => 'java -jar bin/yuicompressor-2.4.2.jar --type css {from} -o {to}',
     // The list of asset bundles to compress:
     'bundles' => [
-        // 'app\assets\AppAsset',
         'yii\web\YiiAsset',
-        'yii\web\JqueryAsset',
         'yii\captcha\CaptchaAsset',
         'yii\validators\ValidationAsset',
         'yii\widgets\ActiveFormAsset',
         'yii\grid\GridViewAsset',
-        'xutl\fmt\Asset'
+        'xutl\fmt\Asset',
+        'yuncms\user\frontend\assets\UserAsset',
+        'yuncms\user\frontend\assets\CropperAsset',
+
+        'frontend\assets\AppAsset',//当前依赖
+
+        //以下是 CDN资源，如果不写，那么生成的文件就不包含CDN资源定义。
+        'yii\bootstrap\BootstrapAsset',
+        'yii\bootstrap\BootstrapPluginAsset',
+        'yii\web\JqueryAsset',
+        'yii\widgets\MaskedInputAsset',
+        'yii\jui\JuiAsset',
+        'xutl\fontawesome\Asset',
+        'xutl\cropper\CropperAsset',
+        'xutl\select2\Select2Asset',
+        'xutl\bootstrap\filestyle\FilestyleAsset'
     ],
     // Asset bundle for compression output:
     'targets' => [
-        'all' => [
+        'vendor' => [
             'class' => 'yii\web\AssetBundle',
             'basePath' => '@webroot/assets',
             'baseUrl' => '@web/assets',
-            'js' => 'all-{hash}.js',
-            'css' => 'all-{hash}.css',
+            'js' => 'vendor-{hash}.js',
+            'css' => 'vendor-{hash}.css',
         ],
     ],
     // Asset manager configuration:
     'assetManager' => [
         'basePath' => '@webroot/assets',
         'baseUrl' => '@web/assets',
+        'bundles' => require(__DIR__ . '/AssetBundles.php'),
     ],
 ];

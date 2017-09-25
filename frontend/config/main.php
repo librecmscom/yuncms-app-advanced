@@ -46,7 +46,8 @@ return [
         'assetManager' => [//前端资源压缩
             'linkAssets' => PHP_OS == 'WINNT' ? false : true,
             'appendTimestamp' => true,
-            'bundles' => require(__DIR__ . '/AssetBundles.php'),
+            //'bundles' => require(__DIR__ . '/assets_compressed.php'),//打包编译本地资源,包含CDN资源
+            'bundles' => require(__DIR__ . '/AssetBundles.php'),//仅定义CDN资源
         ],
         'view' => [
             'theme' => require(__DIR__ . '/theme.php'),
