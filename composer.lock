@@ -2102,18 +2102,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-article.git",
-                "reference": "130a7ebd7525e4c420d4cd0d359ebd680f2ba3b5"
+                "reference": "fef04fc4f048bbfa08bf65beabb4bd9bf0ad7779"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-article/zipball/130a7ebd7525e4c420d4cd0d359ebd680f2ba3b5",
-                "reference": "130a7ebd7525e4c420d4cd0d359ebd680f2ba3b5",
+                "url": "https://api.github.com/repos/yuncms/yii2-article/zipball/fef04fc4f048bbfa08bf65beabb4bd9bf0ad7779",
+                "reference": "fef04fc4f048bbfa08bf65beabb4bd9bf0ad7779",
                 "shasum": ""
             },
             "require": {
                 "xutl/yii2-fileupload-widget": "~1.0",
                 "yiisoft/yii2": "~2.0.6",
                 "yiisoft/yii2-queue": "~2.0.0",
+                "yuncms/yii2-collection": "~1.0.0",
                 "yuncms/yii2-ueditor-widget": "~1.0.0",
                 "yuncms/yii2-user": "~2.0"
             },
@@ -2152,7 +2153,7 @@
                 "article",
                 "yuncms"
             ],
-            "time": "2017-09-23T12:28:27+00:00"
+            "time": "2017-09-25T05:56:41+00:00"
         },
         {
             "name": "yuncms/yii2-attachment",
@@ -2756,12 +2757,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-note.git",
-                "reference": "d68fb6536b712e1a34e740110d0405515605ec30"
+                "reference": "e11075ce54947b63149f623f25409f1b3f99b5ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-note/zipball/d68fb6536b712e1a34e740110d0405515605ec30",
-                "reference": "d68fb6536b712e1a34e740110d0405515605ec30",
+                "url": "https://api.github.com/repos/yuncms/yii2-note/zipball/e11075ce54947b63149f623f25409f1b3f99b5ff",
+                "reference": "e11075ce54947b63149f623f25409f1b3f99b5ff",
                 "shasum": ""
             },
             "require": {
@@ -2769,6 +2770,7 @@
                 "xutl/yii2-highlightjs-widget": "~2.0",
                 "xutl/yii2-select2-widget": "~1.0",
                 "yiisoft/yii2": "~2.0.6",
+                "yuncms/yii2-collection": "~1.0.0",
                 "yuncms/yii2-user": "~2.0"
             },
             "type": "yii2-extension",
@@ -2807,7 +2809,7 @@
                 "yii",
                 "yii2-note"
             ],
-            "time": "2017-09-23T12:26:59+00:00"
+            "time": "2017-09-25T05:59:52+00:00"
         },
         {
             "name": "yuncms/yii2-notification",
@@ -2943,12 +2945,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-question.git",
-                "reference": "488a68790cf52bf7505c25e7697b82ce6e374b76"
+                "reference": "938f6864a64a83d674d7145f860217bf574d7709"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-question/zipball/488a68790cf52bf7505c25e7697b82ce6e374b76",
-                "reference": "488a68790cf52bf7505c25e7697b82ce6e374b76",
+                "url": "https://api.github.com/repos/yuncms/yii2-question/zipball/938f6864a64a83d674d7145f860217bf574d7709",
+                "reference": "938f6864a64a83d674d7145f860217bf574d7709",
                 "shasum": ""
             },
             "require": {
@@ -3000,7 +3002,7 @@
                 "yii",
                 "yii-question"
             ],
-            "time": "2017-09-23T12:22:47+00:00"
+            "time": "2017-09-25T04:53:39+00:00"
         },
         {
             "name": "yuncms/yii2-summernote-widget",

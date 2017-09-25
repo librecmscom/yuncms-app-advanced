@@ -6,14 +6,14 @@
  */
 return [
     '/' => 'site/index',
-    [
-        'class' => 'yii\web\UrlRule',
-        'name' => '首页',
-        'host'=>'aaa.dev.yuncms.net',
-        'suffix' => '.html',
-        'pattern' => '/index',
-        'route' => 'site/index',
-    ],
+//    [
+//        'class' => 'yii\web\UrlRule',
+//        'name' => '首页',
+//        'host'=>'aaa.dev.yuncms.net',
+//        'suffix' => '.html',
+//        'pattern' => '/index',
+//        'route' => 'site/index',
+//    ],
 
 
     //单页
@@ -29,15 +29,15 @@ return [
     'terms' => 'legal/terms',//服务条款
 
     //用户
-    'u/<slug:[\dA-Za-z]+>' => 'user/space/show',
+    'u/<username:[\dA-Za-z]+>' => 'user/space/show',
 
     //笔记
     'notes/<page:\d+>' => 'note/note/index',
     'notes' => 'note/note/index',
-    'note/create' => 'note/note/create',
-    'note/print/<uuid:[\w+]+>' => 'note/note/print',
-    'note/download/<uuid:[\w+]+>' => 'note/note/download',
-    'note/<uuid:[\w+]+>' => 'note/note/view',
+    'notes/create' => 'note/note/create',
+    'notes/<uuid:[\w+]+>/print' => 'note/note/print',
+    'notes/<uuid:[\w+]+>/download' => 'note/note/download',
+    //'note/<uuid:[\w+]+>' => 'note/note/view',
 
     //标签
     'topics' => 'tag/index',
@@ -45,8 +45,8 @@ return [
     //问答
     'questions/<page:\d+>' => 'question/question/index',
     'questions' => 'question/question/index',
-    'question/tag' => 'question/question/tag',
-    'question/<id:\d+>' => 'question/question/view',
+    'questions/tag' => 'question/question/tag',
+    'questions/<id:\d+>' => 'question/question/view',
 
 //    [//如果使用子域名部署，那么所有的规则都得像这样配置，不然跳转走了，跳转不回来了。因为检测到的host是当前域名的
 //        'class' => 'yii\web\UrlRule',
@@ -60,9 +60,9 @@ return [
     //文章
     'articles/<page:\d+>' => 'article/article/index',
     'articles' => 'article/article/index',
-    'article/create' => 'article/article/create',
-    'article/tag' => 'article/article/tag',
-    'article/<key:[\w+]+>' => 'article/article/view',
+    'articles/create' => 'article/article/create',
+    'articles/tag' => 'article/article/tag',
+    'articles/<key:[\w+]+>' => 'article/article/view',
 
     //友情链接
     'links' => 'link/default/index',
