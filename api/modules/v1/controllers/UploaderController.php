@@ -18,6 +18,11 @@ use api\modules\v1\models\UploaderImageForm;
  */
 class UploaderController extends Controller
 {
+    /**
+     * 图片上传
+     * @return UploaderImageForm
+     * @throws ServerErrorHttpException
+     */
     public function actionImage()
     {
         $model = new UploaderImageForm();

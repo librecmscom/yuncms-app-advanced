@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2012 TintSoft Technology Co. Ltd.
  * @license http://www.tintsoft.com/license/
  */
-return  [
+return [
     'GET /' => 'site/index',
     'GET ping' => 'site/ping',
     'GET location' => 'site/location',
@@ -22,6 +22,7 @@ return  [
         'except' => ['delete', 'create'],
         'extraPatterns' => [
             'GET search' => 'search',
+            'POST avatar' => 'avatar',
             'GET post' => 'register',
         ],
 //        'ruleConfig' => [//额外的包含规则
