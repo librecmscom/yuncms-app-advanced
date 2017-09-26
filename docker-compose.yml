@@ -1,14 +1,22 @@
+
+# 存储
 mysql:
   image: mysql:5.6
   environment:
     - MYSQL_ROOT_PASSWORD=123456
     - MYSQL_DATABASE=yuncms_dev
 
+# 队列
 redis:
   image: redis:3-alpine
 
+# 缓存
 memcached:
   image: memcached:alpine
+
+# 搜索
+elasticsearch:
+  image: elasticsearch:2-alpine
 
 web:
   build: .
@@ -16,6 +24,7 @@ web:
     - mysql:mysql
     - redis:redis
     - memcached:memcached
+    - elasticsearch:elasticsearch
   ports:
     - 80:80
   environment:
