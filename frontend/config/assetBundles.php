@@ -50,6 +50,6 @@ return [
     'assetManager' => [
         'basePath' => '@webroot/assets',
         'baseUrl' => '@web/assets',
-        'bundles' => require(__DIR__ . '/AssetBundles.php'),
+        'bundles' => require(__DIR__ . '/CDNBundles.php'),
     ],
 ];

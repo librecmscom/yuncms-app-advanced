@@ -44,8 +44,8 @@ build:	##@docker build application images
 	php yii message common/messages/config.php
 	php yii message backend/messages/config.php
 	php yii message frontend/messages/config.php
-	php yii asset frontend/config/asset.php frontend/config/assets_compressed.php
-	php yii asset backend/config/asset.php backend/config/assets_compressed.php
+	php yii asset frontend/config/assetBundles.php frontend/config/assets.php
+	php yii asset backend/config/assetBundles.php backend/config/assets.php
 	@echo $(shell cat .version)
 	$(DOCKER_COMPOSE) build
 
