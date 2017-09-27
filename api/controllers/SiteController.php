@@ -13,21 +13,25 @@ use yii\rest\Controller;
 class SiteController extends Controller
 {
     /**
-     * default index
+     * Display welcome
      * @return string
      */
     public function actionIndex()
     {
         Yii::$app->response->format = Response::FORMAT_RAW;
-        return '欢迎访问本站API接口。';
+        return 'Welcome to the API interface.';
     }
 
+    /**
+     * Display http method
+     * @return mixed|string
+     */
     public function actionMethod(){
         return Yii::$app->request->method;
     }
 
     /**
-     * Ping 心跳
+     * Display Pong
      * @return string
      */
     public function actionPing()
@@ -37,7 +41,7 @@ class SiteController extends Controller
     }
 
     /**
-     * 粗定位使用
+     * Display Location
      * @return array
      */
     public function actionLocation()
@@ -63,7 +67,7 @@ class SiteController extends Controller
     }
 
     /**
-     * error action
+     * Display error action
      * @return array
      */
     public function actionError()

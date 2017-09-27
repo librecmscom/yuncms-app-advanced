@@ -8,17 +8,15 @@
 namespace api\modules\v1\controllers;
 
 use Yii;
-use api\modules\v1\ActiveController;
-use yii\data\ActiveDataProvider;
-use yii\helpers\Inflector;
 use yii\helpers\Url;
+use yii\helpers\Inflector;
+use yii\data\ActiveDataProvider;
 use yii\web\ForbiddenHttpException;
 use yii\web\NotFoundHttpException;
 use yii\web\ServerErrorHttpException;
-use api\models\Profile;
+use api\modules\v1\models\User;
 use api\modules\v1\ActiveController;
 use api\modules\v1\models\AvatarForm;
-use api\modules\v1\models\User;
 
 /**
  * 用户接口

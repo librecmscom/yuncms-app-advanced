@@ -56,7 +56,6 @@ class AvatarForm extends Model
 
             //保存原图
             $this->file->saveAs($originalImage);
-
             //缩放
             Image::thumbnail($originalImage, 200, 200)->save($avatarPath . '_avatar_big.jpg', ['quality' => 100]);
             Image::thumbnail($avatarPath . '_avatar_big.jpg', 128, 128)->save($avatarPath . '_avatar_middle.jpg', ['quality' => 100]);
