@@ -45,7 +45,7 @@ use yuncms\question\models\Question;
                         <div class="carousel-inner" role="leftmodbox">
                             <?php foreach ($articles as $article): ?>
                                 <div class="item active">
-                                    <a href="<?= Url::to(['/articles/articles/view' => $article->id]) ?>"
+                                    <a href="<?= Url::to(['/articles/articles/view', 'id' => $article->id]) ?>"
                                        target="_blank"><img
                                                 src="<?= $article->cover ?>"
                                                 alt="<?= Html::encode($article->title) ?>"></a>
@@ -67,7 +67,7 @@ use yuncms\question\models\Question;
                         <?php foreach ($articles as $article): ?>
                             <li class="widget-links-item">
                                 <a title="<?= Html::encode($article->title) ?>" target="_blank"
-                                   href="<?= Url::to(['/articles/articles/view' => $article->id]) ?>"><?= Html::encode($article->title) ?></a>
+                                   href="<?= Url::to(['/articles/articles/view', 'id' => $article->id]) ?>"><?= Html::encode($article->title) ?></a>
                             </li>
                         <?php endforeach; ?>
                     </ul>
@@ -132,7 +132,7 @@ use yuncms\question\models\Question;
                         <?php foreach ($articles as $article): ?>
                             <li class="widget-links-item">
                                 <a title="<?= Html::encode($article->title) ?>" target="_blank"
-                                   href="<?= Url::to(['/articles/articles/view' => $article->id]) ?>"><?= Html::encode($article->title) ?></a>
+                                   href="<?= Url::to(['/articles/articles/view' , 'id' => $article->id]) ?>"><?= Html::encode($article->title) ?></a>
                                 <small class="text-muted"><?= $article->views ?> 浏览</small>
                             </li>
                         <?php endforeach; ?>
@@ -151,7 +151,7 @@ use yuncms\question\models\Question;
                         <?php foreach ($articles as $article): ?>
                             <li class="widget-links-item">
                                 <a title="<?= Html::encode($article->title) ?>" target="_blank"
-                                   href="<?= Url::to(['/articles/articles/view' => $article->id]) ?>"><?= Html::encode($article->title) ?></a>
+                                   href="<?= Url::to(['/articles/articles/view', 'id' => $article->id]) ?>"><?= Html::encode($article->title) ?></a>
                                 <small class="text-muted"><?= $article->views ?> 浏览</small>
                             </li>
                         <?php endforeach; ?>
@@ -181,7 +181,7 @@ use yuncms\question\models\Question;
                         <img class="avatar-32"
                              src="<?= $topAnswerUser->user->getAvatar('big') ?>">
                         <a href="<?= Url::to(['/user/space/view', 'id' => $topAnswerUser->user_id]) ?>"
-                           class="ellipsis"><?= $topAnswerUser->user->username ?></a>
+                           class="ellipsis"><?= $topAnswerUser->user->nickname ?></a>
                         <span class="text-muted pull-right"><?= $topAnswerUser->coins ?> 金币</span>
                     </li>
                 <?php endforeach; ?>

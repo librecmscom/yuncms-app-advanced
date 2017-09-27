@@ -33,7 +33,7 @@ return [
         'yii\jui\JuiAsset',
         'xutl\fontawesome\Asset',
         'xutl\cropper\CropperAsset',
-        'xutl\select2\Select2Asset',
+        //'xutl\select2\Select2Asset',
         'xutl\bootstrap\filestyle\FilestyleAsset'
     ],
     // Asset bundle for compression output:

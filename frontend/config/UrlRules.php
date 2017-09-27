@@ -62,7 +62,7 @@ return [
     'articles' => 'article/article/index',
     'articles/create' => 'article/article/create',
     'articles/tag' => 'article/article/tag',
-    'articles/<key:[\w+]+>' => 'article/article/view',
+    'articles/<id:[\w+]+>' => 'article/article/view',
 
     //友情链接
     'links' => 'link/default/index',
