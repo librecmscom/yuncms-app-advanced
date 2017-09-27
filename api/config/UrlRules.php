@@ -15,7 +15,12 @@ return [
             'v1/site',
         ]
     ],
-
+    [//文章
+        'class' => 'yii\rest\UrlRule',
+        'controller' => [
+            'v1/article',
+        ]
+    ],
     [//用户
         'class' => 'yii\rest\UrlRule',
         'controller' => 'v1/user',

@@ -7,8 +7,8 @@
 
 namespace api\modules\v1\models;
 
-use yii\web\Link;
 use yii\helpers\Url;
+use yii\web\Link;
 
 /**
  * Class User

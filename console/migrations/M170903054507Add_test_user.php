@@ -4,7 +4,7 @@ namespace app\migrations;
 
 use yii\db\Migration;
 
-class M170911054507Add_test_user extends Migration
+class M170903054507Add_test_user extends Migration
 {
 
     public function safeUp()
