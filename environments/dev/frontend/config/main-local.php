@@ -40,41 +40,46 @@ if (!YII_ENV_TEST) {
             'crud' => [ //生成器名称
                 'class' => 'yii\gii\generators\crud\Generator',
                 'template' => 'Inspinia',
-                'templates' => [ //设置我们自己的模板
+                'templates' => [
                     //模板名 => 模板路径
                     'Inspinia' => '@vendor/xutl/yii2-inspinia-widget/gii/generators/crud',
+                    'YUNCMS' => '@frontend/views/gii/crud',
                 ]
             ],
             'model' => [ //生成器名称
                 'class' => 'yii\gii\generators\model\Generator',
                 'template' => 'Inspinia',
-                'templates' => [ //设置我们自己的模板
+                'templates' => [
                     //模板名 => 模板路径
                     'Inspinia' => '@vendor/xutl/yii2-inspinia-widget/gii/generators/model',
+                    'YUNCMS' => '@frontend/views/gii/model',
                 ]
             ],
             'module' => [ //生成器名称
                 'class' => 'yii\gii\generators\module\Generator',
                 'template' => 'Inspinia',
-                'templates' => [ //设置我们自己的模板
+                'templates' => [
                     //模板名 => 模板路径
                     'Inspinia' => '@vendor/xutl/yii2-inspinia-widget/gii/generators/module',
+                    'YUNCMS' => '@frontend/views/gii/module',
                 ]
             ],
             'controller' => [ //生成器名称
                 'class' => 'yii\gii\generators\controller\Generator',
                 'template' => 'Inspinia',
-                'templates' => [ //设置我们自己的模板
+                'templates' => [
                     //模板名 => 模板路径
                     'Inspinia' => '@vendor/xutl/yii2-inspinia-widget/gii/generators/module',
+                    'YUNCMS' => '@frontend/views/gii/controller',
                 ]
             ],
             'extension' => [ //生成器名称
                 'class' => 'yii\gii\generators\extension\Generator',
                 'template' => 'Inspinia',
-                'templates' => [ //设置我们自己的模板
+                'templates' => [
                     //模板名 => 模板路径
                     'Inspinia' => '@vendor/xutl/yii2-inspinia-widget/gii/generators/extension',
+                    'YUNCMS' => '@frontend/views/gii/extension',
                 ]
             ],
             'form' => [ //生成器名称
@@ -82,17 +87,27 @@ if (!YII_ENV_TEST) {
                 'template' => 'Inspinia',
                 'templates' => [ //设置我们自己的模板
                     //模板名 => 模板路径
-                    'SmartAdmin' => '@vendor/xutl/yii2-inspinia-widget/gii/generators/form',
+                    'Inspinia' => '@vendor/xutl/yii2-inspinia-widget/gii/generators/form',
+                    'YUNCMS' => '@frontend/views/gii/form',
                 ]
             ],
 //            'sphinxModel' => [
-//                'class' => 'yii\sphinx\gii\model\Generator'
+//                'class' => 'yii\sphinx\gii\model\Generator',
+//                'templates' => [
+//                    'YUNCMS' => '@frontend/views/gii/sphinx',
+//                ]
 //            ],
 //            'mongoDbModel' => [
-//                'class' => 'yii\mongodb\gii\model\Generator'
+//                'class' => 'yii\mongodb\gii\model\Generator',
+//                'templates' => [
+//                    'YUNCMS' => '@frontend/views/gii/mongo',
+//                ]
 //            ],
             'queue' => [
-                'class' => 'yii\queue\gii\Generator'
+                'class' => 'yii\queue\gii\Generator',
+                'templates' => [
+                    'YUNCMS' => '@frontend/views/gii/queue',
+                ]
             ],
         ]
     ];
