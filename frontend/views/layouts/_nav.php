@@ -17,7 +17,7 @@ $menuItems = [
     ['label' => Yii::t('app', 'Articles'), 'url' => ['/article/article/index']],
     ['label' => Yii::t('app', 'Questions'), 'url' => ['/question/question/index']],
     ['label' => Yii::t('app', 'Notes'), 'url' => ['/note/note/index']],
-    ['label' => Yii::t('app', 'Topics'), 'url' => ['/tag/index']],
+    ['label' => Yii::t('app', 'Topics'), 'url' => ['/topic/index']],
     ['label' => Yii::t('app', 'About'), 'url' => ['/site/about']],
     ['label' => Yii::t('app', 'Contact'), 'url' => ['/site/contact']],
 ];

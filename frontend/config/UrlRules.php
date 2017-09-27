@@ -39,8 +39,8 @@ return [
     'notes/<uuid:[\w+]+>/download' => 'note/note/download',
     //'note/<uuid:[\w+]+>' => 'note/note/view',
 
-    //标签
-    'topics' => 'tag/index',
+    //话题
+    'topics' => 'topic/index',
 
     //问答
     'questions/<page:\d+>' => 'question/question/index',

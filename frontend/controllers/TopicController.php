@@ -9,9 +9,10 @@ namespace frontend\controllers;
 
 use Yii;
 use yii\helpers\Url;
-use yii\web\Response;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
+use yii\caching\DbDependency;
+use yii\caching\TagDependency;
 use yii\filters\AccessControl;
 use yii\data\ActiveDataProvider;
 use yii\web\NotFoundHttpException;
@@ -20,12 +21,29 @@ use yuncms\tag\models\Tag;
 /**
  * Tag controller
  */
-class TagController extends Controller
+class TopicController extends Controller
 {
 
     public function behaviors()
     {
         return [
+            'pageCache' => [
+                'class' => 'yii\filters\PageCache',
+                'only' => ['index'],
+                'duration' => 24 * 3600 * 365, // 1 year
+                'variations' => [
+                    Yii::$app->user->id,
+                    Yii::$app->language,
+                    Yii::$app->request->get('page'),
+                ],
+                'dependency' => [
+                    'class' => 'yii\caching\ChainedDependency',
+                    'dependencies' => [
+                        new TagDependency(['tags' => ['tags']]),
+                        new DbDependency(['sql' => 'SELECT MAX(id) FROM ' . Tag::tableName()])
+                    ]
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [

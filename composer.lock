@@ -1235,7 +1235,7 @@
             ],
             "authors": [
                 {
-                    "name": "XuTL",
+                    "name": "XUTL",
                     "email": "xutl@gmail.com"
                 }
             ],
@@ -5580,12 +5580,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "985b4788f55362bb73e632c431221d5887bded12"
+                "reference": "e5f4d261720507565ff68235a70136fc662f727e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/985b4788f55362bb73e632c431221d5887bded12",
-                "reference": "985b4788f55362bb73e632c431221d5887bded12",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/e5f4d261720507565ff68235a70136fc662f727e",
+                "reference": "e5f4d261720507565ff68235a70136fc662f727e",
                 "shasum": ""
             },
             "require": {
@@ -5621,7 +5621,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2017-09-15T10:12:22+00:00"
+            "time": "2017-09-26T14:59:44+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",

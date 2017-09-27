@@ -6,7 +6,7 @@ use yii\helpers\Html;
 <section class="topic-list-item col-md-3">
     <div class="widget-topic">
         <h2>
-            <a href="<?= Url::to(['/tag/index', 'tag' => $model->name]); ?>"><?= Html::encode($model->name) ?></a>
+            <a href="<?= Url::to(['/topic/index', 'tag' => $model->name]); ?>"><?= Html::encode($model->name) ?></a>
         </h2>
         <p>
             <?= empty($model->description) ? Yii::t('app', 'No introduction') : Html::encode($model->description); ?>
