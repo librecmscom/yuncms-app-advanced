@@ -8,20 +8,23 @@
 namespace api\modules\v1\controllers;
 
 use Yii;
+use yii\data\ActiveDataProvider;
 use yii\web\ForbiddenHttpException;
 use yii\web\NotFoundHttpException;
 use yii\web\ServerErrorHttpException;
 use api\models\Profile;
 use api\modules\v1\ActiveController;
 use api\modules\v1\models\AvatarForm;
+use api\modules\v1\models\User;
 
 /**
- * Class UserController
+ * 用户接口
  * @package api\modules\v1\controllers
  */
 class UserController extends ActiveController
 {
-    public $modelClass = 'api\models\User';
+
+    public $modelClass = 'api\modules\v1\models\User';
 
     /**
      * @var string the scenario used for updating a model.
@@ -124,6 +127,21 @@ class UserController extends ActiveController
             throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
         }
         return $model;
+    }
+
+    /**
+     * /**
+     * 用户搜索
+     * @param string $username
+     * @return ActiveDataProvider
+     */
+    public function actionSearch($username)
+    {
+        $query = User::find()->where(['like', 'username', $username])->orWhere(['like', 'slug', $username]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
     }
 
     /**

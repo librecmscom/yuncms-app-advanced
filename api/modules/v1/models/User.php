@@ -5,7 +5,7 @@
  * @license http://www.tintsoft.com/license/
  */
 
-namespace api\models;
+namespace api\modules\v1\models;
 
 use yii\web\Link;
 use yii\helpers\Url;
@@ -24,13 +24,11 @@ class User extends \yuncms\user\models\User
             'username',
             'nickname',
             'email',
-            'mobile' => 'mobile',
             'faceUrl' => function () {
                 $this->getAvatar(self::AVATAR_MIDDLE);
             },
-            'avatar' => function () {
-                return $this->isAvatar;
-            },
+            'avatar',
+            'mobile' => 'mobile',
             'registration_ip',
             'created_at',
             'blocked_at',

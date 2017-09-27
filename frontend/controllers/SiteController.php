@@ -37,14 +37,6 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
-    public function actionMail()
-    {
-        return Yii::$app->mailer->compose(['html' => 'test-html'], ['aa' => 'bbb'])
-            ->setTo('85825770@qq.com')
-            ->setSubject('测试格式')
-            ->send();
-    }
-
     /**
      * 站点关闭页面
      * @param string $reason 离线原因
