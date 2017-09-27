@@ -27,7 +27,9 @@ var App = function () {
         modal.modal();
     };
 
-    // Bootstrap Tooltips and Popovers
+    /**
+     * Bootstrap Tooltips and Popovers 、Model
+     */
     function handleBootstrap() {
         /* Tooltips */
         jQuery('.tooltips').tooltip();
@@ -43,10 +45,20 @@ var App = function () {
         jQuery('.popovers-toggle').popover('toggle');
         jQuery('.popovers-destroy').popover('destroy');
 
+        /* 防止表单重复刷新 */
+        jQuery("form").submit(function () {
+            var sub = jQuery(":submit", this);
+            sub.attr("disabled", "disabled");
+            setTimeout(function () {
+                sub.removeAttr('disabled');
+            }, 1000);
+        });
+
         /* Modal */
         jQuery('#modal').on("hidden.bs.modal", function (event) {
             jQuery(this).removeData("bs.modal");
         });
+
         jQuery("[data-confirm]").click(function () {
             jQuery.modalConfirm(jQuery(this));
             return false;
@@ -54,15 +66,16 @@ var App = function () {
         window.alert = jQuery.modalAlert;
     }
 
+    /**
+     * 关注模块处理，关注问题，用户等
+     */
     function handleFollow() {
-        /* 关注模块处理，关注问题，用户等 */
         jQuery(document).on('click', '[data-target="follow-button"]', function (e) {
             jQuery(this).button('loading');
             var follow_btn = jQuery(this);
             var source_type = jQuery(this).data('source_type');
             var source_id = jQuery(this).data('source_id');
             var show_num = jQuery(this).data('show_num');
-
             jQuery.post("/attention/attention/store", {model: source_type, model_id: source_id}, function (result) {
                 follow_btn.removeClass('disabled');
                 follow_btn.removeAttr('disabled');
@@ -88,8 +101,10 @@ var App = function () {
         });
     }
 
+    /**
+     * 收藏模块处理，收藏问题，收藏代码，收藏笔记等
+     */
     function handleCollect() {
-        /* 收藏模块处理，收藏问题，收藏代码，收藏笔记等 */
         jQuery(document).on('click', '[data-target="collect-button"]', function (e) {
             jQuery(this).button('loading');
             var collect_btn = jQuery(this);
@@ -121,8 +136,10 @@ var App = function () {
         });
     }
 
+    /**
+     * 推荐 点赞
+     */
     function handleSupport() {
-        /* 推荐 */
         jQuery(document).on('click', '[data-target="support-button"]', function (e) {
             var btn_support = jQuery(this);
             var source_type = btn_support.data('source_type');
@@ -139,6 +156,9 @@ var App = function () {
         });
     }
 
+    /**
+     * 关注标签
+     */
     function handleFollowTag() {
         jQuery(document).on('click', '[data-target="follow-tag"]', function (e) {
             jQuery(this).button('loading');
@@ -168,6 +188,9 @@ var App = function () {
         });
     }
 
+    /**
+     * 检查短消息
+     */
     function handleMessages() {
         jQuery.getJSON("/message/message/unread-messages", function (result) {
             if (result.total > 0) {
@@ -179,6 +202,9 @@ var App = function () {
         });
     }
 
+    /**
+     * 检查通知
+     */
     function handleNotifications() {
         jQuery.getJSON("/notification/notification/unread-notifications", function (result) {
             if (result.total > 0) {
@@ -190,6 +216,9 @@ var App = function () {
         });
     }
 
+    /**
+     * 加载跟踪代码
+     */
     function handleTrack() {
         //百度统计的点击事件监听
         /* 指定要响应JS-API调用的帐号的站点id */

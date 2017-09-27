@@ -20,7 +20,6 @@ return [
         'yii\widgets\ActiveFormAsset',
         'yii\grid\GridViewAsset',
         'xutl\fmt\Asset',
-        'yuncms\user\frontend\assets\UserAsset',
         'yuncms\user\frontend\assets\CropperAsset',
 
         'frontend\assets\AppAsset',//当前依赖
