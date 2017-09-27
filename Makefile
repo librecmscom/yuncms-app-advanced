@@ -41,17 +41,13 @@ bash:	##@docker open application shell in container
 
 build:	##@docker build application images
 	$(shell echo $(shell git describe --long --tags --dirty --always) > .version)
-	@echo $(shell cat .version)
-	$(DOCKER_COMPOSE) build
-
-build-lang:   ##@yuncms Extracts messages to be translated from source code
 	php yii message common/messages/config.php
 	php yii message backend/messages/config.php
 	php yii message frontend/messages/config.php
-
-build-asset:   ##@yuncms Combines and compresses the asset files according to the given configuration
 	php yii asset frontend/config/asset.php frontend/config/assets_compressed.php
 	php yii asset backend/config/asset.php backend/config/assets_compressed.php
+	@echo $(shell cat .version)
+	$(DOCKER_COMPOSE) build
 
 build-release:   ##@yuncms build release version.
 	composer install --prefer-dist --optimize-autoloader -vvv
@@ -69,7 +65,7 @@ composer-update:   ##@yuncms composer update.
 	composer update --prefer-source --optimize-autoloader -vvv
 
 install:   ##@yuncms install application
-	$(MAKE) composer-install
+	$(MAKE) composer-install -o
 	$(MAKE) build-release
 
 init:   ##@docker setup config files and install composer vendor packages (host-volume required)
