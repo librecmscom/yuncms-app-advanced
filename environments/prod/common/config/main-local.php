@@ -15,7 +15,9 @@ return [
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
+            'enableSwiftMailerLogging' => true,
             'viewPath' => '@common/mail',
+            'useFileTransport' => false,
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
@@ -28,17 +30,29 @@ return [
                         'yii\web\UnauthorizedHttpException:401',
                     ],
                     'levels' => ['error', 'warning'],
-                    'logFile' => '@runtime/logs/api-4xx.log',
+                    'logFile' => '@runtime/logs/app-4xx.log',
+                ],
+                'smtp' => [
+                    'class' => 'yii\log\FileTarget',
+                    'levels' => ['error', 'warning'],
+                    'logFile' => '@runtime/logs/app-smtp.log',
+                    'categories' => [
+                        'yii\swiftmailer\Logger::add'
+                    ],
                 ],
                 'email' => [
                     'class' => 'yii\log\EmailTarget',
-                    'except' => ['yii\web\HttpException:404'],
+                    'except' => [
+                        'yii\web\HttpException:404',
+                        'yii\web\ForbiddenHttpException:403',
+                        'yii\web\UnauthorizedHttpException:401',
+                    ],
                     'levels' => ['error', 'warning'],
                     'message' => ['to' => 'admin@example.com'],
                 ],
                 'default' => [
                     'class' => 'yii\log\FileTarget',
-                    'logFile' => '@runtime/logs/api.log',
+                    'logFile' => '@runtime/logs/app.log',
                     'levels' => ['error', 'warning'],
                     'except' => [
                         'yii\web\HttpException:404',

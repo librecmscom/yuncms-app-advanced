@@ -3,6 +3,7 @@
 namespace api\controllers;
 
 use Yii;
+use yii\web\Response;
 use yii\rest\Controller;
 
 /**
@@ -13,22 +14,26 @@ class SiteController extends Controller
 {
     /**
      * default index
-     * @return array
+     * @return string
      */
     public function actionIndex()
     {
-        return [
-            '欢迎访问本站API接口。'
-        ];
+        Yii::$app->response->format = Response::FORMAT_RAW;
+        return '欢迎访问本站API接口。';
+    }
+
+    public function actionMethod(){
+        return Yii::$app->request->method;
     }
 
     /**
-     * Ping
-     * @return array
+     * Ping 心跳
+     * @return string
      */
     public function actionPing()
     {
-        return ['ok'];
+        Yii::$app->response->format = Response::FORMAT_RAW;
+        return 'Pong';
     }
 
     /**

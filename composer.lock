@@ -2161,12 +2161,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-attachment.git",
-                "reference": "aed3ecd57c6ed9712d8867b2a470db06dfb1d657"
+                "reference": "f11ba4e50a92f2feb3ce4ab71b53f25a381322b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-attachment/zipball/aed3ecd57c6ed9712d8867b2a470db06dfb1d657",
-                "reference": "aed3ecd57c6ed9712d8867b2a470db06dfb1d657",
+                "url": "https://api.github.com/repos/yuncms/yii2-attachment/zipball/f11ba4e50a92f2feb3ce4ab71b53f25a381322b2",
+                "reference": "f11ba4e50a92f2feb3ce4ab71b53f25a381322b2",
                 "shasum": ""
             },
             "require": {
@@ -2209,7 +2209,7 @@
                 "yii2",
                 "yii2-attachment"
             ],
-            "time": "2017-09-23T12:28:19+00:00"
+            "time": "2017-09-27T05:57:42+00:00"
         },
         {
             "name": "yuncms/yii2-attention",
@@ -2946,12 +2946,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-question.git",
-                "reference": "938f6864a64a83d674d7145f860217bf574d7709"
+                "reference": "6ddf36bb238ed4169818b4cfccd190d8e8854647"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-question/zipball/938f6864a64a83d674d7145f860217bf574d7709",
-                "reference": "938f6864a64a83d674d7145f860217bf574d7709",
+                "url": "https://api.github.com/repos/yuncms/yii2-question/zipball/6ddf36bb238ed4169818b4cfccd190d8e8854647",
+                "reference": "6ddf36bb238ed4169818b4cfccd190d8e8854647",
                 "shasum": ""
             },
             "require": {
@@ -3003,7 +3003,7 @@
                 "yii",
                 "yii-question"
             ],
-            "time": "2017-09-25T04:53:39+00:00"
+            "time": "2017-09-27T03:38:00+00:00"
         },
         {
             "name": "yuncms/yii2-summernote-widget",

@@ -7,8 +7,11 @@
 
 namespace api\modules\v1;
 
+use Yii;
+use yii\web\ForbiddenHttpException;
+
 /**
- * Class Controller
+ * V1 版控制器基类
  * @package api\modules\v1
  */
 class Controller extends \yii\rest\Controller
@@ -32,5 +35,15 @@ class Controller extends \yii\rest\Controller
             'class' => 'yuncms\oauth2\filters\auth\TokenAuth',
         ];
         return $behaviors;
+    }
+
+    /**
+     * Declares the allowed HTTP verbs.
+     * Please refer to [[VerbFilter::actions]] on how to declare the allowed verbs.
+     * @return array the allowed HTTP verbs.
+     */
+    protected function verbs()
+    {
+        return [];
     }
 }

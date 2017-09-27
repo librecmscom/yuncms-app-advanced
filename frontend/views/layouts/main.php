@@ -14,7 +14,9 @@ use common\widgets\Alert;
 
 $asset = AppAsset::register($this);
 $this->registerLinkTag(['rel' => 'canonical', 'href' => Url::canonical()]);
-$this->title = $this->title ? $this->title : 'Default Title';
+$this->title = $this->title ? $this->title . ' - ' . Yii::$app->settings->get('title', 'system') : Yii::$app->settings->get('title', 'system');
+$this->registerMetaTag(['name' => 'keywords', 'content' => Yii::$app->settings->get('keywords', 'system')]);
+$this->registerMetaTag(['name' => 'description', 'content' => Yii::$app->settings->get('description', 'system')]);
 $this->registerJs('App.init();')
 ?>
 <?php $this->beginPage() ?>

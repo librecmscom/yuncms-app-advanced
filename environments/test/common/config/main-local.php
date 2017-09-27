@@ -21,7 +21,7 @@ return [
                         'yii\web\UnauthorizedHttpException:401',
                     ],
                     'levels' => ['error', 'warning'],
-                    'logFile' => '@runtime/logs/api-4xx.log',
+                    'logFile' => '@runtime/logs/app-4xx.log',
                 ],
                 'email' => [
                     'class' => 'yii\log\EmailTarget',
@@ -31,7 +31,7 @@ return [
                 ],
                 'default' => [
                     'class' => 'yii\log\FileTarget',
-                    'logFile' => '@runtime/logs/api.log',
+                    'logFile' => '@runtime/logs/app.log',
                     'levels' => ['error', 'warning'],
                     'except' => [
                         'yii\web\HttpException:404',

@@ -14,5 +14,9 @@ return [
             // for the mailer to send real emails.
             'useFileTransport' => true,
         ],
+        'queue'=>[
+            'class' => 'yii\queue\file\Queue',
+            'path' => '@console/runtime/queue',
+        ],
     ],
 ];
