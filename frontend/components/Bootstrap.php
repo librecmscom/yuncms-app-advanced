@@ -33,14 +33,6 @@ class Bootstrap implements BootstrapInterface
             ];
         }
 
-        //注册关键词和描述
-        Yii::$app->view->registerMetaTag(['name' => 'description', 'content' => Yii::$app->settings->get('description', 'system')]);
-        Yii::$app->view->registerMetaTag(['name' => 'keywords', 'content' => Yii::$app->settings->get('keywords', 'system')]);
-
-        $app->view->params['title'] = Yii::$app->settings->get('title', 'system');
-        $app->view->params['copyright'] = Yii::$app->settings->get('copyright', 'system');
-        $app->view->params['analysisCode'] = Yii::$app->settings->get('analysisCode', 'system');
-
         //自动检测语言
         if (($language = Yii::$app->request->getQueryParam('language')) !== null) {
             $app->language = $language;

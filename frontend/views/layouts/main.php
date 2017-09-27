@@ -79,6 +79,7 @@ $this->registerJs('App.init();')
 <?= $this->render(
     '//layouts/_footer.php', ['asset' => $asset]
 ) ?>
+<?=Yii::$app->settings->get('analysisCode', 'system')?>
 <?php $this->endBody() ?>
 </body>
 </html>
