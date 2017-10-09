@@ -3,14 +3,14 @@
 * Author: @xutongle
 * Website: http://www.yuncms.net
 */
-var App = function () {
+var App = function ($) {
     // We extend jQuery by method hasAttr
-    jQuery.fn.hasAttr = function (name) {
+    $.fn.hasAttr = function (name) {
         return this.attr(name) !== undefined;
     };
 
-    jQuery.fn.modalAlert = function (content) {
-        var modal = jQuery('#modal');
+    $.fn.modalAlert = function (content) {
+        var modal = $('#modal');
         modal.find('.modal-title, .modal-body p, .modal-footer').remove();
         modal.find('.modal-header').append('<h2 class="modal-title">友情提示</h2>');
         modal.find('.modal-body').html('<p>' + content + '</p>');
@@ -18,8 +18,8 @@ var App = function () {
         modal.modal();
     };
 
-    jQuery.fn.modalConfirm = function (object) {
-        var modal = jQuery('#modal');
+    $.fn.modalConfirm = function (object) {
+        var modal = $('#modal');
         modal.find('.modal-title, .modal-body p, .modal-footer').remove();
         modal.find('.modal-header').append('<h2 class="modal-title">请您确认</h2>');
         modal.find('.modal-body').html('<p>' + object.attr('data-confirm') + '</p>');
@@ -32,51 +32,51 @@ var App = function () {
      */
     function handleBootstrap() {
         /* Tooltips */
-        jQuery('.tooltips').tooltip();
-        jQuery('.tooltips-show').tooltip('show');
-        jQuery('.tooltips-hide').tooltip('hide');
-        jQuery('.tooltips-toggle').tooltip('toggle');
-        jQuery('.tooltips-destroy').tooltip('destroy');
+        $('.tooltips').tooltip();
+        $('.tooltips-show').tooltip('show');
+        $('.tooltips-hide').tooltip('hide');
+        $('.tooltips-toggle').tooltip('toggle');
+        $('.tooltips-destroy').tooltip('destroy');
 
         /* Popovers */
-        jQuery('.popovers').popover();
-        jQuery('.popovers-show').popover('show');
-        jQuery('.popovers-hide').popover('hide');
-        jQuery('.popovers-toggle').popover('toggle');
-        jQuery('.popovers-destroy').popover('destroy');
+        $('.popovers').popover();
+        $('.popovers-show').popover('show');
+        $('.popovers-hide').popover('hide');
+        $('.popovers-toggle').popover('toggle');
+        $('.popovers-destroy').popover('destroy');
 
         /* 防止表单重复刷新 */
-        jQuery("form").submit(function () {
-            var sub = jQuery(":submit", this);
+        $("form").submit(function () {
+            var sub = $(":submit", this);
             sub.attr("disabled", "disabled");
             setTimeout(function () {
                 sub.removeAttr('disabled');
             }, 1000);
         });
 
-        /* Modal */
-        jQuery('#modal').on("hidden.bs.modal", function (event) {
-            jQuery(this).removeData("bs.modal");
+      /* Modal */
+        $('#modal').on("hidden.bs.modal", function (event) {
+            $(this).removeData("bs.modal");
         });
 
-        jQuery("[data-confirm]").click(function () {
-            jQuery.modalConfirm(jQuery(this));
+        $("[data-confirm]").click(function () {
+            $.modalConfirm($(this));
             return false;
         });
-        window.alert = jQuery.modalAlert;
+        window.alert = $.modalAlert;
     }
 
     /**
      * 关注模块处理，关注问题，用户等
      */
     function handleFollow() {
-        jQuery(document).on('click', '[data-target="follow-button"]', function (e) {
-            jQuery(this).button('loading');
-            var follow_btn = jQuery(this);
-            var source_type = jQuery(this).data('source_type');
-            var source_id = jQuery(this).data('source_id');
-            var show_num = jQuery(this).data('show_num');
-            jQuery.post("/attention/attention/store", {model: source_type, model_id: source_id}, function (result) {
+        $(document).on('click', '[data-target="follow-button"]', function (e) {
+            $(this).button('loading');
+            var follow_btn = $(this);
+            var source_type = $(this).data('source_type');
+            var source_id = $(this).data('source_id');
+            var show_num = $(this).data('show_num');
+            $.post("/attention/attention/store", {model: source_type, model_id: source_id}, function (result) {
                 follow_btn.removeClass('disabled');
                 follow_btn.removeAttr('disabled');
                 if (result.status == 'followed') {
@@ -105,13 +105,13 @@ var App = function () {
      * 收藏模块处理，收藏问题，收藏代码，收藏笔记等
      */
     function handleCollect() {
-        jQuery(document).on('click', '[data-target="collect-button"]', function (e) {
-            jQuery(this).button('loading');
-            var collect_btn = jQuery(this);
-            var source_type = jQuery(this).data('source_type');
-            var source_id = jQuery(this).data('source_id');
-            var show_num = jQuery(this).data('show_num');
-            jQuery.post("/collection/collection/store", {model: source_type, model_id: source_id}, function (result) {
+        $(document).on('click', '[data-target="collect-button"]', function (e) {
+            $(this).button('loading');
+            var collect_btn = $(this);
+            var source_type = $(this).data('source_type');
+            var source_id = $(this).data('source_id');
+            var show_num = $(this).data('show_num');
+            $.post("/collection/collection/store", {model: source_type, model_id: source_id}, function (result) {
                 collect_btn.removeClass('disabled');
                 collect_btn.removeAttr('disabled');
                 if (result.status == 'collected') {
@@ -140,15 +140,15 @@ var App = function () {
      * 推荐 点赞
      */
     function handleSupport() {
-        jQuery(document).on('click', '[data-target="support-button"]', function (e) {
-            var btn_support = jQuery(this);
+        $(document).on('click', '[data-target="support-button"]', function (e) {
+            var btn_support = $(this);
             var source_type = btn_support.data('source_type');
             var source_id = btn_support.data('source_id');
             var support_num = parseInt(btn_support.data('support_num'));
-            jQuery.post("/support/support/store", {model: source_type, model_id: source_id}, function (result) {
+            $.post("/support/support/store", {model: source_type, model_id: source_id}, function (result) {
                 return callback(result.status);
                 if (result.status == 'success') {
-                    support_num++
+                    support_num++;
                 }
                 btn_support.html(support_num + ' 已推荐');
                 btn_support.data('support_num', support_num);
@@ -160,12 +160,12 @@ var App = function () {
      * 关注标签
      */
     function handleFollowTag() {
-        jQuery(document).on('click', '[data-target="follow-tag"]', function (e) {
-            jQuery(this).button('loading');
-            var follow_btn = jQuery(this);
-            var source_id = jQuery(this).data('source_id');
-            var show_num = jQuery(this).data('show_num');
-            jQuery.post("/user/space/tag", {model_id: source_id}, function (result) {
+        $(document).on('click', '[data-target="follow-tag"]', function (e) {
+            $(this).button('loading');
+            var follow_btn = $(this);
+            var source_id = $(this).data('source_id');
+            var show_num = $(this).data('show_num');
+            $.post("/user/space/tag", {model_id: source_id}, function (result) {
                 follow_btn.removeClass('disabled');
                 follow_btn.removeAttr('disabled');
                 if (result.status == 'followed') {
@@ -192,12 +192,12 @@ var App = function () {
      * 检查短消息
      */
     function handleMessages() {
-        jQuery.getJSON("/message/message/unread-messages", function (result) {
+        $.getJSON("/message/message/unread-messages", function (result) {
             if (result.total > 0) {
                 if (result.total > 99) result.total = '99+';
-                jQuery("#unread_messages").html('<span class="fa fa-envelope-o fa-lg"></span><span class="label label-danger"">' + result.total + '</span>');
+                $("#unread_messages").html('<span class="fa fa-envelope-o fa-lg"></span><span class="label label-danger"">' + result.total + '</span>');
             } else {
-                jQuery("#unread_messages").html('<span class="fa fa-envelope-o fa-lg"></span>');
+                $("#unread_messages").html('<span class="fa fa-envelope-o fa-lg"></span>');
             }
         });
     }
@@ -206,12 +206,12 @@ var App = function () {
      * 检查通知
      */
     function handleNotifications() {
-        jQuery.getJSON("/notification/notification/unread-notifications", function (result) {
+        $.getJSON("/notification/notification/unread-notifications", function (result) {
             if (result.total > 0) {
                 if (result.total > 99) result.total = '99+';
-                jQuery("#unread_notifications").html('<span class="fa fa-bell-o fa-lg"></span><span class="label label-danger"">' + result.total + '</span>');
+                $("#unread_notifications").html('<span class="fa fa-bell-o fa-lg"></span><span class="label label-danger"">' + result.total + '</span>');
             } else {
-                jQuery("#unread_notifications").html('<span class="fa fa-bell-o fa-lg"></span>');
+                $("#unread_notifications").html('<span class="fa fa-bell-o fa-lg"></span>');
             }
         });
     }
@@ -230,8 +230,8 @@ var App = function () {
         // 用户访问一个安装了百度统计代码的页面时，代码会自动发送该页面的PV统计请求，如果不希望自动统计该页面的PV，就可以使用本接口。主要用于iframe嵌套页面等情况。
         // _hmt.push(['_setAutoPageview', false]);
         //
-        jQuery(document).on('click', '[data-track]', function (event) {
-            var _track = jQuery(this).data('track');//dom
+        $(document).on('click', '[data-track]', function (event) {
+            var _track = $(this).data('track');//dom
             if (typeof (_hmt) != "undefined" && _track != '') {
                 if (_track.indexOf("_hmt.push") > -1) {
                     eval(_track);
@@ -282,11 +282,11 @@ var App = function () {
          * @param id 文章ID
          */
         load_article_comments: function (id) {
-            jQuery.get('/article/comment/index', {
+            $.get('/article/comment/index', {
                 id: id
             }, function (html) {
-                jQuery("#comments-" + id + " .widget-comment-list").append(html);
+                $("#comments-" + id + " .widget-comment-list").append(html);
             });
         }
     };
-}();
+}(jQuery);
