@@ -12,10 +12,10 @@ use yii\web\Link;
 use yii\web\Linkable;
 
 /**
- * Class Article
+ * Class Question
  * @package api\modules\v1\models
  */
-class Article extends \yuncms\article\models\Article implements Linkable
+class Question extends \yuncms\question\models\Question implements Linkable
 {
     /**
      * @return array
@@ -24,26 +24,23 @@ class Article extends \yuncms\article\models\Article implements Linkable
     {
         return [
             'id',
-            'uuid',
             'user_id',
             'nickname' => function () {
                 return $this->user->nickname;
             },
-            'category_id',
             'title',
-            'sub_title',
-            'cover',
-            'description',
-            'comments',
-            'supports',
-            'collections',
-            'views',
-            'is_top',
-            'is_best',
+            'alias',
+            'price',
+            'hide',
             'content',
+            'answers',
+            'views',
+            'followers',
+            'collections',
+            'comments',
             'status',
             'created_at',
-            'updated_at',
+            'updated_at'
         ];
     }
 

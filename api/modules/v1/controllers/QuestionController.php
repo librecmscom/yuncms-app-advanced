@@ -8,19 +8,23 @@
 namespace api\modules\v1\controllers;
 
 use Yii;
+use yii\data\ActiveDataProvider;
+use yii\helpers\Url;
 use yii\web\ForbiddenHttpException;
 use api\modules\v1\ActiveController;
 use yii\web\NotFoundHttpException;
-use api\modules\v1\models\Article;
+use yii\web\ServerErrorHttpException;
 use yuncms\collection\models\Collection;
+use yuncms\question\models\Answer;
+use yuncms\question\models\Question;
 
 /**
- * Class ArticleController
+ * Class QuestionController
  * @package api\modules\v1\controllers
  */
-class ArticleController extends ActiveController
+class QuestionController extends ActiveController
 {
-    public $modelClass = 'api\modules\v1\models\Article';
+    public $modelClass = 'api\modules\v1\models\Question';
 
     /**
      * Declares the allowed HTTP verbs.
@@ -30,13 +34,13 @@ class ArticleController extends ActiveController
     protected function verbs()
     {
         return [
-            'support' => ['POST'],
             'collection' => ['POST'],
+            'answer' => ['GET', 'POST'],
         ];
     }
 
     /**
-     * 文章收藏
+     * 问题收藏
      * @param int $id
      * @return array
      */
@@ -66,31 +70,38 @@ class ArticleController extends ActiveController
         return ['status' => 'collected'];
     }
 
-    /**
-     * 文章点赞
-     * @param int $id
-     * @return array
-     */
-    public function actionSupport($id)
+    public function actionAnswer($id)
     {
         $model = $this->findModel($id);
-        $support = Support::findOne(['user_id' => Yii::$app->user->id, 'model' => get_class($model), 'model_id' => $id]);
-        if ($support) {
-            return ['status' => 'failed'];
+        if (Yii::$app->request->isGet) {
+            return Yii::createObject([
+                'class' => ActiveDataProvider::className(),
+                'query' => Answer::find()->where(['question_id' => $model->id]),
+            ]);
+        } else {
+            $answer = new Answer(['question_id' => $model->id]);
+            $answer->load(Yii::$app->getRequest()->getBodyParams(), '');
+            if ($answer->save()) {
+                $response = Yii::$app->getResponse();
+                $response->setStatusCode(201);
+                $id = implode(',', array_values($answer->getPrimaryKey(true)));
+                $response->getHeaders()->set('Location', Url::toRoute(['view', 'id' => $id], true));
+            } elseif (!$model->hasErrors()) {
+                throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
+            }
+            return $model;
         }
-        return ['status' => 'success'];
     }
-
 
     /**
      * 获取 Model
      * @param int $id
-     * @return Article
+     * @return Question
      * @throws NotFoundHttpException
      */
     public function findModel($id)
     {
-        if (($model = Article::findOne($id)) != null) {
+        if (($model = Question::findOne($id)) != null) {
             return $model;
         } else {
             throw new NotFoundHttpException("Object not found: $id");
