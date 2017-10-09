@@ -16,7 +16,7 @@ return [
     [//公共接口
         'class' => 'yii\rest\UrlRule',
         'except' => ['delete', 'create', 'update'],
-        'controller' => ['v1/category', 'v1/language', 'v1/area']
+        'controller' => ['v1/category', 'v1/language', 'v1/area','v1/country','v1/currency']
     ],
     [//话题
         'class' => 'yii\rest\UrlRule',
@@ -25,7 +25,6 @@ return [
         'extraPatterns' => [
             'GET search' => 'search',
         ],
-
     ],
     [//文章
         'class' => 'yii\rest\UrlRule',
