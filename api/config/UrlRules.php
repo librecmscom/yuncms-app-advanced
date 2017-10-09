@@ -8,15 +8,12 @@ return [
     'GET /' => 'site/index',
     'GET ping' => 'site/ping',
     'GET location' => 'site/location',
+    
     //第一版
-    [
-        'class' => 'yii\rest\UrlRule',
-        'controller' => ['v1/site',]
-    ],
     [//公共接口
         'class' => 'yii\rest\UrlRule',
         'except' => ['delete', 'create', 'update'],
-        'controller' => ['v1/category', 'v1/language', 'v1/area','v1/country','v1/currency']
+        'controller' => ['v1/category', 'v1/language', 'v1/area', 'v1/country', 'v1/currency']
     ],
     [//话题
         'class' => 'yii\rest\UrlRule',
