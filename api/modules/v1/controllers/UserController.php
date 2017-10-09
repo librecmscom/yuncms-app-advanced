@@ -7,6 +7,7 @@
 
 namespace api\modules\v1\controllers;
 
+
 use Yii;
 use yii\helpers\Url;
 use yii\helpers\Inflector;
@@ -15,6 +16,7 @@ use yii\web\ForbiddenHttpException;
 use yii\web\NotFoundHttpException;
 use yii\web\ServerErrorHttpException;
 use api\modules\v1\models\User;
+use api\modules\v1\models\Profile;
 use api\modules\v1\ActiveController;
 use api\modules\v1\models\AvatarForm;
 
@@ -131,14 +133,13 @@ class UserController extends ActiveController
     }
 
     /**
-     * /**
      * 用户搜索
      * @param string $username
      * @return ActiveDataProvider
      */
     public function actionSearch($username)
     {
-        $query = User::find()->where(['like', 'username', $username])->orWhere(['like', 'slug', $username]);
+        $query = User::find()->where(['like', 'username', $username])->orWhere(['like', 'username', $username]);
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);

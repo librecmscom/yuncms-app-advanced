@@ -8,7 +8,7 @@ return [
     'GET /' => 'site/index',
     'GET ping' => 'site/ping',
     'GET location' => 'site/location',
-    
+
     //第一版
     [//公共接口
         'class' => 'yii\rest\UrlRule',
