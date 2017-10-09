@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "74f75cd9dd8defec3e897c8246567803",
+    "content-hash": "27c5af350eb65edd9d2a0d07eeac9227",
     "packages": [
         {
             "name": "2amigos/qrcode-library",
@@ -309,16 +309,16 @@
         },
         {
             "name": "bower-asset/yii2-pjax",
-            "version": "v2.0.6",
+            "version": "v2.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/jquery-pjax.git",
-                "reference": "60728da6ade5879e807a49ce59ef9a72039b8978"
+                "reference": "885fc8c2d36c93a801b6af0ee8ad55d79df97cb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/jquery-pjax/zipball/60728da6ade5879e807a49ce59ef9a72039b8978",
-                "reference": "60728da6ade5879e807a49ce59ef9a72039b8978",
+                "url": "https://api.github.com/repos/yiisoft/jquery-pjax/zipball/885fc8c2d36c93a801b6af0ee8ad55d79df97cb1",
+                "reference": "885fc8c2d36c93a801b6af0ee8ad55d79df97cb1",
                 "shasum": null
             },
             "require": {
@@ -2692,6 +2692,70 @@
             "time": "2017-09-23T12:27:28+00:00"
         },
         {
+            "name": "yuncms/yii2-live",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yuncms/yii2-live.git",
+                "reference": "1f7c670487b00064b1e6d00517e8bac6dee0c818"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yuncms/yii2-live/zipball/1f7c670487b00064b1e6d00517e8bac6dee0c818",
+                "reference": "1f7c670487b00064b1e6d00517e8bac6dee0c818",
+                "shasum": ""
+            },
+            "require": {
+                "xutl/yii2-aliyun": "~1.0",
+                "yiisoft/yii2": "~2.0.6",
+                "yiisoft/yii2-queue": "~2.0.0",
+                "yuncms/yii2-admin": "~2.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "yuncms": {
+                    "name": "live",
+                    "i18n": {
+                        "class": "yii\\i18n\\PhpMessageSource",
+                        "sourceLanguage": "en-US",
+                        "basePath": "@yuncms/live/messages"
+                    },
+                    "migrationNamespace": "@yuncms/live/migrations",
+                    "backend": {
+                        "class": "yuncms\\live\\backend\\Module"
+                    },
+                    "frontend": {
+                        "class": "yuncms\\live\\frontend\\Module"
+                    }
+                },
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yuncms\\live\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Xu TL",
+                    "email": "xutongle@gmail.com"
+                }
+            ],
+            "description": "aliyun live",
+            "keywords": [
+                "aliyun",
+                "live",
+                "video"
+            ],
+            "time": "2017-09-28T09:30:44+00:00"
+        },
+        {
             "name": "yuncms/yii2-message",
             "version": "dev-master",
             "source": {
@@ -3445,12 +3509,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/base.git",
-                "reference": "eb3274a5dddeef8d8ca64b0414c0bf3c75bc9be9"
+                "reference": "5aeb2bc02819c89fa1538c2a413e245a421dbcf4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/base/zipball/eb3274a5dddeef8d8ca64b0414c0bf3c75bc9be9",
-                "reference": "eb3274a5dddeef8d8ca64b0414c0bf3c75bc9be9",
+                "url": "https://files.phpcomposer.com/files/Codeception/base/5aeb2bc02819c89fa1538c2a413e245a421dbcf4.zip",
+                "reference": "5aeb2bc02819c89fa1538c2a413e245a421dbcf4",
                 "shasum": ""
             },
             "require": {
@@ -3463,7 +3527,7 @@
                 "phpunit/phpunit": ">4.8.20 <7.0",
                 "phpunit/phpunit-mock-objects": ">2.3 <5.0",
                 "sebastian/comparator": ">1.1 <3.0",
-                "sebastian/diff": "^1.4",
+                "sebastian/diff": ">=1.4 <3.0",
                 "stecman/symfony-console-completion": "^0.7.0",
                 "symfony/browser-kit": ">=2.7 <4.0",
                 "symfony/console": ">=2.7 <4.0",
@@ -3479,7 +3543,6 @@
                 "flow/jsonpath": "~0.2",
                 "league/factory-muffin": "^3.0",
                 "league/factory-muffin-faker": "^1.0",
-                "mongodb/mongodb": "^1.0",
                 "monolog/monolog": "~1.8",
                 "pda/pheanstalk": "~3.0",
                 "php-amqplib/php-amqplib": "~2.4",
@@ -3530,7 +3593,7 @@
                 "functional testing",
                 "unit testing"
             ],
-            "time": "2017-08-10T20:41:08+00:00"
+            "time": "2017-09-29T00:03:44+00:00"
         },
         {
             "name": "codeception/verify",
@@ -4378,16 +4441,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "6.2.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "ff3a76a58ac293657808aefd58c8aaf05945f4d9"
+                "reference": "489c3ac972fb915f3b05731f2ac904ff408e7a49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ff3a76a58ac293657808aefd58c8aaf05945f4d9",
-                "reference": "ff3a76a58ac293657808aefd58c8aaf05945f4d9",
+                "url": "https://files.phpcomposer.com/files/sebastianbergmann/phpunit/489c3ac972fb915f3b05731f2ac904ff408e7a49.zip",
+                "reference": "489c3ac972fb915f3b05731f2ac904ff408e7a49",
                 "shasum": ""
             },
             "require": {
@@ -4396,24 +4459,24 @@
                 "ext-libxml": "*",
                 "ext-mbstring": "*",
                 "ext-xml": "*",
-                "myclabs/deep-copy": "^1.3",
+                "myclabs/deep-copy": "^1.6.1",
                 "phar-io/manifest": "^1.0.1",
                 "phar-io/version": "^1.0",
                 "php": "^7.0",
                 "phpspec/prophecy": "^1.7",
-                "phpunit/php-code-coverage": "^5.2",
-                "phpunit/php-file-iterator": "^1.4",
-                "phpunit/php-text-template": "^1.2",
-                "phpunit/php-timer": "^1.0.6",
-                "phpunit/phpunit-mock-objects": "^4.0",
-                "sebastian/comparator": "^2.0",
-                "sebastian/diff": "^1.4.3",
-                "sebastian/environment": "^3.0.2",
+                "phpunit/php-code-coverage": "^5.2.2",
+                "phpunit/php-file-iterator": "^1.4.2",
+                "phpunit/php-text-template": "^1.2.1",
+                "phpunit/php-timer": "^1.0.9",
+                "phpunit/phpunit-mock-objects": "^4.0.3",
+                "sebastian/comparator": "^2.0.2",
+                "sebastian/diff": "^2.0",
+                "sebastian/environment": "^3.1",
                 "sebastian/exporter": "^3.1",
-                "sebastian/global-state": "^1.1 || ^2.0",
-                "sebastian/object-enumerator": "^3.0.2",
+                "sebastian/global-state": "^2.0",
+                "sebastian/object-enumerator": "^3.0.3",
                 "sebastian/resource-operations": "^1.0",
-                "sebastian/version": "^2.0"
+                "sebastian/version": "^2.0.1"
             },
             "conflict": {
                 "phpdocumentor/reflection-docblock": "3.0.2",
@@ -4432,7 +4495,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.2.x-dev"
+                    "dev-master": "6.4.x-dev"
                 }
             },
             "autoload": {
@@ -4458,7 +4521,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-08-03T13:59:28+00:00"
+            "time": "2017-09-28T11:11:47+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -4663,21 +4726,21 @@
         },
         {
             "name": "sebastian/comparator",
-            "version": "2.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "20f84f468cb67efee293246e6a09619b891f55f0"
+                "reference": "fb3213355da37bf91569ca7a944af19bc57b80e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/20f84f468cb67efee293246e6a09619b891f55f0",
-                "reference": "20f84f468cb67efee293246e6a09619b891f55f0",
+                "url": "https://files.phpcomposer.com/files/sebastianbergmann/comparator/fb3213355da37bf91569ca7a944af19bc57b80e9.zip",
+                "reference": "fb3213355da37bf91569ca7a944af19bc57b80e9",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.0",
-                "sebastian/diff": "^1.2",
+                "sebastian/diff": "^2.0",
                 "sebastian/exporter": "^3.0"
             },
             "require-dev": {
@@ -4686,7 +4749,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "2.1.x-dev"
                 }
             },
             "autoload": {
@@ -4717,38 +4780,38 @@
                 }
             ],
             "description": "Provides the functionality to compare PHP values for equality",
-            "homepage": "http://www.github.com/sebastianbergmann/comparator",
+            "homepage": "https://github.com/sebastianbergmann/comparator",
             "keywords": [
                 "comparator",
                 "compare",
                 "equality"
             ],
-            "time": "2017-03-03T06:26:08+00:00"
+            "time": "2017-08-20T14:03:32+00:00"
         },
         {
             "name": "sebastian/diff",
-            "version": "1.4.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "7f066a26a962dbe58ddea9f72a4e82874a3975a4"
+                "reference": "347c1d8b49c5c3ee30c7040ea6fc446790e6bddd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/7f066a26a962dbe58ddea9f72a4e82874a3975a4",
-                "reference": "7f066a26a962dbe58ddea9f72a4e82874a3975a4",
+                "url": "https://files.phpcomposer.com/files/sebastianbergmann/diff/347c1d8b49c5c3ee30c7040ea6fc446790e6bddd.zip",
+                "reference": "347c1d8b49c5c3ee30c7040ea6fc446790e6bddd",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3.3 || ^7.0"
+                "php": "^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
+                "phpunit/phpunit": "^6.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
@@ -4775,7 +4838,7 @@
             "keywords": [
                 "diff"
             ],
-            "time": "2017-05-22T07:24:03+00:00"
+            "time": "2017-08-03T08:09:46+00:00"
         },
         {
             "name": "sebastian/environment",
@@ -5283,12 +5346,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "90e1e8682abc51dbf679ef3cdc304424a3075f2f"
+                "reference": "5dcaece35a81f3e0719f8d333122f3051ceca288"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/90e1e8682abc51dbf679ef3cdc304424a3075f2f",
-                "reference": "90e1e8682abc51dbf679ef3cdc304424a3075f2f",
+                "url": "https://api.github.com/repos/symfony/console/zipball/5dcaece35a81f3e0719f8d333122f3051ceca288",
+                "reference": "5dcaece35a81f3e0719f8d333122f3051ceca288",
                 "shasum": ""
             },
             "require": {
@@ -5328,7 +5391,7 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.tintsoft.com/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5344,7 +5407,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-09-19T09:28:48+00:00"
+            "time": "2017-09-27T15:10:55+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -5688,12 +5751,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "eaa08afe947cb5affdf2b5fd39e7de92bd96c872"
+                "reference": "0ae79584f89fee567f21868ddd4ca4d580aba607"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/eaa08afe947cb5affdf2b5fd39e7de92bd96c872",
-                "reference": "eaa08afe947cb5affdf2b5fd39e7de92bd96c872",
+                "url": "https://files.phpcomposer.com/files/symfony/yaml/0ae79584f89fee567f21868ddd4ca4d580aba607.zip",
+                "reference": "0ae79584f89fee567f21868ddd4ca4d580aba607",
                 "shasum": ""
             },
             "require": {
@@ -5738,7 +5801,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-09-25T19:23:20+00:00"
+            "time": "2017-09-28T15:24:12+00:00"
         },
         {
             "name": "theseer/tokenizer",

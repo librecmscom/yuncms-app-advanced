@@ -33,12 +33,12 @@
     "yuncms/yii2-user": "~2.0.0",
     "yuncms/yii2-system": "~2.0.1",
     "yuncms/yii2-tag": "~2.0.0",
+    "yuncms/yii2-article": "~2.0.0",
     "yuncms/yii2-attachment": "~2.0",
     "yuncms/yii2-oauth2": "~2.0",
     "yuncms/yii2-question": "~2.0",
     "yuncms/yii2-note": "~2.0",
     "yuncms/yii2-message": "~2.0",
-    "yuncms/yii2-article": "~2.0",
     "yuncms/yii2-credit": "~1.0.0",
     "yuncms/yii2-coin": "~1.0.0",
     "yuncms/yii2-doing": "~1.0.0",
@@ -47,6 +47,7 @@
     "yuncms/yii2-collection": "~1.0.0",
     "yuncms/yii2-notification": "~1.0.0",
     "yuncms/yii2-authentication": "~1.0.0",
+    "yuncms/yii2-live": "~2.0.0",
     "2amigos/qrcode-library": "~1.1"
   },
   "require-dev": {
@@ -64,9 +65,14 @@
     "notify-on-install": false
   },
   "repositories": [
+
     {
       "type": "composer",
-      "url": "https://asset-packagist.org"
+      "url": "https://asset-packagist.tintsoft.com"
+    },
+    {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
     }
   ]
 }

@@ -275,6 +275,18 @@ var App = function () {
             handleMessages();
             handleNotifications();
             handleTrack();
+        },
+
+        /**
+         * 加载评论
+         * @param id 文章ID
+         */
+        load_article_comments: function (id) {
+            jQuery.get('/article/comment/index', {
+                id: id
+            }, function (html) {
+                jQuery("#comments-" + id + " .widget-comment-list").append(html);
+            });
         }
     };
 }();

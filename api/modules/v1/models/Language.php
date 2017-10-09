@@ -9,14 +9,33 @@ namespace api\modules\v1\models;
 
 use yii\helpers\Url;
 use yii\web\Link;
-use yuncms\tag\models\Tag;
+use yii\web\Linkable;
 
 /**
- * 主题(标签)模型
+ * Class Language
  * @package api\modules\v1\models
  */
-class Topic extends Tag
+class Language extends \yuncms\system\models\Language implements Linkable
 {
+    /**
+     * @return array
+     */
+    public function fields()
+    {
+        return [
+            'id',
+            'name',
+            'iso_639_1',
+            'iso_639_2',
+            'iso_639_3'
+        ];
+    }
+
+    /**
+     * return HATEOAS
+     * @see https://en.wikipedia.org/wiki/HATEOAS
+     * @return array
+     */
     public function getLinks()
     {
         return [

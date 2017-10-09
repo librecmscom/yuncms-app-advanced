@@ -53,7 +53,7 @@ class GreenJob extends Object implements RetryableJob
                 'category' => $this->category,
                 'content' => $model->{$this->scanField}
             ]);
-            $modelClass::review($suggestion);
+            $modelClass::review($id, $suggestion);
         }
     }
 

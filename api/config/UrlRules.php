@@ -11,9 +11,21 @@ return [
     //第一版
     [
         'class' => 'yii\rest\UrlRule',
-        'controller' => [
-            'v1/site',
-        ]
+        'controller' => ['v1/site',]
+    ],
+    [//公共接口
+        'class' => 'yii\rest\UrlRule',
+        'except' => ['delete', 'create', 'update'],
+        'controller' => ['v1/category', 'v1/language', 'v1/area']
+    ],
+    [//话题
+        'class' => 'yii\rest\UrlRule',
+        'except' => ['delete', 'create', 'update'],
+        'controller' => 'v1/topic',
+        'extraPatterns' => [
+            'GET search' => 'search',
+        ],
+
     ],
     [//文章
         'class' => 'yii\rest\UrlRule',
