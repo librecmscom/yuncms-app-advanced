@@ -56,6 +56,8 @@ YUNCMS 接口的调用，如发直播、关注等，都是需要获取用户身�
 
 ## 基本使用
 
+API请求应以 `api` API版本为前缀。API版本定义在 `api/modules`。例如，v1 API的根目录在`api/modules/v1` 。
+
 有效的API请求示例:
 
 ```shell
