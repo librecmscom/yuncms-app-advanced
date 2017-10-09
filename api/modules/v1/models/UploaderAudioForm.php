@@ -33,8 +33,10 @@ class UploaderAudioForm extends Model
             [['file'],
                 'file',
                 'skipOnEmpty' => false,
-                'extensions' => 'mp3,wma,flac,ape,aac,ogg,m4a',
+                'checkExtensionByMimeType' => false,
+                'extensions' => 'mp3,wma,flac,ape,aac,ogg,m4a,amr',
                 'maxSize' => 1024 * 1024 * 20,
+                'maxFiles' => 1,
                 'tooBig' => Yii::t('app', 'File has to be smaller than 20MB'),
             ],
         ]);
