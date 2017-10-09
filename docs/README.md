@@ -12,7 +12,7 @@
 
 ## 自动化
 
-- [API](api.md) 通过简单而强大的API自动化 YUNCMS。
+- [API](api/api.md) 通过简单而强大的API自动化 YUNCMS。
 
 ## 故障排除
 
