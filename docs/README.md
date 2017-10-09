@@ -13,3 +13,7 @@
 ## 自动化
 
 - [API](api.md) 通过简单而强大的API自动化 YUNCMS。
+
+## 故障排除
+
+- [日志系统](administration/logs.md) 在哪里寻找日志。
