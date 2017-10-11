@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "27c5af350eb65edd9d2a0d07eeac9227",
+    "content-hash": "64ca32815109e94f2462354bbd47208e",
     "packages": [
         {
             "name": "2amigos/qrcode-library",
@@ -776,12 +776,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "1a2f9df896c8bfa6e22e8e1a78cca637c6f70613"
+                "reference": "5f617743a4bf70c2f453efdbc850abe04de6f1af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/1a2f9df896c8bfa6e22e8e1a78cca637c6f70613",
-                "reference": "1a2f9df896c8bfa6e22e8e1a78cca637c6f70613",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/5f617743a4bf70c2f453efdbc850abe04de6f1af",
+                "reference": "5f617743a4bf70c2f453efdbc850abe04de6f1af",
                 "shasum": ""
             },
             "require": {
@@ -803,7 +803,7 @@
                     "lib/swift_required.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "MIT"
             ],
@@ -823,7 +823,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2017-08-29T20:44:31+00:00"
+            "time": "2017-09-30T22:40:37+00:00"
         },
         {
             "name": "symfony/process",
@@ -831,12 +831,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "89a6ce31d08c44978b7523a45272291061ab9f82"
+                "reference": "729f0f798ebf13f17a79e2431bbcc1fd5c515552"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/89a6ce31d08c44978b7523a45272291061ab9f82",
-                "reference": "89a6ce31d08c44978b7523a45272291061ab9f82",
+                "url": "https://api.github.com/repos/symfony/process/zipball/729f0f798ebf13f17a79e2431bbcc1fd5c515552",
+                "reference": "729f0f798ebf13f17a79e2431bbcc1fd5c515552",
                 "shasum": ""
             },
             "require": {
@@ -856,7 +856,7 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "MIT"
             ],
@@ -872,7 +872,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2017-09-15T10:16:43+00:00"
+            "time": "2017-10-06T16:19:45+00:00"
         },
         {
             "name": "xutl/yii2-aliyun",
@@ -959,6 +959,48 @@
                 "wecaht"
             ],
             "time": "2017-08-30T09:06:09+00:00"
+        },
+        {
+            "name": "xutl/yii2-back-to-top-widget",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xutl/yii2-back-to-top-widget.git",
+                "reference": "9574507bf0d135c3b1ce5af0e33aa7180096d4b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xutl/yii2-back-to-top-widget/zipball/9574507bf0d135c3b1ce5af0e33aa7180096d4b7",
+                "reference": "9574507bf0d135c3b1ce5af0e33aa7180096d4b7",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "xutl\\backtop\\": ""
+                }
+            },
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Yii 2 widget to add back-to-top button.",
+            "keywords": [
+                "back-to-top",
+                "extension",
+                "scroll",
+                "top",
+                "yii2"
+            ],
+            "time": "2017-10-11T03:05:42+00:00"
         },
         {
             "name": "xutl/yii2-bootstrap-filestyle-asset",
@@ -1290,16 +1332,16 @@
         },
         {
             "name": "xutl/yii2-inspinia-widget",
-            "version": "1.0.5.5",
+            "version": "1.0.5.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xutl/yii2-inspinia-widget.git",
-                "reference": "f02d8de9499c64a51f5c1d9424e507c031c58062"
+                "reference": "0bf1aae9942d6875bde87bcc5ca3570e85ef095f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xutl/yii2-inspinia-widget/zipball/f02d8de9499c64a51f5c1d9424e507c031c58062",
-                "reference": "f02d8de9499c64a51f5c1d9424e507c031c58062",
+                "url": "https://api.github.com/repos/xutl/yii2-inspinia-widget/zipball/0bf1aae9942d6875bde87bcc5ca3570e85ef095f",
+                "reference": "0bf1aae9942d6875bde87bcc5ca3570e85ef095f",
                 "shasum": ""
             },
             "require": {
@@ -1313,7 +1355,7 @@
                     "xutl\\inspinia\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "BSD-4-Clause"
             ],
@@ -1330,7 +1372,7 @@
                 "yii2",
                 "yii2-inspinia"
             ],
-            "time": "2017-09-26T09:17:30+00:00"
+            "time": "2017-10-09T10:48:18+00:00"
         },
         {
             "name": "xutl/yii2-select2-widget",
@@ -1379,12 +1421,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yii2tech/ar-position.git",
-                "reference": "658057c736d7700dff8ad75c486c80cca1ff6260"
+                "reference": "11e7359200ecaf5fe18377d5c15f7d17a6411b00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yii2tech/ar-position/zipball/658057c736d7700dff8ad75c486c80cca1ff6260",
-                "reference": "658057c736d7700dff8ad75c486c80cca1ff6260",
+                "url": "https://api.github.com/repos/yii2tech/ar-position/zipball/11e7359200ecaf5fe18377d5c15f7d17a6411b00",
+                "reference": "11e7359200ecaf5fe18377d5c15f7d17a6411b00",
                 "shasum": ""
             },
             "require": {
@@ -1401,7 +1443,7 @@
                     "yii2tech\\ar\\position\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1420,7 +1462,7 @@
                 "sort",
                 "yii2"
             ],
-            "time": "2017-07-27T14:17:38+00:00"
+            "time": "2017-10-10T09:57:17+00:00"
         },
         {
             "name": "yiisoft/yii2",
@@ -1428,12 +1470,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "31cbccb32fd84fa408446bd84af300e52b4af9bf"
+                "reference": "3f66a37dbc8386b7672540529a1ab3b8869fe813"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/31cbccb32fd84fa408446bd84af300e52b4af9bf",
-                "reference": "31cbccb32fd84fa408446bd84af300e52b4af9bf",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/3f66a37dbc8386b7672540529a1ab3b8869fe813",
+                "reference": "3f66a37dbc8386b7672540529a1ab3b8869fe813",
                 "shasum": ""
             },
             "require": {
@@ -1463,7 +1505,7 @@
                     "yii\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1520,7 +1562,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2017-09-22T23:24:18+00:00"
+            "time": "2017-10-08T22:01:58+00:00"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -1580,12 +1622,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-                "reference": "034d57071f7bb91074c0c2728c60ae8abdaa0e47"
+                "reference": "646df9c0277f4cd9e067da03e86d1576bdfcccb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/034d57071f7bb91074c0c2728c60ae8abdaa0e47",
-                "reference": "034d57071f7bb91074c0c2728c60ae8abdaa0e47",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/646df9c0277f4cd9e067da03e86d1576bdfcccb3",
+                "reference": "646df9c0277f4cd9e067da03e86d1576bdfcccb3",
                 "shasum": ""
             },
             "require": {
@@ -1603,7 +1645,7 @@
                     "yii\\bootstrap\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1618,7 +1660,7 @@
                 "bootstrap",
                 "yii2"
             ],
-            "time": "2017-08-02T13:52:13+00:00"
+            "time": "2017-10-09T19:48:45+00:00"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -1676,12 +1718,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-httpclient.git",
-                "reference": "d1ab910c752dbcdfc88fdbde9a4ea0fdc9a10b62"
+                "reference": "4f82ef36021af046ddd3ccb857b334af8e596c79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-httpclient/zipball/d1ab910c752dbcdfc88fdbde9a4ea0fdc9a10b62",
-                "reference": "d1ab910c752dbcdfc88fdbde9a4ea0fdc9a10b62",
+                "url": "https://api.github.com/repos/yiisoft/yii2-httpclient/zipball/4f82ef36021af046ddd3ccb857b334af8e596c79",
+                "reference": "4f82ef36021af046ddd3ccb857b334af8e596c79",
                 "shasum": ""
             },
             "require": {
@@ -1698,7 +1740,7 @@
                     "yii\\httpclient\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1715,7 +1757,7 @@
                 "httpclient",
                 "yii2"
             ],
-            "time": "2017-07-27T14:36:55+00:00"
+            "time": "2017-10-06T19:57:33+00:00"
         },
         {
             "name": "yiisoft/yii2-imagine",
@@ -1817,12 +1859,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-queue.git",
-                "reference": "7a8db9a3a934924fe49601c45b31849323898794"
+                "reference": "69abb2f1533f3df3ece3880edbc66df4eec54c2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-queue/zipball/7a8db9a3a934924fe49601c45b31849323898794",
-                "reference": "7a8db9a3a934924fe49601c45b31849323898794",
+                "url": "https://api.github.com/repos/yiisoft/yii2-queue/zipball/69abb2f1533f3df3ece3880edbc66df4eec54c2a",
+                "reference": "69abb2f1533f3df3ece3880edbc66df4eec54c2a",
                 "shasum": ""
             },
             "require": {
@@ -1864,7 +1906,7 @@
                     "yii\\queue\\sync\\": "src/drivers/sync"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1886,7 +1928,7 @@
                 "redis",
                 "yii"
             ],
-            "time": "2017-09-18T21:13:37+00:00"
+            "time": "2017-10-09T18:47:11+00:00"
         },
         {
             "name": "yiisoft/yii2-redis",
@@ -2102,12 +2144,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-article.git",
-                "reference": "8e4c5ffb2a19467afbd8113cb737798d5fee407d"
+                "reference": "316ff948b4db8207a47ad9eb8aab478846d35c0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-article/zipball/8e4c5ffb2a19467afbd8113cb737798d5fee407d",
-                "reference": "8e4c5ffb2a19467afbd8113cb737798d5fee407d",
+                "url": "https://api.github.com/repos/yuncms/yii2-article/zipball/316ff948b4db8207a47ad9eb8aab478846d35c0c",
+                "reference": "316ff948b4db8207a47ad9eb8aab478846d35c0c",
                 "shasum": ""
             },
             "require": {
@@ -2115,6 +2157,8 @@
                 "yiisoft/yii2": "~2.0.6",
                 "yiisoft/yii2-queue": "~2.0.0",
                 "yuncms/yii2-collection": "~1.0",
+                "yuncms/yii2-comment": "~2.0",
+                "yuncms/yii2-support": "~1.0",
                 "yuncms/yii2-ueditor-widget": "~1.0.0",
                 "yuncms/yii2-user": "~2.0"
             },
@@ -2144,7 +2188,7 @@
                     "yuncms\\article\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2153,7 +2197,7 @@
                 "article",
                 "yuncms"
             ],
-            "time": "2017-09-26T09:30:26+00:00"
+            "time": "2017-10-03T04:14:44+00:00"
         },
         {
             "name": "yuncms/yii2-attachment",
@@ -2161,12 +2205,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-attachment.git",
-                "reference": "f11ba4e50a92f2feb3ce4ab71b53f25a381322b2"
+                "reference": "0c2eec25a02ea5ea30d35dbd3eadf2bd7bf66cfa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-attachment/zipball/f11ba4e50a92f2feb3ce4ab71b53f25a381322b2",
-                "reference": "f11ba4e50a92f2feb3ce4ab71b53f25a381322b2",
+                "url": "https://api.github.com/repos/yuncms/yii2-attachment/zipball/0c2eec25a02ea5ea30d35dbd3eadf2bd7bf66cfa",
+                "reference": "0c2eec25a02ea5ea30d35dbd3eadf2bd7bf66cfa",
                 "shasum": ""
             },
             "require": {
@@ -2199,7 +2243,7 @@
                     "yuncms\\attachment\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2209,7 +2253,7 @@
                 "yii2",
                 "yii2-attachment"
             ],
-            "time": "2017-09-27T05:57:42+00:00"
+            "time": "2017-09-29T10:26:39+00:00"
         },
         {
             "name": "yuncms/yii2-attention",
@@ -2465,16 +2509,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-comment.git",
-                "reference": "c860facf74ad30411b4e303cd6fd687f677b0ab4"
+                "reference": "eb95fc9e4ceb9df549933adf9a20512150a15207"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-comment/zipball/c860facf74ad30411b4e303cd6fd687f677b0ab4",
-                "reference": "c860facf74ad30411b4e303cd6fd687f677b0ab4",
+                "url": "https://api.github.com/repos/yuncms/yii2-comment/zipball/eb95fc9e4ceb9df549933adf9a20512150a15207",
+                "reference": "eb95fc9e4ceb9df549933adf9a20512150a15207",
                 "shasum": ""
             },
             "require": {
-                "yiisoft/yii2": "~2.0.6"
+                "yiisoft/yii2": "~2.0.0",
+                "yiisoft/yii2-queue": "~2.0.0",
+                "yuncms/yii2-system": "~2.0",
+                "yuncms/yii2-user": "~2.0"
             },
             "type": "yii2-extension",
             "extra": {
@@ -2502,7 +2549,7 @@
                     "yuncms\\comment\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2511,7 +2558,7 @@
                 "comment",
                 "yuncms"
             ],
-            "time": "2017-09-23T12:27:43+00:00"
+            "time": "2017-10-02T09:50:34+00:00"
         },
         {
             "name": "yuncms/yii2-composer",
@@ -2697,12 +2744,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-live.git",
-                "reference": "1f7c670487b00064b1e6d00517e8bac6dee0c818"
+                "reference": "bc286d8da355fdb0d94035cec68369717aac9fc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-live/zipball/1f7c670487b00064b1e6d00517e8bac6dee0c818",
-                "reference": "1f7c670487b00064b1e6d00517e8bac6dee0c818",
+                "url": "https://api.github.com/repos/yuncms/yii2-live/zipball/bc286d8da355fdb0d94035cec68369717aac9fc3",
+                "reference": "bc286d8da355fdb0d94035cec68369717aac9fc3",
                 "shasum": ""
             },
             "require": {
@@ -2720,7 +2767,7 @@
                         "sourceLanguage": "en-US",
                         "basePath": "@yuncms/live/messages"
                     },
-                    "migrationNamespace": "@yuncms/live/migrations",
+                    "migrationNamespace": "yuncms\\live\\migrations",
                     "backend": {
                         "class": "yuncms\\live\\backend\\Module"
                     },
@@ -2737,7 +2784,7 @@
                     "yuncms\\live\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -2753,7 +2800,7 @@
                 "live",
                 "video"
             ],
-            "time": "2017-09-28T09:30:44+00:00"
+            "time": "2017-10-01T03:39:15+00:00"
         },
         {
             "name": "yuncms/yii2-message",
@@ -3182,12 +3229,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-system.git",
-                "reference": "6e86b7a4b965805ee6202bb376515eb87a40fbd0"
+                "reference": "de781e317db7e1ed844dab9151bc725cb16627a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-system/zipball/6e86b7a4b965805ee6202bb376515eb87a40fbd0",
-                "reference": "6e86b7a4b965805ee6202bb376515eb87a40fbd0",
+                "url": "https://api.github.com/repos/yuncms/yii2-system/zipball/de781e317db7e1ed844dab9151bc725cb16627a6",
+                "reference": "de781e317db7e1ed844dab9151bc725cb16627a6",
                 "shasum": ""
             },
             "require": {
@@ -3231,7 +3278,7 @@
                     "yuncms\\system\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3241,7 +3288,7 @@
                 "system",
                 "yuncms"
             ],
-            "time": "2017-09-26T09:40:57+00:00"
+            "time": "2017-10-09T03:29:47+00:00"
         },
         {
             "name": "yuncms/yii2-tag",
@@ -3351,12 +3398,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yuncms/yii2-user.git",
-                "reference": "00f14d7c43111cada62a8b090b9eca60e098a3de"
+                "reference": "f47deb943f395b24010bf50294c72e09102f0bf7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yuncms/yii2-user/zipball/00f14d7c43111cada62a8b090b9eca60e098a3de",
-                "reference": "00f14d7c43111cada62a8b090b9eca60e098a3de",
+                "url": "https://api.github.com/repos/yuncms/yii2-user/zipball/f47deb943f395b24010bf50294c72e09102f0bf7",
+                "reference": "f47deb943f395b24010bf50294c72e09102f0bf7",
                 "shasum": ""
             },
             "require": {
@@ -3411,7 +3458,7 @@
                     "yuncms\\user\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3421,7 +3468,7 @@
                 "yii2",
                 "yii2-user"
             ],
-            "time": "2017-09-26T07:56:23+00:00"
+            "time": "2017-10-01T03:17:17+00:00"
         }
     ],
     "packages-dev": [
@@ -3513,7 +3560,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/Codeception/base/5aeb2bc02819c89fa1538c2a413e245a421dbcf4.zip",
+                "url": "https://api.github.com/repos/Codeception/base/zipball/5aeb2bc02819c89fa1538c2a413e245a421dbcf4",
                 "reference": "5aeb2bc02819c89fa1538c2a413e245a421dbcf4",
                 "shasum": ""
             },
@@ -3689,12 +3736,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "a8dbabd55659bbaa37abfccedc0fb3959f3ad1cf"
+                "reference": "a71e08134429e3d65f7df6fc4629bb95bd047afd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/a8dbabd55659bbaa37abfccedc0fb3959f3ad1cf",
-                "reference": "a8dbabd55659bbaa37abfccedc0fb3959f3ad1cf",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/a71e08134429e3d65f7df6fc4629bb95bd047afd",
+                "reference": "a71e08134429e3d65f7df6fc4629bb95bd047afd",
                 "shasum": ""
             },
             "require": {
@@ -3716,7 +3763,7 @@
                     "Faker\\": "src/Faker/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3731,7 +3778,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2017-09-19T12:05:22+00:00"
+            "time": "2017-10-09T14:54:23+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -3739,12 +3786,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "811b676fbab9c99e359885032e5ebc70e442f5b8"
+                "reference": "d2537c86fa8b004c29e9b9f5e10028f0a29df101"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/811b676fbab9c99e359885032e5ebc70e442f5b8",
-                "reference": "811b676fbab9c99e359885032e5ebc70e442f5b8",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/d2537c86fa8b004c29e9b9f5e10028f0a29df101",
+                "reference": "d2537c86fa8b004c29e9b9f5e10028f0a29df101",
                 "shasum": ""
             },
             "require": {
@@ -3771,7 +3818,7 @@
                     "src/functions_include.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3796,7 +3843,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2017-07-17T09:11:21+00:00"
+            "time": "2017-10-07T03:19:56+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -4445,12 +4492,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "489c3ac972fb915f3b05731f2ac904ff408e7a49"
+                "reference": "c8745d395da972d2df5db396e2ecd2e28f94585a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/phpunit/489c3ac972fb915f3b05731f2ac904ff408e7a49.zip",
-                "reference": "489c3ac972fb915f3b05731f2ac904ff408e7a49",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c8745d395da972d2df5db396e2ecd2e28f94585a",
+                "reference": "c8745d395da972d2df5db396e2ecd2e28f94585a",
                 "shasum": ""
             },
             "require": {
@@ -4495,7 +4542,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.4.x-dev"
+                    "dev-master": "6.5.x-dev"
                 }
             },
             "autoload": {
@@ -4503,7 +4550,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -4521,7 +4568,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-09-28T11:11:47+00:00"
+            "time": "2017-10-07T17:54:35+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -4734,7 +4781,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/comparator/fb3213355da37bf91569ca7a944af19bc57b80e9.zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/fb3213355da37bf91569ca7a944af19bc57b80e9",
                 "reference": "fb3213355da37bf91569ca7a944af19bc57b80e9",
                 "shasum": ""
             },
@@ -4794,12 +4841,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "347c1d8b49c5c3ee30c7040ea6fc446790e6bddd"
+                "reference": "376cb25efae48c66fb660c9ce7bc07e1682b5e84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/diff/347c1d8b49c5c3ee30c7040ea6fc446790e6bddd.zip",
-                "reference": "347c1d8b49c5c3ee30c7040ea6fc446790e6bddd",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/376cb25efae48c66fb660c9ce7bc07e1682b5e84",
+                "reference": "376cb25efae48c66fb660c9ce7bc07e1682b5e84",
                 "shasum": ""
             },
             "require": {
@@ -4819,7 +4866,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -4838,7 +4885,7 @@
             "keywords": [
                 "diff"
             ],
-            "time": "2017-08-03T08:09:46+00:00"
+            "time": "2017-10-05T13:24:46+00:00"
         },
         {
             "name": "sebastian/environment",
@@ -5289,12 +5336,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
-                "reference": "b75564b5d11cd7aef9528fcfc6a701ba26d5b6dc"
+                "reference": "95e5e02acda550f6edafb2f21e4aa1075b9b401e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/b75564b5d11cd7aef9528fcfc6a701ba26d5b6dc",
-                "reference": "b75564b5d11cd7aef9528fcfc6a701ba26d5b6dc",
+                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/95e5e02acda550f6edafb2f21e4aa1075b9b401e",
+                "reference": "95e5e02acda550f6edafb2f21e4aa1075b9b401e",
                 "shasum": ""
             },
             "require": {
@@ -5322,7 +5369,7 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5338,7 +5385,7 @@
             ],
             "description": "Symfony BrowserKit Component",
             "homepage": "https://symfony.com",
-            "time": "2017-09-15T10:12:22+00:00"
+            "time": "2017-10-02T06:49:52+00:00"
         },
         {
             "name": "symfony/console",
@@ -5346,12 +5393,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "5dcaece35a81f3e0719f8d333122f3051ceca288"
+                "reference": "2ea46ac0f2e5557108e3d40490703aad4e140ecb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/5dcaece35a81f3e0719f8d333122f3051ceca288",
-                "reference": "5dcaece35a81f3e0719f8d333122f3051ceca288",
+                "url": "https://api.github.com/repos/symfony/console/zipball/2ea46ac0f2e5557108e3d40490703aad4e140ecb",
+                "reference": "2ea46ac0f2e5557108e3d40490703aad4e140ecb",
                 "shasum": ""
             },
             "require": {
@@ -5391,7 +5438,7 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.tintsoft.com/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5407,7 +5454,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-09-27T15:10:55+00:00"
+            "time": "2017-10-10T17:53:03+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -5415,12 +5462,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "0fb45a835b60085d00ad92261829d2fd1243f01b"
+                "reference": "f38b363faac4d647f53ef389203436e6c3b27f01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/0fb45a835b60085d00ad92261829d2fd1243f01b",
-                "reference": "0fb45a835b60085d00ad92261829d2fd1243f01b",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/f38b363faac4d647f53ef389203436e6c3b27f01",
+                "reference": "f38b363faac4d647f53ef389203436e6c3b27f01",
                 "shasum": ""
             },
             "require": {
@@ -5440,7 +5487,7 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5460,7 +5507,7 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
-            "time": "2017-09-15T10:12:22+00:00"
+            "time": "2017-10-02T06:49:52+00:00"
         },
         {
             "name": "symfony/debug",
@@ -5468,12 +5515,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "82a670d33fdb850d6ffed6e0e1a29591fb541365"
+                "reference": "a76f02e3af359cadacc17b6b1ac0a7f8da912d5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/82a670d33fdb850d6ffed6e0e1a29591fb541365",
-                "reference": "82a670d33fdb850d6ffed6e0e1a29591fb541365",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/a76f02e3af359cadacc17b6b1ac0a7f8da912d5b",
+                "reference": "a76f02e3af359cadacc17b6b1ac0a7f8da912d5b",
                 "shasum": ""
             },
             "require": {
@@ -5500,7 +5547,7 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5516,7 +5563,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-09-15T17:31:55+00:00"
+            "time": "2017-10-10T14:32:10+00:00"
         },
         {
             "name": "symfony/dom-crawler",
@@ -5524,12 +5571,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "407a9b933209f5291b1b90ec0ed1298fcfba3026"
+                "reference": "a7a9ef79fc160ebd64c4623c7b1d01dcba374aae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/407a9b933209f5291b1b90ec0ed1298fcfba3026",
-                "reference": "407a9b933209f5291b1b90ec0ed1298fcfba3026",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/a7a9ef79fc160ebd64c4623c7b1d01dcba374aae",
+                "reference": "a7a9ef79fc160ebd64c4623c7b1d01dcba374aae",
                 "shasum": ""
             },
             "require": {
@@ -5556,7 +5603,7 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5572,7 +5619,7 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-            "time": "2017-09-15T10:12:22+00:00"
+            "time": "2017-10-02T06:49:52+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -5580,12 +5627,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "2766c22a2a7d2a8317c575c2912f61ed39684107"
+                "reference": "0f8e4151b4a471df3efe1c18c95d10500dde7591"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/2766c22a2a7d2a8317c575c2912f61ed39684107",
-                "reference": "2766c22a2a7d2a8317c575c2912f61ed39684107",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/0f8e4151b4a471df3efe1c18c95d10500dde7591",
+                "reference": "0f8e4151b4a471df3efe1c18c95d10500dde7591",
                 "shasum": ""
             },
             "require": {
@@ -5619,7 +5666,7 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5635,7 +5682,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2017-09-15T10:12:22+00:00"
+            "time": "2017-10-05T10:20:28+00:00"
         },
         {
             "name": "symfony/finder",
@@ -5643,12 +5690,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "e5f4d261720507565ff68235a70136fc662f727e"
+                "reference": "6db4a8ddcd86146761130989eb348451de03de74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/e5f4d261720507565ff68235a70136fc662f727e",
-                "reference": "e5f4d261720507565ff68235a70136fc662f727e",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/6db4a8ddcd86146761130989eb348451de03de74",
+                "reference": "6db4a8ddcd86146761130989eb348451de03de74",
                 "shasum": ""
             },
             "require": {
@@ -5668,7 +5715,7 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5684,7 +5731,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2017-09-26T14:59:44+00:00"
+            "time": "2017-10-02T06:49:52+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -5751,12 +5798,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "0ae79584f89fee567f21868ddd4ca4d580aba607"
+                "reference": "e99024f324a7fa927c3a7992ed6f359e3a5ccc3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/yaml/0ae79584f89fee567f21868ddd4ca4d580aba607.zip",
-                "reference": "0ae79584f89fee567f21868ddd4ca4d580aba607",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/e99024f324a7fa927c3a7992ed6f359e3a5ccc3b",
+                "reference": "e99024f324a7fa927c3a7992ed6f359e3a5ccc3b",
                 "shasum": ""
             },
             "require": {
@@ -5785,7 +5832,7 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5801,7 +5848,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-09-28T15:24:12+00:00"
+            "time": "2017-10-09T14:52:13+00:00"
         },
         {
             "name": "theseer/tokenizer",
@@ -5899,12 +5946,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "e158aea48b699eaddf306f4f00c8c168539ec5d4"
+                "reference": "5073d2d317bdaab7e506883fe55c5e66360fc9c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/e158aea48b699eaddf306f4f00c8c168539ec5d4",
-                "reference": "e158aea48b699eaddf306f4f00c8c168539ec5d4",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/5073d2d317bdaab7e506883fe55c5e66360fc9c5",
+                "reference": "5073d2d317bdaab7e506883fe55c5e66360fc9c5",
                 "shasum": ""
             },
             "require": {
@@ -5922,7 +5969,7 @@
                     "yii\\debug\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://packagist.oss-ap-southeast-1.aliyuncs.com/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -5938,7 +5985,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2017-09-19T21:13:50+00:00"
+            "time": "2017-10-09T20:30:23+00:00"
         },
         {
             "name": "yiisoft/yii2-faker",

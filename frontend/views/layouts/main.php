@@ -8,6 +8,7 @@ use yii\helpers\Url;
 use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
 use yii\bootstrap\Modal;
+use xutl\backtop\BackTop;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
 
@@ -72,6 +73,8 @@ $this->registerJs('App.init();')
 <?= Modal::widget([
     'options' => ['id' => 'modal'],
 ]); ?>
+
+<?= BackTop::widget() ?>
 
 <!-- Footer
 ================================================== -->
