@@ -13,12 +13,15 @@ use yii\helpers\Url;
 use yii\helpers\Inflector;
 use yii\data\ActiveDataProvider;
 use yii\web\ForbiddenHttpException;
+use yii\web\MethodNotAllowedHttpException;
 use yii\web\NotFoundHttpException;
 use yii\web\ServerErrorHttpException;
 use api\modules\v1\models\User;
-use api\modules\v1\models\Profile;
 use api\modules\v1\ActiveController;
 use api\modules\v1\models\AvatarForm;
+use yuncms\user\models\Career;
+use yuncms\user\models\Education;
+use yuncms\user\models\Profile;
 
 /**
  * 用户接口
@@ -60,6 +63,8 @@ class UserController extends ActiveController
             'search' => ['GET'],
             'me' => ['GET'],
             'profile' => ['GET', 'PUT', 'PATCH'],
+            'education' => ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+            'career' => ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
         ];
     }
 
@@ -114,6 +119,140 @@ class UserController extends ActiveController
     }
 
     /**
+     * 教育经历 CURD
+     * @param int $id
+     * @param int $eid
+     * @return null|Education|static|object
+     * @throws MethodNotAllowedHttpException
+     * @throws NotFoundHttpException
+     * @throws ServerErrorHttpException
+     */
+    public function actionEducation($id, $eid = null)
+    {
+        $user = $this->findModel($id);
+        if (Yii::$app->request->isPost) {//发布
+            $model = new Education();
+            $model->load(Yii::$app->getRequest()->getBodyParams(), '');
+            if (($model->save()) != false) {
+                $response = Yii::$app->getResponse();
+                $response->setStatusCode(201);
+                return $model;
+            } elseif (!$model->hasErrors()) {
+                throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
+            }
+            return $model;
+        } else if (Yii::$app->request->isGet) {
+            if (!empty($eid)) {
+                if (($model = Education::findOne(['user_id' => Yii::$app->user->id, 'id' => $eid])) != null) {
+                    return $model;
+                } else {
+                    throw new NotFoundHttpException("Object not found: $id");
+                }
+            } else {
+                return Yii::createObject([
+                    'class' => ActiveDataProvider::className(),
+                    'query' => $user->getEducations(),
+                ]);
+            }
+        } else if ((Yii::$app->request->isPut || Yii::$app->request->isPatch) && !empty($eid)) {
+            if (($model = Education::findOne(['user_id' => Yii::$app->user->id, 'id' => $eid])) != null) {
+                $model->load(Yii::$app->getRequest()->getBodyParams(), '');
+                if (($model->save()) != false) {
+                    $response = Yii::$app->getResponse();
+                    $response->setStatusCode(200);
+                    return $model;
+                } elseif (!$model->hasErrors()) {
+                    throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
+                }
+                return $model;
+            } else {
+                throw new NotFoundHttpException("Object not found: $eid");
+            }
+        } else if (Yii::$app->request->isDelete && !empty($eid)) {
+            if (($model = Education::findOne(['user_id' => Yii::$app->user->id, 'id' => $eid])) != null) {
+                $model->load(Yii::$app->getRequest()->getBodyParams(), '');
+                if (($model->delete()) != false) {
+                    $response = Yii::$app->getResponse();
+                    $response->setStatusCode(204);
+                } elseif (!$model->hasErrors()) {
+                    throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
+                }
+                return $model;
+            } else {
+                throw new NotFoundHttpException("Object not found: $eid");
+            }
+        }
+        throw new MethodNotAllowedHttpException();
+    }
+
+    /**
+     * 职业经历 CURD
+     * @param int $id
+     * @param int $cid
+     * @return null|Education|static|object
+     * @throws MethodNotAllowedHttpException
+     * @throws NotFoundHttpException
+     * @throws ServerErrorHttpException
+     */
+    public function actionCareer($id, $cid = null)
+    {
+        $user = $this->findModel($id);
+        if (Yii::$app->request->isPost) {//发布
+            $model = new Career();
+            $model->load(Yii::$app->getRequest()->getBodyParams(), '');
+            if (($model->save()) != false) {
+                $response = Yii::$app->getResponse();
+                $response->setStatusCode(201);
+                return $model;
+            } elseif (!$model->hasErrors()) {
+                throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
+            }
+            return $model;
+        } else if (Yii::$app->request->isGet) {
+            if (!empty($cid)) {
+                if (($model = Career::findOne(['user_id' => Yii::$app->user->id, 'id' => $cid])) != null) {
+                    return $model;
+                } else {
+                    throw new NotFoundHttpException("Object not found: $id");
+                }
+            } else {
+                return Yii::createObject([
+                    'class' => ActiveDataProvider::className(),
+                    'query' => $user->getCareers(),
+                ]);
+            }
+        } else if ((Yii::$app->request->isPut || Yii::$app->request->isPatch) && !empty($cid)) {
+            if (($model = Education::findOne(['user_id' => Yii::$app->user->id, 'id' => $cid])) != null) {
+                $model->load(Yii::$app->getRequest()->getBodyParams(), '');
+                if (($model->save()) != false) {
+                    $response = Yii::$app->getResponse();
+                    $response->setStatusCode(200);
+                    return $model;
+                } elseif (!$model->hasErrors()) {
+                    throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
+                }
+                return $model;
+            } else {
+                throw new NotFoundHttpException("Object not found: $cid");
+            }
+        } else if (Yii::$app->request->isDelete && !empty($cid)) {
+            if (($model = Education::findOne(['user_id' => Yii::$app->user->id, 'id' => $cid])) != null) {
+                $model->load(Yii::$app->getRequest()->getBodyParams(), '');
+                if (($model->delete()) != false) {
+                    $response = Yii::$app->getResponse();
+                    $response->setStatusCode(204);
+                } elseif (!$model->hasErrors()) {
+                    throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
+                }
+                return $model;
+            } else {
+                throw new NotFoundHttpException("Object not found: $cid");
+            }
+        }
+        throw new MethodNotAllowedHttpException();
+    }
+
+    /**
      * 上传头像
      * @return AvatarForm|bool
      * @throws ServerErrorHttpException
@@ -144,6 +283,21 @@ class UserController extends ActiveController
             'query' => $query,
         ]);
         return $dataProvider;
+    }
+
+    /**
+     * 获取用户
+     * @param int $id
+     * @return User
+     * @throws NotFoundHttpException
+     */
+    public function findModel($id)
+    {
+        if (($model = User::findOne($id)) != null) {
+            return $model;
+        } else {
+            throw new NotFoundHttpException("Object not found: $id");
+        }
     }
 
     /**

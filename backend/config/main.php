@@ -35,11 +35,15 @@ return [
             'class' => 'yii\web\User',
             'enableAutoLogin' => true,
             'loginUrl' => ['/admin/security/login'],
-            'identityClass' => 'yuncms\user\models\User',
+            'identityClass' => 'yuncms\admin\models\Admin',
             'identityCookie' => [
                 'name' => '_identity_backend',
                 'httpOnly' => true
             ],
+        ],
+        'authManager' => [
+            'class' => 'yuncms\admin\components\RbacManager',
+            'cache' => 'cache',
         ],
         'frontUrlManager' => [
             'class' => 'yii\web\UrlManager',
@@ -57,6 +61,8 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'login' => '/admin/security/login',
+                'logout' => '/admin/security/logout',
             ],
         ],
         */

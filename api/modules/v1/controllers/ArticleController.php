@@ -10,8 +10,11 @@ namespace api\modules\v1\controllers;
 use Yii;
 use yii\web\ForbiddenHttpException;
 use api\modules\v1\ActiveController;
+use yii\web\MethodNotAllowedHttpException;
 use yii\web\NotFoundHttpException;
-use api\modules\v1\models\Article;
+use yii\web\ServerErrorHttpException;
+use yuncms\article\models\Article;
+use yuncms\support\models\Support;
 use yuncms\collection\models\Collection;
 
 /**
@@ -31,39 +34,52 @@ class ArticleController extends ActiveController
     {
         return [
             'support' => ['POST'],
-            'collection' => ['POST'],
+            'collection' => ['POST', 'DELETE'],
         ];
     }
 
     /**
      * 文章收藏
      * @param int $id
-     * @return array
+     * @return void
+     * @throws MethodNotAllowedHttpException
+     * @throws NotFoundHttpException
+     * @throws ServerErrorHttpException
      */
     public function actionCollection($id)
     {
         $model = $this->findModel($id);
-        /*不能多次收藏*/
-        $userCollect = Collection::findOne(['user_id' => Yii::$app->user->id, 'model' => get_class($model), 'model_id' => $id]);
-        if ($userCollect) {
-            $userCollect->delete();
-            $model->updateCounters(['collections' => -1]);
-            return ['status' => 'uncollect'];
+        if (Yii::$app->request->isDelete) {
+            $userCollect = Collection::findOne(['user_id' => Yii::$app->user->id, 'model' => get_class($model), 'model_id' => $id]);
+            if ($userCollect) {
+                $userCollect->delete();
+                $model->updateCounters(['collections' => -1]);
+                Yii::$app->getResponse()->setStatusCode(204);
+                return;
+            } else {
+                throw new NotFoundHttpException("Object not found.");
+            }
+        } else if (Yii::$app->request->isPost) {
+            $userCollect = Collection::findOne(['user_id' => Yii::$app->user->id, 'model' => get_class($model), 'model_id' => $id]);
+            if (!$userCollect) {
+                $collect = new Collection([
+                    'user_id' => Yii::$app->user->id,
+                    'model_id' => $id,
+                    'model' => get_class($model),
+                    'subject' => $model->title,
+                ]);
+                if ($collect->save()) {
+                    $model->updateCounters(['collections' => 1]);
+                } elseif (!$model->hasErrors()) {
+                    throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
+                }
+                Yii::$app->getResponse()->setStatusCode(201);
+            } else {
+                Yii::$app->getResponse()->setStatusCode(200);
+            }
+            return;
         }
-
-        $data = [
-            'user_id' => Yii::$app->user->id,
-            'model_id' => $id,
-            'model' => get_class($model),
-            'subject' => $model->title,
-        ];
-
-        $collect = Collection::create($data);
-        if ($collect) {
-            $model->updateCounters(['collections' => 1]);
-            $collect->save();
-        }
-        return ['status' => 'collected'];
+        throw new MethodNotAllowedHttpException();
     }
 
     /**
@@ -76,11 +92,10 @@ class ArticleController extends ActiveController
         $model = $this->findModel($id);
         $support = Support::findOne(['user_id' => Yii::$app->user->id, 'model' => get_class($model), 'model_id' => $id]);
         if ($support) {
-            return ['status' => 'failed'];
+            Yii::$app->getResponse()->setStatusCode(202);
         }
-        return ['status' => 'success'];
+        Yii::$app->getResponse()->setStatusCode(201);
     }
-
 
     /**
      * 获取 Model

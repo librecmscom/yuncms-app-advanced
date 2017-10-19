@@ -29,6 +29,7 @@
     "xutl/yii2-fontawesome-asset": "~2.0.0",
     "xutl/yii2-id98": "~1.0.0",
     "xutl/yii2-aliyun": "~1.0",
+    "xutl/yii2-dingtalk": "~1.0",
     "xutl/yii2-back-to-top-widget": "~1.0",
     "yuncms/yii2-admin": "~2.0.0",
     "yuncms/yii2-user": "~2.0.0",
@@ -67,8 +68,11 @@
   },
   "repositories": [
     {
+      "packagist": false
+    },
+    {
       "type": "composer",
-      "url": "https://asset-packagist.tintsoft.com"
+      "url": "https://asset-packagist.org"
     },
     {
       "type": "composer",

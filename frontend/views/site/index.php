@@ -45,7 +45,7 @@ use yuncms\question\models\Question;
                         <div class="carousel-inner" role="leftmodbox">
                             <?php foreach ($articles as $article): ?>
                                 <div class="item active">
-                                    <a href="<?= Url::to(['/articles/articles/view', 'id' => $article->id]) ?>"
+                                    <a href="<?= Url::to(['/article/article/view', 'id' => $article->id]) ?>"
                                        target="_blank"><img
                                                 src="<?= $article->cover ?>"
                                                 alt="<?= Html::encode($article->title) ?>"></a>
@@ -67,7 +67,7 @@ use yuncms\question\models\Question;
                         <?php foreach ($articles as $article): ?>
                             <li class="widget-links-item">
                                 <a title="<?= Html::encode($article->title) ?>" target="_blank"
-                                   href="<?= Url::to(['/articles/articles/view', 'id' => $article->id]) ?>"><?= Html::encode($article->title) ?></a>
+                                   href="<?= Url::to(['/article/article/view', 'id' => $article->id]) ?>"><?= Html::encode($article->title) ?></a>
                             </li>
                         <?php endforeach; ?>
                     </ul>
@@ -120,7 +120,7 @@ use yuncms\question\models\Question;
             <div class="job-list-item row">
                 <div class="col-md-6">
                     <h4 class="widget-box-title">热门文章 <a
-                                href="<?= Url::to(['/articles/articles/index', 'order' => 'reward']) ?>"
+                                href="<?= Url::to(['/article/article/index', 'order' => 'reward']) ?>"
                                 title="更多">»</a></h4>
                     <?php
                     //首页显示排行榜
@@ -132,7 +132,7 @@ use yuncms\question\models\Question;
                         <?php foreach ($articles as $article): ?>
                             <li class="widget-links-item">
                                 <a title="<?= Html::encode($article->title) ?>" target="_blank"
-                                   href="<?= Url::to(['/articles/articles/view' , 'id' => $article->id]) ?>"><?= Html::encode($article->title) ?></a>
+                                   href="<?= Url::to(['/article/article/view' , 'id' => $article->id]) ?>"><?= Html::encode($article->title) ?></a>
                                 <small class="text-muted"><?= $article->views ?> 浏览</small>
                             </li>
                         <?php endforeach; ?>
@@ -151,7 +151,7 @@ use yuncms\question\models\Question;
                         <?php foreach ($articles as $article): ?>
                             <li class="widget-links-item">
                                 <a title="<?= Html::encode($article->title) ?>" target="_blank"
-                                   href="<?= Url::to(['/articles/articles/view', 'id' => $article->id]) ?>"><?= Html::encode($article->title) ?></a>
+                                   href="<?= Url::to(['/article/article/view', 'id' => $article->id]) ?>"><?= Html::encode($article->title) ?></a>
                                 <small class="text-muted"><?= $article->views ?> 浏览</small>
                             </li>
                         <?php endforeach; ?>
