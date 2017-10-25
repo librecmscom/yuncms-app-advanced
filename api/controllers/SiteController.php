@@ -5,6 +5,9 @@ namespace api\controllers;
 use Yii;
 use yii\web\Response;
 use yii\rest\Controller;
+use yii\base\Exception;
+use yii\web\HttpException;
+use yii\base\ErrorException;
 
 /**
  * Class SiteController
@@ -72,11 +75,16 @@ class SiteController extends Controller
      */
     public function actionError()
     {
-        return [
-            "name" => "Not Found",
-            "message" => "The requested resources does not exist.",
-            "code" => 0,
-            "status" => 404,
+        $exception = Yii::$app->errorHandler->exception;
+        $array = [
+            "name" => ($exception instanceof Exception || $exception instanceof ErrorException) ? $exception->getName() : 'Exception',
+            "message" => $exception->getMessage(),
+            "code" => $exception->getCode(),
+            "status" => $exception->getCode(),
         ];
+        if ($exception instanceof HttpException) {
+            $array['status'] = $exception->statusCode;
+        }
+        return $array;
     }
 }
