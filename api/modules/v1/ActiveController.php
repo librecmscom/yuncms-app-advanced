@@ -47,7 +47,6 @@ class ActiveController extends \yii\rest\ActiveController
         return [];
     }
 
-
     /**
      * 检查当前用户的权限
      *

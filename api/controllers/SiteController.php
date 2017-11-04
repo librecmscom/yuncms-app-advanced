@@ -26,11 +26,16 @@ class SiteController extends Controller
     }
 
     /**
-     * Display http method
-     * @return mixed|string
+     * Test http request
+     * @return array
      */
-    public function actionMethod(){
-        return Yii::$app->request->method;
+    public function actionTest()
+    {
+        return [
+            'method' => Yii::$app->request->method,
+            'bin' => 0b11,
+            //'POST' => Yii::$app->request->post,
+        ];
     }
 
     /**

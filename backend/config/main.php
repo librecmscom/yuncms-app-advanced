@@ -67,9 +67,6 @@ return [
         ],
         */
     ],
-    'controllerMap' => [
-        'tag' => 'yuncms\tag\backend\controllers\TagController'
-    ],
     'modules' => $modules,
     'params' => $params,
 ];
