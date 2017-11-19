@@ -45,6 +45,24 @@ class Question extends \yuncms\question\models\Question implements Linkable
     }
 
     /**
+     * User Relation
+     * @return \yii\db\ActiveQueryInterface
+     */
+    public function getUser()
+    {
+        return $this->hasOne(User::className(), ['id' => 'user_id']);
+    }
+
+    /**
+     * Answer Relation
+     * @return \yii\db\ActiveQueryInterface
+     */
+    public function getAnswers()
+    {
+        return $this->hasMany(Answer::className(), ['question_id' => 'id']);
+    }
+
+    /**
      * return HATEOAS
      * @see https://en.wikipedia.org/wiki/HATEOAS
      * @return array

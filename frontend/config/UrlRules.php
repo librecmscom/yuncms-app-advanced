@@ -15,7 +15,6 @@ return [
 //        'route' => 'site/index',
 //    ],
 
-
     //单页
     'about' => 'site/about',//关于
     'advertising' => 'site/adv',//广告
@@ -29,7 +28,7 @@ return [
     'terms' => 'legal/terms',//服务条款
 
     //用户
-    'u/<username:[\dA-Za-z]+>' => 'user/space/show',
+    'u/<username:[\dA-Za-z]+>' => 'space/space/show',
 
     //笔记
     'notes/<page:\d+>' => 'note/note/index',
@@ -40,7 +39,8 @@ return [
     //'note/<uuid:[\w+]+>' => 'note/note/view',
 
     //话题
-    'topics' => 'topic/index',
+    'topics' => 'tag/tag/index',
+    'topics/<name:(.*)>' => 'tag/tag/view',
 
     //问答
     'questions/<page:\d+>' => 'question/question/index',
@@ -58,10 +58,11 @@ return [
 //    ],
 
     //文章
-    'articles/<page:\d+>' => 'article/article/index',
+    //'articles/<page:\d+>' => 'article/article/index',
     'articles' => 'article/article/index',
     'articles/create' => 'article/article/create',
     'articles/tag' => 'article/article/tag',
+    'articles/search' => 'article/article/search',
     'articles/<id:[\w+]+>' => 'article/article/view',
 
     //友情链接
@@ -69,8 +70,11 @@ return [
 
     //user
     'user/notice' => 'notification/notification/index',
+    'user/space/<id:\d+>/credits' => 'credit/space/index',
     'user/space/<id:\d+>/coins' => 'coin/space/index',
     'user/space/<id:\d+>/followers' => 'attention/space/follower',
     'user/space/<id:\d+>/followed/<type:\w+>' => 'attention/space/attention',
+    'user/space/<id:\d+>/followed' => 'attention/space/index',
     'user/space/<id:\d+>/collected/<type:\w+>' => 'collection/space/index',
+    'user/space/<id:\d+>/collected' => 'collection/space/index',
 ];

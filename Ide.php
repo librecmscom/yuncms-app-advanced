@@ -16,7 +16,7 @@ class Yii extends \yii\BaseYii
  * Class BaseApplication
  * Used for properties that are identical for both WebApplication and ConsoleApplication
  *
- * @property yuncms\att\Id98 $id98 The id98 component. This property is read-only. Extended component.
+ * @property xutl\oss\Storage $storage The storage component. This property is read-only. Extended component.
  * @property yuncms\system\components\Settings $settings The settings component. This property is read-only. Extended component.
  * @property yii\web\UrlManager $frontUrlManager The frontUrlManager component. This property is read-only. Extended component.
  * @property yii\queue\cli\Queue $queue The queue component. This property is read-only. Extended component.

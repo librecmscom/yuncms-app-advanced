@@ -16,7 +16,7 @@ use yii\web\MethodNotAllowedHttpException;
 use yii\web\NotFoundHttpException;
 use yii\web\ServerErrorHttpException;
 use yuncms\collection\models\Collection;
-use yuncms\question\models\Answer;
+use yuncms\question\models\QuestionAnswer;
 use yuncms\question\models\Question;
 
 /**
@@ -96,10 +96,10 @@ class QuestionController extends ActiveController
         if (Yii::$app->request->isGet) {
             return Yii::createObject([
                 'class' => ActiveDataProvider::className(),
-                'query' => Answer::find()->where(['question_id' => $model->id]),
+                'query' => QuestionAnswer::find()->where(['question_id' => $model->id]),
             ]);
         } else {
-            $answer = new Answer(['question_id' => $model->id]);
+            $answer = new QuestionAnswer(['question_id' => $model->id]);
             $answer->load(Yii::$app->getRequest()->getBodyParams(), '');
             if ($answer->save()) {
                 $response = Yii::$app->getResponse();

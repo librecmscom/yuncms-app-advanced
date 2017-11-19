@@ -7,15 +7,15 @@
 
 namespace api\modules\v1\models;
 
-use yii\helpers\Url;
 use yii\web\Link;
+use yii\helpers\Url;
 use yii\web\Linkable;
 
 /**
- * Class Language
+ * Class News
  * @package api\modules\v1\models
  */
-class Language extends \yuncms\system\models\Language implements Linkable
+class News extends \yuncms\news\models\News implements Linkable
 {
     /**
      * @return array
@@ -24,10 +24,16 @@ class Language extends \yuncms\system\models\Language implements Linkable
     {
         return [
             'id',
-            'name',
-            'iso_639_1',
-            'iso_639_2',
-            'iso_639_3'
+            'user_id',
+            'slug',
+            'title',
+            'description',
+            'status',
+            'views',
+            'url',
+            'published_at',
+            'created_at',
+            'updated_at'
         ];
     }
 
@@ -40,6 +46,7 @@ class Language extends \yuncms\system\models\Language implements Linkable
     {
         return [
             Link::REL_SELF => Url::to(['view', 'id' => $this->id], true),
+            'edit' => Url::to(['view', 'id' => $this->id], true),
             'index' => Url::to(['index'], true),
         ];
     }

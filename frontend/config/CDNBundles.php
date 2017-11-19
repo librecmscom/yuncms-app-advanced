@@ -75,7 +75,7 @@ return [
     'xutl\bootstrap\filestyle\FilestyleAsset' => [
         'sourcePath' => null, // do not publish the bundle
         'js' => [
-            '//cdn.bootcss.com/bootstrap-filestyle/1.3.0/bootstrap-filestyle.min.js'
+            '//cdn.bootcss.com/bootstrap-filestyle/1.2.3/bootstrap-filestyle.min.js'
         ]
     ],
 ];

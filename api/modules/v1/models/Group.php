@@ -7,15 +7,12 @@
 
 namespace api\modules\v1\models;
 
-use yii\helpers\Url;
+use Yii;
 use yii\web\Link;
+use yii\helpers\Url;
 use yii\web\Linkable;
 
-/**
- * Class Category
- * @package api\modules\v1\models
- */
-class Category extends \yuncms\system\models\Category implements Linkable
+class Group extends \yuncms\group\models\Group implements Linkable
 {
     /**
      * @return array
@@ -24,20 +21,20 @@ class Category extends \yuncms\system\models\Category implements Linkable
     {
         return [
             'id',
-            'parent_id' => function () {
-                return $this->parent;
+            'user_id',
+            'nickname' => function () {
+                return $this->user->nickname;
             },
             'name',
-            'slug' ,
-            'keywords',
-            'description',
-            'pinyin',
-            'letter',
-            'frequency',
-            'sort',
+            'logo',
+            'price',
+            'introduce',
             'allow_publish',
+            'applicants',
+            'status',
+            'blocked_at',
             'created_at',
-            'updated_at',
+            'updated_at'
         ];
     }
 
@@ -50,6 +47,7 @@ class Category extends \yuncms\system\models\Category implements Linkable
     {
         return [
             Link::REL_SELF => Url::to(['view', 'id' => $this->id], true),
+            'edit' => Url::to(['view', 'id' => $this->id], true),
             'index' => Url::to(['index'], true),
         ];
     }

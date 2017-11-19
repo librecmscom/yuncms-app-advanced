@@ -26,7 +26,7 @@ return [
             'class' => 'yii\caching\FileCache',
         ],
         'settings' => [
-            'class' => 'yuncms\system\components\Settings',
+            'class' => 'yuncms\core\components\Settings',
             'frontCache' => 'cache'
         ],
         'queue' => [
@@ -35,6 +35,11 @@ return [
         'id98' => [
             'class' => 'xutl\id98\Id98',
             'apiKey' => '1234567890',
+        ],
+        'snowflake' => [
+            'class' => 'xutl\snowflake\Snowflake',
+            'workerId' => 0,
+            'dataCenterId' => 0,
         ],
         'authClientCollection' => [
             'class' => 'yii\authclient\Collection',

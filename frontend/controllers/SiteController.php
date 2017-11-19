@@ -24,6 +24,12 @@ class SiteController extends Controller
                 'class' => 'yii\captcha\CaptchaAction',
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
+            'smsCaptcha' => [
+                'class' => 'xutl\sms\captcha\CaptchaAction',
+                'minLength' => 4,
+                'maxLength' => 6,
+                'fixedVerifyCode' => YII_ENV_TEST ? '1234' : null,
+            ],
         ];
     }
 

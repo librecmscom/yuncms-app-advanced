@@ -30,17 +30,6 @@ return [
                 'text/xml' => 'yuncms\system\web\XmlParser'
             ]
         ],
-        'response' => [
-            'class' => 'yii\web\Response',
-            'on beforeSend' => function ($event) {
-                /** @var \yii\web\Response $response */
-                $response = $event->sender;
-                $headers = $response->getHeaders();
-                //$headers->set('Access-Control-Allow-Origin', '*');
-                //$headers->set('Access-Control-Allow-Methods', 'GET, POST, DELETE, PUT, OPTIONS');
-                //$headers->set('Access-Control-Allow-Headers', 'DNT,access-token,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type');
-            },
-        ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],

@@ -7,10 +7,8 @@
 
 namespace api\modules\v1\controllers;
 
-
 use Yii;
 use yii\helpers\Url;
-use yii\helpers\Inflector;
 use yii\data\ActiveDataProvider;
 use yii\web\ForbiddenHttpException;
 use yii\web\MethodNotAllowedHttpException;
@@ -19,6 +17,8 @@ use yii\web\ServerErrorHttpException;
 use api\modules\v1\models\User;
 use api\modules\v1\ActiveController;
 use api\modules\v1\models\AvatarForm;
+use api\modules\v1\models\Authentication;
+use api\modules\v1\models\RegistrationForm;
 use yuncms\user\models\Career;
 use yuncms\user\models\Education;
 use yuncms\user\models\Profile;
@@ -63,8 +63,7 @@ class UserController extends ActiveController
             'search' => ['GET'],
             'me' => ['GET'],
             'profile' => ['GET', 'PUT', 'PATCH'],
-            'education' => ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
-            'career' => ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+            'authentication' => ['GET', 'POST', 'PUT', 'PATCH'],
         ];
     }
 
@@ -93,6 +92,7 @@ class UserController extends ActiveController
             'nickname' => $user->nickname,
             'email' => $user->email,
             'mobile' => $user->mobile,
+            'isAuthentication' => Authentication::isAuthentication($user->id),
             'faceUrl' => $user->getAvatar()
         ];
     }
@@ -116,6 +116,42 @@ class UserController extends ActiveController
         } else {
             throw new NotFoundHttpException (Yii::t('yii', 'The requested page does not exist.'));
         }
+    }
+
+    /**
+     * 实名认证
+     * @param int $id
+     * @return null|Education|static|object
+     * @throws MethodNotAllowedHttpException
+     * @throws NotFoundHttpException
+     * @throws ServerErrorHttpException
+     */
+    public function actionAuthentication($id)
+    {
+        $user = $this->findModel($id);
+        if (Yii::$app->request->isPost) {
+            if (($model = Authentication::findOne(['user_id' => $user->id])) == null) {
+                $model = new Authentication();
+                $model->scenario = Authentication::SCENARIO_CREATE;
+            } else {
+                $model->scenario = Authentication::SCENARIO_UPDATE;
+            }
+            $model->load(Yii::$app->getRequest()->getBodyParams(), '');
+            if (($model->save()) != false) {
+                $response = Yii::$app->getResponse();
+                $response->setStatusCode(201);
+                return $model;
+            } elseif (!$model->hasErrors()) {
+                throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
+            }
+            return $model;
+        } else if (Yii::$app->request->isGet) {
+            if (($model = Authentication::findOne(['user_id' => $id])) != null) {
+                return $model;
+            }
+            throw new NotFoundHttpException("Object not found: $id");
+        }
+        throw new MethodNotAllowedHttpException();
     }
 
     /**
@@ -283,6 +319,27 @@ class UserController extends ActiveController
             'query' => $query,
         ]);
         return $dataProvider;
+    }
+
+    /**
+     * 注册用户
+     * @return RegistrationForm|false|\yuncms\user\models\User
+     * @throws ServerErrorHttpException
+     */
+    public function actionRegister()
+    {
+        $model = new RegistrationForm();
+        $model->load(Yii::$app->getRequest()->getBodyParams(), '');
+        if (($user = $model->register()) != false) {
+            $response = Yii::$app->getResponse();
+            $response->setStatusCode(201);
+            $id = implode(',', array_values($user->getPrimaryKey(true)));
+            $response->getHeaders()->set('Location', Url::toRoute(['view', 'id' => $id], true));
+            return $user;
+        } elseif (!$model->hasErrors()) {
+            throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
+        }
+        return $model;
     }
 
     /**

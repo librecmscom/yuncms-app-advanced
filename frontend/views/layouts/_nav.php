@@ -17,7 +17,7 @@ $menuItems = [
     ['label' => Yii::t('app', 'Articles'), 'url' => ['/article/article/index']],
     ['label' => Yii::t('app', 'Questions'), 'url' => ['/question/question/index']],
     ['label' => Yii::t('app', 'Notes'), 'url' => ['/note/note/index']],
-    ['label' => Yii::t('app', 'Topics'), 'url' => ['/topic/index']],
+    ['label' => Yii::t('app', 'Topics'), 'url' => ['/tag/tag/index']],
     ['label' => Yii::t('app', 'About'), 'url' => ['/site/about']],
     ['label' => Yii::t('app', 'Contact'), 'url' => ['/site/contact']],
 ];
@@ -58,7 +58,7 @@ if (Yii::$app->user->isGuest) {
         'encode' => false,
         'options' => ['class' => 'user-avatar'],
         'items' => [
-            ['label' => Html::tag('span', '', ['class' => 'fa fa-home']) . Yii::t('user', 'My Page'), 'url' => ['/user/space/index'], 'encode' => false],
+            ['label' => Html::tag('span', '', ['class' => 'fa fa-home']) . Yii::t('user', 'My Page'), 'url' => ['/space/space/index'], 'encode' => false],
             '<li class="divider"></li>',
             ['label' => Html::tag('span', '', ['class' => 'fa fa-money']) . Yii::t('user', 'My Coin'), 'url' => ['/coin/coin/index'], 'encode' => false],
             ['label' => Html::tag('span', '', ['class' => 'fa fa-gift']) . Yii::t('user', 'My Credit'), 'url' => ['/credit/credit/index'], 'encode' => false],

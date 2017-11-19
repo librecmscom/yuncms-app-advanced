@@ -174,7 +174,7 @@ use yuncms\question\models\Question;
             </h2>
             <ol class="widget-top10">
                 <?php
-                $topAnswerUsers = \yuncms\user\models\Extend::top('coins', 8);
+                $topAnswerUsers = \yuncms\user\models\UserExtra::top('coins', 8);
                 ?>
                 <?php foreach ($topAnswerUsers as $index => $topAnswerUser): ?>
                     <li class="text-muted">

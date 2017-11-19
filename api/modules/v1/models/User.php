@@ -9,12 +9,13 @@ namespace api\modules\v1\models;
 
 use yii\helpers\Url;
 use yii\web\Link;
+use yii\web\Linkable;
 
 /**
  * Class User
  * @package api\modules\v1\models
  */
-class User extends \yuncms\user\models\User
+class User extends \yuncms\user\models\User implements Linkable
 {
     public function fields()
     {
@@ -35,18 +36,26 @@ class User extends \yuncms\user\models\User
         ];
     }
 
+    /**
+     * return HATEOAS
+     * @see https://en.wikipedia.org/wiki/HATEOAS
+     * @return array
+     */
     public function getLinks()
     {
         return [
-            Link::REL_SELF => Url::to(['user/view', 'id' => $this->id], true),
-            'edit' => Url::to(['user/view', 'id' => $this->id], true),
-            'profile' => Url::to(['user/profile/view', 'id' => $this->id], true),
-            'index' => Url::to(['users'], true),
+            Link::REL_SELF => Url::to(['view', 'id' => $this->id], true),
+            'edit' => Url::to(['view', 'id' => $this->id], true),
+            'index' => Url::to(['index'], true),
         ];
     }
 
+    /**
+     * À©Õ¹×Ö¶Î¶¨Òå
+     * @return array
+     */
     public function extraFields()
     {
-        return ['profile', 'extend'];
+        return ['profile', 'extra'];
     }
 }
