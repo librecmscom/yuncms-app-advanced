@@ -31,6 +31,7 @@
     "xutl/yii2-aliyun": "~1.0",
     "xutl/yii2-dingtalk": "~1.0",
     "xutl/yii2-back-to-top-widget": "~1.0",
+    "xutl/yii2-payment": "1.0.x-dev",
     "yuncms/yuncms-admin": "~2.0.0",
     "yuncms/yuncms-tag": "~2.0.0",
     "yuncms/yuncms-user": "~2.0.0",
