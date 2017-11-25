@@ -9,19 +9,24 @@ namespace api\modules\v1\models;
 
 use yii\helpers\Url;
 use yii\web\Link;
-use yuncms\tag\models\Tag;
+use yii\web\Linkable;
 
 /**
- * 主题(标签)模型
+ * Class Tag
  * @package api\modules\v1\models
  */
-class Topic extends Tag
+class Tag extends \yuncms\tag\models\Tag implements Linkable
 {
+    /**
+     * return HATEOAS
+     * @see https://en.wikipedia.org/wiki/HATEOAS
+     * @return array
+     */
     public function getLinks()
     {
         return [
-            Link::REL_SELF => Url::to(['view', 'id' => $this->id], true),
-            'index' => Url::to(['index'], true),
+            Link::REL_SELF => Url::to(['/v1/tag/view', 'id' => $this->id], true),
+            'index' => Url::to(['/v1/tag/index'], true),
         ];
     }
 }

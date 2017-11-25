@@ -7,6 +7,7 @@
 
 namespace api\modules\v1\controllers;
 
+
 use Yii;
 use yii\helpers\Url;
 use yii\data\ActiveDataProvider;
@@ -14,14 +15,16 @@ use yii\web\ForbiddenHttpException;
 use yii\web\MethodNotAllowedHttpException;
 use yii\web\NotFoundHttpException;
 use yii\web\ServerErrorHttpException;
+use yuncms\user\frontend\models\UserRecoveryForm;
+use yuncms\user\models\UserProfile;
+use yuncms\attention\models\Attention;
 use api\modules\v1\models\User;
 use api\modules\v1\ActiveController;
 use api\modules\v1\models\AvatarForm;
 use api\modules\v1\models\Authentication;
-use api\modules\v1\models\RegistrationForm;
-use yuncms\user\models\Career;
-use yuncms\user\models\Education;
-use yuncms\user\models\Profile;
+use api\modules\v1\models\UserMobileRegistrationForm;
+use api\modules\v1\models\UserEmailRegistrationForm;
+use api\modules\v1\models\UserSettingsForm;
 
 /**
  * 用户接口
@@ -30,6 +33,9 @@ use yuncms\user\models\Profile;
 class UserController extends ActiveController
 {
 
+    /**
+     * @var string the model class name. This property must be set.
+     */
     public $modelClass = 'api\modules\v1\models\User';
 
     /**
@@ -59,23 +65,28 @@ class UserController extends ActiveController
     {
         return [
             'register' => ['POST'],
+            'email-register' => ['POST'],
             'avatar' => ['POST'],
             'search' => ['GET'],
             'me' => ['GET'],
             'profile' => ['GET', 'PUT', 'PATCH'],
             'authentication' => ['GET', 'POST', 'PUT', 'PATCH'],
+            'follow' => ['POST', 'DELETE'],
+            'friends' => ['GET'],
+            'followers' => ['GET'],
+            'friendships' => ['GET'],
         ];
     }
 
     /**
      * 读取用户扩展数据
-     * @return \yuncms\user\models\Extend
+     * @return \yuncms\user\models\UserExtra
      */
-    public function actionExtend()
+    public function actionExtra()
     {
         /** @var \yuncms\user\models\User $user */
         $user = Yii::$app->user->identity;
-        return $user->extend;
+        return $user->extra;
     }
 
     /**
@@ -99,13 +110,13 @@ class UserController extends ActiveController
 
     /**
      * 获取个人扩展资料
-     * @return Profile
+     * @return UserProfile
      * @throws NotFoundHttpException
      * @throws ServerErrorHttpException
      */
     public function actionProfile()
     {
-        if (($model = Profile::findOne(['user_id' => Yii::$app->user->identity->getId()])) !== null) {
+        if (($model = UserProfile::findOne(['user_id' => Yii::$app->user->identity->getId()])) !== null) {
             if (!Yii::$app->request->isGet) {
                 $model->load(Yii::$app->getRequest()->getBodyParams(), '');
                 if ($model->save() === false && !$model->hasErrors()) {
@@ -119,18 +130,135 @@ class UserController extends ActiveController
     }
 
     /**
-     * 实名认证
-     * @param int $id
-     * @return null|Education|static|object
+     * 修改密码
+     * @return UserSettingsForm
+     * @throws ServerErrorHttpException
+     */
+    public function actionPassword()
+    {
+        $model = new UserSettingsForm();
+        $model->load(Yii::$app->request->post(), '');
+        if ($model->save()) {
+            Yii::$app->getResponse()->setStatusCode(200);
+            return $model;
+        } elseif (!$model->hasErrors()) {
+            throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
+        }
+        return $model;
+    }
+
+    /**
+     * 关注别人
+     * @param integer $id
+     * @return Attention
      * @throws MethodNotAllowedHttpException
      * @throws NotFoundHttpException
      * @throws ServerErrorHttpException
      */
-    public function actionAuthentication($id)
+    public function actionFollow($id)
     {
         $user = $this->findModel($id);
         if (Yii::$app->request->isPost) {
-            if (($model = Authentication::findOne(['user_id' => $user->id])) == null) {
+            /** @var Attention $model */
+            if (($model = Attention::find()->where(['user_id' => Yii::$app->user->getId(), 'model_class' => \yuncms\user\models\User::className(), 'model_id' => $user->id])->one()) != null) {
+                Yii::$app->getResponse()->setStatusCode(200);
+                return $model;
+            } else {
+                $model = new Attention();
+                $model->load(Yii::$app->request->post(), '');
+                $model->model_class = \yuncms\user\models\User::className();
+                $model->user_id = Yii::$app->user->getId();
+                $model->model_id = $user->id;
+                if ($model->save() === false && !$model->hasErrors()) {
+                    throw new ServerErrorHttpException('Failed to update the object for unknown reason.');
+                }
+                Yii::$app->getResponse()->setStatusCode(201);
+                return $model;
+            }
+        } else if (Yii::$app->request->isDelete) {
+            if (($model = Attention::find()->where(['user_id' => Yii::$app->user->getId(), 'model_class' => \yuncms\user\models\User::className(), 'model_id' => $user->id])->one()) != null) {
+                if (($model->delete()) != false) {
+                    Yii::$app->getResponse()->setStatusCode(204);
+                } elseif (!$model->hasErrors()) {
+                    throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
+                }
+            } else {
+                throw new NotFoundHttpException("Object not found.");
+            }
+        } else {
+            throw new MethodNotAllowedHttpException();
+        }
+    }
+
+    /**
+     * 获取用户的关注列表
+     * @param string $id
+     * @return ActiveDataProvider
+     * @throws NotFoundHttpException
+     */
+    public function actionFriends($id)
+    {
+        $user = User::findOne($id);
+        $query = Attention::find()->where(['user_id' => $user->id, 'model_class' => User::className()]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+
+    /**
+     * 获取用户的粉丝列表
+     * @param int $id
+     * @return ActiveDataProvider
+     * @throws NotFoundHttpException
+     */
+    public function actionFollowers($id)
+    {
+        $user = User::findOne($id);
+        $query = Attention::find()->where(['model_class' => User::className(), 'model_id' => $user->id]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+
+    /**
+     * 获取两个用户之间是否存在关注关系
+     * @param int $source_id 源用户的UID
+     * @param int $target_id 目标用户的UID
+     * @return array
+     * @throws NotFoundHttpException
+     */
+    public function actionFriendships($source_id, $target_id)
+    {
+        $source = $this->findModel($source_id);
+        $target = $this->findModel($target_id);
+        return [
+            'target' => [
+                "id" => $source->id,
+                "username" => $source->username,
+                "following" => Attention::find()->where(['user_id' => $source->id, 'model_class' => User::className(), 'model_id' => $target->id])->exists()
+
+            ],
+            'source' => [
+                "id" => $target->id,
+                "screen_name" => $target->username,
+                "following" => Attention::find()->where(['user_id' => $target->id, 'model_class' => User::className(), 'model_id' => $source->id])->exists()
+            ],
+        ];
+    }
+
+    /**
+     * 实名认证
+     * @return null|Authentication
+     * @throws MethodNotAllowedHttpException
+     * @throws NotFoundHttpException
+     * @throws ServerErrorHttpException
+     */
+    public function actionAuthentication()
+    {
+        if (Yii::$app->request->isPost) {
+            if (($model = Authentication::findOne(['user_id' => Yii::$app->user->getId()])) === null) {
                 $model = new Authentication();
                 $model->scenario = Authentication::SCENARIO_CREATE;
             } else {
@@ -146,144 +274,10 @@ class UserController extends ActiveController
             }
             return $model;
         } else if (Yii::$app->request->isGet) {
-            if (($model = Authentication::findOne(['user_id' => $id])) != null) {
+            if (($model = Authentication::findOne(['user_id' => Yii::$app->user->getId()])) != null) {
                 return $model;
             }
-            throw new NotFoundHttpException("Object not found: $id");
-        }
-        throw new MethodNotAllowedHttpException();
-    }
-
-    /**
-     * 教育经历 CURD
-     * @param int $id
-     * @param int $eid
-     * @return null|Education|static|object
-     * @throws MethodNotAllowedHttpException
-     * @throws NotFoundHttpException
-     * @throws ServerErrorHttpException
-     */
-    public function actionEducation($id, $eid = null)
-    {
-        $user = $this->findModel($id);
-        if (Yii::$app->request->isPost) {//发布
-            $model = new Education();
-            $model->load(Yii::$app->getRequest()->getBodyParams(), '');
-            if (($model->save()) != false) {
-                $response = Yii::$app->getResponse();
-                $response->setStatusCode(201);
-                return $model;
-            } elseif (!$model->hasErrors()) {
-                throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
-            }
-            return $model;
-        } else if (Yii::$app->request->isGet) {
-            if (!empty($eid)) {
-                if (($model = Education::findOne(['user_id' => Yii::$app->user->id, 'id' => $eid])) != null) {
-                    return $model;
-                } else {
-                    throw new NotFoundHttpException("Object not found: $id");
-                }
-            } else {
-                return Yii::createObject([
-                    'class' => ActiveDataProvider::className(),
-                    'query' => $user->getEducations(),
-                ]);
-            }
-        } else if ((Yii::$app->request->isPut || Yii::$app->request->isPatch) && !empty($eid)) {
-            if (($model = Education::findOne(['user_id' => Yii::$app->user->id, 'id' => $eid])) != null) {
-                $model->load(Yii::$app->getRequest()->getBodyParams(), '');
-                if (($model->save()) != false) {
-                    $response = Yii::$app->getResponse();
-                    $response->setStatusCode(200);
-                    return $model;
-                } elseif (!$model->hasErrors()) {
-                    throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
-                }
-                return $model;
-            } else {
-                throw new NotFoundHttpException("Object not found: $eid");
-            }
-        } else if (Yii::$app->request->isDelete && !empty($eid)) {
-            if (($model = Education::findOne(['user_id' => Yii::$app->user->id, 'id' => $eid])) != null) {
-                $model->load(Yii::$app->getRequest()->getBodyParams(), '');
-                if (($model->delete()) != false) {
-                    $response = Yii::$app->getResponse();
-                    $response->setStatusCode(204);
-                } elseif (!$model->hasErrors()) {
-                    throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
-                }
-                return $model;
-            } else {
-                throw new NotFoundHttpException("Object not found: $eid");
-            }
-        }
-        throw new MethodNotAllowedHttpException();
-    }
-
-    /**
-     * 职业经历 CURD
-     * @param int $id
-     * @param int $cid
-     * @return null|Education|static|object
-     * @throws MethodNotAllowedHttpException
-     * @throws NotFoundHttpException
-     * @throws ServerErrorHttpException
-     */
-    public function actionCareer($id, $cid = null)
-    {
-        $user = $this->findModel($id);
-        if (Yii::$app->request->isPost) {//发布
-            $model = new Career();
-            $model->load(Yii::$app->getRequest()->getBodyParams(), '');
-            if (($model->save()) != false) {
-                $response = Yii::$app->getResponse();
-                $response->setStatusCode(201);
-                return $model;
-            } elseif (!$model->hasErrors()) {
-                throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
-            }
-            return $model;
-        } else if (Yii::$app->request->isGet) {
-            if (!empty($cid)) {
-                if (($model = Career::findOne(['user_id' => Yii::$app->user->id, 'id' => $cid])) != null) {
-                    return $model;
-                } else {
-                    throw new NotFoundHttpException("Object not found: $id");
-                }
-            } else {
-                return Yii::createObject([
-                    'class' => ActiveDataProvider::className(),
-                    'query' => $user->getCareers(),
-                ]);
-            }
-        } else if ((Yii::$app->request->isPut || Yii::$app->request->isPatch) && !empty($cid)) {
-            if (($model = Education::findOne(['user_id' => Yii::$app->user->id, 'id' => $cid])) != null) {
-                $model->load(Yii::$app->getRequest()->getBodyParams(), '');
-                if (($model->save()) != false) {
-                    $response = Yii::$app->getResponse();
-                    $response->setStatusCode(200);
-                    return $model;
-                } elseif (!$model->hasErrors()) {
-                    throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
-                }
-                return $model;
-            } else {
-                throw new NotFoundHttpException("Object not found: $cid");
-            }
-        } else if (Yii::$app->request->isDelete && !empty($cid)) {
-            if (($model = Education::findOne(['user_id' => Yii::$app->user->id, 'id' => $cid])) != null) {
-                $model->load(Yii::$app->getRequest()->getBodyParams(), '');
-                if (($model->delete()) != false) {
-                    $response = Yii::$app->getResponse();
-                    $response->setStatusCode(204);
-                } elseif (!$model->hasErrors()) {
-                    throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
-                }
-                return $model;
-            } else {
-                throw new NotFoundHttpException("Object not found: $cid");
-            }
+            throw new NotFoundHttpException("Object not found: " . Yii::$app->user->getId());
         }
         throw new MethodNotAllowedHttpException();
     }
@@ -314,7 +308,7 @@ class UserController extends ActiveController
      */
     public function actionSearch($username)
     {
-        $query = User::find()->where(['like', 'username', $username])->orWhere(['like', 'username', $username]);
+        $query = User::find()->where(['like', 'username', $username])->orWhere(['like', 'nickname', $username]);
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
@@ -323,12 +317,12 @@ class UserController extends ActiveController
 
     /**
      * 注册用户
-     * @return RegistrationForm|false|\yuncms\user\models\User
+     * @return UserEmailRegistrationForm|\yuncms\user\models\User
      * @throws ServerErrorHttpException
      */
-    public function actionRegister()
+    public function actionEmailRegister()
     {
-        $model = new RegistrationForm();
+        $model = new UserEmailRegistrationForm();
         $model->load(Yii::$app->getRequest()->getBodyParams(), '');
         if (($user = $model->register()) != false) {
             $response = Yii::$app->getResponse();
@@ -336,6 +330,44 @@ class UserController extends ActiveController
             $id = implode(',', array_values($user->getPrimaryKey(true)));
             $response->getHeaders()->set('Location', Url::toRoute(['view', 'id' => $id], true));
             return $user;
+        } elseif (!$model->hasErrors()) {
+            throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
+        }
+        return $model;
+    }
+
+    /**
+     * 注册用户
+     * @return UserMobileRegistrationForm|false|\yuncms\user\models\User
+     * @throws ServerErrorHttpException
+     */
+    public function actionRegister()
+    {
+        $model = new UserMobileRegistrationForm();
+        $model->load(Yii::$app->getRequest()->getBodyParams(), '');
+        if (($user = $model->register()) != false) {
+            $response = Yii::$app->getResponse();
+            $response->setStatusCode(201);
+            $id = implode(',', array_values($user->getPrimaryKey(true)));
+            $response->getHeaders()->set('Location', Url::toRoute(['view', 'id' => $id], true));
+            return $user;
+        } elseif (!$model->hasErrors()) {
+            throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
+        }
+        return $model;
+    }
+
+    /**
+     * 重置密码
+     * @return UserRecoveryForm
+     * @throws ServerErrorHttpException
+     */
+    public function actionRecovery()
+    {
+        $model = new UserRecoveryForm();
+        $model->load(Yii::$app->getRequest()->getBodyParams(), '');
+        if ($model->resetPassword()) {
+            Yii::$app->getResponse()->setStatusCode(200);
         } elseif (!$model->hasErrors()) {
             throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
         }

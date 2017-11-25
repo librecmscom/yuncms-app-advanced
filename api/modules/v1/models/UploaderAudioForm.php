@@ -14,6 +14,10 @@ use yii\web\UploadedFile;
 use yuncms\attachment\AttachmentTrait;
 use yuncms\attachment\components\Uploader;
 
+/**
+ * Class UploaderAudioForm
+ * @package api\modules\v1\models
+ */
 class UploaderAudioForm extends Model
 {
     use AttachmentTrait;

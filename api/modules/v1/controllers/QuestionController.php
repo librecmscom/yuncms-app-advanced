@@ -11,13 +11,13 @@ use Yii;
 use yii\data\ActiveDataProvider;
 use yii\helpers\Url;
 use yii\web\ForbiddenHttpException;
-use api\modules\v1\ActiveController;
 use yii\web\MethodNotAllowedHttpException;
 use yii\web\NotFoundHttpException;
 use yii\web\ServerErrorHttpException;
-use yuncms\collection\models\Collection;
-use yuncms\question\models\QuestionAnswer;
-use yuncms\question\models\Question;
+use api\modules\v1\ActiveController;
+use api\modules\v1\models\Question;
+use api\modules\v1\models\QuestionAnswer;
+use api\modules\v1\models\QuestionCollection;
 
 /**
  * Class QuestionController
@@ -25,6 +25,9 @@ use yuncms\question\models\Question;
  */
 class QuestionController extends ActiveController
 {
+    /**
+     * @var string the model class name. This property must be set.
+     */
     public $modelClass = 'api\modules\v1\models\Question';
 
     /**
@@ -35,7 +38,7 @@ class QuestionController extends ActiveController
     protected function verbs()
     {
         return [
-            'collection' => ['POST', 'DELETE'],
+            'collection' => ['GET', 'POST', 'DELETE'],
             'answer' => ['GET', 'POST'],
         ];
     }
@@ -43,45 +46,45 @@ class QuestionController extends ActiveController
     /**
      * 问题收藏
      * @param int $id
-     * @return void
+     * @return object|ActiveDataProvider
      * @throws MethodNotAllowedHttpException
      * @throws NotFoundHttpException
      * @throws ServerErrorHttpException
      */
-    public function actionCollection($id)
+    public function actionCollection($id = null)
     {
-        $model = $this->findModel($id);
-        if (Yii::$app->request->isDelete) {
-            $userCollect = Collection::findOne(['user_id' => Yii::$app->user->id, 'model' => get_class($model), 'model_id' => $id]);
-            if ($userCollect) {
-                $userCollect->delete();
-                $model->updateCounters(['collections' => -1]);
+        if (Yii::$app->request->isGet) {
+            return Yii::createObject([
+                'class' => ActiveDataProvider::className(),
+                'query' => $query = QuestionCollection::find()->where([
+                    'user_id' => Yii::$app->user->getId()
+                ])->with('user'),
+            ]);
+        } else if (!empty($id) && Yii::$app->request->isDelete) {
+            $question = $this->findModel($id);
+            if (($collect = QuestionCollection::find()->where(['model_id' => $question->id, 'user_id' => Yii::$app->user->getId()])->one()) != null) {
+                $collect->delete();
                 Yii::$app->getResponse()->setStatusCode(204);
-                return;
             } else {
                 throw new NotFoundHttpException("Object not found.");
             }
-        } else if (Yii::$app->request->isPost) {
-            $userCollect = Collection::findOne(['user_id' => Yii::$app->user->id, 'model' => get_class($model), 'model_id' => $id]);
-            if (!$userCollect) {
-                $collect = new Collection([
-                    'user_id' => Yii::$app->user->id,
-                    'model_id' => $id,
-                    'model' => get_class($model),
-                    'subject' => $model->title,
-                ]);
-                if ($collect->save()) {
-                    $model->updateCounters(['collections' => 1]);
-                } elseif (!$model->hasErrors()) {
+        } else if (!empty($id) && Yii::$app->request->isPost) {
+            $question = $this->findModel($id);
+            if (($collect = QuestionCollection::find()->where(['model_id' => $question->id, 'user_id' => Yii::$app->user->getId()])->one()) != null) {
+                Yii::$app->getResponse()->setStatusCode(200);
+            } else {
+                $model = new QuestionCollection();
+                $model->load(Yii::$app->request->post(), '');
+                $model->subject = $question->title;
+                $model->model_id = $question->id;
+                if ($model->save() === false && !$model->hasErrors()) {
                     throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
                 }
                 Yii::$app->getResponse()->setStatusCode(201);
-            } else {
-                Yii::$app->getResponse()->setStatusCode(200);
             }
-            return;
+        } else {
+            throw new MethodNotAllowedHttpException();
         }
-        throw new MethodNotAllowedHttpException();
     }
 
     /**

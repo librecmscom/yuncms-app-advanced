@@ -39,6 +39,7 @@ return [
             'api/web/assets',
             'backend/runtime',
             'backend/web/assets',
+            'console/runtime',
             'frontend/runtime',
             'frontend/web/assets',
         ],
@@ -58,7 +59,7 @@ return [
 //        ],
     ],
     'Staging' => [
-        'path' => 'test',
+        'path' => 'stage',
         'setNginxConf' => [
             'nginx.conf',
         ],
@@ -67,6 +68,7 @@ return [
             'api/web/assets',
             'backend/runtime',
             'backend/web/assets',
+	    'console/runtime',
             'frontend/runtime',
             'frontend/web/assets',
         ],
@@ -94,6 +96,7 @@ return [
             'api/web/assets',
             'backend/runtime',
             'backend/web/assets',
+            'console/runtime',
             'frontend/runtime',
             'frontend/web/assets',
         ],

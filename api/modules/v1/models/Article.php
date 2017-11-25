@@ -7,8 +7,9 @@
 
 namespace api\modules\v1\models;
 
-use yii\helpers\Url;
+use Yii;
 use yii\web\Link;
+use yii\helpers\Url;
 use yii\web\Linkable;
 
 /**
@@ -25,26 +26,48 @@ class Article extends \yuncms\article\models\Article implements Linkable
         return [
             'id',
             'uuid',
-            'user_id',
-            'nickname' => function () {
-                return $this->user->nickname;
-            },
-            'category_id',
+            'category',
             'title',
             'sub_title',
-            'cover',
             'description',
+            'cover',
             'comments',
             'supports',
             'collections',
             'views',
-            'is_top',
-            'is_best',
-            'content',
+            'isTop' => 'is_top',
+            'isBest' => 'is_best',
+            'isCollected' => function () {
+                return $this->isCollected(Yii::$app->user->getId());
+            },
+            'isSupported' => function () {
+                return $this->isSupported(Yii::$app->user->getId());
+            },
             'status',
+            'content',
+            'user',
             'created_at',
             'updated_at',
+            'published_at',
+            "created_datetime" => function () {
+                return gmdate(DATE_ISO8601, $this->created_at);
+            },
+            "updated_datetime" => function () {
+                return gmdate(DATE_ISO8601, $this->updated_at);
+            },
+            'published_datetime' => function () {
+                return gmdate(DATE_ISO8601, $this->published_at);
+            }
         ];
+    }
+
+    /**
+     * User Relation
+     * @return \yii\db\ActiveQueryInterface
+     */
+    public function getUser()
+    {
+        return $this->hasOne(User::className(), ['id' => 'user_id']);
     }
 
     /**

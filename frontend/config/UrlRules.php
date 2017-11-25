@@ -46,7 +46,7 @@ return [
     'questions/<page:\d+>' => 'question/question/index',
     'questions' => 'question/question/index',
     'questions/tag' => 'question/question/tag',
-    'questions/<id:\d+>' => 'question/question/view',
+    'question/<id:\d+>' => 'question/question/view',
 
 //    [//如果使用子域名部署，那么所有的规则都得像这样配置，不然跳转走了，跳转不回来了。因为检测到的host是当前域名的
 //        'class' => 'yii\web\UrlRule',

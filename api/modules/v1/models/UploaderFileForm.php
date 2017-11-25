@@ -14,6 +14,10 @@ use yii\web\UploadedFile;
 use yuncms\attachment\AttachmentTrait;
 use yuncms\attachment\components\Uploader;
 
+/**
+ * Class UploaderFileForm
+ * @package api\modules\v1\models
+ */
 class UploaderFileForm extends Model
 {
     use AttachmentTrait;

@@ -6,11 +6,51 @@
  */
 return [
     //第一版
+    [//用户
+        'class' => 'yii\rest\UrlRule',
+        'controller' => 'v1/user',
+        'except' => ['delete', 'create'],
+        'extraPatterns' => [
+            'GET search' => 'search',
+            'GET me' => 'me',
+            'GET extra' => 'extra',
+            'PUT,PATCH,GET profile' => 'profile',
+            'POST register' => 'register',
+            'POST email-register' => 'email-register',
+            'POST recovery' => 'recovery',
+            'POST avatar' => 'avatar',
+            'POST password' => 'password',
+            'GET friendships' => 'friendships',
+            'POST,DELETE follow' => 'follow',
+            'GET,POST authentication' => 'authentication',
+            'GET {id}/friends' => 'friends',
+            'GET {id}/followers' => 'followers',
+        ],
+    ],
+
+    [//私信
+        'class' => 'yii\rest\UrlRule',
+        'except' => ['delete', 'update'],
+        'controller' => 'v1/message',
+        'extraPatterns' => [
+            'GET unread-messages' => 'unread-messages'
+        ],
+    ],
+
+    [//通知
+        'class' => 'yii\rest\UrlRule',
+        'except' => ['delete', 'update', 'create'],
+        'controller' => 'v1/notification',
+        'extraPatterns' => [
+            'POST read-all' => 'read-all',
+            'GET,HEAD unread-notifications' => 'unread-notifications'
+        ],
+    ],
 
     [//话题
         'class' => 'yii\rest\UrlRule',
         'except' => ['delete', 'create', 'update'],
-        'controller' => 'v1/topic',
+        'controller' => 'v1/tag',
         'extraPatterns' => [
             'GET search' => 'search',
         ],
@@ -20,17 +60,9 @@ return [
         'class' => 'yii\rest\UrlRule',
         'controller' => ['v1/article'],
         'extraPatterns' => [
-            'POST,DELETE {id}/collection' => 'collection',
+            'GET,POST,DELETE {id}/collection' => 'collection',
             'POST {id}/support' => 'support',
-        ],
-    ],
-
-    [//问答
-        'class' => 'yii\rest\UrlRule',
-        'controller' => ['v1/question'],
-        'extraPatterns' => [
-            'POST,DELETE {id}/collection' => 'collection',
-            'GET,POST {id}/answers' => 'answer',
+            'GET,POST {id}/comments' => 'comment',
         ],
     ],
 
@@ -40,45 +72,32 @@ return [
         'extraPatterns' => [
             'GET my' => 'my',
             'GET,PUT,PATCH,DELETE {id}/members/<user_id:\d+>' => 'member',
-            'GET,POST <id:\d+>/members' => 'member',
+            'GET,POST {id}/members' => 'member',
             'GET search' => 'search',
             'GET joined' => 'joined',
             'POST {id}/join' => 'join',
         ],
     ],
 
+    [//问答
+        'class' => 'yii\rest\UrlRule',
+        'controller' => ['v1/question'],
+        'extraPatterns' => [
+            'GET my' => 'my',
+            'GET collection' => 'collection',
+            'GET,POST {id}/answers' => 'answer',
+            'GET,POST {id}/comments' => 'comment',
+            'POST {id}/support' => 'support',
+            'POST,DELETE {id}/collection' => 'collection',
+        ],
+    ],
 
     [//头条
         'class' => 'yii\rest\UrlRule',
         'controller' => 'v1/news',
-    ],
-
-    [//用户
-        'class' => 'yii\rest\UrlRule',
-        'controller' => 'v1/user',
-        'except' => ['delete', 'create'],
         'extraPatterns' => [
-            'GET search' => 'search',
-            'GET me' => 'me',
-            'GET extend' => 'extend',
-            'PUT,PATCH,GET profile' => 'profile',
-            'POST register' => 'register',
-            'POST avatar' => 'avatar',
-
-            'PUT,PATCH,GET,DELETE {id}/educations/<eid:\d+>' => 'education',
-            'GET,POST {id}/educations' => 'education',
-
-            'PUT,PATCH,GET,DELETE <id:\d+>/careers/<eid:\d+>' => 'career',
-            'GET,POST {id}/careers' => 'career',
-
-            'GET,POST {id}/authentication' => 'authentication',
+            'POST {id}/support' => 'support',
         ],
-//        'ruleConfig' => [//额外的包含规则
-//            'class' => 'yii\web\UrlRule',
-//            'defaults' => [
-//                'expand' => 'profile',
-//            ]
-//        ],
     ],
 
     [//支付

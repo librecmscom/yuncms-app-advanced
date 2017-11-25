@@ -7,8 +7,9 @@
 
 namespace api\modules\v1\models;
 
-use yii\helpers\Url;
+use Yii;
 use yii\web\Link;
+use yii\helpers\Url;
 use yii\web\Linkable;
 
 /**
@@ -24,24 +25,52 @@ class Question extends \yuncms\question\models\Question implements Linkable
     {
         return [
             'id',
-            'user_id',
-            'nickname' => function () {
-                return $this->user->nickname;
-            },
             'title',
             'alias',
             'price',
             'hide',
-            'content',
             'answers',
             'views',
             'followers',
             'collections',
             'comments',
+            'tags',
+            'isFollowed' => function () {
+                return $this->isFollowed(Yii::$app->user->getId());
+            },
+            'isCollected' => function () {
+                return $this->isCollected(Yii::$app->user->getId());
+            },
             'status',
+            'user',
+            'content',
             'created_at',
-            'updated_at'
+            'updated_at',
+            "created_datetime" => function () {
+                return gmdate(DATE_ISO8601, $this->created_at);
+            },
+            "updated_datetime" => function () {
+                return gmdate(DATE_ISO8601, $this->updated_at);
+            },
         ];
+    }
+
+    /**
+     * Collection Relation
+     * @return \yii\db\ActiveQueryInterface
+     */
+    public function getAttentions()
+    {
+        return $this->hasMany(QuestionAttention::className(), ['model_id' => 'id']);
+    }
+
+    /**
+     * Collection Relation
+     * @return \yii\db\ActiveQueryInterface
+     */
+    public function getCollections()
+    {
+        return $this->hasMany(QuestionCollection::className(), ['model_id' => 'id']);
     }
 
     /**
@@ -54,12 +83,12 @@ class Question extends \yuncms\question\models\Question implements Linkable
     }
 
     /**
-     * Answer Relation
+     * Tag Relation
      * @return \yii\db\ActiveQueryInterface
      */
-    public function getAnswers()
+    public function getTags()
     {
-        return $this->hasMany(Answer::className(), ['question_id' => 'id']);
+        return $this->hasMany(Tag::className(), ['id' => 'tag_id'])->viaTable('{{%question_tag}}', ['question_id' => 'id']);
     }
 
     /**
@@ -70,9 +99,9 @@ class Question extends \yuncms\question\models\Question implements Linkable
     public function getLinks()
     {
         return [
-            Link::REL_SELF => Url::to(['view', 'id' => $this->id], true),
-            'edit' => Url::to(['view', 'id' => $this->id], true),
-            'index' => Url::to(['index'], true),
+            Link::REL_SELF => Url::to(['/v1/question/view', 'id' => $this->id], true),
+            'edit' => Url::to(['/v1/question/view', 'id' => $this->id], true),
+            'index' => Url::to(['/v1/question/index'], true),
         ];
     }
 }

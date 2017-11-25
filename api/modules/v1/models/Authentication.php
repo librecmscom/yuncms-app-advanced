@@ -10,7 +10,6 @@ namespace api\modules\v1\models;
 use Yii;
 use yii\helpers\ArrayHelper;
 use yii\web\UploadedFile;
-use yuncms\system\validators\IdCardValidator;
 
 /**
  * Class Authentication
@@ -45,10 +44,8 @@ class  Authentication extends \yuncms\authentication\models\Authentication
     public function fields()
     {
         $fields = parent::fields();
-
         // 删除一些包含敏感信息的字段
         unset($fields['passport_cover'], $fields['passport_person_page'], $fields['passport_self_holding']);
-
         return $fields;
     }
 

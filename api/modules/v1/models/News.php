@@ -7,6 +7,7 @@
 
 namespace api\modules\v1\models;
 
+use Yii;
 use yii\web\Link;
 use yii\helpers\Url;
 use yii\web\Linkable;
@@ -24,17 +25,34 @@ class News extends \yuncms\news\models\News implements Linkable
     {
         return [
             'id',
-            'user_id',
-            'slug',
             'title',
             'description',
-            'status',
-            'views',
             'url',
-            'published_at',
+            'status',
+            'user',
             'created_at',
             'updated_at'
         ];
+    }
+
+    /**
+     * 扩展字段定义
+     * @return array
+     */
+    public function extraFields()
+    {
+        return [
+            'user'
+        ];
+    }
+
+    /**
+     * User Relation
+     * @return \yii\db\ActiveQueryInterface
+     */
+    public function getUser()
+    {
+        return $this->hasOne(User::className(), ['id' => 'user_id']);
     }
 
     /**
@@ -45,9 +63,9 @@ class News extends \yuncms\news\models\News implements Linkable
     public function getLinks()
     {
         return [
-            Link::REL_SELF => Url::to(['view', 'id' => $this->id], true),
-            'edit' => Url::to(['view', 'id' => $this->id], true),
-            'index' => Url::to(['index'], true),
+            Link::REL_SELF => Url::to(['/v1/news/view', 'id' => $this->id], true),
+            'edit' => Url::to(['/v1/news/view', 'id' => $this->id], true),
+            'index' => Url::to(['/v1/news/index'], true),
         ];
     }
 }

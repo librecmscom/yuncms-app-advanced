@@ -22,6 +22,15 @@ return [
             ],
         ],
         'request' => [
+            'ipHeaders' => [
+                'X-Forwarded-For',
+                'ALI-CDN-REAL-IP',
+            ],
+            'secureProtocolHeaders' => [
+                'X-Forwarded-Proto' => ['https'],
+                'Front-End-Https' => ['on'],
+                'X-CLIENT-SCHEME' => ['on'],
+            ],
             'parsers' => [
                 'multipart/form-data' => 'yii\web\MultipartFormDataParser',
                 'application/json' => 'yii\web\JsonParser',

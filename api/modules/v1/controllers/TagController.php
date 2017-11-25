@@ -7,17 +7,18 @@
 
 namespace api\modules\v1\controllers;
 
-use api\modules\v1\ActiveController;
-use api\modules\v1\models\Topic;
 use yii\data\ActiveDataProvider;
+use api\modules\v1\ActiveController;
+use api\modules\v1\models\Tag;
+
 
 /**
  * 主题
  * @package api\modules\v1\controllers
  */
-class TopicController extends ActiveController
+class TagController extends ActiveController
 {
-    public $modelClass = 'api\modules\v1\models\Topic';
+    public $modelClass = 'api\modules\v1\models\Tag';
 
     /**
      * 定义操作
@@ -32,15 +33,33 @@ class TopicController extends ActiveController
     }
 
     /**
+     * Declares the allowed HTTP verbs.
+     * Please refer to [[VerbFilter::actions]] on how to declare the allowed verbs.
+     * @return array the allowed HTTP verbs.
+     */
+    protected function verbs()
+    {
+        return [
+            'search' => ['GET'],
+        ];
+    }
+
+    /**
      * 主题搜索
-     * @param string $topic
+     * @param string $tag
      * @return ActiveDataProvider
      */
-    public function actionSearch($topic)
+    public function actionSearch($tag)
     {
-        $query = Topic::find()->where(['like', 'name', $topic]);
+        $query = Tag::find()->andWhere(['like', 'name', $tag]);
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'sort' => [
+                'defaultOrder' => [
+                    'frequency' => SORT_DESC,
+                    'id' => SORT_ASC,
+                ]
+            ],
         ]);
         return $dataProvider;
     }

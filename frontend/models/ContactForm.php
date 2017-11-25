@@ -15,7 +15,8 @@ class ContactForm extends Model
     public $subject;
     public $body;
     public $verifyCode;
-
+    public $mobile;
+    public $smsVerifyCode;
 
     /**
      * @inheritdoc
@@ -29,6 +30,11 @@ class ContactForm extends Model
             ['email', 'email'],
             // verifyCode needs to be entered correctly
             ['verifyCode', 'captcha'],
+
+            ['smsVerifyCode', 'required'],
+            ['smsVerifyCode', 'integer'],
+            ['smsVerifyCode', 'string', 'min' => 4, 'max' => 6],
+            ['smsVerifyCode', '\xutl\sms\captcha\CaptchaValidator', 'captchaAction' => '/site/smsCaptcha', 'skipOnEmpty' => false, 'message' => '手机验证码输入错误'],
         ];
     }
 

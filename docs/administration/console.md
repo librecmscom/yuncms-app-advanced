@@ -1,5 +1,15 @@
 # 控制台操作手册
 
+#### Composer 
+
+```bash
+composer install --prefer-source --optimize-autoloader -vvv
+composer update --prefer-source --optimize-autoloader -vvv
+
+composer install --prefer-dist --optimize-autoloader -vvv
+composer update --prefer-dist --optimize-autoloader -vvv
+```
+
 #### 初始化开发环境
 
 ```bash
@@ -39,7 +49,7 @@ rpm -ivh jdk-8u25-linux-x64.rpm
 ./yii message backend/messages/config.php
 ./yii message frontend/messages/config.php
 ./yii message @yuncms/credit/messages/config.php
-./yii message @yuncms/group/messages/config.php
+./yii message @yuncms/user/messages/config.php
 ```
 
 ##### 创建数据迁移文件(支持命名空间)
@@ -49,8 +59,12 @@ rpm -ivh jdk-8u25-linux-x64.rpm
 php yii gii/model --ns=common\\models --modelClass=AdminLog --tableName=admin_log
 
 ./yii migrate/create yuncms\coin\migrations\create_coin_recharge_table
-./yii migrate/create app\migrations\add_test_user
+./yii migrate/create app\migrations\Add_oauth2_client
 ./yii migrate/create app\migrations\create_group_member_table
 ./yii migrate/create app\migrations\create_group_order_table
-./yii migrate/create yuncms\credit\migrations\add_credit_field
+./yii migrate/create yuncms\oauth2\migrations\Add_backend_menu
+./yii migrate/create sixiang\group\migrations\add_questions_field
+
+./yii migrate/create yuncms\tag\migrations\import_default_tag
+
 ```

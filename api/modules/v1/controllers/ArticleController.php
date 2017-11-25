@@ -8,14 +8,17 @@
 namespace api\modules\v1\controllers;
 
 use Yii;
+use yii\data\ActiveDataProvider;
+use yii\rest\IndexAction;
 use yii\web\ForbiddenHttpException;
-use api\modules\v1\ActiveController;
 use yii\web\MethodNotAllowedHttpException;
 use yii\web\NotFoundHttpException;
 use yii\web\ServerErrorHttpException;
-use yuncms\article\models\Article;
-use yuncms\support\models\Support;
-use yuncms\collection\models\Collection;
+use yuncms\article\models\ArticleSupport;
+use api\modules\v1\ActiveController;
+use api\modules\v1\models\Article;
+use api\modules\v1\models\ArticleCollection;
+use api\modules\v1\models\ArticleComment;
 
 /**
  * Class ArticleController
@@ -23,6 +26,9 @@ use yuncms\collection\models\Collection;
  */
 class ArticleController extends ActiveController
 {
+    /**
+     * @var string the model class name. This property must be set.
+     */
     public $modelClass = 'api\modules\v1\models\Article';
 
     /**
@@ -34,67 +40,157 @@ class ArticleController extends ActiveController
     {
         return [
             'support' => ['POST'],
-            'collection' => ['POST', 'DELETE'],
+            'comment' => ['GET', 'POST'],
+            'collection' => ['GET', 'POST', 'DELETE'],
         ];
     }
 
     /**
-     * 文章收藏
-     * @param int $id
-     * @return void
+     * @return array
+     */
+    public function actions()
+    {
+        $actions = parent::actions();
+        $actions['index']['prepareDataProvider'] = [$this, 'prepareDataProvider'];
+        return $actions;
+    }
+
+    /**
+     * Prepares the data provider that should return the requested collection of the models.
+     *
+     * @param IndexAction $action
+     * @param mixed $filter
+     * @return ActiveDataProvider
+     */
+    public function prepareDataProvider(IndexAction $action, $filter)
+    {
+        /* @var $modelClass \yii\db\BaseActiveRecord */
+        $modelClass = $action->modelClass;
+        $query = $modelClass::find()->with('user')->active();
+        if (!empty($filter)) {
+            $query->andWhere($filter);
+        }
+        return Yii::createObject([
+            'class' => ActiveDataProvider::className(),
+            'query' => $query,
+            'sort' => [
+                'defaultOrder' => [
+                    'created_at' => SORT_DESC,
+                    'id' => SORT_ASC,
+                ]
+            ],
+        ]);
+    }
+
+    /**
+     * 赞
+     * @param integer $id
+     * @return Article
+     * @throws ServerErrorHttpException
+     */
+    public function actionSupport($id)
+    {
+        $source = $this->findModel($id);
+        if ($source->isSupported(Yii::$app->user->getId())) {
+            Yii::$app->getResponse()->setStatusCode(200);
+            return $source;
+        } else {
+            $model = new ArticleSupport();
+            $model->load(Yii::$app->request->post(), '');
+            $model->model_id = $source->id;
+            if ($model->save() === false && !$model->hasErrors()) {
+                throw new ServerErrorHttpException('Failed to update the object for unknown reason.');
+            }
+            Yii::$app->getResponse()->setStatusCode(201);
+            return $source;
+        }
+    }
+
+    /**
+     * 收藏
+     * @param null|integer $id
+     * @return array|null|object|ActiveDataProvider|\yii\db\ActiveRecordInterface|Article|ArticleCollection
      * @throws MethodNotAllowedHttpException
      * @throws NotFoundHttpException
      * @throws ServerErrorHttpException
      */
-    public function actionCollection($id)
+    public function actionCollection($id = null)
     {
-        $model = $this->findModel($id);
-        if (Yii::$app->request->isDelete) {
-            $userCollect = Collection::findOne(['user_id' => Yii::$app->user->id, 'model' => get_class($model), 'model_id' => $id]);
-            if ($userCollect) {
-                $userCollect->delete();
-                $model->updateCounters(['collections' => -1]);
-                Yii::$app->getResponse()->setStatusCode(204);
-                return;
+        if (Yii::$app->request->isGet) {
+            return Yii::createObject([
+                'class' => ActiveDataProvider::className(),
+                'query' => $query = ArticleCollection::find()->where(['user_id' => Yii::$app->user->getId()])->with('user'),
+            ]);
+        } else if (!empty($id) && Yii::$app->request->isPost) {
+            $source = $this->findModel($id);
+            /** @var ArticleCollection $model */
+            if (($model = $source->getCollections()->andWhere(['user_id' => Yii::$app->user->getId()])->one()) != null) {
+                Yii::$app->getResponse()->setStatusCode(200);
+                return $model;
             } else {
-                throw new NotFoundHttpException("Object not found.");
+                $model = new ArticleCollection();
+                $model->load(Yii::$app->request->post(), '');
+                $model->subject = $source->title;
+                $model->model_id = $source->id;
+                if ($model->save() === false && !$model->hasErrors()) {
+                    throw new ServerErrorHttpException('Failed to update the object for unknown reason.');
+                }
+                Yii::$app->getResponse()->setStatusCode(201);
+                return $model;
             }
-        } else if (Yii::$app->request->isPost) {
-            $userCollect = Collection::findOne(['user_id' => Yii::$app->user->id, 'model' => get_class($model), 'model_id' => $id]);
-            if (!$userCollect) {
-                $collect = new Collection([
-                    'user_id' => Yii::$app->user->id,
-                    'model_id' => $id,
-                    'model' => get_class($model),
-                    'subject' => $model->title,
-                ]);
-                if ($collect->save()) {
-                    $model->updateCounters(['collections' => 1]);
+        } else if (!empty($id) && Yii::$app->request->isDelete) {
+            $source = $this->findModel($id);
+            if (($model = $source->getCollections()->andWhere(['user_id' => Yii::$app->user->getId()])->one()) != null) {
+                if ($model->delete()) {
+                    Yii::$app->getResponse()->setStatusCode(204);
                 } elseif (!$model->hasErrors()) {
                     throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
                 }
-                Yii::$app->getResponse()->setStatusCode(201);
             } else {
-                Yii::$app->getResponse()->setStatusCode(200);
+                throw new NotFoundHttpException("Object not found.");
             }
-            return;
+        } else {
+            throw new MethodNotAllowedHttpException();
         }
-        throw new MethodNotAllowedHttpException();
     }
 
     /**
-     * 文章点赞
-     * @param int $id
-     * @return array
+     * 评论
+     * @param integer $id
+     * @return object|ActiveDataProvider|ArticleComment
+     * @throws MethodNotAllowedHttpException
+     * @throws NotFoundHttpException
+     * @throws ServerErrorHttpException
      */
-    public function actionSupport($id)
+    public function actionComment($id)
     {
-        $model = $this->findModel($id);
-        $support = Support::findOne(['user_id' => Yii::$app->user->id, 'model' => get_class($model), 'model_id' => $id]);
-        if ($support) {
-            Yii::$app->getResponse()->setStatusCode(202);
+        if (($source = $this->findModel($id)) != null) {
+            if (Yii::$app->request->isPost) {//发布
+                $model = new ArticleComment();
+                $model->scenario = ArticleComment::SCENARIO_CREATE;
+                $model->load(Yii::$app->request->post(), '');
+                $model->model_id = $source->id;
+                if ($model->save() === false && !$model->hasErrors()) {
+                    throw new ServerErrorHttpException('Failed to update the object for unknown reason.');
+                }
+                if ($model->to_user_id > 0) {
+                    //notify(Yii::$app->user->id, $model->to_user_id, 'reply_comment', $source->title, $source->id, $model->content, 'article', $source->id);
+                } else {
+                    //notify(Yii::$app->user->id, $source->user_id, 'comment_article', $source->title, $source->id, $model->content, 'article', $source->id);
+                }
+                Yii::$app->getResponse()->setStatusCode(201);
+                return $model;
+            } else if (Yii::$app->request->isGet) {
+                return Yii::createObject([
+                    'class' => ActiveDataProvider::className(),
+                    'query' => $query = ArticleComment::find()->with('user')->with('toUser')->where([
+                        'model_id' => $source->id,
+                    ])->with('user'),
+                ]);
+            }
+            throw new MethodNotAllowedHttpException();
         }
-        Yii::$app->getResponse()->setStatusCode(201);
+        throw new NotFoundHttpException(Yii::t('yii', 'The requested page does not exist'));
     }
 
     /**
@@ -120,16 +216,14 @@ class ArticleController extends ActiveController
      * If the user does not have access, a [[ForbiddenHttpException]] should be thrown.
      *
      * @param string $action the ID of the action to be executed
-     * @param object $model the model to be accessed. If null, it means no specific model is being accessed.
+     * @param Article $model the model to be accessed. If null, it means no specific model is being accessed.
      * @param array $params additional parameters
      * @throws ForbiddenHttpException if the user does not have access
      */
     public function checkAccess($action, $model = null, $params = [])
     {
-        if ($action === 'update' || $action === 'delete') {
-            if ($model->user_id !== Yii::$app->user->id) {
-                throw new ForbiddenHttpException(sprintf('You can only %s articles that you\'ve created.', $action));
-            }
+        if (($action === 'update' || $action === 'delete') && !$model->isAuthor) {
+            throw new ForbiddenHttpException(sprintf('You can only %s articles that you\'ve created.', $action));
         }
     }
 }
