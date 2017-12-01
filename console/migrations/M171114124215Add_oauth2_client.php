@@ -4,7 +4,7 @@ namespace app\migrations;
 
 use yii\db\Migration;
 
-class M170904070743Add_oauth2_client extends Migration
+class M171114124215Add_oauth2_client extends Migration
 {
 
     public function safeUp()
@@ -17,10 +17,10 @@ class M170904070743Add_oauth2_client extends Migration
             'grant_type' => NULL,
             'scope' => NULL,
             'name' => 'App',
-            'domain' => 'baidu.com',
-            'provider' => '北京百度公司',
-            'icp' => '鲁ICP备123456789号',
-            'registration_ip' => '127.0.0.1',
+            'domain' => 'sixiang.im',
+            'provider' => '济南智数信息科技有限公司',
+            'icp' => '鲁ICP备16044693号-6',
+            'registration_ip' => '112.230.206.38',
             'created_at' => 1503631239,
             'updated_at' => 1503631239,
         ]);
@@ -41,7 +41,7 @@ class M170904070743Add_oauth2_client extends Migration
 
     public function down()
     {
-        echo "M170904070743Add_oauth2_client cannot be reverted.\n";
+        echo "M171114124215Add_oauth2_client cannot be reverted.\n";
 
         return false;
     }
