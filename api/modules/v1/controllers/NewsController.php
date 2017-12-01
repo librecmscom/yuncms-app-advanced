@@ -59,9 +59,7 @@ class NewsController extends ActiveController
      */
     public function prepareDataProvider(IndexAction $action, $filter)
     {
-        /* @var $modelClass \yii\db\BaseActiveRecord */
-        $modelClass = $action->modelClass;
-        $query = $modelClass::find()->with('user')->active();
+        $query = News::find()->with('user')->active();
         if (!empty($filter)) {
             $query->andWhere($filter);
         }

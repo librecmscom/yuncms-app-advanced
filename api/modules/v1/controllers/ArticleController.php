@@ -64,9 +64,7 @@ class ArticleController extends ActiveController
      */
     public function prepareDataProvider(IndexAction $action, $filter)
     {
-        /* @var $modelClass \yii\db\BaseActiveRecord */
-        $modelClass = $action->modelClass;
-        $query = $modelClass::find()->with('user')->active();
+        $query = Article::find()->with('user')->active();
         if (!empty($filter)) {
             $query->andWhere($filter);
         }
@@ -108,8 +106,8 @@ class ArticleController extends ActiveController
 
     /**
      * 收藏
-     * @param null|integer $id
-     * @return array|null|object|ActiveDataProvider|\yii\db\ActiveRecordInterface|Article|ArticleCollection
+     * @param null $id
+     * @return Article|ArticleCollection|array|null|object|void|ActiveDataProvider|\yii\db\ActiveRecordInterface
      * @throws MethodNotAllowedHttpException
      * @throws NotFoundHttpException
      * @throws ServerErrorHttpException
@@ -123,7 +121,6 @@ class ArticleController extends ActiveController
             ]);
         } else if (!empty($id) && Yii::$app->request->isPost) {
             $source = $this->findModel($id);
-            /** @var ArticleCollection $model */
             if (($model = $source->getCollections()->andWhere(['user_id' => Yii::$app->user->getId()])->one()) != null) {
                 Yii::$app->getResponse()->setStatusCode(200);
                 return $model;
@@ -143,15 +140,15 @@ class ArticleController extends ActiveController
             if (($model = $source->getCollections()->andWhere(['user_id' => Yii::$app->user->getId()])->one()) != null) {
                 if ($model->delete()) {
                     Yii::$app->getResponse()->setStatusCode(204);
+                    return;
                 } elseif (!$model->hasErrors()) {
                     throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
                 }
             } else {
                 throw new NotFoundHttpException("Object not found.");
             }
-        } else {
-            throw new MethodNotAllowedHttpException();
         }
+        throw new MethodNotAllowedHttpException();
     }
 
     /**

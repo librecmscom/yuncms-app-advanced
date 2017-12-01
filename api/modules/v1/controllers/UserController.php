@@ -7,7 +7,6 @@
 
 namespace api\modules\v1\controllers;
 
-
 use Yii;
 use yii\helpers\Url;
 use yii\data\ActiveDataProvider;
@@ -15,7 +14,6 @@ use yii\web\ForbiddenHttpException;
 use yii\web\MethodNotAllowedHttpException;
 use yii\web\NotFoundHttpException;
 use yii\web\ServerErrorHttpException;
-use yuncms\user\frontend\models\UserRecoveryForm;
 use yuncms\user\models\UserProfile;
 use yuncms\attention\models\Attention;
 use api\modules\v1\models\User;
@@ -24,7 +22,9 @@ use api\modules\v1\models\AvatarForm;
 use api\modules\v1\models\Authentication;
 use api\modules\v1\models\UserMobileRegistrationForm;
 use api\modules\v1\models\UserEmailRegistrationForm;
+use api\modules\v1\models\UserSocialBindMobileForm;
 use api\modules\v1\models\UserSettingsForm;
+use api\modules\v1\models\UserRecoveryForm;
 
 /**
  * 用户接口
@@ -75,6 +75,7 @@ class UserController extends ActiveController
             'friends' => ['GET'],
             'followers' => ['GET'],
             'friendships' => ['GET'],
+            'bind-mobile' => ['POST'],
         ];
     }
 
@@ -103,6 +104,7 @@ class UserController extends ActiveController
             'nickname' => $user->nickname,
             'email' => $user->email,
             'mobile' => $user->mobile,
+            'mobile_confirmed_at' => $user->mobile_confirmed_at,
             'isAuthentication' => Authentication::isAuthentication($user->id),
             'faceUrl' => $user->getAvatar()
         ];
@@ -375,6 +377,23 @@ class UserController extends ActiveController
     }
 
     /**
+     * 绑定手机号
+     * @return UserSocialBindMobileForm
+     * @throws ServerErrorHttpException
+     */
+    public function actionBindMobile()
+    {
+        $model = new UserSocialBindMobileForm();
+        $model->load(Yii::$app->getRequest()->getBodyParams(), '');
+        if ($model->bingMobile()) {
+            Yii::$app->getResponse()->setStatusCode(200);
+        } elseif (!$model->hasErrors()) {
+            throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
+        }
+        return $model;
+    }
+
+    /**
      * 获取用户
      * @param int $id
      * @return User
@@ -403,7 +422,7 @@ class UserController extends ActiveController
      */
     public function checkAccess($action, $model = null, $params = [])
     {
-        if ($action === 'update' && $model->id !== Yii::$app->user->id) {
+        if ($action === 'update' && $model->id !== Yii::$app->user->getId()) {
             throw new ForbiddenHttpException(sprintf('You can only %s articles that you\'ve created.', $action));
         } else if ($action === 'delete') {
             throw new ForbiddenHttpException(sprintf('You can only %s articles that you\'ve created.', $action));

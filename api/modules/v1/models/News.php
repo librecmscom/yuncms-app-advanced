@@ -36,17 +36,6 @@ class News extends \yuncms\news\models\News implements Linkable
     }
 
     /**
-     * 扩展字段定义
-     * @return array
-     */
-    public function extraFields()
-    {
-        return [
-            'user'
-        ];
-    }
-
-    /**
      * User Relation
      * @return \yii\db\ActiveQueryInterface
      */

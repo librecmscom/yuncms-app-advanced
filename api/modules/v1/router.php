@@ -22,6 +22,7 @@ return [
             'POST password' => 'password',
             'GET friendships' => 'friendships',
             'POST,DELETE follow' => 'follow',
+            'POST bind-mobile' => 'bind-mobile',
             'GET,POST authentication' => 'authentication',
             'GET {id}/friends' => 'friends',
             'GET {id}/followers' => 'followers',

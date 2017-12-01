@@ -20,6 +20,7 @@ class User extends \yuncms\user\models\User implements Linkable
     public function fields()
     {
         return [
+            // field name is the same as the attribute name
             'id',
             'username',
             'nickname',
@@ -29,7 +30,15 @@ class User extends \yuncms\user\models\User implements Linkable
             'created_at',
             'blocked_at',
             'created_at',
-            'blocked_at',
+            "created_datetime" => function () {
+                return gmdate(DATE_ISO8601, $this->created_at);
+            },
+            "updated_datetime" => function () {
+                return gmdate(DATE_ISO8601, $this->updated_at);
+            },
+            'blocked_datetime' => function () {
+                return gmdate(DATE_ISO8601, $this->blocked_at);
+            }
         ];
     }
 

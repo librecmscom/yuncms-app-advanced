@@ -24,6 +24,8 @@ class SmsController extends Controller
             'verify-code' => [
                 'class' => 'xutl\sms\captcha\CaptchaAction',
                 'sendJobClass' => 'common\jobs\SmsCodeJob',
+                'minLength' => 5,
+                'maxLength' => 7,
                 'fixedVerifyCode' => YII_ENV_TEST ? '12345' : null,
             ],
         ];
