@@ -165,10 +165,10 @@ var App = function ($) {
             var follow_btn = $(this);
             var source_id = $(this).data('source_id');
             var show_num = $(this).data('show_num');
-            $.post("/user/space/tag", {model_id: source_id}, function (result) {
+            $.post("/tag/tag/follow", {id: source_id}, function (data,status) {
                 follow_btn.removeClass('disabled');
                 follow_btn.removeAttr('disabled');
-                if (result.status == 'followed') {
+                if (data.status === 'followed') {
                     follow_btn.html('已关注');
                     follow_btn.addClass('active');
                 } else {
@@ -178,7 +178,7 @@ var App = function ($) {
                 /*是否操作关注数*/
                 if (Boolean(show_num)) {
                     var follower_num = follow_btn.nextAll(".follows").html();
-                    if (result.status == 'followed') {
+                    if (data.status === 'followed') {
                         follow_btn.nextAll(".follows").html(parseInt(follower_num) + 1);
                     } else {
                         follow_btn.nextAll(".follows").html(parseInt(follower_num) - 1);
