@@ -68,7 +68,7 @@ return [
             'api/web/assets',
             'backend/runtime',
             'backend/web/assets',
-	    'console/runtime',
+        'console/runtime',
             'frontend/runtime',
             'frontend/web/assets',
         ],

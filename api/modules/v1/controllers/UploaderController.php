@@ -24,6 +24,7 @@ class UploaderController extends Controller
      * 图片上传
      * @return UploaderImageForm
      * @throws ServerErrorHttpException
+     * @throws \yii\base\InvalidConfigException
      */
     public function actionImage()
     {
@@ -43,6 +44,7 @@ class UploaderController extends Controller
      * 语音上传
      * @return UploaderAudioForm
      * @throws ServerErrorHttpException
+     * @throws \yii\base\InvalidConfigException
      */
     public function actionAudio()
     {
@@ -62,6 +64,7 @@ class UploaderController extends Controller
      * 文件上传
      * @return UploaderFileForm
      * @throws ServerErrorHttpException
+     * @throws \yii\base\InvalidConfigException
      */
     public function actionFile()
     {

@@ -61,6 +61,7 @@ class ArticleController extends ActiveController
      * @param IndexAction $action
      * @param mixed $filter
      * @return ActiveDataProvider
+     * @throws \yii\base\InvalidConfigException
      */
     public function prepareDataProvider(IndexAction $action, $filter)
     {
@@ -85,6 +86,7 @@ class ArticleController extends ActiveController
      * @param integer $id
      * @return Article
      * @throws ServerErrorHttpException
+     * @throws NotFoundHttpException
      */
     public function actionSupport($id)
     {
@@ -111,6 +113,7 @@ class ArticleController extends ActiveController
      * @throws MethodNotAllowedHttpException
      * @throws NotFoundHttpException
      * @throws ServerErrorHttpException
+     * @throws \yii\base\InvalidConfigException
      */
     public function actionCollection($id = null)
     {
@@ -158,6 +161,7 @@ class ArticleController extends ActiveController
      * @throws MethodNotAllowedHttpException
      * @throws NotFoundHttpException
      * @throws ServerErrorHttpException
+     * @throws \yii\base\InvalidConfigException
      */
     public function actionComment($id)
     {

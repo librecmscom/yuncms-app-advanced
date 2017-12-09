@@ -1,41 +1,62 @@
+# yuncms - local development overrides
 
-# 存储
-mysql:
-  image: mysql:5.6
-  environment:
-    - MYSQL_ROOT_PASSWORD=123456
-    - MYSQL_DATABASE=yuncms_dev
-
-# 队列
-redis:
-  image: redis:3-alpine
-
-# 缓存
-memcached:
-  image: memcached:alpine
-
-# 搜索
-elasticsearch:
-  image: elasticsearch:2-alpine
-
-web:
-  build: .
-  links:
-    - mysql:mysql
-    - redis:redis
-    - memcached:memcached
-    - elasticsearch:elasticsearch
-  ports:
-    - 80:80
-  environment:
-    - MYSQL_PORT_3306_TCP_ADDR=127.0.0.1
-    - MYSQL_USERNAME=root
-    - MYSQL_INSTANCE_NAME=yuncms_dev
-    - MYSQL_ROOT_PASSWORD=123456
-    - REDIS_PORT_6379_TCP_ADDR=127.0.0.1
-    - REDIS_PORT_6379_TCP_PORT=6379
-    - APP_ENV=Production
-  volumes:
-    - /docker/yuncms/vendor:/app/vendor:rw
-    - /docker/yuncms/composer:/root/.composer:rw
-    # - .:/app:rw # you should uncomment this line if you want to develop the app.
+version: '2'
+services:
+  mysql:
+    image: mysql:5.6
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+      - MYSQL_DATABASE=yuncms_dev
+  redis:
+    image: redis
+    restart: always
+  memcached:
+    image: memcached
+    restart: always
+  php-fpm:
+    image: yuncms/php:7.1-fpm
+    volumes:
+      - .:/app:rw # you should uncomment this line if you want to develop the app.
+    volumes_from:
+      - nginx
+    environment:
+      - APP_ENV=Production
+      - DB_PORT_3306_TCP_ADDR=db
+      - DB_PORT_3306_TCP_PORT=3306
+      - DB_ENV_MYSQL_ROOT_USER=root
+      - DB_ENV_MYSQL_ROOT_PASSWORD=123456
+    restart: always
+    depends_on:
+      - mysql
+      - redis
+      - memcached
+      - nginx
+  queue:
+    image: yuncms/php:7.1-fpm
+    volumes:
+      - .:/app:rw # you should uncomment this line if you want to develop the app.
+    volumes_from:
+      - nginx
+    environment:
+      - APP_ENV=Production
+      - DB_PORT_3306_TCP_ADDR=db
+      - DB_PORT_3306_TCP_PORT=3306
+      - DB_ENV_MYSQL_ROOT_USER=root
+      - DB_ENV_MYSQL_ROOT_PASSWORD=123456
+    restart: always
+    command: yii queue/listen --verbose=1 --color=0
+    depends_on:
+      - mysql
+      - redis
+      - memcached
+      - nginx
+  nginx:
+    build: .
+#    volumes:
+#      - .:/app:rw # you should uncomment this line if you want to develop the app.
+#      - /docker/yuncms/vendor:/app/vendor:rw
+#      - /docker/yuncms/composer:/root/.composer:rw
+    restart: always
+    ports:
+      - '40080:80'

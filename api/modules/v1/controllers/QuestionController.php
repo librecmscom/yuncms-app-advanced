@@ -44,12 +44,40 @@ class QuestionController extends ActiveController
     }
 
     /**
+     * 我回答的问题
+     * @return string
+     * @throws \yii\base\InvalidConfigException
+     */
+    public function actionMyAnswer()
+    {
+        $query = Question::find()->innerJoinWith([
+            'answers' => function ($query) {
+                /** @var \yii\db\ActiveQuery $query */
+                $query->where([
+                    QuestionAnswer::tableName() . '.user_id' => Yii::$app->user->getId()]);
+            }
+        ]);
+
+        return Yii::createObject([
+            'class' => ActiveDataProvider::className(),
+            'query' => $query,
+            'sort' => [
+                'defaultOrder' => [
+                    'created_at' => SORT_DESC,
+                    'id' => SORT_ASC,
+                ]
+            ],
+        ]);
+    }
+
+    /**
      * 问题收藏
      * @param null $id
      * @return object|ActiveDataProvider
      * @throws MethodNotAllowedHttpException
      * @throws NotFoundHttpException
      * @throws ServerErrorHttpException
+     * @throws \yii\base\InvalidConfigException
      */
     public function actionCollection($id = null)
     {
@@ -90,7 +118,9 @@ class QuestionController extends ActiveController
      * 回答问题
      * @param int $id
      * @return object|ActiveDataProvider|Question
+     * @throws NotFoundHttpException
      * @throws ServerErrorHttpException
+     * @throws \yii\base\InvalidConfigException
      */
     public function actionAnswer($id)
     {

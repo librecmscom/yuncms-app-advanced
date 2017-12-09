@@ -15,33 +15,8 @@ use yii\web\Linkable;
  * Class User
  * @package api\modules\v1\models
  */
-class User extends \yuncms\user\models\User implements Linkable
+class User extends \api\models\User implements Linkable
 {
-    public function fields()
-    {
-        return [
-            // field name is the same as the attribute name
-            'id',
-            'username',
-            'nickname',
-            'faceUrl' => function () {
-                return $this->getAvatar(self::AVATAR_MIDDLE);
-            },
-            'created_at',
-            'blocked_at',
-            'created_at',
-            "created_datetime" => function () {
-                return gmdate(DATE_ISO8601, $this->created_at);
-            },
-            "updated_datetime" => function () {
-                return gmdate(DATE_ISO8601, $this->updated_at);
-            },
-            'blocked_datetime' => function () {
-                return gmdate(DATE_ISO8601, $this->blocked_at);
-            }
-        ];
-    }
-
     /**
      * return HATEOAS
      * @see https://en.wikipedia.org/wiki/HATEOAS
@@ -54,14 +29,5 @@ class User extends \yuncms\user\models\User implements Linkable
             'edit' => Url::to(['/v1/user/view', 'id' => $this->id], true),
             'index' => Url::to(['/v1/user/index'], true),
         ];
-    }
-
-    /**
-     * 扩展字段定义
-     * @return array
-     */
-    public function extraFields()
-    {
-        return ['profile', 'extra'];
     }
 }

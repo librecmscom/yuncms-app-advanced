@@ -1,16 +1,30 @@
-FROM xutongle/php:7.1-fpm
+# 第一阶段编译
+FROM yuncms/php:7.1-build AS builder
+
+ARG APP_ENV=Production
+
+ENV GITHUB_API_TOKEN="eb517cd26e59740490c099850cbd74c951c7e030"
+
+COPY . /app/
+
+WORKDIR /app
+
+RUN composer config -g github-oauth.github.com ${GITHUB_API_TOKEN} && \
+    composer install --prefer-dist --optimize-autoloader -v && \
+    php init --env=${APP_ENV} --overwrite=y
+
+# 第二阶段打包程序
+FROM xutl/nginx
 
 MAINTAINER XUTL <xutl@gmail.com>
 
-COPY . /app/
-WORKDIR /app
+COPY --from=builder /app /app/
 
-RUN rm -rf /etc/nginx/conf.d/default.conf \
-    && composer install --prefer-dist --optimize-autoloader -vvv \
-    && chmod 700 docker-files/run.sh init
+RUN rm -f /usr/local/etc/nginx/sites/default.conf && \
+    ln -s /app/nginx.conf /usr/local/etc/nginx/sites/nginx.conf
+
+WORKDIR /app
 
 VOLUME ["/app/uploads"]
 
-EXPOSE 80
-
-CMD ["docker-files/run.sh"]
+CMD ["nginx", "-c", "/usr/local/etc/nginx/nginx.conf"]

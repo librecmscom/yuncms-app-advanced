@@ -24,6 +24,20 @@ Pull the image:
 docker pull yuncms/yuncms-app-advanced
 ```
 
+## Manually deploy
+
+```shell
+git clone git@git.qcloud.com:yuncms/yuncms.git /home/yuncms/yuncms
+cd /home/yuncms/yuncms
+composer install --prefer-dist --optimize-autoloader -vvv
+php init --env=Production --overwrite=y
+php yii migrate
+
+
+ln -s /home/yuncms/yuncms/nginx.conf /usr/local/etc/nginx/sites-enabled/www.yuncms.net.conf
+
+```
+
 ## 目录结构
 
 ```

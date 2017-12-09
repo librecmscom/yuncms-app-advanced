@@ -38,6 +38,12 @@ class AuthController extends Controller
             'token' => [
                 'class' => 'yuncms\oauth2\actions\Token',
             ],
+            /**
+             * Returns an access token.
+             */
+            'qrcode' => [
+                'class' => 'yuncms\oauth2\actions\QRCode',
+            ],
         ];
     }
 

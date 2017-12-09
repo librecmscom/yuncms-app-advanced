@@ -39,6 +39,7 @@ class MessageController extends Controller
     /**
      * 收件箱
      * @return object|ActiveDataProvider
+     * @throws \yii\base\InvalidConfigException
      */
     public function actionIndex()
     {
@@ -62,6 +63,7 @@ class MessageController extends Controller
      * 发私信
      * @return Message|\yii\db\ActiveRecord
      * @throws ServerErrorHttpException
+     * @throws \yii\base\InvalidConfigException
      */
     public function actionCreate(){
         /* @var $model \yii\db\ActiveRecord */
@@ -82,6 +84,8 @@ class MessageController extends Controller
      * 获取会话
      * @param integer $id
      * @return object|ActiveDataProvider
+     * @throws NotFoundHttpException
+     * @throws \yii\base\InvalidConfigException
      */
     public function actionView($id)
     {

@@ -34,7 +34,7 @@ class ContactForm extends Model
             ['smsVerifyCode', 'required'],
             ['smsVerifyCode', 'integer'],
             ['smsVerifyCode', 'string', 'min' => 4, 'max' => 6],
-            ['smsVerifyCode', '\xutl\sms\captcha\CaptchaValidator', 'captchaAction' => '/site/smsCaptcha', 'skipOnEmpty' => false, 'message' => 'ÊÖ»úÑéÖ¤ÂëÊäÈë´íÎó'],
+            ['smsVerifyCode', '\xutl\sms\captcha\CaptchaValidator', 'captchaAction' => '/site/smsCaptcha', 'skipOnEmpty' => false, 'message' => 'æ‰‹æœºéªŒè¯ç è¾“å…¥é”™è¯¯'],
         ];
     }
 

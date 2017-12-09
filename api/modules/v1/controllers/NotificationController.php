@@ -37,6 +37,7 @@ class NotificationController extends Controller
     /**
      * 显示通知首页
      * @return string
+     * @throws \yii\base\InvalidConfigException
      */
     public function actionIndex()
     {
@@ -65,6 +66,7 @@ class NotificationController extends Controller
     /**
      * 未读通知数目
      * @return array
+     * @throws \Exception|\Throwable
      */
     public function actionUnreadNotifications()
     {

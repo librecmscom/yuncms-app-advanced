@@ -56,6 +56,7 @@ class NewsController extends ActiveController
      * @param IndexAction $action
      * @param mixed $filter
      * @return ActiveDataProvider
+     * @throws \yii\base\InvalidConfigException
      */
     public function prepareDataProvider(IndexAction $action, $filter)
     {
@@ -80,6 +81,7 @@ class NewsController extends ActiveController
      * @param integer $id
      * @return News
      * @throws ServerErrorHttpException
+     * @throws NotFoundHttpException
      */
     public function actionSupport($id)
     {

@@ -8,8 +8,8 @@
 namespace api\modules\v1\controllers;
 
 use Yii;
-use yii\helpers\Url;
 use yii\data\ActiveDataProvider;
+use yii\rest\IndexAction;
 use yii\web\ForbiddenHttpException;
 use yii\web\MethodNotAllowedHttpException;
 use yii\web\NotFoundHttpException;
@@ -20,11 +20,6 @@ use api\modules\v1\models\User;
 use api\modules\v1\ActiveController;
 use api\modules\v1\models\AvatarForm;
 use api\modules\v1\models\Authentication;
-use api\modules\v1\models\UserMobileRegistrationForm;
-use api\modules\v1\models\UserEmailRegistrationForm;
-use api\modules\v1\models\UserSocialBindMobileForm;
-use api\modules\v1\models\UserSettingsForm;
-use api\modules\v1\models\UserRecoveryForm;
 
 /**
  * 用户接口
@@ -42,7 +37,7 @@ class UserController extends ActiveController
      * @var string the scenario used for updating a model.
      * @see \yii\base\Model::scenarios()
      */
-    public $updateScenario = 'update';
+    //public $updateScenario = 'update';
 
     /**
      * 定义操作
@@ -51,9 +46,36 @@ class UserController extends ActiveController
     public function actions()
     {
         $actions = parent::actions();
+        $actions['index']['prepareDataProvider'] = [$this, 'prepareDataProvider'];
         // disable the "delete" and "create" actions
         unset($actions['delete'], $actions['create']);
         return $actions;
+    }
+
+    /**
+     * Prepares the data provider that should return the requested collection of the models.
+     *
+     * @param IndexAction $action
+     * @param mixed $filter
+     * @return ActiveDataProvider
+     * @throws \yii\base\InvalidConfigException
+     */
+    public function prepareDataProvider(IndexAction $action, $filter)
+    {
+        $query = User::find();
+        if (!empty($filter)) {
+            $query->andWhere($filter);
+        }
+        return Yii::createObject([
+            'class' => ActiveDataProvider::className(),
+            'query' => $query,
+            'sort' => [
+                'defaultOrder' => [
+                    'created_at' => SORT_DESC,
+                    'id' => SORT_ASC,
+                ]
+            ],
+        ]);
     }
 
     /**
@@ -64,8 +86,6 @@ class UserController extends ActiveController
     protected function verbs()
     {
         return [
-            'register' => ['POST'],
-            'email-register' => ['POST'],
             'avatar' => ['POST'],
             'search' => ['GET'],
             'me' => ['GET'],
@@ -77,6 +97,28 @@ class UserController extends ActiveController
             'friendships' => ['GET'],
             'bind-mobile' => ['POST'],
         ];
+    }
+
+    /**
+     * 用户搜索
+     * @param string $username
+     * @return ActiveDataProvider
+     * @throws \yii\base\InvalidConfigException
+     */
+    public function actionSearch($username)
+    {
+        $query = User::find()->where(['like', 'username', $username])->orWhere(['like', 'nickname', $username]);
+
+        return Yii::createObject([
+            'class' => ActiveDataProvider::className(),
+            'query' => $query,
+            'sort' => [
+                'defaultOrder' => [
+                    'created_at' => SORT_DESC,
+                    'id' => SORT_ASC,
+                ]
+            ],
+        ]);
     }
 
     /**
@@ -115,6 +157,7 @@ class UserController extends ActiveController
      * @return UserProfile
      * @throws NotFoundHttpException
      * @throws ServerErrorHttpException
+     * @throws \yii\base\InvalidConfigException
      */
     public function actionProfile()
     {
@@ -132,30 +175,15 @@ class UserController extends ActiveController
     }
 
     /**
-     * 修改密码
-     * @return UserSettingsForm
-     * @throws ServerErrorHttpException
-     */
-    public function actionPassword()
-    {
-        $model = new UserSettingsForm();
-        $model->load(Yii::$app->request->post(), '');
-        if ($model->save()) {
-            Yii::$app->getResponse()->setStatusCode(200);
-            return $model;
-        } elseif (!$model->hasErrors()) {
-            throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
-        }
-        return $model;
-    }
-
-    /**
      * 关注别人
      * @param integer $id
      * @return Attention
      * @throws MethodNotAllowedHttpException
      * @throws NotFoundHttpException
      * @throws ServerErrorHttpException
+     * @throws \Exception
+     * @throws \Throwable
+     * @throws \yii\db\StaleObjectException
      */
     public function actionFollow($id)
     {
@@ -196,7 +224,6 @@ class UserController extends ActiveController
      * 获取用户的关注列表
      * @param string $id
      * @return ActiveDataProvider
-     * @throws NotFoundHttpException
      */
     public function actionFriends($id)
     {
@@ -212,7 +239,6 @@ class UserController extends ActiveController
      * 获取用户的粉丝列表
      * @param int $id
      * @return ActiveDataProvider
-     * @throws NotFoundHttpException
      */
     public function actionFollowers($id)
     {
@@ -254,8 +280,8 @@ class UserController extends ActiveController
      * 实名认证
      * @return null|Authentication
      * @throws MethodNotAllowedHttpException
-     * @throws NotFoundHttpException
      * @throws ServerErrorHttpException
+     * @throws \yii\base\InvalidConfigException
      */
     public function actionAuthentication()
     {
@@ -276,10 +302,11 @@ class UserController extends ActiveController
             }
             return $model;
         } else if (Yii::$app->request->isGet) {
-            if (($model = Authentication::findOne(['user_id' => Yii::$app->user->getId()])) != null) {
-                return $model;
+            if (($model = Authentication::findOne(['user_id' => Yii::$app->user->getId()])) == null) {
+                $model = new Authentication(['registrationPolicy' => true,]);
+                $model->save();
             }
-            throw new NotFoundHttpException("Object not found: " . Yii::$app->user->getId());
+            return $model;
         }
         throw new MethodNotAllowedHttpException();
     }
@@ -288,6 +315,7 @@ class UserController extends ActiveController
      * 上传头像
      * @return AvatarForm|bool
      * @throws ServerErrorHttpException
+     * @throws \yii\base\InvalidConfigException
      */
     public function actionAvatar()
     {
@@ -297,96 +325,6 @@ class UserController extends ActiveController
             $response = Yii::$app->getResponse();
             $response->setStatusCode(200);
             return $user;
-        } elseif (!$model->hasErrors()) {
-            throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
-        }
-        return $model;
-    }
-
-    /**
-     * 用户搜索
-     * @param string $username
-     * @return ActiveDataProvider
-     */
-    public function actionSearch($username)
-    {
-        $query = User::find()->where(['like', 'username', $username])->orWhere(['like', 'nickname', $username]);
-        $dataProvider = new ActiveDataProvider([
-            'query' => $query,
-        ]);
-        return $dataProvider;
-    }
-
-    /**
-     * 注册用户
-     * @return UserEmailRegistrationForm|\yuncms\user\models\User
-     * @throws ServerErrorHttpException
-     */
-    public function actionEmailRegister()
-    {
-        $model = new UserEmailRegistrationForm();
-        $model->load(Yii::$app->getRequest()->getBodyParams(), '');
-        if (($user = $model->register()) != false) {
-            $response = Yii::$app->getResponse();
-            $response->setStatusCode(201);
-            $id = implode(',', array_values($user->getPrimaryKey(true)));
-            $response->getHeaders()->set('Location', Url::toRoute(['view', 'id' => $id], true));
-            return $user;
-        } elseif (!$model->hasErrors()) {
-            throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
-        }
-        return $model;
-    }
-
-    /**
-     * 注册用户
-     * @return UserMobileRegistrationForm|false|\yuncms\user\models\User
-     * @throws ServerErrorHttpException
-     */
-    public function actionRegister()
-    {
-        $model = new UserMobileRegistrationForm();
-        $model->load(Yii::$app->getRequest()->getBodyParams(), '');
-        if (($user = $model->register()) != false) {
-            $response = Yii::$app->getResponse();
-            $response->setStatusCode(201);
-            $id = implode(',', array_values($user->getPrimaryKey(true)));
-            $response->getHeaders()->set('Location', Url::toRoute(['view', 'id' => $id], true));
-            return $user;
-        } elseif (!$model->hasErrors()) {
-            throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
-        }
-        return $model;
-    }
-
-    /**
-     * 重置密码
-     * @return UserRecoveryForm
-     * @throws ServerErrorHttpException
-     */
-    public function actionRecovery()
-    {
-        $model = new UserRecoveryForm();
-        $model->load(Yii::$app->getRequest()->getBodyParams(), '');
-        if ($model->resetPassword()) {
-            Yii::$app->getResponse()->setStatusCode(200);
-        } elseif (!$model->hasErrors()) {
-            throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
-        }
-        return $model;
-    }
-
-    /**
-     * 绑定手机号
-     * @return UserSocialBindMobileForm
-     * @throws ServerErrorHttpException
-     */
-    public function actionBindMobile()
-    {
-        $model = new UserSocialBindMobileForm();
-        $model->load(Yii::$app->getRequest()->getBodyParams(), '');
-        if ($model->bingMobile()) {
-            Yii::$app->getResponse()->setStatusCode(200);
         } elseif (!$model->hasErrors()) {
             throw new ServerErrorHttpException('Failed to create the object for unknown reason.');
         }
@@ -423,9 +361,9 @@ class UserController extends ActiveController
     public function checkAccess($action, $model = null, $params = [])
     {
         if ($action === 'update' && $model->id !== Yii::$app->user->getId()) {
-            throw new ForbiddenHttpException(sprintf('You can only %s articles that you\'ve created.', $action));
+            throw new ForbiddenHttpException(sprintf('You can only %s users that you\'ve created.', $action));
         } else if ($action === 'delete') {
-            throw new ForbiddenHttpException(sprintf('You can only %s articles that you\'ve created.', $action));
+            throw new ForbiddenHttpException(sprintf('You can only %s users that you\'ve deleted.', $action));
         }
     }
 }
