@@ -14,17 +14,20 @@ RUN composer config -g github-oauth.github.com ${GITHUB_API_TOKEN} && \
     php init --env=${APP_ENV} --overwrite=y
 
 # 第二阶段打包程序
-FROM xutl/nginx
+FROM yuncms/php:7.1-nginx
 
 MAINTAINER XUTL <xutl@gmail.com>
 
 COPY --from=builder /app /app/
 
-RUN rm -f /usr/local/etc/nginx/sites/default.conf && \
-    ln -s /app/nginx.conf /usr/local/etc/nginx/sites/nginx.conf
-
 WORKDIR /app
 
-VOLUME ["/app/uploads"]
+RUN rm -f /usr/local/etc/nginx/sites/default.conf \
+	&& ln -s /app/nginx.conf /usr/local/etc/nginx/sites/nginx.conf \
+	&& mkdir /storage \
+	&& chown -R www-data:www-data /app
 
-CMD ["nginx", "-c", "/usr/local/etc/nginx/nginx.conf"]
+# Add configuration files
+COPY docker-files/ /
+
+VOLUME ["/app/storage"]
