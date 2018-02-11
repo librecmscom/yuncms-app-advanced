@@ -16,8 +16,8 @@ class Yii extends \yii\BaseYii
  * Class BaseApplication
  * Used for properties that are identical for both WebApplication and ConsoleApplication
  *
- * @property xutl\oss\Storage $storage The storage component. This property is read-only. Extended component.
- * @property yuncms\system\components\Settings $settings The settings component. This property is read-only. Extended component.
+ * @property xutl\aliyun\Aliyun $aliyun The aliyun component. This property is read-only. Extended component.
+ * @property yuncms\core\components\Settings $settings The settings component. This property is read-only. Extended component.
  * @property yii\web\UrlManager $frontUrlManager The frontUrlManager component. This property is read-only. Extended component.
  * @property yii\queue\cli\Queue $queue The queue component. This property is read-only. Extended component.
  * @property xutl\tim\Tim $im The im component. This property is read-only. Extended component.
@@ -49,15 +49,5 @@ class WebApplication extends yii\web\Application
  * @property \app\components\ConsoleUser $user The user component. This property is read-only. Extended component.
  */
 class ConsoleApplication extends yii\console\Application
-{
-}
-
-/**
- * Class WeixinApplication
- * Include only Console application related components here
- *
- * @property \app\components\ConsoleUser $user The user component. This property is read-only. Extended component.
- */
-class WeixinApplication extends yii\web\Application
 {
 }

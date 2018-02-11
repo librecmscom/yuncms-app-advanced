@@ -4,6 +4,7 @@ include:
     - api
     - frontend
     - backend
+    - wechat
 paths:
     log: console/runtime/logs
 settings:

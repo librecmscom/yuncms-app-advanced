@@ -9,6 +9,9 @@ backend/config/params-local.php
 frontend/config/main-local.php
 frontend/config/modules-local.php
 frontend/config/params-local.php
+wechat/config/main-local.php
+wechat/config/modules-local.php
+wechat/config/params-local.php
 uploads
 
 # phpstorm project files
@@ -39,7 +42,4 @@ phpunit.phar
 
 # local phpunit config
 phpunit.xml
-
-# vagrant runtime
-.vagrant
 

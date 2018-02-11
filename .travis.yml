@@ -29,6 +29,7 @@ install:
     sed -i "s/'cookieValidationKey' => ''/'cookieValidationKey' => 'testkey'/" api/config/main.php
     sed -i "s/'cookieValidationKey' => ''/'cookieValidationKey' => 'testkey'/" frontend/config/main.php
     sed -i "s/'cookieValidationKey' => ''/'cookieValidationKey' => 'testkey'/" backend/config/main.php
+    sed -i "s/'cookieValidationKey' => ''/'cookieValidationKey' => 'testkey'/" wechat/config/main.php
 
 before_script:
   - mysql -e 'CREATE DATABASE yuncms_test;'

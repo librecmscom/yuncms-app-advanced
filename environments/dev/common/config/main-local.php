@@ -2,7 +2,7 @@
 return [
     'components' => [
         'db' => [
-            'dsn' => 'mysql:host=localhost;dbname=yuncms_advanced_dev',
+            'dsn' => 'mysql:host=localhost;dbname=yuncms_dev',
             'username' => 'yuncms',
             'password' => '123456',
         ],

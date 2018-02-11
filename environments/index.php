@@ -32,7 +32,7 @@ return [
     'Development' => [
         'path' => 'dev',
         'setNginxConf' => [
-            'nginx.conf',
+            'common/config/http.nginx',
         ],
         'setWritable' => [
             'api/runtime',
@@ -42,6 +42,8 @@ return [
             'console/runtime',
             'frontend/runtime',
             'frontend/web/assets',
+            'wechat/runtime',
+            'wechat/web/assets',
         ],
         'setExecutable' => [
             'yii',
@@ -51,6 +53,7 @@ return [
             'api/config/main-local.php',
             'backend/config/main-local.php',
             'frontend/config/main-local.php',
+            'wechat/config/main-local.php',
         ],
 //        'createSymlink' => [
 //            'frontend/web/uploads' => 'uploads',
@@ -61,16 +64,18 @@ return [
     'Staging' => [
         'path' => 'stage',
         'setNginxConf' => [
-            'nginx.conf',
+            'common/config/http.nginx',
         ],
         'setWritable' => [
             'api/runtime',
             'api/web/assets',
             'backend/runtime',
             'backend/web/assets',
-        'console/runtime',
+            'console/runtime',
             'frontend/runtime',
             'frontend/web/assets',
+            'wechat/runtime',
+            'wechat/web/assets',
         ],
         'setExecutable' => [
             'yii',
@@ -79,6 +84,7 @@ return [
             'api/config/main-local.php',
             'backend/config/main-local.php',
             'frontend/config/main-local.php',
+            'wechat/config/main-local.php',
         ],
 //        'createSymlink' => [
 //            'frontend/web/uploads' => 'uploads',
@@ -89,7 +95,7 @@ return [
     'Production' => [
         'path' => 'prod',
         'setNginxConf' => [
-            'nginx.conf',
+            'common/config/http.nginx',
         ],
         'setWritable' => [
             'api/runtime',
@@ -99,6 +105,8 @@ return [
             'console/runtime',
             'frontend/runtime',
             'frontend/web/assets',
+            'wechat/runtime',
+            'wechat/web/assets',
         ],
         'setExecutable' => [
             'yii',
@@ -107,6 +115,7 @@ return [
             'api/config/main-local.php',
             'backend/config/main-local.php',
             'frontend/config/main-local.php',
+            'wechat/config/main-local.php',
         ],
 //        'createSymlink' => [
 //            'frontend/web/uploads' => 'uploads',

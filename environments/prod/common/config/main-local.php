@@ -2,9 +2,9 @@
 return [
     'components' => [
         'db' => [
-            'dsn' => 'mysql:host=' . getenv('YII_DB_HOST', true) . ';dbname=' . getenv('YII_DB_NAME'),
-            'username' => getenv('YII_DB_USERNAME', true),
-            'password' => getenv('YII_DB_PASSWORD', true),
+            'dsn' => 'mysql:host=' . getenv('YUN_DB_HOST', true) . ';dbname=' . getenv('YUN_DB_NAME'),
+            'username' => getenv('YUN_DB_USERNAME', true),
+            'password' => getenv('YUN_DB_PASSWORD', true),
             //必须开启，不然查询会额外多消耗 30-100ms
             'enableSchemaCache' => true,
             'schemaCacheDuration' => 3600,
