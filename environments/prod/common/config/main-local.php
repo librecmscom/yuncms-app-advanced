@@ -2,7 +2,7 @@
 return [
     'components' => [
         'db' => [
-            'dsn' => 'mysql:host=localhost;dbname=yii2advanced',
+            'dsn' => 'mysql:host=localhost;dbname=yuncms',
             'username' => 'root',
             'password' => '',
             //必须开启，不然查询会额外多消耗 30-100ms

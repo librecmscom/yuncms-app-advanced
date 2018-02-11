@@ -6,9 +6,9 @@
  */
 return [
     'translations' => array_merge(
-        require(__DIR__ . '/../../vendor/yuncms/i18n.php'),
+        require(__DIR__ . '/../../vendor/yuncms/translates.php'),
         [
-            'app*' => [
+            '*' => [
                 'class' => 'yii\i18n\PhpMessageSource',
                 //'basePath' => '@app/messages',
                 'sourceLanguage' => 'en-US',
