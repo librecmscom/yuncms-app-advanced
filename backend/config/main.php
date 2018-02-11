@@ -1,11 +1,11 @@
 <?php
-$params = array_merge(
+$params = \yii\helpers\ArrayHelper::merge(
     require(__DIR__ . '/../../common/config/params.php'),
     require(__DIR__ . '/../../common/config/params-local.php'),
     require(__DIR__ . '/params.php'),
     require(__DIR__ . '/params-local.php')
 );
-$modules = array_merge(
+$modules = \yii\helpers\ArrayHelper::merge(
     require(__DIR__ . '/../../vendor/yuncms/backend.php'),
     require(__DIR__ . '/../../common/config/modules.php'),
     require(__DIR__ . '/../../common/config/modules-local.php'),

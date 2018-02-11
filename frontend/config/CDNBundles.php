@@ -42,7 +42,7 @@ return [
         ],
     ],
     // use font-awesome from CDN
-    'xutl\fontawesome\Asset' => [
+    'yiilab\fontawesome\FontAwesomeAsset' => [
         'sourcePath' => null, // do not publish the bundle
         'css' => [
             '//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css',

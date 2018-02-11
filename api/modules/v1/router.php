@@ -63,19 +63,6 @@ return [
         ],
     ],
 
-    [//圈子
-        'class' => 'yii\rest\UrlRule',
-        'controller' => 'v1/group',
-        'extraPatterns' => [
-            'GET my' => 'my',
-            'GET,PUT,PATCH,DELETE {id}/members/<user_id:\d+>' => 'member',
-            'GET,POST {id}/members' => 'member',
-            'GET search' => 'search',
-            'GET joined' => 'joined',
-            'POST {id}/join' => 'join',
-        ],
-    ],
-
     [//问答
         'class' => 'yii\rest\UrlRule',
         'controller' => ['v1/question'],

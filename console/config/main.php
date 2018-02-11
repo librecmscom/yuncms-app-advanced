@@ -17,7 +17,7 @@ $migrationNamespaces = array_merge(
 return [
     'id' => 'app-console',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log', 'queue'],
+    'bootstrap' => ['log', 'queue','\yuncms\core\Bootstrap'],
     'controllerNamespace' => 'console\controllers',
     'controllerMap' => [
         'fixture' => [
@@ -27,7 +27,6 @@ return [
         'migrate' => [//迁移配置
             'class' => 'yii\console\controllers\MigrateController',
             'templateFile' => '@app/views/migration.php',
-            'interactive' => 0,//自动应答
             'migrationPath' => null,// 完全禁用非命名空间迁移
             'migrationNamespaces' => $migrationNamespaces,
         ],

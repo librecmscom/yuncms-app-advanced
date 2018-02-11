@@ -44,7 +44,7 @@ class ActiveController extends \yii\rest\ActiveController
      */
     protected function verbs()
     {
-        return [];
+        return parent::verbs();
     }
 
     /**
@@ -62,8 +62,9 @@ class ActiveController extends \yii\rest\ActiveController
     public function checkAccess($action, $model = null, $params = [])
     {
         if ($action === 'update' || $action === 'delete') {
-            if ($model->user_id !== Yii::$app->user->id)
-                throw new ForbiddenHttpException(sprintf('You can only %s articles that you\'ve created.', $action));
+            if ($model && $model->user_id !== Yii::$app->user->id) {
+                throw new ForbiddenHttpException(sprintf('You can only %s data that you\'ve created.', $action));
+            }
         }
     }
 }
