@@ -13,7 +13,7 @@ sudo: false
 cache:
   directories:
     - vendor
-    - $HOME/.composer/cache
+    - $HOME/.composer
 
 matrix:
   allow_failures:
@@ -33,7 +33,7 @@ install:
 
 before_script:
   - mysql -e 'CREATE DATABASE yuncms_test;'
-  - php yii_test migrate --interactive=0
+  - php yii_test migrate/up --interactive=0
 
 script:
   - composer validate --strict
