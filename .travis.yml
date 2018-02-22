@@ -24,7 +24,7 @@ install:
   - travis_retry composer update --dev --prefer-dist --no-interaction
 # setup application:
   - |
-    ./init --env=Development
+    ./init --env=Development --overwrite=y
     sed -i s/root/travis/ common/config/main-local.php
     sed -i "s/'cookieValidationKey' => ''/'cookieValidationKey' => 'testkey'/" api/config/main.php
     sed -i "s/'cookieValidationKey' => ''/'cookieValidationKey' => 'testkey'/" frontend/config/main.php
